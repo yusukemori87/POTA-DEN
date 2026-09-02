@@ -1,0 +1,659 @@
+<title>ポタ電カタログ</title>
+<meta name="description" content="日本で買えるポータブル電源を容量・Wh単価・星評価・ソーラー入力で横断比較">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<style>
+:root{
+  color-scheme:light;
+  --bg:#F5F6F7; --surface:#FFFFFF; --surface2:#F4F6F7; --imgbg:#F2F4F5; --ink:#16191B; --ink2:#4C5459; --muted:#7C858B; --line:#E4E7E9; --line2:#CBD1D5;
+  --accent:#0E7C66; --accent-ink:#0A5A4A; --accent-soft:#DDF0EA; --price:#B2410E; --star:#E39A17; --star-off:#D6DAD8;
+  --shadow:0 1px 2px rgba(26,31,30,.06),0 8px 24px -12px rgba(26,31,30,.18); --shadow2:0 24px 60px -20px rgba(26,31,30,.35);
+  --dv0:#9CC1EA; --dv1:#B5D1F0; --dv2:#CBDFF4; --dv3:#DEEAF8; --dv4:#ECEFF2;
+  --dv5:#F4EFEC; --dv6:#F9DED4; --dv7:#F7C7B6; --dv8:#F2AC96; --dv9:#EA8E74;
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  --sans:"IBM Plex Sans JP","Hiragino Sans","Noto Sans JP",system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#0F1214; --surface:#181C1F; --surface2:#1F2427; --imgbg:#F2F4F5; --ink:#EDF0F2; --ink2:#AEB6BB; --muted:#7C868C; --line:#282E32; --line2:#394146;
+    --accent:#3BB99A; --accent-ink:#86DCC6; --accent-soft:#1B3A33; --price:#F0925C; --star:#F0B23C; --star-off:#3A4543;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px -12px rgba(0,0,0,.6); --shadow2:0 24px 60px -20px rgba(0,0,0,.8);
+    --dv0:#1D3F63; --dv1:#1C3A57; --dv2:#1C334A; --dv3:#1D2E3C; --dv4:#1F262B;
+    --dv5:#262220; --dv6:#332520; --dv7:#40261D; --dv8:#4E271A; --dv9:#5D2817;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#0F1214; --surface:#181C1F; --surface2:#1F2427; --imgbg:#F2F4F5; --ink:#EDF0F2; --ink2:#AEB6BB; --muted:#7C868C; --line:#282E32; --line2:#394146;
+  --accent:#3BB99A; --accent-ink:#86DCC6; --accent-soft:#1B3A33; --price:#F0925C; --star:#F0B23C; --star-off:#3A4543;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px -12px rgba(0,0,0,.6); --shadow2:0 24px 60px -20px rgba(0,0,0,.8);
+    --dv0:#1D3F63; --dv1:#1C3A57; --dv2:#1C334A; --dv3:#1D2E3C; --dv4:#1F262B;
+    --dv5:#262220; --dv6:#332520; --dv7:#40261D; --dv8:#4E271A; --dv9:#5D2817;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:14px;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:var(--accent-ink)}
+button{font:inherit;color:inherit;cursor:pointer}
+.num{font-family:var(--mono);font-variant-numeric:tabular-nums}
+/* top bar */
+.top{position:sticky;top:0;z-index:20;background:var(--surface);border-bottom:1px solid var(--line);box-shadow:0 1px 0 var(--line)}
+.topin{max-width:1440px;margin:0 auto;padding:10px 20px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.logo{display:flex;align-items:center;gap:9px;font-weight:700;font-size:18px;letter-spacing:-.01em;white-space:nowrap}
+.logo i{width:26px;height:26px;border-radius:7px;background:var(--accent);display:inline-grid;place-items:center}
+.logo i::before{content:"";width:12px;height:16px;border:2px solid #fff;border-radius:2px;box-shadow:inset 0 -6px 0 #fff}
+.logo small{font-size:11px;font-weight:500;color:var(--muted);letter-spacing:.06em;margin-left:4px}
+.search{flex:1;min-width:220px;display:flex;border:1.5px solid var(--line2);border-radius:10px;overflow:hidden;background:var(--surface2)}
+.search input{flex:1;border:0;background:transparent;padding:9px 14px;font:inherit;color:var(--ink);outline:none}
+.search button{border:0;background:var(--accent);color:#fff;padding:0 16px;font-weight:600}
+.topr{display:flex;align-items:center;gap:10px}
+.sortsel{font:inherit;padding:8px 10px;border:1.5px solid var(--line2);border-radius:10px;background:var(--surface);color:var(--ink)}
+.cmpbtn{border:1.5px solid var(--line2);background:var(--surface);border-radius:10px;padding:7px 12px;font-weight:600;display:flex;gap:8px;align-items:center}
+.cmpbtn b{background:var(--accent);color:#fff;border-radius:999px;min-width:20px;height:20px;display:inline-grid;place-items:center;font-size:11px;padding:0 6px}
+/* layout */
+.page{max-width:1440px;margin:0 auto;padding:18px 20px 80px;display:grid;grid-template-columns:250px 1fr;gap:22px;align-items:start}
+aside{position:sticky;top:64px;max-height:calc(100vh - 80px);overflow:auto;padding-right:6px;scrollbar-width:thin}
+.fs{border-bottom:1px solid var(--line);padding:12px 0}
+.fs:first-child{padding-top:0}
+.fs h3{margin:0 0 8px;font-size:12.5px;font-weight:700;letter-spacing:.02em;display:flex;justify-content:space-between;align-items:center}
+.fs h3 .cl{font-size:11px;font-weight:500;color:var(--accent-ink);background:none;border:0;padding:0;text-decoration:underline;display:none}
+.fs.active h3 .cl{display:inline}
+.opt{display:flex;align-items:center;gap:8px;padding:3px 0;font-size:13px;cursor:pointer;color:var(--ink2)}
+.opt:hover{color:var(--ink)}
+.opt input{accent-color:var(--accent);width:15px;height:15px;margin:0;flex:none}
+.opt .c{margin-left:auto;font-size:11px;color:var(--muted);font-family:var(--mono)}
+.opt.on{color:var(--ink);font-weight:600}
+.stars{display:inline-flex;gap:1px;line-height:1}
+.stars i{width:13px;height:13px;display:inline-block;background:var(--star-off);clip-path:polygon(50% 0,61% 35%,98% 35%,68% 57%,79% 91%,50% 70%,21% 91%,32% 57%,2% 35%,39% 35%)}
+.stars i.f{background:var(--star)}
+.stars i.h{background:linear-gradient(90deg,var(--star) 50%,var(--star-off) 50%)}
+.more{background:none;border:0;padding:4px 0 0;color:var(--accent-ink);font-size:12px;text-decoration:underline}
+.resetall{width:100%;margin-top:12px;border:1.5px solid var(--line2);background:var(--surface);border-radius:10px;padding:8px;font-weight:600}
+/* results */
+.rhead{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;margin-bottom:12px}
+.rhead h1{font-size:18px;margin:0;font-weight:700}
+.rhead h1 span{font-weight:500;color:var(--ink2);font-size:13px;margin-left:8px}
+.chipsrow{display:flex;flex-wrap:wrap;gap:6px}
+.fchip{display:inline-flex;align-items:center;gap:6px;background:var(--accent-soft);color:var(--accent-ink);border-radius:999px;padding:3px 10px;font-size:12px;font-weight:600}
+.fchip button{border:0;background:none;padding:0;color:inherit;font-size:14px;line-height:1}
+.seg{display:inline-flex;border:1.5px solid var(--line2);border-radius:10px;overflow:hidden;background:var(--surface)}
+.seg button{border:0;background:none;padding:6px 12px;color:var(--ink2);font-weight:500}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(232px,1fr));gap:14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--shadow);transition:transform .15s,box-shadow .15s;position:relative}
+.card:hover{transform:translateY(-2px);box-shadow:var(--shadow2)}
+.card.sel{outline:2px solid var(--accent);outline-offset:-2px}
+.ph{background:var(--imgbg);aspect-ratio:1/1;display:grid;place-items:center;position:relative;cursor:pointer}
+.ph img{width:88%;height:88%;object-fit:contain;mix-blend-mode:multiply}
+.ph .noimg{width:60%;height:60%;display:grid;place-items:center;color:#9AA5A1;font-family:var(--mono);font-size:12px;text-align:center}
+.ph .noimg b{display:block;font-size:26px;color:#7E8986;letter-spacing:-.02em}
+.ph .noimg svg{width:56px;height:56px;margin-bottom:6px}
+.rank{position:absolute;left:10px;top:10px;background:var(--ink);color:var(--bg);font-family:var(--mono);font-size:11px;font-weight:600;padding:2px 7px;border-radius:6px}
+.badge{position:absolute;right:10px;top:10px;font-size:10.5px;font-weight:700;padding:2px 7px;border-radius:6px;background:#fff;color:#1A1F1E;border:1px solid #D9DEDB}
+.badge.lfp{color:#0A5A4A;border-color:#8CCFBE}
+.cb{position:absolute;left:10px;bottom:10px;display:flex;align-items:center;gap:5px;font-size:11px;background:rgba(255,255,255,.92);color:#1A1F1E;padding:3px 8px 3px 5px;border-radius:999px;border:1px solid #D9DEDB;cursor:pointer}
+.cb input{accent-color:#0E7C66;width:13px;height:13px;margin:0}
+.body{padding:12px 14px 14px;display:flex;flex-direction:column;gap:6px;flex:1}
+.brand{font-size:11px;color:var(--muted);letter-spacing:.06em;text-transform:uppercase;font-weight:600}
+.title{font-size:14.5px;font-weight:700;line-height:1.35;margin:0;cursor:pointer;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:2.7em}
+.title:hover{color:var(--accent-ink)}
+.rating{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--ink2)}
+.rating .rv{font-family:var(--mono);font-weight:600;color:var(--ink)}
+.rating .rc{color:var(--muted)}
+.rating.none{color:var(--muted)}
+.pricebox{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;margin-top:2px}
+.price{font-family:var(--mono);font-weight:600;font-size:21px;color:var(--price);letter-spacing:-.02em;line-height:1.1}
+.price small{font-size:12px;font-weight:600;margin-right:1px}
+.psrc{font-size:11px;color:var(--muted)}
+.low{font-size:11.5px;color:var(--ink2);display:flex;align-items:center;gap:5px;flex-wrap:wrap}
+.low b{font-family:var(--mono);font-weight:600;color:var(--accent-ink)}
+.low .tag{background:var(--accent-soft);color:var(--accent-ink);font-size:10px;font-weight:700;padding:1px 6px;border-radius:5px}
+.meta{display:flex;flex-wrap:wrap;gap:4px 10px;align-items:center;justify-content:space-between}
+.capbadge{display:inline-flex;align-items:baseline;gap:3px;border:2.5px solid var(--ink);border-radius:0;padding:3px 10px;font-family:var(--mono);font-weight:600;font-size:19px;color:var(--ink);line-height:1.15;letter-spacing:-.01em;align-self:flex-start}
+.capbadge em{font-style:normal;font-size:11px;font-weight:600}
+.capbadge span{font-size:10.5px;font-weight:500;color:var(--ink2);margin-left:2px}
+.ppwrow{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.ppwrow div{background:var(--surface2);border-radius:8px;padding:5px 8px;line-height:1.25}
+.ppwrow div[data-dv]{background:var(--dv-bg)}
+.ppwrow div[data-dv] b{color:var(--ink)}
+.ppwrow div[data-dv] span{color:var(--ink);opacity:.6}
+.dvlegend{display:flex;align-items:center;gap:8px;font-size:11px;color:var(--muted);flex-wrap:wrap}
+.dvlegend .sc{display:flex;border-radius:4px;overflow:hidden;border:1px solid var(--line2)}
+.dvlegend .sc i{width:18px;height:13px;display:block}
+.dvlegend b{color:var(--ink2);font-weight:600}
+.ppwrow b{display:block;font-family:var(--mono);font-size:14px;font-weight:600;color:var(--ink)}
+.ppwrow b em{font-style:normal;font-size:10px;color:var(--muted);margin-left:2px}
+.ppwrow span{font-size:10px;color:var(--muted);letter-spacing:.02em}
+
+.badge.v200{right:auto;left:10px;top:auto;bottom:10px;background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.tn{display:inline-flex;align-items:center;gap:5px;font-size:11px;font-weight:700;border-radius:6px;padding:2px 7px;white-space:nowrap;background:var(--surface2);color:var(--ink2)}
+.tn b{font-family:var(--mono);font-size:13px}
+.tn.s4{background:#E6F4EE;color:#0A5A4A}.tn.s3{background:#FFF3D6;color:#7A5200}.tn.s2{background:#FDE7DC;color:#8A3B12}.tn.s1{background:#F6D9D9;color:#8C1D1D}
+.crit{position:absolute;left:10px;top:38px;font-size:10.5px;font-weight:700;padding:2px 7px;border-radius:6px;background:#B42318;color:#fff}
+.pricebox .low{margin-left:2px}
+/* modal sections */
+.msec{border-top:1px solid var(--line);padding-top:12px}
+.msec h3{margin:0 0 6px;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-family:var(--mono)}
+.tennobox{background:var(--ink);color:var(--bg);border-radius:14px;padding:16px 18px;display:grid;grid-template-columns:auto 1fr;gap:6px 16px;align-items:start}
+.tennobox .sc{font-family:var(--mono);font-size:44px;font-weight:600;line-height:1;letter-spacing:-.03em;grid-column:1;grid-row:1/span 3}
+.tennobox .vd,.tennobox .bd,.tennobox .ba{grid-column:2}
+.tennobox .sc small{font-size:12px;letter-spacing:0;opacity:.6;margin-left:2px}
+.tennobox .vd{font-size:17px;font-weight:700;line-height:1.3}
+.tennobox .bd{font-size:13px;line-height:1.7;opacity:.92}
+.tennobox .ba{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:12px;opacity:.85}
+.tennobox .ba span::before{content:"◎ ";}
+.tennobox .ba span.no::before{content:"✕ ";}
+.pc{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.pc ul{margin:0;padding:0;list-style:none;font-size:12.5px}
+.pc li{padding:3px 0 3px 16px;position:relative;color:var(--ink2)}
+.pc li::before{position:absolute;left:0;font-weight:700}
+.pc .p li::before{content:"＋";color:var(--accent)}
+.pc .n li::before{content:"－";color:var(--price)}
+.flag{border-left:3px solid var(--line2);padding:6px 10px;margin:0 0 6px;font-size:12.5px;background:var(--surface2);border-radius:0 8px 8px 0}
+.flag.f1{border-color:#B42318}.flag.f2{border-color:#D98E04}
+.flag b{font-size:10.5px;padding:1px 6px;border-radius:4px;color:#fff;margin-right:6px}
+.flag.f1 b{background:#B42318}.flag.f2 b{background:#D98E04}
+.flag small{display:block;color:var(--muted);margin-top:2px}
+.crit-def{margin-top:8px;font-size:12px;border:1px solid var(--line);border-radius:10px;background:var(--surface2);overflow:hidden}
+.crit-def summary{cursor:pointer;padding:7px 12px;font-weight:600;color:var(--ink2);list-style:none}
+.crit-def summary::-webkit-details-marker{display:none}
+.crit-def summary::before{content:"▸ ";color:var(--accent)}
+.crit-def[open] summary::before{content:"▾ "}
+.crit-def .in{padding:2px 14px 12px;display:grid;gap:10px}
+.crit-def h4{margin:0 0 4px;font-size:12px;display:flex;align-items:center;gap:6px}
+.crit-def h4 b{font-size:10.5px;padding:1px 6px;border-radius:4px;color:#fff}
+.crit-def h4 b.c1{background:#B42318}.crit-def h4 b.c2{background:#D98E04}
+.crit-def ol{margin:0;padding-left:1.2em;color:var(--ink2);line-height:1.65}
+.crit-def p{margin:0;color:var(--muted);font-size:11.5px;line-height:1.6}
+.rvs{font-size:12px;color:var(--ink2)}
+.rvs div{padding:5px 0;border-bottom:1px dashed var(--line)}
+.rvs .st{color:var(--star);font-weight:700;margin-right:4px}
+.rvs .dt{color:var(--muted);margin-left:6px}
+.srcs a{font-size:11px;margin-right:8px}
+.summ{font-size:13px;line-height:1.75;color:var(--ink)}
+.mbody{gap:14px}
+
+.warr{display:inline-flex;align-items:center;gap:3px;font-size:11px;color:var(--ink2);background:var(--surface2);border-radius:6px;padding:2px 7px;white-space:nowrap}
+.warr b{font-family:var(--mono);color:var(--ink)}
+.age{display:inline-flex;align-items:center;gap:4px;font-size:11px;color:var(--ink2);background:var(--surface2);border-radius:6px;padding:2px 7px;white-space:nowrap}
+.age b{font-family:var(--mono);color:var(--ink)}
+.age.vet{background:var(--accent-soft);color:var(--accent-ink)}
+.age.vet b{color:var(--accent-ink)}
+.buy{border:1px solid var(--line);border-radius:12px;padding:12px 14px;display:grid;gap:8px}
+.buy .hd{display:flex;align-items:baseline;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.buy .vd{font-weight:700;font-size:14px}
+.buy .vd.g{color:var(--accent-ink)}.buy .vd.w{color:#8A5B00}.buy .vd.b{color:var(--price)}
+.buy .sub{font-size:11.5px;color:var(--muted)}
+.bar{position:relative;height:8px;border-radius:99px;background:linear-gradient(90deg,var(--accent-soft),var(--surface2));border:1px solid var(--line)}
+.bar i{position:absolute;top:-4px;width:3px;height:14px;border-radius:2px;background:var(--ink);transform:translateX(-1px)}
+.bar em{position:absolute;top:-4px;width:2px;height:14px;background:var(--line2)}
+.buy .ends{display:flex;justify-content:space-between;font-family:var(--mono);font-size:11px;color:var(--ink2)}
+.spark{margin-top:2px}
+.spark svg{width:100%;height:60px;display:block}
+.spark path.ln{fill:none;stroke:var(--accent);stroke-width:2}
+.spark path.ar{fill:var(--accent-soft);stroke:none}
+.spark .nodata{font-size:11.5px;color:var(--muted);line-height:1.6}
+.tennobox .bo{grid-column:1/-1;font-size:11.5px;opacity:.72;font-family:var(--mono);border-top:1px solid rgba(255,255,255,.16);padding-top:8px;margin-top:2px;line-height:1.6}
+.warr.w5 b{color:var(--accent-ink)}
+.ppw{font-size:11.5px;color:var(--ink2)}.ppw b{font-family:var(--mono);color:var(--ink)}
+.specs{display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;margin-top:4px}
+.sp{background:var(--surface2);border-radius:8px;padding:6px 8px;line-height:1.2}
+.sp b{display:block;font-family:var(--mono);font-size:14px;font-weight:600;color:var(--ink)}
+.sp b em{font-style:normal;font-size:10px;color:var(--muted);margin-left:2px}
+.sp span{font-size:10px;color:var(--muted);letter-spacing:.03em}
+.sp.cap{grid-column:1/-1;background:var(--accent-soft);display:flex;align-items:baseline;justify-content:space-between}
+.sp.cap b{font-size:20px;color:var(--accent-ink)}
+.sp.cap span{font-size:11px;color:var(--accent-ink)}
+.acts{display:flex;gap:8px;margin-top:auto;padding-top:8px}
+.btn{flex:1;border-radius:9px;padding:8px 10px;font-weight:600;font-size:13px;border:1.5px solid var(--line2);background:var(--surface);text-align:center;text-decoration:none;color:var(--ink)}
+.btn.p{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn.am{border-color:#F0B23C;background:#FFF5DD;color:#6B4A00}
+.btn:hover{filter:brightness(.96)}
+.loadmore{display:block;margin:22px auto 0;padding:10px 28px;border-radius:10px;border:1.5px solid var(--line2);background:var(--surface);font-weight:600}
+.empty{padding:60px 20px;text-align:center;color:var(--muted);background:var(--surface);border-radius:14px;border:1px dashed var(--line2)}
+/* chart */
+.chartcard{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px 16px 8px}
+.chartbar{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;margin-bottom:6px;font-size:12px;color:var(--ink2)}
+svg.sc{width:100%;height:auto;display:block}
+svg.sc text{font-family:var(--mono);font-size:11px;fill:var(--muted)}
+svg.sc .grid line{stroke:var(--line)}
+svg.sc .axis line{stroke:var(--line2)}
+svg.sc circle{fill:var(--accent);fill-opacity:.55;stroke:var(--surface);stroke-width:1.5;cursor:pointer}
+svg.sc circle.sel{fill:var(--price);fill-opacity:.95}
+svg.sc circle:hover{fill-opacity:1}
+.tip{position:fixed;pointer-events:none;background:var(--ink);color:var(--bg);padding:7px 10px;border-radius:8px;font-size:12px;line-height:1.45;z-index:40;display:none;max-width:260px}
+/* modal */
+.ov{position:fixed;inset:0;background:rgba(10,14,13,.55);z-index:30;display:none;align-items:flex-start;justify-content:center;padding:4vh 16px;overflow:auto}
+.ov.open{display:flex}
+.modal{background:var(--surface);border-radius:18px;max-width:960px;width:100%;box-shadow:var(--shadow2);display:grid;grid-template-columns:minmax(260px,360px) 1fr;overflow:clip;position:relative;align-items:start}
+.mimg{background:var(--imgbg);display:grid;place-items:start center;padding:24px;align-self:start;position:sticky;top:0;min-height:0}
+.mimg .inner{display:grid;place-items:center;gap:10px;width:100%}
+.mimg .cap{font-family:var(--mono);font-size:11px;color:#5C6663;letter-spacing:.04em;text-align:center}
+.mimg img{width:100%;max-height:min(360px,50vh);object-fit:contain;mix-blend-mode:multiply}
+.mbody{padding:26px 28px 24px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.mbody h2{margin:0;font-size:22px;line-height:1.25;letter-spacing:-.01em}
+.mclose{position:absolute;right:12px;top:12px;width:34px;height:34px;border-radius:999px;border:1px solid var(--line2);background:var(--surface);font-size:18px;line-height:1}
+.kv{display:grid;grid-template-columns:repeat(2,1fr);gap:0 20px;border-top:1px solid var(--line)}
+.kv div{display:flex;justify-content:space-between;gap:10px;padding:7px 0;border-bottom:1px solid var(--line);font-size:13px}
+.kv div span{color:var(--muted)}
+.kv div b{font-family:var(--mono);font-weight:600;text-align:right}
+.notes{font-size:12.5px;color:var(--ink2);background:var(--surface2);border-radius:10px;padding:10px 12px}
+.macts{display:flex;gap:8px;flex-wrap:wrap}
+.macts .btn{flex:1 1 120px}
+/* compare tray */
+.tray{position:fixed;left:0;right:0;bottom:0;z-index:25;background:var(--surface);border-top:2px solid var(--accent);box-shadow:0 -10px 30px rgba(0,0,0,.12);transform:translateY(110%);transition:transform .25s}
+.tray.on{transform:none}
+.trayhead{display:flex;justify-content:space-between;align-items:center;padding:10px 20px;gap:12px;flex-wrap:wrap}
+.traybody{overflow:auto;max-height:56vh;padding:0 20px 16px;display:none}
+.tray.open .traybody{display:block}
+.cmpt{border-collapse:collapse;min-width:640px;font-variant-numeric:tabular-nums;width:100%}
+.cmpt th,.cmpt td{padding:6px 12px;border-bottom:1px solid var(--line);text-align:left;font-size:13px;vertical-align:middle}
+.cmpt th{color:var(--muted);font-weight:500;font-size:11.5px;white-space:nowrap}
+.cmpt td{font-family:var(--mono)}
+.cmpt td.best{color:var(--accent-ink);font-weight:600}
+.cmpt img{width:72px;height:72px;object-fit:contain;background:var(--imgbg);border-radius:8px;mix-blend-mode:multiply}
+.tbtn{border:1.5px solid var(--line2);background:var(--surface);border-radius:9px;padding:6px 12px;font-weight:600}
+.tbtn.p{background:var(--accent);border-color:var(--accent);color:#fff}
+footer{max-width:1440px;margin:0 auto;padding:10px 20px 60px;color:var(--ink2);font-size:12px}
+footer p{max-width:80ch;margin:0 0 8px}
+.hidden{display:none!important}
+.mtoggle{display:none}
+@media (max-width:860px){
+  .mimg{position:static}
+  .page{grid-template-columns:1fr}
+  aside{position:static;max-height:none;display:none;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px}
+  aside.open{display:block}
+  .mtoggle{display:inline-block}
+  .modal{grid-template-columns:1fr}
+  .mimg{min-height:220px}
+}
+@media (prefers-reduced-motion:reduce){.card,.tray{transition:none}}
+</style>
+
+<div class="top"><div class="topin">
+  <div class="logo"><i></i>ポタ電カタログ<small id="upd">JAPAN 2026.09</small></div>
+  <form class="search" id="sform" role="search"><input type="search" id="q" placeholder="機種名・ブランドで検索（例: DELTA 3, Anker, 1000Wh）" aria-label="検索"><button type="submit">検索</button></form>
+  <div class="topr">
+    <button class="tbtn mtoggle" id="mtoggle">絞り込み</button>
+    <select class="sortsel" id="sort" aria-label="並び替え">
+      <option value="tenno">総合評価が高い順</option>
+      <option value="pop">レビュー数が多い順</option>
+      <option value="rating">星評価が高い順</option>
+      <option value="price_asc">価格が安い順</option>
+      <option value="price_desc">価格が高い順</option>
+      <option value="ppw">いまのWh単価が安い順</option>
+      <option value="lowppw">セール時Wh単価が安い順</option>
+      <option value="cap_desc">容量が大きい順</option>
+      <option value="cap_asc">容量が小さい順</option>
+      <option value="solar">ソーラー入力が大きい順</option>
+      <option value="weight">軽い順</option>
+      <option value="warr">保証が長い順</option>
+      <option value="low">セール最安値が安い順</option>
+      <option value="new">新しい順</option>
+    </select>
+    <button class="cmpbtn" id="cmpbtn" title="比較リスト">比較 <b id="cmpn">0</b></button>
+  </div>
+</div></div>
+
+<div class="page">
+  <aside id="side">
+    <div class="fs" id="fs-tenno"><h3>総合評価スコア<button class="cl" data-clear="tenno">クリア</button></h3>
+      <label class="opt"><input type="radio" name="tenno" value="75"> 75点以上（良品）<span class="c"></span></label>
+      <label class="opt"><input type="radio" name="tenno" value="60"> 60点以上 <span class="c"></span></label>
+      <label class="opt"><input type="checkbox" name="feat" value="nocrit"> 致命的レビュー報告なし <span class="c"></span></label>
+    </div>
+    <div class="fs" id="fs-cap"><h3>容量（Wh）<button class="cl" data-clear="cap">クリア</button></h3>
+      <label class="opt"><input type="checkbox" name="cap" value="0-500"> 〜500Wh <span class="c"></span></label>
+      <label class="opt"><input type="checkbox" name="cap" value="500-1000"> 500〜1,000Wh <span class="c"></span></label>
+      <label class="opt"><input type="checkbox" name="cap" value="1000-2000"> 1,000〜2,000Wh <span class="c"></span></label>
+      <label class="opt"><input type="checkbox" name="cap" value="2000-3000"> 2,000〜3,000Wh <span class="c"></span></label>
+      <label class="opt"><input type="checkbox" name="cap" value="3000-99999"> 3,000Wh〜 <span class="c"></span></label>
+    </div>
+    <div class="fs" id="fs-rate"><h3>Amazon星評価<button class="cl" data-clear="rate">クリア</button></h3>
+      <label class="opt"><input type="radio" name="rate" value="4.5"> <span class="stars" data-v="4.5"></span> 4.5以上 <span class="c"></span></label>
+      <label class="opt"><input type="radio" name="rate" value="4"> <span class="stars" data-v="4"></span> 4以上 <span class="c"></span></label>
+      <label class="opt"><input type="radio" name="rate" value="3.5"> <span class="stars" data-v="3.5"></span> 3.5以上 <span class="c"></span></label>
+      <label class="opt"><input type="radio" name="rate" value="3"> <span class="stars" data-v="3"></span> 3以上 <span class="c"></span></label>
+    </div>
+    <div class="fs" id="fs-price"><h3>価格<button class="cl" data-clear="price">クリア</button></h3>
+      <label class="opt"><input type="radio" name="price" value="0-30000"> 〜3万円 <span class="c"></span></label>
+      <label class="opt"><input type="radio" name="price" value="30000-60000"> 3〜6万円 <span class="c"></span></label>
+      <label class="opt"><input type="radio" name="price" value="60000-100000"> 6〜10万円 <span class="c"></span></label>
+      <label class="opt"><input type="radio" name="price" value="100000-200000"> 10〜20万円 <span class="c"></span></label>
+      <label class="opt"><input type="radio" name="price" value="200000-99999999"> 20万円〜 <span class="c"></span></label>
+    </div>
+    <div class="fs" id="fs-warr"><h3>メーカー保証<button class="cl" data-clear="warr">クリア</button></h3>
+      <label class="opt"><input type="radio" name="warr" value="5"> 5年以上（登録延長含む）<span class="c"></span></label>
+      <label class="opt"><input type="radio" name="warr" value="3"> 3年以上 <span class="c"></span></label>
+      <label class="opt"><input type="radio" name="warr" value="2"> 2年以上 <span class="c"></span></label>
+    </div>
+    <div class="fs" id="fs-solar"><h3>ソーラー入力<button class="cl" data-clear="solar">クリア</button></h3>
+      <label class="opt"><input type="radio" name="solar" value="100"> 100W以上 <span class="c"></span></label>
+      <label class="opt"><input type="radio" name="solar" value="200"> 200W以上 <span class="c"></span></label>
+      <label class="opt"><input type="radio" name="solar" value="400"> 400W以上 <span class="c"></span></label>
+      <label class="opt"><input type="radio" name="solar" value="800"> 800W以上 <span class="c"></span></label>
+      <label class="opt"><input type="radio" name="solar" value="1500"> 1,500W以上 <span class="c"></span></label>
+    </div>
+    <div class="fs" id="fs-out"><h3>定格出力<button class="cl" data-clear="out">クリア</button></h3>
+      <label class="opt"><input type="radio" name="out" value="300"> 300W以上 <span class="c"></span></label>
+      <label class="opt"><input type="radio" name="out" value="600"> 600W以上 <span class="c"></span></label>
+      <label class="opt"><input type="radio" name="out" value="1000"> 1,000W以上 <span class="c"></span></label>
+      <label class="opt"><input type="radio" name="out" value="1500"> 1,500W以上（電子レンジ可）<span class="c"></span></label>
+      <label class="opt"><input type="radio" name="out" value="3000"> 3,000W以上 <span class="c"></span></label>
+    </div>
+    <div class="fs" id="fs-brand"><h3>ブランド<button class="cl" data-clear="brand">クリア</button></h3><div id="brandlist"></div><button class="more" id="brandmore">すべてのブランドを表示</button></div>
+    <div class="fs" id="fs-feat"><h3>特徴<button class="cl" data-clear="feat">クリア</button></h3>
+      <label class="opt"><input type="checkbox" name="feat" value="lfp"> リン酸鉄リチウム（長寿命）<span class="c"></span></label>
+      <label class="opt"><input type="checkbox" name="feat" value="exp"> 拡張バッテリー対応 <span class="c"></span></label>
+      <label class="opt"><input type="checkbox" name="feat" value="ups"> UPS機能（20ms以下）<span class="c"></span></label>
+      <label class="opt"><input type="checkbox" name="feat" value="light"> 軽量（10kg以下）<span class="c"></span></label>
+      <label class="opt"><input type="checkbox" name="feat" value="vet"> 3年以上続く定番モデル <span class="c"></span></label>
+      <label class="opt"><input type="checkbox" name="feat" value="v200"> 200V出力対応 <span class="c"></span></label>
+      <label class="opt"><input type="checkbox" name="feat" value="rated"> Amazon評価あり <span class="c"></span></label>
+    </div>
+    <div class="fs" id="fs-weight"><h3>重量<button class="cl" data-clear="weight">クリア</button></h3>
+      <label class="opt"><input type="radio" name="weight" value="0-5"> 〜5kg <span class="c"></span></label>
+      <label class="opt"><input type="radio" name="weight" value="5-10"> 5〜10kg <span class="c"></span></label>
+      <label class="opt"><input type="radio" name="weight" value="10-20"> 10〜20kg <span class="c"></span></label>
+      <label class="opt"><input type="radio" name="weight" value="20-999"> 20kg〜 <span class="c"></span></label>
+    </div>
+    <button class="resetall" id="resetall">すべての条件をクリア</button>
+  </aside>
+
+  <main>
+    <div class="rhead">
+      <h1><span class="num" id="cnt">0</span>件<span id="hint"></span></h1>
+      <div class="chipsrow" id="chips"></div>
+      <div id="dvleg"></div>
+      <div class="seg"><button id="v-grid" aria-pressed="true">商品一覧</button><button id="v-chart" aria-pressed="false">散布図</button></div>
+    </div>
+    <div id="gridview"><div class="grid" id="grid"></div><button class="loadmore hidden" id="loadmore">さらに表示</button></div>
+    <section id="chartview" class="chartcard hidden">
+      <div class="chartbar"><span>横軸: 容量 Wh（対数）</span><span>縦軸:</span>
+        <select class="sortsel" id="ysel" style="padding:5px 8px">
+          <option value="_pmin">価格（最安）</option><option value="_ppw">円/Wh</option><option value="solar_input_w">ソーラー入力 W</option><option value="rated_output_w">定格出力 W</option><option value="weight_kg">重量 kg</option><option value="rating">★評価</option>
+        </select><span>点にカーソルで詳細・クリックで詳細を開く</span></div>
+      <svg class="sc" id="sc" viewBox="0 0 1100 520" role="img" aria-label="散布図"></svg>
+    </section>
+  </main>
+</div>
+
+<div class="tip" id="tip"></div>
+<div class="ov" id="ov"><div class="modal" id="modal" role="dialog" aria-modal="true"></div></div>
+
+<div class="tray" id="tray">
+  <div class="trayhead"><div><b id="traytitle">比較: 0 機種</b> <span style="color:var(--muted)">（最大4機種）</span></div>
+  <div style="display:flex;gap:8px"><button class="tbtn" id="trayclear">クリア</button><button class="tbtn p" id="traytoggle">比較表を開く</button></div></div>
+  <div class="traybody" id="traybody"></div>
+</div>
+
+<footer>
+  <p><b>データについて</b>　掲載 <span id="f-n"></span> 機種は 2026年9月時点で各メーカー公式・Amazon.co.jp・価格.com等で新品購入できる（または流通在庫のある）モデル。価格はAmazon実売（2026/9/2取得）を優先し、無い場合はメーカー公式の通常価格（税込）。★評価・レビュー数・商品画像は Amazon.co.jp の掲載情報で、色違い等のバリエーションと共有されている場合があります。</p>
+  <p>「総合評価（天の声）」は編集部がAmazon・価格.com・楽天・レビュー記事を横断して読み、仕様・価格・保証・サポート報告を突き合わせて付けた辛口の独自採点（100点満点）です。メーカーや販売店とは無関係で、レビューにない事実は書いていません。「気になるレビュー」は出典（時期・星）付きで、購入判断に関わる深刻な報告を優先して載せています。判定基準は各機種の詳細内に記載。総合評価には「発売から2年以上、現行モデルとして売られ続けている」ことへの加点（2〜6点）を含みます。新しい機種は加点0で、減点はしていません。仕様への不満（重い・高い）、購入者側の環境（自宅のブレーカーが落ちる等）、業界共通の挙動、配送・梱包の問題は製品の落ち度ではないため掲載していません。</p>
+  <p>「セール時最安値」は公式セール・価格.com価格推移・プライムデー等の報道で確認できた税込最安値（2025〜2026年）で、現在は購入できない場合があります。保証年数はメーカー公式の記載（「登録で◯年」は会員登録・製品登録による延長後の合計）。Wh単価（円/Wh）は表示価格 ÷ 容量。ソーラー入力は本体単体の最大値。仕様・価格は変動するため、購入前に必ず販売ページでご確認ください。本サイトのリンクにはアフィリエイトリンクを含む場合があります。</p>
+</footer>
+
+<script>
+// ===== アフィリエイト設定 =====
+const AFF = { amazonTag: '', rakutenAfl: '' }; // 例: amazonTag:'yourid-22'  rakutenAfl:'https://hb.afl.rakuten.co.jp/hgc/xxxx/?pc='
+const DATA = __DATA__;
+const IMG = __IMG__;
+const $ = s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+// Wh単価の発散カラースケール（全182機種の十分位。安い=青／平均=無彩色／高い=赤）
+const PPW_BINS=[51.9,60.9,77.3,91.6,101.8,115.7,128.1,143.3,178.3];
+const ppwBin=v=>{if(v==null)return null;let i=0;while(i<PPW_BINS.length&&v>=PPW_BINS[i])i++;return i};
+const dvStyle=v=>{const i=ppwBin(v);if(i==null)return '';const lab=i===0?'最も安い層':i===9?'最も高い層':(i<4?'平均より安い':i>5?'平均より高い':'ほぼ平均');return ` data-dv="${i}" style="--dv-bg:var(--dv${i})" title="Wh単価 ${v} 円/Wh ・ 全182機種中で${lab}（第${i+1}十分位）"`};
+const dvLegendHTML=()=>{const cells=[...Array(10)].map((_,i)=>`<i style="background:var(--dv${i})" title="${i===0?'〜'+PPW_BINS[0]+' 円/Wh':i===9?PPW_BINS[8]+' 円/Wh〜':PPW_BINS[i-1]+'〜'+PPW_BINS[i]+' 円/Wh'}"></i>`).join('');return `<div class="dvlegend"><b>Wh単価</b><span>安い</span><span class="sc">${cells}</span><span>高い</span><span>（全182機種の分布で10段階・中央値 ${PPW_BINS[4]} 円/Wh）</span></div>`};
+const PAGE_BASE = window.POTADEN_PAGE_BASE || null;  // 静的サイト版では 'p/' が入る
+const slugOf = p => (p.brand+'-'+p.model).toLowerCase().replace(/\(.*?\)/g,'').replace(/[^a-z0-9ぁ-んァ-ヶ一-龠]+/g,'-').replace(/^-|-$/g,'');
+const hrefOf = p => PAGE_BASE ? PAGE_BASE+slugOf(p)+'/' : null;
+const linkAttr = p => PAGE_BASE ? ` href="${hrefOf(p)}"` : '';
+const fmt=n=>n==null?'—':n.toLocaleString('ja-JP');
+const yen=n=>n==null?'—':'¥'+n.toLocaleString('ja-JP');
+const esc=s=>(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+DATA.forEach((p,i)=>{p.id=i;
+  p._pmin=p.amazon_price||p.price_jpy||null; p._psrc=p.amazon_price?'Amazon':p.price_jpy?'公式':'';
+  p._ppw=(p._pmin&&p.capacity_wh)?Math.round(p._pmin/p.capacity_wh*10)/10:null;
+  p._q=(p.brand+' '+p.model+' '+(p.capacity_wh||'')+'wh').toLowerCase();
+  if(p.prices&&p.prices.min){const pr=p.prices;const src=pr.amazon===pr.min?'Amazon':pr.rakuten===pr.min?'楽天':pr.kakaku===pr.min?'価格.com最安':'';p._pmin=pr.min;p._psrc=src;p._rakuten_url=pr.rakuten_url;p._kakaku_url=pr.kakaku_url;if(pr.updated)window.__updated=pr.updated;}
+  const lows=[p.sale_low_price,p.amazon_price,p.price_jpy,p.prices&&p.prices.hist_min].filter(x=>x);p._low=lows.length?Math.min(...lows):null;p._lowsrc=p._low==null?'':p._low===p.sale_low_price?(p.sale_low_note||''):p._low===p.amazon_price?'Amazon現在価格':'公式価格';
+  p._wext=p.warranty_ext_years||p.warranty_years||null;
+  p._lowppw=(p._low&&p.capacity_wh)?Math.round(p._low/p.capacity_wh*10)/10:null;
+  p._v200s=p.v200?'対応':'非対応';p._ts=p.tenno?p.tenno.score:null;p._crit=!!(p.review&&p.review.flagged.some(f=>f.level==='致命的'));
+  p._q+=' '+(p.tenno?p.tenno.verdict:'');
+  p._img=IMG[i]||null;});
+const BRANDS=[...new Set(DATA.map(p=>p.brand))].sort((a,b)=>DATA.filter(p=>p.brand===b).length-DATA.filter(p=>p.brand===a).length);
+$('#f-n').textContent=DATA.length;if(window.__updated){const e=document.getElementById('upd');if(e)e.textContent='価格最終更新: '+window.__updated}
+
+// ---- state
+const S={q:'',cap:new Set(),rate:null,price:null,warr:null,tenno:null,solar:null,out:null,brand:new Set(),feat:new Set(),weight:null,sort:'tenno',view:'grid',shown:24,cmp:[]};
+// brand list
+$('#brandlist').innerHTML=BRANDS.map((b,i)=>`<label class="opt ${i>=8?'hidden xb':''}"><input type="checkbox" name="brand" value="${esc(b)}"> ${esc(b)} <span class="c"></span></label>`).join('');
+$('#brandmore').onclick=e=>{const h=$$('.xb')[0].classList.contains('hidden');$$('.xb').forEach(x=>x.classList.toggle('hidden',!h));e.target.textContent=h?'表示を減らす':'すべてのブランドを表示'};
+// stars
+function starsHTML(v){let h='';for(let i=1;i<=5;i++){h+=`<i class="${v>=i?'f':v>=i-.5?'h':''}"></i>`}return `<span class="stars">${h}</span>`}
+$$('.stars[data-v]').forEach(el=>el.outerHTML=starsHTML(+el.dataset.v));
+
+// sidebar events
+$('#side').addEventListener('change',e=>{const el=e.target;if(!el.name)return;
+  const v=el.value;
+  if(el.name==='cap')el.checked?S.cap.add(v):S.cap.delete(v);
+  else if(el.name==='brand')el.checked?S.brand.add(v):S.brand.delete(v);
+  else if(el.name==='feat')el.checked?S.feat.add(v):S.feat.delete(v);
+  else if(el.name==='rate')S.rate=+v; else if(el.name==='solar')S.solar=+v; else if(el.name==='out')S.out=+v;
+  else if(el.name==='price')S.price=v; else if(el.name==='weight')S.weight=v; else if(el.name==='warr')S.warr=+v; else if(el.name==='tenno')S.tenno=+v;
+  S.shown=24;render();});
+$('#side').addEventListener('click',e=>{const c=e.target.closest('[data-clear]');if(c)clearKey(c.dataset.clear)});
+function clearKey(k){ if(k==='cap')S.cap.clear(); else if(k==='brand')S.brand.clear(); else if(k==='feat')S.feat.clear(); else if(k==='q'){S.q='';$('#q').value=''} else S[k]=null;
+  $$(`#side input[name="${k}"]`).forEach(i=>i.checked=false); S.shown=24; render();}
+$('#resetall').onclick=()=>{['cap','rate','price','warr','tenno','solar','out','brand','feat','weight','q'].forEach(k=>{if(k==='cap'||k==='brand'||k==='feat')S[k].clear();else if(k==='q'){S.q='';$('#q').value=''}else S[k]=null});$$('#side input').forEach(i=>i.checked=false);S.shown=24;render()};
+$('#sform').onsubmit=e=>{e.preventDefault();S.q=$('#q').value.trim().toLowerCase();S.shown=24;render()};
+$('#q').addEventListener('input',e=>{if(!e.target.value){S.q='';render()}});
+$('#sort').onchange=e=>{S.sort=e.target.value;S.shown=24;render()};
+$('#mtoggle').onclick=()=>$('#side').classList.toggle('open');
+$('#v-grid').onclick=()=>setView('grid');$('#v-chart').onclick=()=>setView('chart');
+function setView(v){S.view=v;$('#v-grid').setAttribute('aria-pressed',v==='grid');$('#v-chart').setAttribute('aria-pressed',v==='chart');$('#gridview').classList.toggle('hidden',v!=='grid');$('#chartview').classList.toggle('hidden',v!=='chart');render()}
+$('#ysel').onchange=render;
+
+// ---- filtering
+function inRange(v,r){if(v==null)return false;const[a,b]=r.split('-').map(Number);return v>=a&&v<b}
+function pass(p,skip){
+  if(skip!=='q'&&S.q&&!p._q.includes(S.q))return false;
+  if(skip!=='cap'&&S.cap.size&&![...S.cap].some(r=>inRange(p.capacity_wh,r)))return false;
+  if(skip!=='rate'&&S.rate!=null&&!(p.rating>=S.rate))return false;
+  if(skip!=='price'&&S.price&&!inRange(p._pmin,S.price))return false;
+  if(skip!=='warr'&&S.warr!=null&&!(p._wext>=S.warr))return false;
+  if(skip!=='tenno'&&S.tenno!=null&&!(p._ts>=S.tenno))return false;
+  if(skip!=='solar'&&S.solar!=null&&!(p.solar_input_w>=S.solar))return false;
+  if(skip!=='out'&&S.out!=null&&!(p.rated_output_w>=S.out))return false;
+  if(skip!=='brand'&&S.brand.size&&!S.brand.has(p.brand))return false;
+  if(skip!=='weight'&&S.weight&&!inRange(p.weight_kg,S.weight))return false;
+  if(skip!=='feat'){for(const f of S.feat){if(f==='lfp'&&p.battery!=='LFP')return false;if(f==='exp'&&!p.expandable)return false;if(f==='ups'&&!(p.ups_ms!=null&&p.ups_ms<=20))return false;if(f==='light'&&!(p.weight_kg!=null&&p.weight_kg<=10))return false;if(f==='rated'&&p.rating==null)return false;if(f==='nocrit'&&p._crit)return false;if(f==='v200'&&!p.v200)return false;if(f==='vet'&&!(p.years_on_market>=3))return false}}
+  return true;
+}
+const SORTS={tenno:(a,b)=>(b._ts||0)-(a._ts||0)||(b.reviews||0)-(a.reviews||0),pop:(a,b)=>(b.reviews||0)-(a.reviews||0)||(b.rating||0)-(a.rating||0),rating:(a,b)=>(b.rating||0)-(a.rating||0)||(b.reviews||0)-(a.reviews||0),price_asc:(a,b)=>(a._pmin||9e9)-(b._pmin||9e9),price_desc:(a,b)=>(b._pmin||0)-(a._pmin||0),ppw:(a,b)=>(a._ppw||9e9)-(b._ppw||9e9),lowppw:(a,b)=>(a._lowppw||9e9)-(b._lowppw||9e9)||(a._ppw||9e9)-(b._ppw||9e9),cap_desc:(a,b)=>b.capacity_wh-a.capacity_wh,cap_asc:(a,b)=>a.capacity_wh-b.capacity_wh,solar:(a,b)=>(b.solar_input_w||0)-(a.solar_input_w||0),weight:(a,b)=>(a.weight_kg||9e9)-(b.weight_kg||9e9),warr:(a,b)=>(b._wext||0)-(a._wext||0)||(b.warranty_years||0)-(a.warranty_years||0)||(b.reviews||0)-(a.reviews||0),low:(a,b)=>(a._low||9e9)-(b._low||9e9),new:(a,b)=>(b.release_year||0)-(a.release_year||0)||(b.reviews||0)-(a.reviews||0)};
+
+// facet counts
+function updateCounts(){
+  $$('#side label.opt').forEach(l=>{const inp=l.querySelector('input');const k=inp.name,v=inp.value;
+    const n=DATA.filter(p=>pass(p,k)&&matchOne(p,k,v)).length;l.querySelector('.c').textContent=n;l.classList.toggle('on',inp.checked);});
+  ['cap','rate','price','warr','tenno','solar','out','brand','feat','weight'].forEach(k=>{const on=(S[k] instanceof Set)?S[k].size>0:S[k]!=null;$('#fs-'+k).classList.toggle('active',on)});
+}
+function matchOne(p,k,v){switch(k){case'cap':return inRange(p.capacity_wh,v);case'rate':return p.rating>=+v;case'price':return inRange(p._pmin,v);case'warr':return p._wext>=+v;case'tenno':return p._ts>=+v;case'solar':return p.solar_input_w>=+v;case'out':return p.rated_output_w>=+v;case'brand':return p.brand===v;case'weight':return inRange(p.weight_kg,v);case'feat':return v==='lfp'?p.battery==='LFP':v==='exp'?!!p.expandable:v==='ups'?(p.ups_ms!=null&&p.ups_ms<=20):v==='light'?(p.weight_kg!=null&&p.weight_kg<=10):v==='nocrit'?!p._crit:v==='v200'?!!p.v200:v==='vet'?p.years_on_market>=3:p.rating!=null}}
+
+// links
+const amz=p=>{const u=p.amazon_asin?`https://www.amazon.co.jp/dp/${p.amazon_asin}`:`https://www.amazon.co.jp/s?k=${encodeURIComponent(p.brand+' '+p.model.replace(/\(.*?\)/g,'').trim()+' ポータブル電源')}`;return AFF.amazonTag?u+(u.includes('?')?'&':'?')+'tag='+AFF.amazonTag:u};
+const rak=p=>{if(p._rakuten_url&&!AFF.rakutenAfl)return p._rakuten_url;const u=`https://search.rakuten.co.jp/search/mall/${encodeURIComponent(p.brand+' '+p.model.replace(/\(.*?\)/g,'').trim())}/`;return AFF.rakutenAfl?AFF.rakutenAfl+encodeURIComponent(u):u};
+
+function imgHTML(p,cls){ if(p._img)return `<img class="${cls||''}" src="${p._img}" alt="${esc(p.brand+' '+p.model)}" loading="lazy">`;
+  return `<div class="noimg"><svg viewBox="0 0 48 48" fill="none" stroke="#9AA5A1" stroke-width="2"><rect x="6" y="14" width="32" height="22" rx="4"/><path d="M38 21h4v8h-4M14 24h6M12 20l3-5h18l3 5"/></svg><b>${fmt(p.capacity_wh)}</b>Wh</div>`}
+function tnHTML(p){if(!p.tenno)return '';const s=p.tenno.score;return `<span class="tn ${s>=75?'s4':s>=60?'s3':s>=45?'s2':'s1'}" title="${esc(p.tenno.verdict)}">総合評価 <b>${s}</b>点</span>`}
+function ageHTML(p){if(!p.release_year)return '';const y=p.years_on_market;
+  return `<span class="age ${y>=3?'vet':''}" title="${y>=3?'3年以上売れ続けている定番モデル':'発売から'+y+'年'}"><b>${p.release_year}</b>年発売${y>=1?`・${y}年目`:'・新'}</span>`}
+function warrHTML(p){if(!p.warranty_years)return '';const w=p.warranty_years,e=p.warranty_ext_years;const y=v=>v===1.5?'18ヶ月':v+'年';const t=e&&e>w?`<b>${y(w)}</b>→登録で<b>${y(e)}</b>`:`<b>${y(w)}</b>`;return `<span class="warr ${(e||w)>=5?'w5':''}" title="${esc(p.warranty_note||'')}">保証 ${t}</span>`}
+function shortNote(s){if(!s)return '';const m=s.match(/(20\d\d)[\/年.\-]?\s*(\d{1,2})?/);const src=/価格\.com/.test(s)?'価格.com':/プライムデー/.test(s)?'プライムデー':/ブラックフライデー|BF/.test(s)?'ブラックフライデー':/楽天/.test(s)?'楽天':/公式/.test(s)?'公式セール':/Amazon/.test(s)?'Amazon':'';return (m?m[1]+(m[2]?'/'+m[2]:'')+' ':'')+src}
+function ratingHTML(p){return p.rating==null?`<div class="rating none">Amazon評価なし</div>`:`<div class="rating">${starsHTML(p.rating)}<span class="rv">${p.rating.toFixed(1)}</span><span class="rc">(${fmt(p.reviews)})</span></div>`}
+
+// ---- render
+let LIST=[];
+function render(){
+  LIST=DATA.filter(p=>pass(p)).sort(SORTS[S.sort]);
+  $('#cnt').textContent=LIST.length;$('#hint').textContent=LIST.length===DATA.length?`全 ${DATA.length} 機種`:`／ 全 ${DATA.length} 機種`;
+  renderChips();updateCounts();
+  if(S.view==='grid')renderGrid();else renderChart();
+  renderTray();
+}
+function renderChips(){const c=[];
+  if(S.q)c.push(['q',`「${S.q}」`]);[...S.cap].forEach(v=>c.push(['cap',labelOf('cap',v)]));if(S.rate)c.push(['rate',`★${S.rate}以上`]);if(S.price)c.push(['price',labelOf('price',S.price)]);if(S.warr)c.push(['warr',`保証${S.warr}年+`]);if(S.tenno)c.push(['tenno',`総合評価${S.tenno}点+`]);if(S.solar)c.push(['solar',`PV ${S.solar}W+`]);if(S.out)c.push(['out',`出力 ${S.out}W+`]);[...S.brand].forEach(v=>c.push(['brand',v]));[...S.feat].forEach(v=>c.push(['feat',labelOf('feat',v)]));if(S.weight)c.push(['weight',labelOf('weight',S.weight)]);
+  $('#chips').innerHTML=c.map(([k,l])=>`<span class="fchip">${esc(l)}<button data-k="${k}" aria-label="解除">×</button></span>`).join('');}
+function labelOf(k,v){const l=$(`#side input[name="${k}"][value="${v}"]`)?.parentElement;return l?l.textContent.replace(/\d+$/,'').trim():v}
+$('#chips').addEventListener('click',e=>{const b=e.target.closest('button');if(b)clearKey(b.dataset.k)});
+
+function renderGrid(){
+  const g=$('#grid');
+  if(!LIST.length){g.innerHTML='<div class="empty" style="grid-column:1/-1">条件に合う機種がありません。条件を減らしてみてください。</div>';$('#loadmore').classList.add('hidden');return}
+  g.innerHTML=LIST.slice(0,S.shown).map((p,i)=>{const sel=S.cmp.includes(p.id);return `<article class="card ${sel?'sel':''}" data-id="${p.id}">
+    <div class="ph" data-open="${p.id}">${imgHTML(p)}<span class="rank">#${i+1}</span>${p._crit?'<span class="crit">致命的レビューあり</span>':''}${p.v200?'<span class="badge v200">200V出力</span>':''}${p.battery?`<span class="badge ${p.battery==='LFP'?'lfp':''}">${p.battery==='LFP'?'リン酸鉄':p.battery}</span>`:''}<label class="cb" onclick="event.stopPropagation()"><input type="checkbox" data-cmp="${p.id}" ${sel?'checked':''} ${!sel&&S.cmp.length>=4?'disabled':''}>比較</label></div>
+    <div class="body">
+      <div class="brand">${esc(p.brand)}</div>
+      <div class="capbadge">${fmt(p.capacity_wh)}<em>Wh</em>${p.expandable?'<span>拡張可</span>':''}</div>
+      <h2 class="title">${PAGE_BASE?`<a${linkAttr(p)} data-open="${p.id}" style="color:inherit;text-decoration:none">${esc(p.model)}</a>`:`<span data-open="${p.id}">${esc(p.model)}</span>`}</h2>
+      ${ratingHTML(p)}
+      <div class="pricebox" title="${esc(p._psrc)}価格（現在）"><span class="price"><small>¥</small>${p._pmin?fmt(p._pmin):'—'}</span>${p._low&&p._pmin&&p._low<p._pmin?`<span class="low" title="${esc(p._lowsrc)}"><span class="tag">セール最安</span><b>${yen(p._low)}</b></span>`:''}</div>
+      <div class="ppwrow"><div${dvStyle(p._ppw)}><b>${p._ppw!=null?p._ppw.toFixed(1):'—'}<em>円/Wh</em></b><span>いまのWh単価</span></div><div${dvStyle(p._lowppw)}><b>${p._lowppw!=null?p._lowppw.toFixed(1):'—'}<em>円/Wh</em></b><span>最安時のWh単価</span></div></div>
+      <div class="meta">${ageHTML(p)}${warrHTML(p)}${tnHTML(p)}</div>
+      <div class="specs" style="grid-template-columns:repeat(3,1fr)">
+        <div class="sp"><b>${p.rated_output_w?fmt(p.rated_output_w):'DC'}<em>W</em></b><span>定格出力</span></div>
+        <div class="sp"><b>${p.solar_input_w?fmt(p.solar_input_w):'—'}<em>W</em></b><span>ソーラー</span></div>
+        <div class="sp"><b>${p.weight_kg!=null?p.weight_kg.toFixed(1):'—'}<em>kg</em></b><span>重量</span></div>
+      </div>
+      <div class="acts">${PAGE_BASE?`<a class="btn p"${linkAttr(p)} data-open="${p.id}" style="text-decoration:none">詳細を見る</a>`:`<button class="btn p" data-open="${p.id}">詳細を見る</button>`}<a class="btn am" href="${amz(p)}" target="_blank" rel="nofollow noopener">Amazon</a></div>
+    </div></article>`}).join('');
+  $('#loadmore').classList.toggle('hidden',S.shown>=LIST.length);
+  $('#loadmore').textContent=`さらに表示（残り ${LIST.length-S.shown} 件）`;
+}
+$('#loadmore').onclick=()=>{S.shown+=24;renderGrid()};
+$('#grid').addEventListener('click',e=>{const o=e.target.closest('[data-open]');if(o&&!e.target.closest('.cb')){
+  if(e.metaKey||e.ctrlKey||e.shiftKey||e.button===1)return; e.preventDefault(); openModal(+o.dataset.open,true);return}});
+$('#grid').addEventListener('change',e=>{if(e.target.dataset.cmp!=null)toggleCmp(+e.target.dataset.cmp)});
+function toggleCmp(id){const i=S.cmp.indexOf(id);if(i>=0)S.cmp.splice(i,1);else if(S.cmp.length<4)S.cmp.push(id);render()}
+
+// ---- modal
+function openModal(id,push){const p=DATA[id];
+  if(push&&PAGE_BASE&&window.history&&history.pushState){try{history.pushState({id},'',hrefOf(p))}catch(e){}}
+  const kv=[['容量',fmt(p.capacity_wh)+' Wh'],['定格出力',p.rated_output_w?fmt(p.rated_output_w)+' W':'DC専用'],['瞬間最大出力',p.surge_output_w?fmt(p.surge_output_w)+' W':'—'],['ソーラー最大入力',p.solar_input_w?fmt(p.solar_input_w)+' W':'—'],['AC充電入力',p.ac_input_w?fmt(p.ac_input_w)+' W':'—'],['電池',p.battery||'—'],['サイクル寿命',p.cycles?fmt(p.cycles)+' 回':'—'],['重量',p.weight_kg!=null?p.weight_kg+' kg':'—'],['拡張',p.expandable?'対応'+(p.max_expand_wh?'（最大 '+fmt(p.max_expand_wh)+' Wh）':''):'非対応'],['UPS切替',p.ups_ms!=null?p.ups_ms+' ms':'—'],['Wh単価',p._ppw!=null?p._ppw+' 円/Wh':'—'],['200V出力',p.v200?'対応':'非対応'],['メーカー保証',p.warranty_years?(p.warranty_ext_years&&p.warranty_ext_years>p.warranty_years?`${p.warranty_years===1.5?'18ヶ月':p.warranty_years+'年'}（登録で${p.warranty_ext_years}年）`:`${p.warranty_years}年`):'—'],['セール時最安値',p._low?yen(p._low):'—'],['発売年',p.release_year?`${p.release_year}年（${p.years_on_market}年目）`:'—'],['公式価格',yen(p.price_jpy)],['Amazon価格',p.amazon_price?yen(p.amazon_price):'—']];
+  $('#modal').innerHTML=`<button class="mclose" id="mclose" aria-label="閉じる">×</button><div class="mimg"><div class="inner">${imgHTML(p)}<div class="cap">${fmt(p.capacity_wh)} Wh ／ ${p.rated_output_w?fmt(p.rated_output_w)+' W':'DC専用'}${p.weight_kg!=null?' ／ '+p.weight_kg+' kg':''}</div></div></div><div class="mbody">
+    <div class="brand">${esc(p.brand)}</div><h2>${esc(p.model)}</h2>${ratingHTML(p)}
+    <div class="pricebox"><span class="price"><small>¥</small>${p._pmin?fmt(p._pmin):'—'}</span><span class="psrc">${p._psrc}価格（現在）</span>${p._low&&p._low<p._pmin?`<span class="low"><span class="tag">セール最安</span><b>${yen(p._low)}</b></span>`:''}</div>
+    <div class="kv">${kv.map(([k,v])=>`<div><span>${k}</span><b>${esc(String(v))}</b></div>`).join('')}</div>
+    ${p.warranty_note||p._lowsrc?`<div class="notes" style="display:grid;gap:4px">${p.warranty_note?`<div><b>保証:</b> ${esc(p.warranty_note)}</div>`:''}${p._low?`<div><b>セール最安値 ${yen(p._low)}:</b> ${esc(p._lowsrc)}</div>`:''}</div>`:''}
+    ${p.notes?`<div class="notes">${esc(p.notes)}</div>`:''}
+    ${buyHTML(p)}
+    ${tennoHTML(p)}
+    ${reviewHTML(p)}
+    <div class="macts"><a class="btn am" href="${amz(p)}" target="_blank" rel="nofollow noopener">Amazonで見る</a><a class="btn" href="${rak(p)}" target="_blank" rel="nofollow noopener">楽天で探す</a>${p.official_url?`<a class="btn" href="${esc(p.official_url)}" target="_blank" rel="noopener">公式サイト</a>`:''}<button class="btn ${S.cmp.includes(id)?'p':''}" id="mcmp">${S.cmp.includes(id)?'比較リストから外す':'比較に追加'}</button></div></div>`;
+  $('#ov').classList.add('open');document.body.style.overflow='hidden';
+  $('#mclose').onclick=()=>closeModal(true);$('#mcmp').onclick=()=>{toggleCmp(id);openModal(id)};
+}
+const CRITDEF=`<details class="crit-def"><summary>「致命的」「要注意」の判定基準</summary><div class="in">
+<div><h4><b class="c1">致命的</b>製品を選ぶ理由が消えるレベル</h4><ol>
+<li>発煙・発火・焦げ・異臭・溶損</li>
+<li>バッテリーの膨張・液漏れ</li>
+<li>使用中に突然停止する／出力が落ちる</li>
+<li>購入直後〜1年以内に充電できない・起動しない</li>
+<li>1〜2年で完全故障（電源が入らない）</li>
+<li>交換品でも同じ症状が再発（個体差ではなく設計・製造の問題）</li>
+<li>保証期間内なのに修理拒否・サポート無応答・連絡が途絶える</li>
+<li>公称値との重大な乖離（実容量が明らかに少ない、定格出力が出ない、サイクル数の偽装）</li>
+<li>安全に関わる設計上の問題（ポートの焼損、ケース変形、アース不良）</li>
+<li>リコール・メーカーによる不具合告知</li></ol></div>
+<div><h4><b class="c2">要注意</b>致命傷ではないが知っておくべき</h4><ol>
+<li>単発の初期不良（交換対応で解決している）</li>
+<li>ファームウェア更新後の不具合（修正済み・回避策あり）</li>
+<li>表示やアプリの不具合（残量表示のズレ、Bluetooth切断）</li>
+<li>気になる程度の自然放電</li>
+<li>特定条件でのみ出る症状（高負荷時・低温時など）</li>
+<li>3年以上使ってからの故障</li>
+<li>サポートの対応が遅い（最終的には解決している）</li></ol></div>
+<p>仕様への不満（重い・容量が小さい・価格が高い）、購入者側の環境の問題（自宅のブレーカーが落ちる等）、業界共通の挙動、配送・梱包の問題、根拠のない不安は<b>製品の落ち度ではない</b>ため掲載していません。</p>
+</div></details>`;
+function buyHTML(p){
+  const now=p._pmin,low=p._low,hi=Math.max(p.price_jpy||0,p.amazon_price||0,now||0,low||0);
+  if(!now||!low)return '';
+  const r=(now-low)/low;
+  const v=r<=0.02?['いま最安値圏。買い時','g']:r<=0.10?['ほぼ底値。買っていい','g']:r<=0.25?['やや高い。セールを待つ手もある','w']:['高い。過去に大きく下がっている','b'];
+  const pos=hi>low?Math.max(0,Math.min(100,(now-low)/(hi-low)*100)):0;
+  const hist=(p.prices&&p.prices.history)||[];
+  let chart='';
+  if(hist.length>=3){
+    const vals=hist.map(h=>h[1]).filter(x=>x);
+    const mn=Math.min(...vals),mx=Math.max(...vals),W=520,H=60,pad=4;
+    const pts=hist.filter(h=>h[1]).map((h,i,a)=>[pad+i/(a.length-1)*(W-pad*2),H-pad-(mx>mn?(h[1]-mn)/(mx-mn):0.5)*(H-pad*2)]);
+    const ln=pts.map((q,i)=>(i?'L':'M')+q[0].toFixed(1)+' '+q[1].toFixed(1)).join(' ');
+    chart=`<div class="spark"><svg viewBox="0 0 ${W} ${H}" role="img" aria-label="価格推移"><path class="ar" d="${ln} L${pts[pts.length-1][0].toFixed(1)} ${H} L${pts[0][0].toFixed(1)} ${H} Z"/><path class="ln" d="${ln}"/></svg><div class="ends"><span>${esc(hist[0][0])}</span><span>${yen(mn)} 〜 ${yen(mx)}</span><span>${esc(hist[hist.length-1][0])}</span></div></div>`;
+  } else {
+    chart=`<div class="spark nodata">価格推移グラフは毎日の自動巡回で貯めている途中（現在 ${hist.length} 日分）。1〜2週間で表示されます。それまでは上のバーで「いまが安いか」を判断してください。</div>`;
+  }
+  return `<div class="msec"><h3>いま買うべきか</h3><div class="buy">
+    <div class="hd"><span class="vd ${v[1]}">${v[0]}</span><span class="sub">現在 ${yen(now)}／既知の最安 ${yen(low)}${r>0.02?`（+${Math.round(r*100)}%）`:''}</span></div>
+    <div class="bar"><em style="left:100%"></em><i style="left:${pos.toFixed(1)}%"></i></div>
+    <div class="ends"><span>最安 ${yen(low)}</span><span>定価 ${yen(hi)}</span></div>
+    ${chart}</div></div>`}
+function tennoHTML(p){if(!p.tenno)return '';const t=p.tenno;return `<div class="msec"><h3>総合評価 — 天の声（編集部の辛口採点）</h3><div class="tennobox"><div class="sc">${t.score}<small>点</small></div><div class="vd">${esc(t.verdict)}</div><div class="bd">${esc(t.body)}</div><div class="ba"><span>${esc(t.best_for)}</span><span class="no">${esc(t.avoid_if)}</span></div>${t.longevity_bonus?`<div class="bo">内訳: 基礎 ${t.base_score}点 ＋ 継続販売ボーナス ${t.longevity_bonus}点（${esc(t.longevity_note)}）</div>`:`<div class="bo">${esc(t.longevity_note||'')}</div>`}</div></div>`}
+function reviewHTML(p){const r=p.review;if(!r)return '';
+  const meta=[r.amazon_total?`Amazon ${esc(r.amazon_total.replace('件のグローバル評価','件'))}${p.rating?' ★'+p.rating:''}`:'',r.kakaku_rating?`価格.com ${r.kakaku_rating}${r.kakaku_reviews?'（'+r.kakaku_reviews+'件）':''}`:''].filter(Boolean).join(' ／ ');
+  let h=`<div class="msec"><h3>全レビューの要約${meta?`<span style="text-transform:none;letter-spacing:0;margin-left:8px">${meta}</span>`:''}</h3><p class="summ" style="margin:0 0 8px">${esc(r.summary)}</p><div class="pc"><ul class="p">${r.pros.map(x=>`<li>${esc(x)}</li>`).join('')}</ul><ul class="n">${r.cons.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div></div>`;
+  if(r.flagged&&r.flagged.length)h+=`<div class="msec"><h3>天の声が気になったレビュー</h3>${r.flagged.map(f=>`<div class="flag ${f.level==='致命的'?'f1':'f2'}"><b>${esc(f.level)}</b>${esc(f.text)}<small>${esc(f.source)}</small></div>`).join('')}${CRITDEF}</div>`;
+  else h+=`<div class="msec"><h3>天の声が気になったレビュー</h3><p class="rvs" style="margin:0">致命的・要注意に該当するレビューは確認できなかった（${r.amazon_total?'Amazon低評価レビューと外部サイトを確認':'レビュー自体が少ない'}）。</p>${CRITDEF}</div>`;
+  if(r.amazon_samples&&r.amazon_samples.length)h+=`<div class="msec"><h3>Amazonレビュー抜粋（低評価・最新）</h3><div class="rvs">${r.amazon_samples.map(s=>`<div><span class="st">★${s.s??'-'}</span>${esc(s.t)}<span class="dt">${esc(s.d)}${s.v?'・購入済み':''}</span><br>${esc(s.b)}${s.b.length>=200?'…':''}</div>`).join('')}</div></div>`;
+  if(r.sources&&r.sources.length)h+=`<div class="msec srcs"><h3>参照した出典</h3>${r.sources.map(u=>`<a href="${esc(u)}" target="_blank" rel="nofollow noopener">${esc(u.replace(/^https?:\/\//,'').split('/')[0])}</a>`).join('')}</div>`;
+  return h}
+function closeModal(back){$('#ov').classList.remove('open');document.body.style.overflow='';
+  if(back&&PAGE_BASE&&location.pathname!==BASE_PATH&&history.state&&history.state.id!=null)history.back();}
+const BASE_PATH=location.pathname;
+window.addEventListener('popstate',e=>{if(e.state&&e.state.id!=null)openModal(e.state.id);else closeModal()});
+$('#ov').addEventListener('click',e=>{if(e.target.id==='ov')closeModal(true)});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal(true)});
+
+// ---- chart
+const YL={_pmin:'価格（万円）',_ppw:'円/Wh',solar_input_w:'ソーラー入力 W',rated_output_w:'定格出力 W',weight_kg:'重量 kg',rating:'★評価'};
+function niceStep(r){const e=Math.pow(10,Math.floor(Math.log10(r)));const f=r/e;return (f<=1?1:f<=2?2:f<=5?5:10)*e}
+function renderChart(){
+  const svg=$('#sc'),yk=$('#ysel').value,pts=LIST.filter(p=>p.capacity_wh>0&&p[yk]!=null);
+  const W=1100,H=520,L=70,R=20,T=20,B=48;
+  if(!pts.length){svg.innerHTML='<text x="550" y="260" text-anchor="middle">条件に合う機種がありません</text>';return}
+  const xmin=Math.log10(80),xmax=Math.log10(8000);let ymin=yk==='rating'?2.5:0,ymax=yk==='rating'?5:Math.max(...pts.map(p=>p[yk]))*1.06;
+  const X=v=>L+(Math.log10(v)-xmin)/(xmax-xmin)*(W-L-R),Y=v=>T+(1-(v-ymin)/(ymax-ymin))*(H-T-B);
+  const xt=[100,200,300,500,1000,2000,3000,5000],step=niceStep((ymax-ymin)/6),yt=[];for(let v=Math.ceil(ymin/step)*step;v<=ymax;v+=step)yt.push(+v.toFixed(6));
+  let g=`<g class="grid">${yt.map(v=>`<line x1="${L}" x2="${W-R}" y1="${Y(v)}" y2="${Y(v)}"/>`).join('')}${xt.map(v=>`<line y1="${T}" y2="${H-B}" x1="${X(v)}" x2="${X(v)}"/>`).join('')}</g><g class="axis"><line x1="${L}" x2="${W-R}" y1="${H-B}" y2="${H-B}"/><line x1="${L}" x2="${L}" y1="${T}" y2="${H-B}"/></g>`;
+  g+=xt.map(v=>`<text x="${X(v)}" y="${H-B+16}" text-anchor="middle">${fmt(v)}</text>`).join('')+yt.map(v=>`<text x="${L-8}" y="${Y(v)+4}" text-anchor="end">${yk==='_pmin'?(v/10000).toFixed(0):fmt(v)}</text>`).join('');
+  g+=`<text x="${(L+W-R)/2}" y="${H-8}" text-anchor="middle">容量 Wh（対数軸）</text><text transform="translate(14,${(T+H-B)/2}) rotate(-90)" text-anchor="middle">${YL[yk]}</text>`;
+  g+=pts.map(p=>`<circle cx="${X(p.capacity_wh).toFixed(1)}" cy="${Y(p[yk]).toFixed(1)}" r="6" data-id="${p.id}" class="${S.cmp.includes(p.id)?'sel':''}"/>`).join('');
+  svg.innerHTML=g;
+}
+const tip=$('#tip');
+$('#sc').addEventListener('mousemove',e=>{const c=e.target.closest('circle');if(!c){tip.style.display='none';return}const p=DATA[+c.dataset.id];
+  tip.innerHTML=`<b>${esc(p.brand)} ${esc(p.model)}</b><br>${fmt(p.capacity_wh)}Wh · ${p.rated_output_w?fmt(p.rated_output_w)+'W':'DC'} · PV${p.solar_input_w?fmt(p.solar_input_w)+'W':'—'}<br>${yen(p._pmin)}${p._ppw?' · '+p._ppw+'円/Wh':''}${p.rating?' · ★'+p.rating:''}`;
+  tip.style.display='block';tip.style.left=(e.clientX+14)+'px';tip.style.top=(e.clientY+14)+'px'});
+$('#sc').addEventListener('mouseleave',()=>tip.style.display='none');
+$('#sc').addEventListener('click',e=>{const c=e.target.closest('circle');if(c)openModal(+c.dataset.id)});
+
+// ---- compare tray
+const CMPROWS=[['容量 Wh','capacity_wh',1],['Wh単価 円/Wh','_ppw',-1],['総合評価','_ts',1],['現在価格','_pmin',-1],['セール時最安値','_low',-1],['保証（延長含む）年','_wext',1],['定格出力 W','rated_output_w',1],['瞬間最大 W','surge_output_w',1],['ソーラー入力 W','solar_input_w',1],['AC入力 W','ac_input_w',1],['電池','battery',0],['200V出力','_v200s',0],['サイクル','cycles',1],['重量 kg','weight_kg',-1],['拡張最大 Wh','max_expand_wh',1],['UPS切替 ms','ups_ms',-1],['★評価','rating',1],['レビュー数','reviews',1],['発売年','release_year',0],['市場滞在','years_on_market',1]];
+function renderTray(){const n=S.cmp.length;$('#cmpn').textContent=n;$('#tray').classList.toggle('on',n>0);$('#traytitle').textContent=`比較: ${n} 機種`;
+  if(!n){$('#tray').classList.remove('open');$('#traytoggle').textContent='比較表を開く';return}
+  const ps=S.cmp.map(i=>DATA[i]);
+  let h=`<table class="cmpt"><tr><th></th>${ps.map(p=>`<th style="font-family:var(--sans);color:var(--ink);font-size:13px">${p._img?`<img src="${p._img}" alt="">`:''}<br>${esc(p.brand)}<br><b>${esc(p.model)}</b></th>`).join('')}</tr>`;
+  for(const[lab,k,dir]of CMPROWS){const vals=ps.map(p=>p[k]);const nums=vals.filter(v=>typeof v==='number');const best=dir&&nums.length>1?(dir>0?Math.max(...nums):Math.min(...nums)):null;
+    h+=`<tr><th>${lab}</th>${vals.map(v=>`<td class="${v===best?'best':''}">${v==null?'—':typeof v==='number'?((k==='_pmin'||k==='_low')?yen(v):fmt(v)):esc(String(v))}</td>`).join('')}</tr>`}
+  h+=`<tr><th></th>${ps.map(p=>`<td><a class="btn am" style="display:inline-block" href="${amz(p)}" target="_blank" rel="nofollow noopener">Amazon</a> <button class="tbtn" data-rm="${p.id}">外す</button></td>`).join('')}</tr></table>`;
+  $('#traybody').innerHTML=h;}
+$('#traybody').addEventListener('click',e=>{const b=e.target.closest('[data-rm]');if(b)toggleCmp(+b.dataset.rm)});
+$('#traytoggle').onclick=()=>{const o=$('#tray').classList.toggle('open');$('#traytoggle').textContent=o?'閉じる':'比較表を開く'};
+$('#cmpbtn').onclick=()=>{if(S.cmp.length){$('#tray').classList.add('open');$('#traytoggle').textContent='閉じる';$('#tray').scrollIntoView()}};
+$('#trayclear').onclick=()=>{S.cmp=[];render()};
+
+$('#dvleg').innerHTML=dvLegendHTML();
+render();
+</script>
