@@ -1,0 +1,51 @@
+name: daily-price-crawl
+on:
+  schedule:
+    - cron: '0 21 * * *'   # 毎日 06:00 JST
+  workflow_dispatch:
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: false
+jobs:
+  crawl-build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Configure Pages
+        id: pages
+        uses: actions/configure-pages@v5
+      - name: Fetch prices
+        env:
+          RAKUTEN_APP_ID: ${{ secrets.RAKUTEN_APP_ID }}
+          RAKUTEN_AFFILIATE_ID: ${{ secrets.RAKUTEN_AFFILIATE_ID }}
+          SITE_DOMAIN: ${{ vars.SITE_DOMAIN }}
+          RAKUTEN_REFERER: ${{ vars.RAKUTEN_REFERER }}
+          PAAPI_ACCESS_KEY: ${{ secrets.PAAPI_ACCESS_KEY }}
+          PAAPI_SECRET_KEY: ${{ secrets.PAAPI_SECRET_KEY }}
+          PAAPI_PARTNER_TAG: ${{ secrets.PAAPI_PARTNER_TAG }}
+        run: |
+          pip install -q paapi5-python-sdk || true
+          python scripts/fetch_prices.py
+      - name: Build site
+        env:
+          SITE_URL: ${{ steps.pages.outputs.base_url }}
+          SITE_DOMAIN: ${{ vars.SITE_DOMAIN }}
+        run: python scripts/build.py
+      - name: Commit price data
+        run: |
+          git config user.name "potaden-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add data
+          git diff --cached --quiet || git commit -m "price update $(TZ=Asia/Tokyo date +%F)"
+          git push
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+      - uses: actions/deploy-pages@v4
