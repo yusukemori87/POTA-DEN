@@ -1,14 +1,15 @@
-#!/usr/bin/env python3
 """data/products.json + data/images.json + template.html から
    docs/index.html（一覧・SPA）と docs/p/<slug>/index.html（機種ごとの独立ページ）を生成。
    独立ページはサーバー側でHTMLを書き出す静的ページなので、検索エンジンにそのままインデックスされる。"""
-import json, os, re, html, datetime
+import json, os, re, html, datetime, urllib.parse
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DOMAIN = (os.environ.get('SITE_DOMAIN') or '').strip().replace('https://', '').replace('http://', '').strip('/')
 SITE = ('https://' + DOMAIN) if DOMAIN else (os.environ.get('SITE_URL') or 'https://example.github.io/potaden-site').rstrip('/')
 JST = datetime.timezone(datetime.timedelta(hours=9))
 TODAY = datetime.datetime.now(JST).strftime('%Y-%m-%d')
+AMAZON_TAG = os.environ.get('AMAZON_TAG', 'poonyan87-22')  # AmazonアソシエイトのトラッキングID
+RAKUTEN_AFL = os.environ.get('RAKUTEN_AFL', 'https://hb.afl.rakuten.co.jp/ichiba/57142585.1577c0d6.57142586.3a6608f9/?pc=')
 
 d = json.load(open(os.path.join(ROOT, 'data', 'products.json'), encoding='utf-8'))
 IMG = json.load(open(os.path.join(ROOT, 'data', 'images.json'), encoding='utf-8'))
@@ -131,7 +132,11 @@ def product_page(i, p):
     tn_cls = 's4' if sc >= 75 else 's3' if sc >= 60 else 's2' if sc >= 45 else 's1'
     amz = (f"https://www.amazon.co.jp/dp/{p['amazon_asin']}" if p.get('amazon_asin')
            else 'https://www.amazon.co.jp/s?k=' + re.sub(r'\s+', '+', f"{p['brand']} {p['model']} ポータブル電源"))
+    if AMAZON_TAG:
+        amz += ('&' if '?' in amz else '?') + 'tag=' + AMAZON_TAG
     rak = pr.get('rakuten_url') or ('https://search.rakuten.co.jp/search/mall/' + re.sub(r'\s+', '%20', f"{p['brand']} {p['model']}") + '/')
+    if RAKUTEN_AFL and 'hb.afl.rakuten.co.jp' not in rak:   # 既に成果報酬リンクならそのまま
+        rak = RAKUTEN_AFL + urllib.parse.quote(rak, safe='')
     body = f"""<div class="top"><div class="topin"><a class="logo" href="{SITE}/" style="text-decoration:none;color:inherit"><i></i>ポタ電カタログ<small>JAPAN</small></a></div></div>
 <div class="page" style="grid-template-columns:1fr;max-width:1000px">
 <main>
@@ -155,7 +160,7 @@ def product_page(i, p):
 {('<section class="msec"><h2 style="margin:0 0 6px;font-size:12px;letter-spacing:.08em;color:var(--muted);font-family:var(--mono)">Amazonレビュー抜粋（低評価・最新）</h2><div class="rvs">' + ''.join(f'<div><span class="st">★{s.get("s") or "-"}</span>{e(s.get("t"))}<span class="dt">{e(s.get("d"))}{"・購入済み" if s.get("v") else ""}</span><br>{e(s.get("b"))}</div>' for s in rv.get('amazon_samples', [])) + '</div></section>') if rv.get('amazon_samples') else ''}
 <div class="macts"><a class="btn am" href="{e(amz)}" target="_blank" rel="nofollow noopener sponsored">Amazonで見る</a><a class="btn" href="{e(rak)}" target="_blank" rel="nofollow noopener sponsored">楽天で探す</a>{f'<a class="btn" href="{e(p["official_url"])}" target="_blank" rel="noopener">公式サイト</a>' if p.get('official_url') else ''}<a class="btn" href="{SITE}/">他の機種と比較する</a></div>
 </div></article>
-<footer style="padding:24px 0 40px;color:var(--ink2);font-size:12px;max-width:80ch">価格は{e(pr.get('updated') or TODAY)}時点。Amazon・楽天・価格.comの最安値を毎日自動取得しています。「総合評価（天の声）」は編集部がレビューを横断して読み、仕様・価格・保証・サポート報告を突き合わせて付けた独自の辛口採点です。本ページのリンクにはアフィリエイトリンクを含む場合があります。</footer>
+<footer style="padding:24px 0 40px;color:var(--ink2);font-size:12px;max-width:80ch">価格は{e(pr.get('updated') or TODAY)}時点。Amazon・楽天・価格.comの最安値を毎日自動取得しています。「総合評価（天の声）」は編集部がレビューを横断して読み、仕様・価格・保証・サポート報告を突き合わせて付けた独自の辛口採点です。本ページのリンクにはアフィリエイトリンクを含みます。<b>Amazonのアソシエイトとして、ポタ電カタログは適格販売により収入を得ています。</b>価格は取得時点のもので変動します。最新の価格・在庫は各販売ページでご確認ください。</footer>
 </main></div>"""
     head = (f'<title>{e(title)}</title><meta name="description" content="{e(desc)}">'
             f'<link rel="canonical" href="{url}">'
