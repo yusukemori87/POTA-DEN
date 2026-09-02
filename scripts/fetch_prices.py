@@ -22,8 +22,19 @@ UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML,
 
 EXCLUDE = re.compile(r'セット|パネル|拡張バッテリー|専用バッテリー|バッグ|ケース|カバー|ケーブル|アダプタ|充電器|収納|保護|中古|整備済|リファービッシュ|レンタル')
 
-def get(url, headers=None, timeout=25):
-    req = urllib.request.Request(url, headers={'User-Agent': UA, **(headers or {})})
+# 楽天APIを「Webアプリケーション」タイプで登録した場合、リファラーで許可判定される。
+# 自サイトのドメインを Referer として送る（SITE_DOMAIN か RAKUTEN_REFERER で指定）。
+REFERER = (os.environ.get('RAKUTEN_REFERER') or
+           (('https://' + os.environ['SITE_DOMAIN'].strip().replace('https://', '').strip('/') + '/')
+            if os.environ.get('SITE_DOMAIN') else ''))
+
+def get(url, headers=None, timeout=8):
+    h = {'User-Agent': UA}
+    if REFERER:
+        h['Referer'] = REFERER
+        h['Origin'] = REFERER.rstrip('/')
+    h.update(headers or {})
+    req = urllib.request.Request(url, headers=h)
     with urllib.request.urlopen(req, timeout=timeout) as r:
         return r.read().decode('utf-8', 'ignore')
 
@@ -74,13 +85,24 @@ def rakuten_price(p, app_id, aff_id):
     return None, None, 'no match'
 
 # ---------- 価格.com ----------
+# 連続で失敗したら以降スキップする（IPブロック等で1件25秒×182件かかるのを防ぐ）
+KAKAKU_STATE = {'fail': 0, 'off': os.environ.get('SKIP_KAKAKU') == '1'}
+KAKAKU_MAX_FAIL = 8
+
 def kakaku_price(p):
+    if KAKAKU_STATE['off']:
+        return None, None, 'skipped'
     q, model = query_of(p)
     toks = tokens_of(model)
     url = 'https://kakaku.com/search_results/' + urllib.parse.quote(q) + '/?category=0032'
     try:
         body = get(url)
+        KAKAKU_STATE['fail'] = 0
     except Exception as e:
+        KAKAKU_STATE['fail'] += 1
+        if KAKAKU_STATE['fail'] >= KAKAKU_MAX_FAIL:
+            KAKAKU_STATE['off'] = True
+            print(f'価格.com に {KAKAKU_MAX_FAIL} 回連続で接続できないため、以降スキップします', file=sys.stderr)
         return None, None, f'kakaku error: {e}'
     # 検索結果の各アイテム: タイトルと最安価格
     best = None
@@ -137,6 +159,9 @@ def main():
     aff_id = os.environ.get('RAKUTEN_AFFILIATE_ID', '')
     if not app_id:
         print('RAKUTEN_APP_ID が未設定です（楽天価格はスキップ）', file=sys.stderr)
+    elif not REFERER:
+        print('注意: SITE_DOMAIN / RAKUTEN_REFERER が未設定。楽天アプリを「Webアプリケーション」で'
+              '登録している場合、リファラー不一致で弾かれることがあります', file=sys.stderr)
     amz = amazon_prices(products)
     snap = {}
     limit = int(os.environ.get('LIMIT', '0') or 0)  # テスト用: 先頭N件だけ
@@ -149,7 +174,7 @@ def main():
             rec['rakuten'] = price
             if url:
                 rec['rakuten_url'] = url
-            time.sleep(0.4)
+            time.sleep(0.25)
         kp, ku, kst = kakaku_price(p)
         rec['kakaku'] = kp
         if ku:
@@ -176,7 +201,7 @@ def main():
             'history': [[x['d'], min([x[k] for k in ('amazon', 'rakuten', 'kakaku') if x.get(k)] or [None])] for x in history[str(i)][-90:]],
         }
         print(f"{i:3d} {p['brand']} {p['model'][:24]:24s} 楽天:{rec.get('rakuten')} 価格.com:{rec.get('kakaku')} Amazon:{rec.get('amazon')}", flush=True)
-        time.sleep(1.0)
+        time.sleep(0.25 if KAKAKU_STATE['off'] else 0.7)
     os.makedirs(os.path.join(DATA, 'prices'), exist_ok=True)
     json.dump(snap, open(os.path.join(DATA, 'prices', TODAY + '.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
     json.dump(history, open(hist_path, 'w', encoding='utf-8'), ensure_ascii=False)
