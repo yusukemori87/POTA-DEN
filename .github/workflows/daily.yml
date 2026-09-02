@@ -13,6 +13,7 @@ concurrency:
 jobs:
   crawl-build-deploy:
     runs-on: ubuntu-latest
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -21,19 +22,20 @@ jobs:
       - name: Configure Pages
         id: pages
         uses: actions/configure-pages@v5
-      - name: Fetch prices
+      - name: Fetch prices (楽天API・価格.com・Amazon PA-API)
         env:
           RAKUTEN_APP_ID: ${{ secrets.RAKUTEN_APP_ID }}
           RAKUTEN_AFFILIATE_ID: ${{ secrets.RAKUTEN_AFFILIATE_ID }}
           SITE_DOMAIN: ${{ vars.SITE_DOMAIN }}
           RAKUTEN_REFERER: ${{ vars.RAKUTEN_REFERER }}
+          SKIP_KAKAKU: ${{ vars.SKIP_KAKAKU }}
           PAAPI_ACCESS_KEY: ${{ secrets.PAAPI_ACCESS_KEY }}
           PAAPI_SECRET_KEY: ${{ secrets.PAAPI_SECRET_KEY }}
           PAAPI_PARTNER_TAG: ${{ secrets.PAAPI_PARTNER_TAG }}
         run: |
           pip install -q paapi5-python-sdk || true
           python scripts/fetch_prices.py
-      - name: Build site
+      - name: Build site (一覧＋機種ごとの独立ページ＋sitemap)
         env:
           SITE_URL: ${{ steps.pages.outputs.base_url }}
           SITE_DOMAIN: ${{ vars.SITE_DOMAIN }}
