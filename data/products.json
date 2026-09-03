@@ -2368,16 +2368,16 @@
   "prices": {
    "updated": "2026-09-03",
    "amazon": null,
-   "rakuten": 73700,
+   "rakuten": null,
    "kakaku": 219800,
-   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00tzcjo.5sz2d344.g00tzcjo.5sz2e5d6/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fecoflow%2Fultra-trolley%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fecoflow%2Fi%2F10000229%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": null,
    "kakaku_url": "https://kakaku.com/item/K0001489662/",
-   "min": 73700,
-   "hist_min": 73700,
+   "min": 219800,
+   "hist_min": 219800,
    "history": [
     [
      "2026-09-03",
-     73700
+     219800
     ]
    ]
   }
@@ -2592,16 +2592,16 @@
   "prices": {
    "updated": "2026-09-03",
    "amazon": null,
-   "rakuten": 581777,
+   "rakuten": null,
    "kakaku": null,
-   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00ruito.5sz2da99.g00ruito.5sz2e83a/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsuma-colle%2Fefdeltaproultra-jp-1514%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsuma-colle%2Fi%2F10491989%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": null,
    "kakaku_url": null,
-   "min": 581777,
-   "hist_min": 581777,
+   "min": null,
+   "hist_min": null,
    "history": [
     [
      "2026-09-03",
-     581777
+     null
     ]
    ]
   }
@@ -3298,16 +3298,16 @@
   "prices": {
    "updated": "2026-09-03",
    "amazon": null,
-   "rakuten": 49750,
+   "rakuten": null,
    "kakaku": null,
-   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00upqno.5sz2dc57.g00upqno.5sz2e9b3/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fecmaison%2Fcompass1770021596%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fecmaison%2Fi%2F10000393%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": null,
    "kakaku_url": null,
-   "min": 49750,
-   "hist_min": 49750,
+   "min": null,
+   "hist_min": null,
    "history": [
     [
      "2026-09-03",
-     49750
+     null
     ]
    ]
   }
@@ -3430,16 +3430,16 @@
   "prices": {
    "updated": "2026-09-03",
    "amazon": 73800,
-   "rakuten": 50400,
+   "rakuten": null,
    "kakaku": null,
-   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00ue0po.5sz2df58.g00ue0po.5sz2e0d0/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fattojoystore%2Fa1754511-anker-solix-c800%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fattojoystore%2Fi%2F10001541%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": null,
    "kakaku_url": null,
-   "min": 50400,
-   "hist_min": 50400,
+   "min": 73800,
+   "hist_min": null,
    "history": [
     [
      "2026-09-03",
-     50400
+     null
     ]
    ]
   }
@@ -4556,16 +4556,16 @@
   "prices": {
    "updated": "2026-09-03",
    "amazon": 189900,
-   "rakuten": 187294,
+   "rakuten": null,
    "kakaku": null,
-   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00uuzro.5sz2df49.g00uuzro.5sz2e530/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ffukudakikai%2F7091075%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ffukudakikai%2Fi%2F10119962%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": null,
    "kakaku_url": null,
-   "min": 187294,
-   "hist_min": 187294,
+   "min": 189900,
+   "hist_min": null,
    "history": [
     [
      "2026-09-03",
-     187294
+     null
     ]
    ]
   }
@@ -4861,16 +4861,16 @@
   "prices": {
    "updated": "2026-09-03",
    "amazon": null,
-   "rakuten": 16400,
+   "rakuten": null,
    "kakaku": 29520,
-   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00tgroo.5sz2dbf5.g00tgroo.5sz2ea1f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjackery-japan%2F21-0001-000215-r%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjackery-japan%2Fi%2F10000206%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": null,
    "kakaku_url": "https://kakaku.com/item/K0001623548/",
-   "min": 16400,
-   "hist_min": 16400,
+   "min": 29520,
+   "hist_min": 29520,
    "history": [
     [
      "2026-09-03",
-     16400
+     29520
     ]
    ]
   }
@@ -4940,16 +4940,16 @@
   "prices": {
    "updated": "2026-09-03",
    "amazon": null,
-   "rakuten": 19800,
+   "rakuten": null,
    "kakaku": 22412,
-   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00t7x7o.5sz2d5ce.g00t7x7o.5sz2eb03/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fborder-less1%2Frc_itjc33n0tmjg_tfox%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fborder-less1%2Fi%2F10072658%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": null,
    "kakaku_url": "https://kakaku.com/item/K0001720293/",
-   "min": 19800,
-   "hist_min": 19800,
+   "min": 22412,
+   "hist_min": 22412,
    "history": [
     [
      "2026-09-03",
-     19800
+     22412
     ]
    ]
   }
@@ -5019,9 +5019,9 @@
   "prices": {
    "updated": "2026-09-03",
    "amazon": null,
-   "rakuten": 37370,
+   "rakuten": null,
    "kakaku": 37370,
-   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00riavo.5sz2d72d.g00riavo.5sz2e34e/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fasahiprocureace%2F734-4944%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fasahiprocureace%2Fi%2F15637253%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": null,
    "kakaku_url": "https://kakaku.com/item/K0001787652/",
    "min": 37370,
    "hist_min": 37370,
@@ -5106,9 +5106,9 @@
   "prices": {
    "updated": "2026-09-03",
    "amazon": null,
-   "rakuten": 27800,
+   "rakuten": null,
    "kakaku": 26795,
-   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00t7x7o.5sz2d5ce.g00t7x7o.5sz2eb03/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fborder-less1%2Frc_itntv02pg1b8_ls83%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fborder-less1%2Fi%2F10071017%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": null,
    "kakaku_url": "https://kakaku.com/item/K0001568817/",
    "min": 26795,
    "hist_min": 26795,
@@ -5294,9 +5294,9 @@
   "prices": {
    "updated": "2026-09-03",
    "amazon": 62180,
-   "rakuten": 53900,
+   "rakuten": null,
    "kakaku": 50486,
-   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00qs0io.5sz2da59.g00qs0io.5sz2e2ad/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmitenekakakubamboo%2Fje-600a%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmitenekakakubamboo%2Fi%2F10019032%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": null,
    "kakaku_url": "https://kakaku.com/item/K0001717441/",
    "min": 50486,
    "hist_min": 50486,
@@ -5436,16 +5436,16 @@
   "prices": {
    "updated": "2026-09-03",
    "amazon": 64503,
-   "rakuten": 16800,
+   "rakuten": null,
    "kakaku": 54799,
-   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00tgroo.5sz2dbf5.g00tgroo.5sz2ea1f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjackery-japan%2F90-2000-jpcbk1%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjackery-japan%2Fi%2F10000099%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": null,
    "kakaku_url": "https://kakaku.com/item/J0000045528/",
-   "min": 16800,
-   "hist_min": 16800,
+   "min": 54799,
+   "hist_min": 54799,
    "history": [
     [
      "2026-09-03",
-     16800
+     54799
     ]
    ]
   }
@@ -5515,9 +5515,9 @@
   "prices": {
    "updated": "2026-09-03",
    "amazon": null,
-   "rakuten": 79789,
+   "rakuten": null,
    "kakaku": 69709,
-   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00u7o7o.5sz2d4e1.g00u7o7o.5sz2e220/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Furiurishop%2F0810182240084%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Furiurishop%2Fi%2F10009364%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": null,
    "kakaku_url": "https://kakaku.com/item/K0001687446/",
    "min": 69709,
    "hist_min": 69709,
@@ -5658,16 +5658,16 @@
   "prices": {
    "updated": "2026-09-03",
    "amazon": 69484,
-   "rakuten": 53910,
+   "rakuten": null,
    "kakaku": 69484,
-   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00tgroo.5sz2dbf5.g00tgroo.5sz2ea1f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjackery-japan%2F21-0001-000315-r%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjackery-japan%2Fi%2F10000245%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": null,
    "kakaku_url": "https://kakaku.com/item/J0000047405/",
-   "min": 53910,
-   "hist_min": 53910,
+   "min": 69484,
+   "hist_min": 69484,
    "history": [
     [
      "2026-09-03",
-     53910
+     69484
     ]
    ]
   }
@@ -5738,16 +5738,16 @@
   "prices": {
    "updated": "2026-09-03",
    "amazon": 72468,
-   "rakuten": 109800,
+   "rakuten": null,
    "kakaku": null,
-   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00tgroo.5sz2dbf5.g00tgroo.5sz2ea1f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjackery-japan%2F21-0001-000448%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjackery-japan%2Fi%2F10000269%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": null,
    "kakaku_url": null,
    "min": 72468,
-   "hist_min": 109800,
+   "hist_min": null,
    "history": [
     [
      "2026-09-03",
-     109800
+     null
     ]
    ]
   }
@@ -5818,9 +5818,9 @@
   "prices": {
    "updated": "2026-09-03",
    "amazon": null,
-   "rakuten": 102918,
+   "rakuten": null,
    "kakaku": 77870,
-   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00q6omo.5sz2d388.g00q6omo.5sz2efae/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhitline%2F0810182244136%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fhitline%2Fi%2F19727522%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": null,
    "kakaku_url": "https://kakaku.com/item/K0001793296/",
    "min": 77870,
    "hist_min": 77870,
@@ -6111,9 +6111,9 @@
   "prices": {
    "updated": "2026-09-03",
    "amazon": 86884,
-   "rakuten": 149800,
+   "rakuten": null,
    "kakaku": 89880,
-   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00tgroo.5sz2dbf5.g00tgroo.5sz2ea1f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjackery-japan%2F21-0001-000488%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjackery-japan%2Fi%2F10000261%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": null,
    "kakaku_url": "https://kakaku.com/item/J0000050542/",
    "min": 86884,
    "hist_min": 89880,
@@ -6214,9 +6214,9 @@
   "prices": {
    "updated": "2026-09-03",
    "amazon": null,
-   "rakuten": 149880,
+   "rakuten": null,
    "kakaku": 149800,
-   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00rhoso.5sz2d9c4.g00rhoso.5sz2e648/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauc-e-tool%2F4595556362079%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fauc-e-tool%2Fi%2F10023530%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": null,
    "kakaku_url": "https://kakaku.com/item/K0001700527/",
    "min": 149800,
    "hist_min": 149800,
@@ -6293,16 +6293,16 @@
   "prices": {
    "updated": "2026-09-03",
    "amazon": null,
-   "rakuten": 75400,
+   "rakuten": null,
    "kakaku": 107480,
-   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00t7x7o.5sz2d5ce.g00t7x7o.5sz2eb03/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fborder-less1%2Frc_itmfvhk6lcq8_zbon%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fborder-less1%2Fi%2F10071964%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": null,
    "kakaku_url": "https://kakaku.com/item/K0001687445/",
-   "min": 75400,
-   "hist_min": 75400,
+   "min": 107480,
+   "hist_min": 107480,
    "history": [
     [
      "2026-09-03",
-     75400
+     107480
     ]
    ]
   }
@@ -6375,16 +6375,16 @@
   "prices": {
    "updated": "2026-09-03",
    "amazon": null,
-   "rakuten": 83920,
+   "rakuten": null,
    "kakaku": 111960,
-   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00tgroo.5sz2dbf5.g00tgroo.5sz2ea1f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjackery-japan%2F21-0001-000339-r%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjackery-japan%2Fi%2F10000247%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": null,
    "kakaku_url": "https://kakaku.com/item/J0000048065/",
-   "min": 83920,
-   "hist_min": 83920,
+   "min": 111960,
+   "hist_min": 111960,
    "history": [
     [
      "2026-09-03",
-     83920
+     111960
     ]
    ]
   }
@@ -6498,16 +6498,16 @@
   "prices": {
    "updated": "2026-09-03",
    "amazon": 119800,
-   "rakuten": 199800,
+   "rakuten": null,
    "kakaku": null,
-   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00tgroo.5sz2dbf5.g00tgroo.5sz2ea1f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjackery-japan%2F21-0001-000489%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjackery-japan%2Fi%2F10000258%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": null,
    "kakaku_url": null,
    "min": 119800,
-   "hist_min": 199800,
+   "hist_min": null,
    "history": [
     [
      "2026-09-03",
-     199800
+     null
     ]
    ]
   }
@@ -6665,9 +6665,9 @@
   "prices": {
    "updated": "2026-09-03",
    "amazon": null,
-   "rakuten": 175352,
+   "rakuten": null,
    "kakaku": 173091,
-   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00uuzro.5sz2df49.g00uuzro.5sz2e530/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ffukudakikai%2F6984595%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ffukudakikai%2Fi%2F10119897%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": null,
    "kakaku_url": "https://kakaku.com/item/K0001679170/",
    "min": 173091,
    "hist_min": 173091,
@@ -6861,9 +6861,9 @@
   "prices": {
    "updated": "2026-09-03",
    "amazon": null,
-   "rakuten": 333952,
+   "rakuten": null,
    "kakaku": 215880,
-   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00riavo.5sz2d72d.g00riavo.5sz2e34e/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fasahiprocureace%2F715-5482%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fasahiprocureace%2Fi%2F15576129%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": null,
    "kakaku_url": "https://kakaku.com/item/K0001772033/",
    "min": 215880,
    "hist_min": 215880,
@@ -6957,16 +6957,16 @@
   "prices": {
    "updated": "2026-09-03",
    "amazon": null,
-   "rakuten": 451318,
+   "rakuten": null,
    "kakaku": 479400,
-   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00uuzro.5sz2df49.g00uuzro.5sz2e530/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ffukudakikai%2F7129421%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ffukudakikai%2Fi%2F10120150%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": null,
    "kakaku_url": "https://kakaku.com/item/K0001696427/",
-   "min": 451318,
-   "hist_min": 451318,
+   "min": 479400,
+   "hist_min": 479400,
    "history": [
     [
      "2026-09-03",
-     451318
+     479400
     ]
    ]
   }
@@ -7037,16 +7037,16 @@
   "prices": {
    "updated": "2026-09-03",
    "amazon": null,
-   "rakuten": 22500,
+   "rakuten": null,
    "kakaku": null,
-   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00u57jo.5sz2dedf.g00u57jo.5sz2e74a/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbluettijapan%2Faora10-jp-eg-rktjp-00%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbluettijapan%2Fi%2F10000225%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": null,
    "kakaku_url": null,
-   "min": 22500,
-   "hist_min": 22500,
+   "min": null,
+   "hist_min": null,
    "history": [
     [
      "2026-09-03",
-     22500
+     null
     ]
    ]
   }
@@ -7179,16 +7179,16 @@
   "prices": {
    "updated": "2026-09-03",
    "amazon": 27860,
-   "rakuten": 39800,
+   "rakuten": null,
    "kakaku": null,
-   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00u57jo.5sz2dedf.g00u57jo.5sz2e74a/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbluettijapan%2Fbluettijapan_aora30v2_eg%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbluettijapan%2Fi%2F10000195%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": null,
    "kakaku_url": null,
    "min": 27860,
-   "hist_min": 39800,
+   "hist_min": null,
    "history": [
     [
      "2026-09-03",
-     39800
+     null
     ]
    ]
   }
@@ -7316,16 +7316,16 @@
   "prices": {
    "updated": "2026-09-03",
    "amazon": 62910,
-   "rakuten": 62900,
+   "rakuten": null,
    "kakaku": null,
-   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00u100o.5sz2db24.g00u100o.5sz2e9e1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Febattery%2Fbluetti-aroa100v2%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Febattery%2Fi%2F10000113%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": null,
    "kakaku_url": null,
-   "min": 62900,
-   "hist_min": 62900,
+   "min": 62910,
+   "hist_min": null,
    "history": [
     [
      "2026-09-03",
-     62900
+     null
     ]
    ]
   }
@@ -7433,16 +7433,16 @@
   "prices": {
    "updated": "2026-09-03",
    "amazon": 56899,
-   "rakuten": 96800,
+   "rakuten": null,
    "kakaku": null,
-   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00u57jo.5sz2dedf.g00u57jo.5sz2e74a/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbluettijapan%2Fbluettijapan_aora100mini%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbluettijapan%2Fi%2F10000248%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": null,
    "kakaku_url": null,
    "min": 56899,
-   "hist_min": 96800,
+   "hist_min": null,
    "history": [
     [
      "2026-09-03",
-     96800
+     null
     ]
    ]
   }
@@ -7569,16 +7569,16 @@
   "prices": {
    "updated": "2026-09-03",
    "amazon": 56980,
-   "rakuten": 62900,
+   "rakuten": null,
    "kakaku": null,
-   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00u100o.5sz2db24.g00u100o.5sz2e9e1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Febattery%2Fbluetti-aroa100v2%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Febattery%2Fi%2F10000113%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": null,
    "kakaku_url": null,
    "min": 56980,
-   "hist_min": 62900,
+   "hist_min": null,
    "history": [
     [
      "2026-09-03",
-     62900
+     null
     ]
    ]
   }
@@ -7649,16 +7649,16 @@
   "prices": {
    "updated": "2026-09-03",
    "amazon": null,
-   "rakuten": 237985,
+   "rakuten": null,
    "kakaku": null,
-   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00q1a0o.5sz2de67.g00q1a0o.5sz2e174/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmurauchi-dvd%2F4582739521279%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmurauchi-dvd%2Fi%2F134781524%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": null,
    "kakaku_url": null,
-   "min": 237985,
-   "hist_min": 237985,
+   "min": null,
+   "hist_min": null,
    "history": [
     [
      "2026-09-03",
-     237985
+     null
     ]
    ]
   }
@@ -7730,16 +7730,16 @@
   "prices": {
    "updated": "2026-09-03",
    "amazon": null,
-   "rakuten": 358000,
+   "rakuten": null,
    "kakaku": null,
-   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00rjbzo.5sz2d046.g00rjbzo.5sz2ecce/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fautostyle%2Fbluz000022%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fautostyle%2Fi%2F16878498%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": null,
    "kakaku_url": null,
-   "min": 358000,
-   "hist_min": 358000,
+   "min": null,
+   "hist_min": null,
    "history": [
     [
      "2026-09-03",
-     358000
+     null
     ]
    ]
   }
@@ -7856,16 +7856,16 @@
   "prices": {
    "updated": "2026-09-03",
    "amazon": 199500,
-   "rakuten": 399000,
+   "rakuten": null,
    "kakaku": null,
-   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00q1a0o.5sz2de67.g00q1a0o.5sz2e174/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmurauchi-dvd%2F4582739520838%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmurauchi-dvd%2Fi%2F134781522%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": null,
    "kakaku_url": null,
    "min": 199500,
-   "hist_min": 399000,
+   "hist_min": null,
    "history": [
     [
      "2026-09-03",
-     399000
+     null
     ]
    ]
   }
@@ -7937,16 +7937,16 @@
   "prices": {
    "updated": "2026-09-03",
    "amazon": null,
-   "rakuten": 99800,
+   "rakuten": null,
    "kakaku": null,
-   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00u100o.5sz2db24.g00u100o.5sz2e9e1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Febattery%2Fbluetti-pioneerna%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Febattery%2Fi%2F10000121%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": null,
    "kakaku_url": null,
-   "min": 99800,
-   "hist_min": 99800,
+   "min": null,
+   "hist_min": null,
    "history": [
     [
      "2026-09-03",
-     99800
+     null
     ]
    ]
   }
@@ -8259,16 +8259,16 @@
   "prices": {
    "updated": "2026-09-03",
    "amazon": 39980,
-   "rakuten": 43800,
+   "rakuten": null,
    "kakaku": null,
-   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00u100o.5sz2db24.g00u100o.5sz2e9e1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Febattery%2Fbluetti_ac70%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Febattery%2Fi%2F10000127%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": null,
    "kakaku_url": null,
    "min": 39980,
-   "hist_min": 43800,
+   "hist_min": null,
    "history": [
     [
      "2026-09-03",
-     43800
+     null
     ]
    ]
   }
@@ -8486,16 +8486,16 @@
   "prices": {
    "updated": "2026-09-03",
    "amazon": null,
-   "rakuten": 108600,
+   "rakuten": null,
    "kakaku": null,
-   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00u57jo.5sz2dedf.g00u57jo.5sz2e74a/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbluettijapan%2Fac180t-jp-gy-bl-rktjp-00%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbluettijapan%2Fi%2F10000141%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": null,
    "kakaku_url": null,
-   "min": 108600,
-   "hist_min": 108600,
+   "min": null,
+   "hist_min": null,
    "history": [
     [
      "2026-09-03",
-     108600
+     null
     ]
    ]
   }
@@ -8566,16 +8566,16 @@
   "prices": {
    "updated": "2026-09-03",
    "amazon": null,
-   "rakuten": 198000,
+   "rakuten": null,
    "kakaku": null,
-   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00rjbzo.5sz2d046.g00rjbzo.5sz2ecce/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fautostyle%2Fbluz000020%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fautostyle%2Fi%2F16847144%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": null,
    "kakaku_url": null,
-   "min": 198000,
-   "hist_min": 198000,
+   "min": null,
+   "hist_min": null,
    "history": [
     [
      "2026-09-03",
-     198000
+     null
     ]
    ]
   }
@@ -8807,16 +8807,16 @@
   "prices": {
    "updated": "2026-09-03",
    "amazon": null,
-   "rakuten": 23220,
+   "rakuten": null,
    "kakaku": null,
-   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00r7ldo.5sz2d287.g00r7ldo.5sz2e7a6/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbiccamera%2F4582739520364%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbiccamera%2Fi%2F15081330%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": null,
    "kakaku_url": null,
-   "min": 23220,
-   "hist_min": 23220,
+   "min": null,
+   "hist_min": null,
    "history": [
     [
      "2026-09-03",
-     23220
+     null
     ]
    ]
   }
@@ -8885,16 +8885,16 @@
   "prices": {
    "updated": "2026-09-03",
    "amazon": null,
-   "rakuten": 49800,
+   "rakuten": null,
    "kakaku": null,
-   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00tl2ko.5sz2d219.g00tl2ko.5sz2ece4/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmatsuyadenki%2F530493013%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmatsuyadenki%2Fi%2F10195207%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": null,
    "kakaku_url": null,
-   "min": 49800,
-   "hist_min": 49800,
+   "min": null,
+   "hist_min": null,
    "history": [
     [
      "2026-09-03",
-     49800
+     null
     ]
    ]
   }
@@ -8963,16 +8963,16 @@
   "prices": {
    "updated": "2026-09-03",
    "amazon": null,
-   "rakuten": 53700,
+   "rakuten": null,
    "kakaku": null,
-   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00tl2ko.5sz2d219.g00tl2ko.5sz2ece4/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmatsuyadenki%2F530494010%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmatsuyadenki%2Fi%2F10195220%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": null,
    "kakaku_url": null,
-   "min": 53700,
-   "hist_min": 53700,
+   "min": null,
+   "hist_min": null,
    "history": [
     [
      "2026-09-03",
-     53700
+     null
     ]
    ]
   }
@@ -9042,16 +9042,16 @@
   "prices": {
    "updated": "2026-09-03",
    "amazon": null,
-   "rakuten": 82980,
+   "rakuten": null,
    "kakaku": null,
-   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00u100o.5sz2db24.g00u100o.5sz2e9e1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Febattery%2Fbluetti-ac180p%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Febattery%2Fi%2F10000010%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": null,
    "kakaku_url": null,
-   "min": 82980,
-   "hist_min": 82980,
+   "min": null,
+   "hist_min": null,
    "history": [
     [
      "2026-09-03",
-     82980
+     null
     ]
    ]
   }
@@ -9121,16 +9121,16 @@
   "prices": {
    "updated": "2026-09-03",
    "amazon": null,
-   "rakuten": 198000,
+   "rakuten": null,
    "kakaku": null,
-   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00rjbzo.5sz2d046.g00rjbzo.5sz2ecce/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fautostyle%2Fbluz000020%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fautostyle%2Fi%2F16847144%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": null,
    "kakaku_url": null,
-   "min": 198000,
-   "hist_min": 198000,
+   "min": null,
+   "hist_min": null,
    "history": [
     [
      "2026-09-03",
-     198000
+     null
     ]
    ]
   }
@@ -9252,9 +9252,9 @@
   "prices": {
    "updated": "2026-09-03",
    "amazon": 49988,
-   "rakuten": 52622,
+   "rakuten": null,
    "kakaku": 49988,
-   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00uskco.5sz2d429.g00uskco.5sz2ef04/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsystem5%2Fn_1192091%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsystem5%2Fi%2F10001749%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": null,
    "kakaku_url": "https://kakaku.com/item/K0001658628/",
    "min": 49988,
    "hist_min": 49988,
@@ -9333,9 +9333,9 @@
   "prices": {
    "updated": "2026-09-03",
    "amazon": null,
-   "rakuten": 49500,
+   "rakuten": null,
    "kakaku": 49500,
-   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00pukwo.5sz2d13d.g00pukwo.5sz2e43b/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjism%2F6941565968432-21-74495-n%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjism%2Fi%2F14785830%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": null,
    "kakaku_url": "https://kakaku.com/item/K0001622220/",
    "min": 49500,
    "hist_min": 49500,
@@ -9480,9 +9480,9 @@
   "prices": {
    "updated": "2026-09-03",
    "amazon": 65980,
-   "rakuten": 69850,
+   "rakuten": null,
    "kakaku": 65980,
-   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00pukwo.5sz2d13d.g00pukwo.5sz2e43b/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjism%2F6937224115132-21-74495-n%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjism%2Fi%2F14895179%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": null,
    "kakaku_url": "https://kakaku.com/item/K0001694042/",
    "min": 65980,
    "hist_min": 65980,
@@ -9622,9 +9622,9 @@
   "prices": {
    "updated": "2026-09-03",
    "amazon": 50802,
-   "rakuten": 52800,
+   "rakuten": null,
    "kakaku": 50734,
-   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00s1owo.5sz2d156.g00s1owo.5sz2ef62/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsekido%2F107224149618%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsekido%2Fi%2F10002434%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": null,
    "kakaku_url": "https://kakaku.com/item/K0001775011/",
    "min": 50734,
    "hist_min": 50734,
@@ -9754,9 +9754,9 @@
   "prices": {
    "updated": "2026-09-03",
    "amazon": 114500,
-   "rakuten": 102800,
+   "rakuten": null,
    "kakaku": 102800,
-   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00upqno.5sz2dc57.g00upqno.5sz2e9b3/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fecmaison%2Fcompass1787555861%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fecmaison%2Fi%2F10000760%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": null,
    "kakaku_url": "https://kakaku.com/item/K0001694041/",
    "min": 102800,
    "hist_min": 102800,
@@ -9857,16 +9857,16 @@
   "prices": {
    "updated": "2026-09-03",
    "amazon": 180000,
-   "rakuten": 209400,
+   "rakuten": null,
    "kakaku": null,
-   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00rtgfo.5sz2d35e.g00rtgfo.5sz2eb58/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fd-shop1one%2F4975769471582%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fd-shop1one%2Fi%2F10237873%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": null,
    "kakaku_url": null,
    "min": 180000,
-   "hist_min": 209400,
+   "hist_min": null,
    "history": [
     [
      "2026-09-03",
-     209400
+     null
     ]
    ]
   }
@@ -9952,9 +9952,9 @@
   "prices": {
    "updated": "2026-09-03",
    "amazon": 168355,
-   "rakuten": 169899,
+   "rakuten": null,
    "kakaku": 127097,
-   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00q6doo.5sz2d29d.g00q6doo.5sz2e641/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsanbless%2Fbn-rf1100%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsanbless%2Fi%2F10053933%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": null,
    "kakaku_url": "https://kakaku.com/item/K0001497231/",
    "min": 127097,
    "hist_min": 127097,
@@ -10081,16 +10081,16 @@
   "prices": {
    "updated": "2026-09-03",
    "amazon": null,
-   "rakuten": 115000,
+   "rakuten": null,
    "kakaku": null,
-   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00q6doo.5sz2d29d.g00q6doo.5sz2e641/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsanbless%2Fbn-rf800%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsanbless%2Fi%2F10053932%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": null,
    "kakaku_url": null,
-   "min": 115000,
-   "hist_min": 115000,
+   "min": null,
+   "hist_min": null,
    "history": [
     [
      "2026-09-03",
-     115000
+     null
     ]
    ]
   }
@@ -10192,16 +10192,16 @@
   "prices": {
    "updated": "2026-09-03",
    "amazon": 75480,
-   "rakuten": 66978,
+   "rakuten": null,
    "kakaku": null,
-   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00qs0io.5sz2da59.g00qs0io.5sz2e2ad/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmitenekakakubamboo%2Fbn-rf510%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmitenekakakubamboo%2Fi%2F10016048%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": null,
    "kakaku_url": null,
-   "min": 66978,
-   "hist_min": 66978,
+   "min": 75480,
+   "hist_min": null,
    "history": [
     [
      "2026-09-03",
-     66978
+     null
     ]
    ]
   }
@@ -10288,16 +10288,16 @@
   "prices": {
    "updated": "2026-09-03",
    "amazon": null,
-   "rakuten": 53900,
+   "rakuten": null,
    "kakaku": null,
-   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00s06vo.5sz2dd5f.g00s06vo.5sz2e322/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnf-support%2F522751r8%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fnf-support%2Fi%2F10006322%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": null,
    "kakaku_url": null,
-   "min": 53900,
-   "hist_min": 53900,
+   "min": null,
+   "hist_min": null,
    "history": [
     [
      "2026-09-03",
-     53900
+     null
     ]
    ]
   }
@@ -10621,16 +10621,16 @@
   "prices": {
    "updated": "2026-09-03",
    "amazon": 156000,
-   "rakuten": 194998,
+   "rakuten": null,
    "kakaku": null,
-   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00qr9ko.5sz2d885.g00qr9ko.5sz2ed61/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fgyouhan-shop%2Fg0726030000025%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fgyouhan-shop%2Fi%2F10223034%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": null,
    "kakaku_url": null,
    "min": 156000,
-   "hist_min": 194998,
+   "hist_min": null,
    "history": [
     [
      "2026-09-03",
-     194998
+     null
     ]
    ]
   }
@@ -10761,16 +10761,16 @@
   "prices": {
    "updated": "2026-09-03",
    "amazon": 109980,
-   "rakuten": 149000,
+   "rakuten": null,
    "kakaku": null,
-   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00rcs2o.5sz2d6a9.g00rcs2o.5sz2e5c7/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fgearbox%2Fbn-rb10-c%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fgearbox%2Fi%2F10004696%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": null,
    "kakaku_url": null,
    "min": 109980,
-   "hist_min": 149000,
+   "hist_min": null,
    "history": [
     [
      "2026-09-03",
-     149000
+     null
     ]
    ]
   }
@@ -10902,16 +10902,16 @@
   "prices": {
    "updated": "2026-09-03",
    "amazon": null,
-   "rakuten": 102800,
+   "rakuten": null,
    "kakaku": null,
-   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00tth2o.5sz2d32c.g00tth2o.5sz2ed31/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2F14promo%2F10021557-79860%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2F14promo%2Fi%2F10026957%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": null,
    "kakaku_url": null,
-   "min": 102800,
-   "hist_min": 102800,
+   "min": null,
+   "hist_min": null,
    "history": [
     [
      "2026-09-03",
-     102800
+     null
     ]
    ]
   }
@@ -11037,16 +11037,16 @@
   "prices": {
    "updated": "2026-09-03",
    "amazon": null,
-   "rakuten": 69883,
+   "rakuten": null,
    "kakaku": null,
-   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00rfqvo.5sz2dc07.g00rfqvo.5sz2eb75/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcompmoto-r%2F4975769020193%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fcompmoto-r%2Fi%2F11691708%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": null,
    "kakaku_url": null,
-   "min": 69883,
-   "hist_min": 69883,
+   "min": null,
+   "hist_min": null,
    "history": [
     [
      "2026-09-03",
-     69883
+     null
     ]
    ]
   }
@@ -12028,16 +12028,16 @@
   "prices": {
    "updated": "2026-09-03",
    "amazon": 126000,
-   "rakuten": 126000,
+   "rakuten": null,
    "kakaku": null,
-   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00uk4uo.5sz2def7.g00uk4uo.5sz2e229/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdabbsson%2Fjpradbs2300-bpl-jp001%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fdabbsson%2Fi%2F10000018%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": null,
    "kakaku_url": null,
    "min": 126000,
-   "hist_min": 126000,
+   "hist_min": null,
    "history": [
     [
      "2026-09-03",
-     126000
+     null
     ]
    ]
   }
@@ -12106,16 +12106,16 @@
   "prices": {
    "updated": "2026-09-03",
    "amazon": null,
-   "rakuten": 122170,
+   "rakuten": null,
    "kakaku": null,
-   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00uk4uo.5sz2def7.g00uk4uo.5sz2e229/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdabbsson%2Fjpradbs2100pro-210sc-b-jp001%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fdabbsson%2Fi%2F10000096%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": null,
    "kakaku_url": null,
-   "min": 122170,
-   "hist_min": 122170,
+   "min": null,
+   "hist_min": null,
    "history": [
     [
      "2026-09-03",
-     122170
+     null
     ]
    ]
   }
@@ -12240,16 +12240,16 @@
   "prices": {
    "updated": "2026-09-03",
    "amazon": 114600,
-   "rakuten": 108900,
+   "rakuten": null,
    "kakaku": null,
-   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00uk4uo.5sz2def7.g00uk4uo.5sz2e229/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdabbsson%2Fjpradbs1400pro-b-jp001%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fdabbsson%2Fi%2F10000089%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": null,
    "kakaku_url": null,
-   "min": 108900,
-   "hist_min": 108900,
+   "min": 114600,
+   "hist_min": null,
    "history": [
     [
      "2026-09-03",
-     108900
+     null
     ]
    ]
   }
@@ -12472,16 +12472,16 @@
   "prices": {
    "updated": "2026-09-03",
    "amazon": 82480,
-   "rakuten": 83400,
+   "rakuten": null,
    "kakaku": null,
-   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00uk4uo.5sz2def7.g00uk4uo.5sz2e229/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdabbsson%2Fjpradbs1300-b-jp001%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fdabbsson%2Fi%2F10000019%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": null,
    "kakaku_url": null,
    "min": 82480,
-   "hist_min": 83400,
+   "hist_min": null,
    "history": [
     [
      "2026-09-03",
-     83400
+     null
     ]
    ]
   }
@@ -12551,16 +12551,16 @@
   "prices": {
    "updated": "2026-09-03",
    "amazon": null,
-   "rakuten": 143500,
+   "rakuten": null,
    "kakaku": null,
-   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00uk4uo.5sz2def7.g00uk4uo.5sz2e229/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdabbsson%2Fjpra3000l-b-jp001-copy%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fdabbsson%2Fi%2F10000147%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": null,
    "kakaku_url": null,
-   "min": 143500,
-   "hist_min": 143500,
+   "min": null,
+   "hist_min": null,
    "history": [
     [
      "2026-09-03",
-     143500
+     null
     ]
    ]
   }
@@ -12637,16 +12637,16 @@
   "prices": {
    "updated": "2026-09-03",
    "amazon": null,
-   "rakuten": 89000,
+   "rakuten": null,
    "kakaku": null,
-   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00uk4uo.5sz2def7.g00uk4uo.5sz2e229/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdabbsson%2Fjprad2000l-b-jp001%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fdabbsson%2Fi%2F10000129%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": null,
    "kakaku_url": null,
-   "min": 89000,
-   "hist_min": 89000,
+   "min": null,
+   "hist_min": null,
    "history": [
     [
      "2026-09-03",
-     89000
+     null
     ]
    ]
   }
@@ -12754,16 +12754,16 @@
   "prices": {
    "updated": "2026-09-03",
    "amazon": 62500,
-   "rakuten": 62500,
+   "rakuten": null,
    "kakaku": null,
-   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00uk4uo.5sz2def7.g00uk4uo.5sz2e229/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdabbsson%2Fjprad1000l-b-jp001%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fdabbsson%2Fi%2F10000126%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": null,
    "kakaku_url": null,
    "min": 62500,
-   "hist_min": 62500,
+   "hist_min": null,
    "history": [
     [
      "2026-09-03",
-     62500
+     null
     ]
    ]
   }
@@ -12895,16 +12895,16 @@
   "prices": {
    "updated": "2026-09-03",
    "amazon": 46800,
-   "rakuten": 44000,
+   "rakuten": null,
    "kakaku": null,
-   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00uk4uo.5sz2def7.g00uk4uo.5sz2e229/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdabbsson%2Fjpradbs600l-b-jp001-cp%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fdabbsson%2Fi%2F10000123%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": null,
    "kakaku_url": null,
-   "min": 44000,
-   "hist_min": 44000,
+   "min": 46800,
+   "hist_min": null,
    "history": [
     [
      "2026-09-03",
-     44000
+     null
     ]
    ]
   }
@@ -12980,16 +12980,16 @@
   "prices": {
    "updated": "2026-09-03",
    "amazon": null,
-   "rakuten": 23600,
+   "rakuten": null,
    "kakaku": null,
-   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00uk4uo.5sz2def7.g00uk4uo.5sz2e229/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdabbsson%2Fjprad300e-b-jp001%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fdabbsson%2Fi%2F10000130%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": null,
    "kakaku_url": null,
-   "min": 23600,
-   "hist_min": 23600,
+   "min": null,
+   "hist_min": null,
    "history": [
     [
      "2026-09-03",
-     23600
+     null
     ]
    ]
   }
@@ -14159,16 +14159,16 @@
   "prices": {
    "updated": "2026-09-03",
    "amazon": null,
-   "rakuten": 89700,
+   "rakuten": null,
    "kakaku": null,
-   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00t96po.5sz2d806.g00t96po.5sz2ed85/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fgenbayahonpo%2Fugr-gs1200%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fgenbayahonpo%2Fi%2F10034045%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": null,
    "kakaku_url": null,
-   "min": 89700,
-   "hist_min": 89700,
+   "min": null,
+   "hist_min": null,
    "history": [
     [
      "2026-09-03",
-     89700
+     null
     ]
    ]
   }
@@ -14520,16 +14520,16 @@
   "prices": {
    "updated": "2026-09-03",
    "amazon": 23560,
-   "rakuten": 30296,
+   "rakuten": null,
    "kakaku": null,
-   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00trq3o.5sz2d3da.g00trq3o.5sz2e2af/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhappyhour1414%2Fgr-e9rgc3z4nq%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fhappyhour1414%2Fi%2F10300250%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": null,
    "kakaku_url": null,
    "min": 23560,
-   "hist_min": 30296,
+   "hist_min": null,
    "history": [
     [
      "2026-09-03",
-     30296
+     null
     ]
    ]
   }
@@ -14727,16 +14727,16 @@
   "prices": {
    "updated": "2026-09-03",
    "amazon": 49900,
-   "rakuten": 69880,
+   "rakuten": null,
    "kakaku": null,
-   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00uahto.5sz2d926.g00uahto.5sz2e4ba/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fyesper%2Fvt-jump1500x%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fyesper%2Fi%2F10000065%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": null,
    "kakaku_url": null,
    "min": 49900,
-   "hist_min": 69880,
+   "hist_min": null,
    "history": [
     [
      "2026-09-03",
-     69880
+     null
     ]
    ]
   }
@@ -14814,16 +14814,16 @@
   "prices": {
    "updated": "2026-09-03",
    "amazon": null,
-   "rakuten": 88900,
+   "rakuten": null,
    "kakaku": null,
-   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00uahto.5sz2d926.g00uahto.5sz2e4ba/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fyesper%2Fvtoman-flashspeed1500%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fyesper%2Fi%2F10000030%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": null,
    "kakaku_url": null,
-   "min": 88900,
-   "hist_min": 88900,
+   "min": null,
+   "hist_min": null,
    "history": [
     [
      "2026-09-03",
-     88900
+     null
     ]
    ]
   }
@@ -14901,16 +14901,16 @@
   "prices": {
    "updated": "2026-09-03",
    "amazon": null,
-   "rakuten": 82900,
+   "rakuten": null,
    "kakaku": null,
-   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00uahto.5sz2d926.g00uahto.5sz2e4ba/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fyesper%2Fvt-jump1800%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fyesper%2Fi%2F10000029%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": null,
    "kakaku_url": null,
-   "min": 82900,
-   "hist_min": 82900,
+   "min": null,
+   "hist_min": null,
    "history": [
     [
      "2026-09-03",
-     82900
+     null
     ]
    ]
   }
@@ -15046,16 +15046,16 @@
   "prices": {
    "updated": "2026-09-03",
    "amazon": 8900,
-   "rakuten": 15100,
+   "rakuten": null,
    "kakaku": null,
-   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00umtno.5sz2d9fe.g00umtno.5sz2e3f6/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fwhitehalca%2Fascokqzcgumatjnqnswbsrlati%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fwhitehalca%2Fi%2F10231017%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": null,
    "kakaku_url": null,
    "min": 8900,
-   "hist_min": 15100,
+   "hist_min": null,
    "history": [
     [
      "2026-09-03",
-     15100
+     null
     ]
    ]
   }
