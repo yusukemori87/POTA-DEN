@@ -126,7 +126,7 @@ aside{position:sticky;top:64px;max-height:calc(100vh - 80px);overflow:auto;paddi
 .ppwrow b em{font-style:normal;font-size:10px;color:var(--muted);margin-left:2px}
 .ppwrow span{font-size:10px;color:var(--muted);letter-spacing:.02em}
 
-.badge.v200{right:auto;left:10px;top:auto;bottom:10px;background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.badge.v200{right:10px;top:38px;background:var(--ink);color:var(--bg);border-color:var(--ink)}
 .tn{display:inline-flex;align-items:center;gap:5px;font-size:11px;font-weight:700;border-radius:6px;padding:2px 7px;white-space:nowrap;background:var(--surface2);color:var(--ink2)}
 .tn b{font-family:var(--mono);font-size:13px}
 .tn.s4{background:#E6F4EE;color:#0A5A4A}.tn.s3{background:#FFF3D6;color:#7A5200}.tn.s2{background:#FDE7DC;color:#8A3B12}.tn.s1{background:#F6D9D9;color:#8C1D1D}
@@ -423,7 +423,7 @@ DATA.forEach((p,i)=>{p.id=i;
   p._pnote=(p.prices&&p.prices.updated)?(p.prices.updated+' 取得'):(p._psrc==='Amazon'?'2026/9/2 取得':'メーカー通常価格');
   p._v200s=p.v200?'対応':'非対応';p._ts=p.tenno?p.tenno.score:null;p._crit=!!(p.review&&p.review.flagged.some(f=>f.level==='致命的'));
   p._q+=' '+(p.tenno?p.tenno.verdict:'');
-  p._img=IMG[i]||null;});
+  p._img=IMG[i]||(p.prices&&p.prices.image)||null;});
 const BRANDS=[...new Set(DATA.map(p=>p.brand))].sort((a,b)=>DATA.filter(p=>p.brand===b).length-DATA.filter(p=>p.brand===a).length);
 $('#f-n').textContent=DATA.length;if(window.__updated){const e=document.getElementById('upd');if(e)e.textContent='価格最終更新: '+window.__updated}
 
