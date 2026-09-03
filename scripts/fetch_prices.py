@@ -59,6 +59,8 @@ def title_matches(title, brand, toks):
     return True
 
 # ---------- 楽天 ----------
+RAKUTEN_ERRORS = []
+
 def rakuten_price(p, app_id, aff_id):
     q, model = query_of(p)
     toks = tokens_of(model)
@@ -69,6 +71,9 @@ def rakuten_price(p, app_id, aff_id):
     try:
         js = json.loads(get(url))
     except Exception as e:
+        msg = f'{type(e).__name__}: {e}'[:160]
+        if msg not in RAKUTEN_ERRORS:
+            RAKUTEN_ERRORS.append(msg)
         return None, None, f'rakuten error: {e}'
     best = None
     for it in js.get('Items', []):
@@ -86,7 +91,7 @@ def rakuten_price(p, app_id, aff_id):
 
 # ---------- 価格.com ----------
 # 連続で失敗したら以降スキップする（IPブロック等で1件25秒×182件かかるのを防ぐ）
-KAKAKU_STATE = {'fail': 0, 'off': os.environ.get('SKIP_KAKAKU') == '1'}
+KAKAKU_STATE = {'fail': 0, 'off': os.environ.get('SKIP_KAKAKU') == '1', 'errors': []}
 KAKAKU_MAX_FAIL = 8
 
 def kakaku_price(p):
@@ -100,6 +105,9 @@ def kakaku_price(p):
         KAKAKU_STATE['fail'] = 0
     except Exception as e:
         KAKAKU_STATE['fail'] += 1
+        msg = f'{type(e).__name__}: {e}'[:120]
+        if msg not in KAKAKU_STATE['errors']:
+            KAKAKU_STATE['errors'].append(msg)
         if KAKAKU_STATE['fail'] >= KAKAKU_MAX_FAIL:
             KAKAKU_STATE['off'] = True
             print(f'価格.com に {KAKAKU_MAX_FAIL} 回連続で接続できないため、以降スキップします', file=sys.stderr)
@@ -206,6 +214,27 @@ def main():
     json.dump(snap, open(os.path.join(DATA, 'prices', TODAY + '.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
     json.dump(history, open(hist_path, 'w', encoding='utf-8'), ensure_ascii=False)
     json.dump(products, open(os.path.join(DATA, 'products.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+
+    # ---- 巡回サマリー（data/last_run.json）。毎日ここを見れば成否がわかる ----
+    got = lambda k: sum(1 for r in snap.values() if r.get(k))
+    summary = {
+        'date': TODAY,
+        'products': len(snap),
+        'rakuten_ok': got('rakuten'),
+        'kakaku_ok': got('kakaku'),
+        'amazon_ok': got('amazon'),
+        'rakuten_app_id_set': bool(app_id),
+        'rakuten_affiliate_id_set': bool(aff_id),
+        'referer': REFERER or '(未設定)',
+        'kakaku_skipped': KAKAKU_STATE['off'],
+        'kakaku_errors': KAKAKU_STATE['errors'][:5],
+        'rakuten_errors': RAKUTEN_ERRORS[:5],
+        'paapi_set': all(os.environ.get(k) for k in ('PAAPI_ACCESS_KEY', 'PAAPI_SECRET_KEY', 'PAAPI_PARTNER_TAG')),
+    }
+    json.dump(summary, open(os.path.join(DATA, 'last_run.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+    print('---- 巡回サマリー ----')
+    for k, v in summary.items():
+        print(f'  {k}: {v}')
     print('done', TODAY)
 
 if __name__ == '__main__':
