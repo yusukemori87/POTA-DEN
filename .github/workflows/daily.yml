@@ -3,6 +3,11 @@ on:
   schedule:
     - cron: '0 21 * * *'   # 毎日 06:00 JST
   workflow_dispatch:
+    inputs:
+      discover:
+        description: '新機種スキャンも実行する'
+        type: boolean
+        default: false
 permissions:
   contents: write
   pages: write
@@ -36,6 +41,18 @@ jobs:
         run: |
           pip install -q paapi5-python-sdk || true
           python scripts/fetch_prices.py
+      - name: Discover new models (毎週月曜のみ)
+        env:
+          RAKUTEN_APP_ID: ${{ secrets.RAKUTEN_APP_ID }}
+          RAKUTEN_ACCESS_KEY: ${{ secrets.RAKUTEN_ACCESS_KEY }}
+          SITE_DOMAIN: ${{ vars.SITE_DOMAIN }}
+          RAKUTEN_REFERER: ${{ vars.RAKUTEN_REFERER }}
+        run: |
+          if [ "$(TZ=Asia/Tokyo date +%u)" = "1" ] || [ "${{ github.event.inputs.discover }}" = "true" ]; then
+            python scripts/discover.py
+          else
+            echo "月曜以外なので新機種スキャンはスキップ"
+          fi
       - name: Build site (一覧＋機種ごとの独立ページ＋sitemap)
         env:
           SITE_URL: ${{ steps.pages.outputs.base_url }}
