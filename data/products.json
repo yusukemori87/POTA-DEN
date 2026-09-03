@@ -701,7 +701,7 @@
    "rakuten_url": null,
    "kakaku_url": null,
    "image": null,
-   "miss_days": 1,
+   "miss_days": 2,
    "min": 18990,
    "hist_min": null,
    "history": [
@@ -783,7 +783,7 @@
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "http://jp.ecoflow.com/cdn/shop/files/TRAIL_300_DC_2.png?v=1764051847",
-   "miss_days": 1,
+   "miss_days": 2,
    "min": null,
    "hist_min": null,
    "history": [
@@ -1713,17 +1713,17 @@
    "updated": "2026-09-03",
    "amazon": 119800,
    "rakuten": null,
-   "kakaku": 104800,
+   "kakaku": 99800,
    "rakuten_url": null,
    "kakaku_url": "https://kakaku.com/item/K0001711916/",
    "image": null,
    "miss_days": 0,
-   "min": 104800,
-   "hist_min": 104800,
+   "min": 99800,
+   "hist_min": 99800,
    "history": [
     [
      "2026-09-03",
-     104800
+     99800
     ]
    ]
   }
@@ -2779,7 +2779,7 @@
    "rakuten_url": null,
    "kakaku_url": null,
    "image": null,
-   "miss_days": 1,
+   "miss_days": 2,
    "min": 18990,
    "hist_min": null,
    "history": [
@@ -2923,7 +2923,7 @@
    "rakuten_url": null,
    "kakaku_url": null,
    "image": null,
-   "miss_days": 1,
+   "miss_days": 2,
    "min": 20990,
    "hist_min": null,
    "history": [
@@ -3068,7 +3068,7 @@
    "rakuten_url": null,
    "kakaku_url": null,
    "image": null,
-   "miss_days": 1,
+   "miss_days": 2,
    "min": 29990,
    "hist_min": null,
    "history": [
@@ -3212,7 +3212,7 @@
    "rakuten_url": null,
    "kakaku_url": null,
    "image": null,
-   "miss_days": 1,
+   "miss_days": 2,
    "min": null,
    "hist_min": null,
    "history": [
@@ -3574,7 +3574,7 @@
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "https://www.ankerjapan.com/cdn/shop/products/a1760_0000_71jsn_97twL._AC_SL1500_1200x1200.jpg?v=1660701278",
-   "miss_days": 1,
+   "miss_days": 2,
    "min": null,
    "hist_min": null,
    "history": [
@@ -3724,7 +3724,7 @@
    "rakuten_url": null,
    "kakaku_url": null,
    "image": null,
-   "miss_days": 1,
+   "miss_days": 2,
    "min": 74900,
    "hist_min": null,
    "history": [
@@ -3813,7 +3813,7 @@
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "https://www.ankerjapan.com/cdn/shop/files/snp_A1762_listing_00_b87f86ac-c5a0-4ea9-84e9-9d209194e5d0_1200x1200.jpg?v=1764634626",
-   "miss_days": 1,
+   "miss_days": 2,
    "min": null,
    "hist_min": null,
    "history": [
@@ -3940,7 +3940,7 @@
    "rakuten_url": null,
    "kakaku_url": null,
    "image": null,
-   "miss_days": 1,
+   "miss_days": 2,
    "min": 69990,
    "hist_min": null,
    "history": [
@@ -4090,7 +4090,7 @@
    "rakuten_url": null,
    "kakaku_url": null,
    "image": null,
-   "miss_days": 1,
+   "miss_days": 2,
    "min": 89990,
    "hist_min": null,
    "history": [
@@ -4173,7 +4173,7 @@
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "https://www.ankerjapan.com/cdn/shop/files/AS22051_1200x1200.jpg?v=1779238386",
-   "miss_days": 1,
+   "miss_days": 2,
    "min": null,
    "hist_min": null,
    "history": [
@@ -4323,7 +4323,7 @@
    "rakuten_url": null,
    "kakaku_url": null,
    "image": null,
-   "miss_days": 1,
+   "miss_days": 2,
    "min": 199900,
    "hist_min": null,
    "history": [
@@ -4404,7 +4404,7 @@
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "https://www.ankerjapan.com/cdn/shop/files/A1785521_1200x1200.jpg?v=1770684444",
-   "miss_days": 1,
+   "miss_days": 2,
    "min": null,
    "hist_min": null,
    "history": [
@@ -4493,7 +4493,7 @@
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "https://www.ankerjapan.com/cdn/shop/files/A1780_listing_product_2_1200x1200.jpg?v=1732107731",
-   "miss_days": 1,
+   "miss_days": 2,
    "min": null,
    "hist_min": null,
    "history": [
@@ -4720,7 +4720,7 @@
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "https://www.ankerjapan.com/cdn/shop/files/A1790_listing_product_1200x1200.jpg?v=1728640388",
-   "miss_days": 1,
+   "miss_days": 2,
    "min": null,
    "hist_min": null,
    "history": [
@@ -5195,17 +5195,17 @@
    "updated": "2026-09-03",
    "amazon": null,
    "rakuten": 27800,
-   "kakaku": 26795,
+   "kakaku": 26690,
    "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00t7x7o.5sz2d5ce.g00t7x7o.5sz2eb03/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fborder-less1%2Frc_itntv02pg1b8_ls83%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fborder-less1%2Fi%2F10071017%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
    "kakaku_url": "https://kakaku.com/item/K0001568817/",
    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/border-less1/cabinet/12542195/imgrc0139124736.jpg",
    "miss_days": 0,
-   "min": 26795,
-   "hist_min": 26795,
+   "min": 26690,
+   "hist_min": 26690,
    "history": [
     [
      "2026-09-03",
-     26795
+     26690
     ]
    ]
   }
@@ -5612,17 +5612,17 @@
    "updated": "2026-09-03",
    "amazon": null,
    "rakuten": 79789,
-   "kakaku": 69709,
+   "kakaku": 69656,
    "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00u7o7o.5sz2d4e1.g00u7o7o.5sz2e220/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Furiurishop%2F0810182240084%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Furiurishop%2Fi%2F10009364%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
    "kakaku_url": "https://kakaku.com/item/K0001687446/",
    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/uriurishop/cabinet/3/imgrc0206193930.jpg",
    "miss_days": 0,
-   "min": 69709,
-   "hist_min": 69709,
+   "min": 69656,
+   "hist_min": 69656,
    "history": [
     [
      "2026-09-03",
-     69709
+     69656
     ]
    ]
   }
@@ -5840,9 +5840,9 @@
    "amazon": 72468,
    "rakuten": 109800,
    "kakaku": null,
-   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00tgroo.5sz2dbf5.g00tgroo.5sz2ea1f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjackery-japan%2F21-0001-000448%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjackery-japan%2Fi%2F10000269%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00tgroo.5sz2dbf5.g00tgroo.5sz2ea1f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjackery-japan%2F21-0001-000447%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjackery-japan%2Fi%2F10000266%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
    "kakaku_url": null,
-   "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/jackery-japan/cabinet/13805583/imgrc0119193027.jpg",
+   "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/jackery-japan/cabinet/13805583/imgrc0119193038.jpg",
    "miss_days": 0,
    "min": 72468,
    "hist_min": 109800,
@@ -8184,7 +8184,7 @@
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "http://www.bluetti.jp/cdn/shop/files/EB3A_1x_6eee58ec-99db-41d6-bdb4-a4fe28f03125_grande.png?v=1754290655",
-   "miss_days": 1,
+   "miss_days": 2,
    "min": null,
    "hist_min": null,
    "history": [
@@ -8277,7 +8277,7 @@
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "http://www.bluetti.jp/cdn/shop/files/e41e674ab682de3047b3aab1a68fe217_grande.png?v=1739514639",
-   "miss_days": 1,
+   "miss_days": 2,
    "min": null,
    "hist_min": null,
    "history": [
@@ -8561,7 +8561,7 @@
    "rakuten_url": null,
    "kakaku_url": null,
    "image": null,
-   "miss_days": 1,
+   "miss_days": 2,
    "min": 59800,
    "hist_min": null,
    "history": [
@@ -8806,7 +8806,7 @@
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "http://www.bluetti.jp/cdn/shop/files/26659_1x_807c94f0-b3ae-459a-b89b-212f627c2139_grande.jpg?v=1740205817",
-   "miss_days": 1,
+   "miss_days": 2,
    "min": null,
    "hist_min": null,
    "history": [
@@ -8893,7 +8893,7 @@
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "http://www.bluetti.jp/cdn/shop/files/26639_1x_03d047fe-b565-40de-a87f-b7e8767157a9_grande.jpg?v=1740205879",
-   "miss_days": 1,
+   "miss_days": 2,
    "min": null,
    "hist_min": null,
    "history": [
@@ -10135,17 +10135,17 @@
    "updated": "2026-09-03",
    "amazon": 168355,
    "rakuten": 169899,
-   "kakaku": 127097,
+   "kakaku": 129030,
    "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00q6doo.5sz2d29d.g00q6doo.5sz2e641/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsanbless%2Fbn-rf1100%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsanbless%2Fi%2F10053933%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
    "kakaku_url": "https://kakaku.com/item/K0001497231/",
    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/sanbless/cabinet/03509031/59-1100-1.jpg",
    "miss_days": 0,
-   "min": 127097,
-   "hist_min": 127097,
+   "min": 129030,
+   "hist_min": 129030,
    "history": [
     [
      "2026-09-03",
-     127097
+     129030
     ]
    ]
   }
@@ -10612,7 +10612,7 @@
    "rakuten_url": null,
    "kakaku_url": null,
    "image": null,
-   "miss_days": 1,
+   "miss_days": 2,
    "min": 52800,
    "hist_min": null,
    "history": [
@@ -10710,7 +10710,7 @@
    "rakuten_url": null,
    "kakaku_url": null,
    "image": null,
-   "miss_days": 1,
+   "miss_days": 2,
    "min": 36800,
    "hist_min": null,
    "history": [
@@ -11323,7 +11323,7 @@
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "https://www.kenwood.com/jp/portable-power-supply.thumb.480.300.png",
-   "miss_days": 1,
+   "miss_days": 2,
    "min": null,
    "hist_min": null,
    "history": [
@@ -11604,7 +11604,7 @@
    "rakuten_url": null,
    "kakaku_url": null,
    "image": null,
-   "miss_days": 1,
+   "miss_days": 2,
    "min": 61600,
    "hist_min": null,
    "history": [
@@ -11686,7 +11686,7 @@
    "rakuten_url": null,
    "kakaku_url": null,
    "image": null,
-   "miss_days": 1,
+   "miss_days": 2,
    "min": null,
    "hist_min": null,
    "history": [
@@ -11804,7 +11804,7 @@
    "rakuten_url": null,
    "kakaku_url": null,
    "image": null,
-   "miss_days": 1,
+   "miss_days": 2,
    "min": 114399,
    "hist_min": null,
    "history": [
@@ -11941,7 +11941,7 @@
    "rakuten_url": null,
    "kakaku_url": null,
    "image": null,
-   "miss_days": 1,
+   "miss_days": 2,
    "min": 184800,
    "hist_min": null,
    "history": [
@@ -12020,7 +12020,7 @@
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "http://powerarq.com/cdn/shop/articles/powerarq_HP_5544c26b-827d-4c4a-b470-bc61900b410f_1200x1200.png?v=1754986565",
-   "miss_days": 1,
+   "miss_days": 2,
    "min": null,
    "hist_min": null,
    "history": [
@@ -12102,7 +12102,7 @@
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "http://jp.dabbsson.com/cdn/shop/files/dabbsson-dbs3500-3430wh3000w-427341.webp?v=1760616362&width=2048",
-   "miss_days": 1,
+   "miss_days": 2,
    "min": null,
    "hist_min": null,
    "history": [
@@ -12554,7 +12554,7 @@
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "http://jp.dabbsson.com/cdn/shop/files/dabbsson-dbs1000-pro-1024wh-2000w-354873.jpg?v=1743229603&width=2048",
-   "miss_days": 1,
+   "miss_days": 2,
    "min": null,
    "hist_min": null,
    "history": [
@@ -13363,7 +13363,7 @@
    "rakuten_url": null,
    "kakaku_url": null,
    "image": null,
-   "miss_days": 1,
+   "miss_days": 2,
    "min": 17670,
    "hist_min": null,
    "history": [
@@ -13451,7 +13451,7 @@
    "rakuten_url": null,
    "kakaku_url": null,
    "image": null,
-   "miss_days": 1,
+   "miss_days": 2,
    "min": 42000,
    "hist_min": null,
    "history": [
@@ -13587,7 +13587,7 @@
    "rakuten_url": null,
    "kakaku_url": null,
    "image": null,
-   "miss_days": 1,
+   "miss_days": 2,
    "min": 79800,
    "hist_min": null,
    "history": [
@@ -13667,7 +13667,7 @@
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "http://allpowers.jp/cdn/shop/products/r4000-side-view.jpg?v=1765531273",
-   "miss_days": 1,
+   "miss_days": 2,
    "min": null,
    "hist_min": null,
    "history": [
@@ -13812,7 +13812,7 @@
    "rakuten_url": null,
    "kakaku_url": null,
    "image": null,
-   "miss_days": 1,
+   "miss_days": 2,
    "min": null,
    "hist_min": null,
    "history": [
@@ -13953,7 +13953,7 @@
    "rakuten_url": null,
    "kakaku_url": null,
    "image": null,
-   "miss_days": 1,
+   "miss_days": 2,
    "min": 26999,
    "hist_min": null,
    "history": [
@@ -14032,7 +14032,7 @@
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "http://allpowers.jp/cdn/shop/files/S200.png?v=1755516254",
-   "miss_days": 1,
+   "miss_days": 2,
    "min": null,
    "hist_min": null,
    "history": [
@@ -14114,7 +14114,7 @@
    "rakuten_url": null,
    "kakaku_url": null,
    "image": null,
-   "miss_days": 1,
+   "miss_days": 2,
    "min": 13110,
    "hist_min": null,
    "history": [
@@ -14249,7 +14249,7 @@
    "rakuten_url": null,
    "kakaku_url": null,
    "image": null,
-   "miss_days": 1,
+   "miss_days": 2,
    "min": 7199,
    "hist_min": null,
    "history": [
@@ -14332,7 +14332,7 @@
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "http://ugreen.jp/cdn/shop/files/15052-1.png?v=1732009462",
-   "miss_days": 1,
+   "miss_days": 2,
    "min": null,
    "hist_min": null,
    "history": [
@@ -14506,7 +14506,7 @@
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "http://ugreen.jp/cdn/shop/files/15356-2.png?v=1726309066",
-   "miss_days": 1,
+   "miss_days": 2,
    "min": null,
    "hist_min": null,
    "history": [
@@ -14650,7 +14650,7 @@
    "rakuten_url": null,
    "kakaku_url": null,
    "image": null,
-   "miss_days": 1,
+   "miss_days": 2,
    "min": 18800,
    "hist_min": null,
    "history": [
@@ -14879,7 +14879,7 @@
    "rakuten_url": null,
    "kakaku_url": null,
    "image": null,
-   "miss_days": 1,
+   "miss_days": 2,
    "min": 39990,
    "hist_min": null,
    "history": [
@@ -15743,7 +15743,7 @@
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "https://www.ask-corp.jp/products/images_thumb/goalzero/yeti-200x-120v-power-station_thumb.jpg",
-   "miss_days": 1,
+   "miss_days": 2,
    "min": null,
    "hist_min": null,
    "history": [
@@ -15831,7 +15831,7 @@
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "https://www.ask-corp.jp/products/images_thumb/goalzero/yeti-3000x-120v-power-station_thumb.jpg",
-   "miss_days": 1,
+   "miss_days": 2,
    "min": null,
    "hist_min": null,
    "history": [
@@ -15996,7 +15996,7 @@
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "http://shop.lacita.co.jp/cdn/shop/products/citaeb01_sp_top01_grande.png?v=1620380401",
-   "miss_days": 1,
+   "miss_days": 2,
    "min": null,
    "hist_min": null,
    "history": [
@@ -16077,7 +16077,7 @@
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "http://shop.lacita.co.jp/cdn/shop/products/0604184400_5cf63d6033ddf_grande.jpg?v=1630918882",
-   "miss_days": 1,
+   "miss_days": 2,
    "min": null,
    "hist_min": null,
    "history": [
@@ -16215,7 +16215,7 @@
    "rakuten_url": null,
    "kakaku_url": null,
    "image": null,
-   "miss_days": 1,
+   "miss_days": 2,
    "min": 66430,
    "hist_min": null,
    "history": [
@@ -16308,7 +16308,7 @@
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "http://powerarq.com/cdn/shop/files/240311_mini2_thumbnail_5_a0cf4fed-66b6-4156-9dcc-5c2cbc45fc97_1200x1200.jpg?v=1710822148",
-   "miss_days": 1,
+   "miss_days": 2,
    "min": null,
    "hist_min": null,
    "history": [
@@ -16389,7 +16389,7 @@
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "http://powerarq.com/cdn/shop/files/221109_pa70_thu_1351b930-b31b-43aa-949e-7033f4c52e85_1200x1200.jpg?v=1734065058",
-   "miss_days": 1,
+   "miss_days": 2,
    "min": null,
    "hist_min": null,
    "history": [
@@ -16479,7 +16479,7 @@
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "http://www.eenour.jp/cdn/shop/files/P200_17.jpg?v=1770879095",
-   "miss_days": 1,
+   "miss_days": 2,
    "min": null,
    "hist_min": null,
    "history": [
@@ -16592,7 +16592,7 @@
    "rakuten_url": null,
    "kakaku_url": null,
    "image": null,
-   "miss_days": 1,
+   "miss_days": 2,
    "min": 69976,
    "hist_min": null,
    "history": [
@@ -16742,7 +16742,7 @@
    "rakuten_url": null,
    "kakaku_url": null,
    "image": null,
-   "miss_days": 1,
+   "miss_days": 2,
    "min": 99980,
    "hist_min": null,
    "history": [
@@ -16884,7 +16884,7 @@
    "rakuten_url": null,
    "kakaku_url": null,
    "image": null,
-   "miss_days": 1,
+   "miss_days": 2,
    "min": 7990,
    "hist_min": null,
    "history": [
@@ -16988,7 +16988,7 @@
    "rakuten_url": null,
    "kakaku_url": null,
    "image": null,
-   "miss_days": 1,
+   "miss_days": 2,
    "min": 21990,
    "hist_min": null,
    "history": [
@@ -17677,7 +17677,7 @@
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "http://www.aferiyjapan.com/cdn/shop/files/1_8d4a5fd1-0965-4146-bb73-00625d715786.png?v=1784628041",
-   "miss_days": 1,
+   "miss_days": 2,
    "min": null,
    "hist_min": null,
    "history": [
@@ -17759,7 +17759,7 @@
    "rakuten_url": null,
    "kakaku_url": null,
    "image": null,
-   "miss_days": 1,
+   "miss_days": 2,
    "min": null,
    "hist_min": null,
    "history": [
@@ -17841,7 +17841,7 @@
    "rakuten_url": null,
    "kakaku_url": null,
    "image": null,
-   "miss_days": 1,
+   "miss_days": 2,
    "min": null,
    "hist_min": null,
    "history": [
@@ -17928,7 +17928,7 @@
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "https://form.run/cached/creator-unsplash/2/24/32-1280.png",
-   "miss_days": 1,
+   "miss_days": 2,
    "min": null,
    "hist_min": null,
    "history": [
@@ -18015,7 +18015,7 @@
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "https://form.run/cached/creator-unsplash/2/24/32-1280.png",
-   "miss_days": 1,
+   "miss_days": 2,
    "min": null,
    "hist_min": null,
    "history": [
@@ -18104,7 +18104,7 @@
    "rakuten_url": null,
    "kakaku_url": null,
    "image": null,
-   "miss_days": 1,
+   "miss_days": 2,
    "min": null,
    "hist_min": null,
    "history": [
@@ -18253,7 +18253,7 @@
    "rakuten_url": null,
    "kakaku_url": null,
    "image": null,
-   "miss_days": 1,
+   "miss_days": 2,
    "min": 43900,
    "hist_min": null,
    "history": [
@@ -18403,7 +18403,7 @@
    "rakuten_url": null,
    "kakaku_url": null,
    "image": null,
-   "miss_days": 1,
+   "miss_days": 2,
    "min": 86900,
    "hist_min": null,
    "history": [
@@ -18515,7 +18515,7 @@
    "rakuten_url": null,
    "kakaku_url": null,
    "image": null,
-   "miss_days": 1,
+   "miss_days": 2,
    "min": 160900,
    "hist_min": null,
    "history": [
@@ -18867,7 +18867,7 @@
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "http://www.pecron.jp/cdn/shop/files/lQDPKdcdlMDH1IPNB9DNB9CwMi1GpL4OAEEI5lBpbhs4AQ_2000_2000.jpg?v=1764056577",
-   "miss_days": 1,
+   "miss_days": 2,
    "min": null,
    "hist_min": null,
    "history": [
@@ -19032,7 +19032,7 @@
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "http://www.pecron.jp/cdn/shop/files/PECRON-E2000LFP-portable-power-station-1920wh-2000w-pecron.jp.jpg?v=1766623528",
-   "miss_days": 1,
+   "miss_days": 2,
    "min": null,
    "hist_min": null,
    "history": [
@@ -19202,7 +19202,7 @@
    "rakuten_url": null,
    "kakaku_url": null,
    "image": null,
-   "miss_days": 1,
+   "miss_days": 2,
    "min": null,
    "hist_min": null,
    "history": [
@@ -19365,7 +19365,7 @@
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "http://www.yoshinopower.co.jp/cdn/shop/files/B330-1200_1200.png?v=1729159247&width=2048",
-   "miss_days": 1,
+   "miss_days": 2,
    "min": null,
    "hist_min": null,
    "history": [
@@ -19674,7 +19674,7 @@
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "http://www.yoshinopower.co.jp/cdn/shop/files/B2000-1200_1200.png?v=1729159451&width=2048",
-   "miss_days": 1,
+   "miss_days": 2,
    "min": null,
    "hist_min": null,
    "history": [
@@ -19755,7 +19755,7 @@
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "http://www.yoshinopower.co.jp/cdn/shop/files/B3600-1200_1200.png?v=1729159209&width=2048",
-   "miss_days": 1,
+   "miss_days": 2,
    "min": null,
    "hist_min": null,
    "history": [
@@ -19764,174 +19764,6 @@
      null
     ]
    ]
-  }
- },
- {
-  "brand": "DJI",
-  "model": "Power 1000 Mini Plus",
-  "capacity_wh": 1008,
-  "rated_output_w": 1000,
-  "surge_output_w": null,
-  "solar_input_w": null,
-  "ac_input_w": null,
-  "battery": null,
-  "cycles": null,
-  "weight_kg": null,
-  "expandable": false,
-  "max_expand_wh": null,
-  "ups_ms": null,
-  "price_jpy": 53020,
-  "rating": null,
-  "reviews": null,
-  "release_year": 2026,
-  "official_url": null,
-  "notes": "2026-09-03 に楽天市場の出品から自動収録。スペックは販売ページ記載の範囲のみ。",
-  "amazon_price": null,
-  "amazon_asin": null,
-  "warranty_years": null,
-  "warranty_ext_years": null,
-  "warranty_note": null,
-  "sale_low_price": null,
-  "sale_low_note": null,
-  "review": null,
-  "tenno": null,
-  "v200": false,
-  "v200_note": null,
-  "years_on_market": 0,
-  "provisional": true,
-  "discovered": "2026-09-03",
-  "prices": {
-   "updated": "2026-09-03",
-   "rakuten": 53020,
-   "min": 53020,
-   "rakuten_url": "https://item.rakuten.co.jp/first34/tr-7150495/?rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
-   "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/first34/cabinet/trusco/tr-7150495.jpg"
-  }
- },
- {
-  "brand": "Anker",
-  "model": "Solix C1000 Portable Power",
-  "capacity_wh": 1056,
-  "rated_output_w": 1500,
-  "surge_output_w": null,
-  "solar_input_w": null,
-  "ac_input_w": null,
-  "battery": null,
-  "cycles": null,
-  "weight_kg": null,
-  "expandable": false,
-  "max_expand_wh": null,
-  "ups_ms": null,
-  "price_jpy": 70400,
-  "rating": null,
-  "reviews": null,
-  "release_year": 2026,
-  "official_url": null,
-  "notes": "2026-09-03 に楽天市場の出品から自動収録。スペックは販売ページ記載の範囲のみ。",
-  "amazon_price": null,
-  "amazon_asin": null,
-  "warranty_years": null,
-  "warranty_ext_years": null,
-  "warranty_note": null,
-  "sale_low_price": null,
-  "sale_low_note": null,
-  "review": null,
-  "tenno": null,
-  "v200": false,
-  "v200_note": null,
-  "years_on_market": 0,
-  "provisional": true,
-  "discovered": "2026-09-03",
-  "prices": {
-   "updated": "2026-09-03",
-   "rakuten": 70400,
-   "min": 70400,
-   "rakuten_url": "https://item.rakuten.co.jp/d-shop1one/4571411214240/?rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
-   "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/d-shop1one/cabinet/poin2/4571411214240.jpg"
-  }
- },
- {
-  "brand": "Anker",
-  "model": "Solix C800 Plus Portable",
-  "capacity_wh": 768,
-  "rated_output_w": 1200,
-  "surge_output_w": null,
-  "solar_input_w": null,
-  "ac_input_w": null,
-  "battery": null,
-  "cycles": null,
-  "weight_kg": null,
-  "expandable": false,
-  "max_expand_wh": null,
-  "ups_ms": null,
-  "price_jpy": 57444,
-  "rating": null,
-  "reviews": null,
-  "release_year": 2026,
-  "official_url": null,
-  "notes": "2026-09-03 に楽天市場の出品から自動収録。スペックは販売ページ記載の範囲のみ。",
-  "amazon_price": null,
-  "amazon_asin": null,
-  "warranty_years": null,
-  "warranty_ext_years": null,
-  "warranty_note": null,
-  "sale_low_price": null,
-  "sale_low_note": null,
-  "review": null,
-  "tenno": null,
-  "v200": false,
-  "v200_note": null,
-  "years_on_market": 0,
-  "provisional": true,
-  "discovered": "2026-09-03",
-  "prices": {
-   "updated": "2026-09-03",
-   "rakuten": 57444,
-   "min": 57444,
-   "rakuten_url": "https://item.rakuten.co.jp/anker/a1754/?rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
-   "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/anker/cabinet/tmb/a1/a1754_normal.jpg"
-  }
- },
- {
-  "brand": "DJI",
-  "model": "POWER 2000 7224114562",
-  "capacity_wh": 2048,
-  "rated_output_w": null,
-  "surge_output_w": null,
-  "solar_input_w": null,
-  "ac_input_w": null,
-  "battery": null,
-  "cycles": null,
-  "weight_kg": null,
-  "expandable": false,
-  "max_expand_wh": null,
-  "ups_ms": null,
-  "price_jpy": 110000,
-  "rating": null,
-  "reviews": null,
-  "release_year": 2026,
-  "official_url": null,
-  "notes": "2026-09-03 に楽天市場の出品から自動収録。スペックは販売ページ記載の範囲のみ。",
-  "amazon_price": null,
-  "amazon_asin": null,
-  "warranty_years": null,
-  "warranty_ext_years": null,
-  "warranty_note": null,
-  "sale_low_price": null,
-  "sale_low_note": null,
-  "review": null,
-  "tenno": null,
-  "v200": false,
-  "v200_note": null,
-  "years_on_market": 0,
-  "provisional": true,
-  "discovered": "2026-09-03",
-  "prices": {
-   "updated": "2026-09-03",
-   "rakuten": 110000,
-   "min": 110000,
-   "rakuten_url": "https://item.rakuten.co.jp/first23/tr-7058695/?rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
-   "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/first23/cabinet/trusco/7058/tr-7058695.jpg"
   }
  }
 ]

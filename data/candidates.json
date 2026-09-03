@@ -2,46 +2,6 @@
  "date": "2026-09-03",
  "candidates": [
   {
-   "brand": "DJI",
-   "model": "Power 1000 Mini Plus",
-   "capacity_wh": 1008,
-   "price": 53020,
-   "shops": 4,
-   "adopted": true,
-   "reason": "追加した",
-   "sample_title": "DJI Power 1000 Mini Plus ポータブル電源 大容量 1008Wh 最大出力1000W LFP電池 リン酸鉄リチウムイオン電池 1kWh 急"
-  },
-  {
-   "brand": "Anker",
-   "model": "Solix C1000 Portable Power",
-   "capacity_wh": 1056,
-   "price": 70400,
-   "shops": 3,
-   "adopted": true,
-   "reason": "追加した",
-   "sample_title": "アンカー ポータブル電源 Solix C1000 Portable Power Station A1761521 ベージュ アウトドア キャンプ Anker【転"
-  },
-  {
-   "brand": "Anker",
-   "model": "Solix C800 Plus Portable",
-   "capacity_wh": 768,
-   "price": 57444,
-   "shops": 2,
-   "adopted": true,
-   "reason": "追加した",
-   "sample_title": "Anker Solix C800 Plus Portable Power Station ポータブル電源 768Wh 58分満充電 高出力AC(定格1200W "
-  },
-  {
-   "brand": "DJI",
-   "model": "POWER 2000 7224114562",
-   "capacity_wh": 2048,
-   "price": 110000,
-   "shops": 2,
-   "adopted": true,
-   "reason": "追加した",
-   "sample_title": "DJI POWER 2000 ポータブル電源 7224114562 ポータブル バッテリー 蓄電池 家庭用 非常用電源 発電機【在庫有り】地震対策 防災用品 非"
-  },
-  {
    "brand": "AFERIY",
    "model": "af-s200 USB ETFE",
    "capacity_wh": 1248,
@@ -62,78 +22,38 @@
    "sample_title": "【期間値下げ59％OFF】aferiy ソーラーパネル 400w af-s400 折り畳み式 ソーラー充電器 太陽光発電パネル ソーラーパネル USB充電 バッ"
   },
   {
-   "brand": "AFERIY",
-   "model": "P180-B",
-   "capacity_wh": 1024,
-   "price": 39990,
+   "brand": "Anker",
+   "model": "Solix C1000 A1761521",
+   "capacity_wh": null,
+   "price": 70400,
    "shops": 1,
    "adopted": false,
    "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "AFERIY P180-B 拡張バッテリー1024Wh ポタ電Nomad1800PROポータブル電源専用 拡張バッテリー 1024Wh ポータブル電源 急速充電"
-  },
-  {
-   "brand": "AFERIY",
-   "model": "P040 AC USB",
-   "capacity_wh": 256,
-   "price": 25809,
-   "shops": 1,
-   "adopted": false,
-   "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "AFERIY P040 ポータブル電源256Wh ぽーたぶる電源 リン酸鉄 70分満充電 400W安定出力 6出力ポート AC/USB/シガーソケット 十年長寿"
+   "sample_title": "アンカー ポータブル電源 Solix C1000 Portable Power Station A1761521 ベージュ アウトドア キャンプ Anker【転"
   },
   {
    "brand": "Anker",
-   "model": "Solix C300 Portable Power",
-   "capacity_wh": 288,
-   "price": 34990,
+   "model": "Solix C1000 A17615Z1",
+   "capacity_wh": null,
+   "price": 97000,
    "shops": 1,
    "adopted": false,
    "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "【5,000円OFFクーポン 9/11まで】Anker Solix C300 Portable Power Station ポータブル電源 288Wh ストラッ"
+   "sample_title": "アンカー ポータブル電源 Solix C1000 Portable Power Station 蓄電池 A17615Z1 ダークグレー Anker【転送不可】"
   },
   {
    "brand": "Anker",
-   "model": "Solix C1000 Solix PS100",
-   "capacity_wh": 1056,
-   "price": 146900,
+   "model": "Solix C1000 A1761511",
+   "capacity_wh": null,
+   "price": 71016,
    "shops": 1,
    "adopted": false,
    "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "Anker Solix C1000 ポータブル電源 1056Wh & Anker Solix PS100 Compact ソーラーパネル 100W セット 折り"
+   "sample_title": "【新品】ANKER アンカー ポータブル電源 Solix C1000 Portable Power Station ブラック A1761511"
   },
   {
    "brand": "Anker",
-   "model": "Solix C300 DC Portable",
-   "capacity_wh": 288,
-   "price": 24990,
-   "shops": 1,
-   "adopted": false,
-   "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "【5,000円OFFクーポン 9/11まで】Anker Solix C300 DC Portable Power Station ポータブル電源 288Wh ス"
-  },
-  {
-   "brand": "Anker",
-   "model": "Solix C200 DC Portable",
-   "capacity_wh": 192,
-   "price": 19990,
-   "shops": 1,
-   "adopted": false,
-   "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "【3,000円OFFクーポン 9/11まで】Anker Solix C200 DC Portable Power Station ポータブル電源 192Wh 小"
-  },
-  {
-   "brand": "Anker",
-   "model": "Solix C1000 Plus",
-   "capacity_wh": 1056,
-   "price": 69800,
-   "shops": 1,
-   "adopted": false,
-   "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "【2冠達成！】【ランキング1位獲得】Anker Solix C1000 Plus ポータブル電源 オフホワイト (1056Wh / 1700W) 【世界最小クラ"
-  },
-  {
-   "brand": "Anker",
-   "model": "SOLIX C1000 PORTABLE POW",
+   "model": "SOLIX C1000 POW",
    "capacity_wh": null,
    "price": 71166,
    "shops": 1,
@@ -143,33 +63,13 @@
   },
   {
    "brand": "Anker",
-   "model": "Solix C800 with Solix",
-   "capacity_wh": 768,
-   "price": 135900,
+   "model": "Solix C800 Plus A17545Z1",
+   "capacity_wh": null,
+   "price": 57444,
    "shops": 1,
    "adopted": false,
    "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "768Whポータブル電源と100Wソーラーパネルセット Anker Solix C800 with Anker Solix PS100 AC充電58分 定格出力"
-  },
-  {
-   "brand": "Anker",
-   "model": "Solix C300 with Solix",
-   "capacity_wh": 288,
-   "price": 49990,
-   "shops": 1,
-   "adopted": false,
-   "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "288Whポータブル電源と60Wソーラーパネルセット Anker Solix C300 with Solix PS60 Compact Portable Sol"
-  },
-  {
-   "brand": "Anker",
-   "model": "Solix F3000 Portable Power",
-   "capacity_wh": 3072,
-   "price": 299900,
-   "shops": 1,
-   "adopted": false,
-   "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "【100,000円OFFクーポン 9/11まで】Anker Solix F3000 Portable Power Station 世界最速の急速充電1.4時間 "
+   "sample_title": "アンカー ポータブル電源 Anker Solix C800 Plus Portable Power Station A17545Z1 ダークグレー ANKER【"
   },
   {
    "brand": "BLUETTI",
@@ -183,93 +83,13 @@
   },
   {
    "brand": "DJI",
-   "model": "Power 2000 DY0037 USB",
-   "capacity_wh": 2048,
-   "price": 125000,
-   "shops": 1,
-   "adopted": false,
-   "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "DJI｜ディージェイアイ ポータブル電源 DJI Power 2000 DY0037 [リン酸鉄リチウムイオン電池 /4出力 /AC充電 /USB Power "
-  },
-  {
-   "brand": "DJI",
-   "model": "JAPAN DY0044 Power 1000",
-   "capacity_wh": 1008,
+   "model": "1000 Mini Plus DY0044",
+   "capacity_wh": null,
    "price": 59400,
    "shops": 1,
    "adopted": false,
    "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "DJI JAPAN ポータブル電源 1008Wh ACコンセント4口 USB-C出力搭載 DY0044(1000MINIPLUS) DJI Power 1000"
-  },
-  {
-   "brand": "DJI",
-   "model": "JAPAN DY0001 Power 1000",
-   "capacity_wh": 1024,
-   "price": 49500,
-   "shops": 1,
-   "adopted": false,
-   "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "DJI JAPAN ポータブル電源 1024Wh AC出力コンセント2口 USB-C出力搭載 DY0001 DJI Power 1000 [DY0001]"
-  },
-  {
-   "brand": "DJI",
-   "model": "Power 500 power500",
-   "capacity_wh": 512,
-   "price": 58300,
-   "shops": 1,
-   "adopted": false,
-   "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "DJI Power 500 ポータブル電源 power500 ポータブルバッテリー 非常用電源 バッテリー 発電機 電源 リン酸鉄リチウム ソーラー パネル モ"
-  },
-  {
-   "brand": "DJI",
-   "model": "JAPAN DY0050 Power 1000",
-   "capacity_wh": 1008,
-   "price": 52800,
-   "shops": 1,
-   "adopted": false,
-   "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "DJI JAPAN ポータブル電源 1008Wh ACコンセント4口 USB-C出力搭載 DY0050 DJI Power 1000 Mini White [D"
-  },
-  {
-   "brand": "DJI",
-   "model": "JAPAN DY0042 Power 1000",
-   "capacity_wh": 1024,
-   "price": 69990,
-   "shops": 1,
-   "adopted": false,
-   "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "DJI JAPAN ポータブル電源 1024Wh AC出力コンセント4口 USB-C出力搭載 DY0042(1000V2コンボ) DJI Power 1000 "
-  },
-  {
-   "brand": "DJI",
-   "model": "Power 1000V2 Solar Car",
-   "capacity_wh": 1024,
-   "price": 69990,
-   "shops": 1,
-   "adopted": false,
-   "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "DJI｜ディージェイアイ ポータブル電源 Power 1000V2 Solar/Car Charging On-the-Go Combo（JP） DY0042 "
-  },
-  {
-   "brand": "Dabbsson",
-   "model": "1000L AC+",
-   "capacity_wh": 1008,
-   "price": 62500,
-   "shops": 1,
-   "adopted": false,
-   "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "【最軽量の1KWh半固体電源】Dabbsson ポータブル電源 1008Wh 半固体リン酸鉄リチウム 1000L 高出力AC定格1200W 10年長寿命 8出力"
-  },
-  {
-   "brand": "Dabbsson",
-   "model": "DBS1300+120W AC+ AC DC",
-   "capacity_wh": 1330,
-   "price": 98484,
-   "shops": 1,
-   "adopted": false,
-   "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "【スーパーセールで98,484円 9/4 20時から】Dabbsson 1330Wh ポータブル電源 ソーラーパネル セット DBS1300+120W ダブソン"
+   "sample_title": "DJI｜ディージェイアイ DJI Power 1000 Mini Plus DY0044 [リン酸鉄リチウムイオン電池 /9出力 /AC・DC・USB-C充電・"
   },
   {
    "brand": "Dabbsson",
@@ -293,16 +113,6 @@
   },
   {
    "brand": "Dabbsson",
-   "model": "3000L+420W",
-   "capacity_wh": 3072,
-   "price": 212800,
-   "shops": 1,
-   "adopted": false,
-   "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "【スーパーセールで212,800円 9/4 20時から】Dabbsson 3072Wh ポータブル電源 3000L+420Wソーラーパネルセット 3000W 半"
-  },
-  {
-   "brand": "Dabbsson",
    "model": "DBS2300plus+210W 50",
    "capacity_wh": 2330,
    "price": 153000,
@@ -310,16 +120,6 @@
    "adopted": false,
    "reason": "出品店舗が1店のみ（2店以上必要）",
    "sample_title": "【スーパーセールで153,000円 9/4 20時から】Dabbsson 2330Wh ポータブル電源 ソーラーパネル セット DBS2300plus+210W"
-  },
-  {
-   "brand": "Dabbsson",
-   "model": "3000L+210W",
-   "capacity_wh": 3072,
-   "price": 175800,
-   "shops": 1,
-   "adopted": false,
-   "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "【スーパーセールで175,800円 9/4 20時から】Dabbsson 3072Wh ポータブル電源 3000L+210Wソーラーパネルセット 3000W 半"
   },
   {
    "brand": "Dabbsson",
@@ -340,16 +140,6 @@
    "adopted": false,
    "reason": "出品店舗が1店のみ（2店以上必要）",
    "sample_title": "【EVレベルの最速充電速度】Dabbsson 1382Wh ポータブル電源セット DBS1400Pro 2400W EV用半固体リン酸鉄リチウム 45分で80%"
-  },
-  {
-   "brand": "Dabbsson",
-   "model": "DBS1300 AC DC",
-   "capacity_wh": 1330,
-   "price": 83400,
-   "shops": 1,
-   "adopted": false,
-   "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "【スーパーセールで83,400円 9/4 20時から】Dabbsson 1330Wh ポータブル電源 ダブソン DBS1300 EV用 半固体リン酸鉄リチウム電"
   },
   {
    "brand": "Dabbsson",
@@ -469,7 +259,7 @@
    "shops": 1,
    "adopted": false,
    "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "【9/3 20時~SS限定で71,800円！2点セット ★1024Wh+200W★防災応援】FOSSiBOT ポータブル電源 1024Wh+ソーラーパネル200"
+   "sample_title": "【9/4 20時~SS限定クーポンで70,800円！2点セット ★1024Wh+200W★防災応援】FOSSiBOT ポータブル電源 1024Wh+ソーラーパネ"
   },
   {
    "brand": "FOSSiBOT",
@@ -479,7 +269,7 @@
    "shops": 1,
    "adopted": false,
    "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "【9/3 20時~SS限定で51,800円！★1024Wh★防災応援】APP対応★FOSSiBOT ポータブル電源 1200W リン酸鉄 4000回サイクル 1"
+   "sample_title": "【9/4 20時~SS限定クーポンで50,800円！★1024Wh★防災応援】APP対応★FOSSiBOT ポータブル電源 1200W リン酸鉄 4000回サイ"
   },
   {
    "brand": "FOSSiBOT",
@@ -489,7 +279,7 @@
    "shops": 1,
    "adopted": false,
    "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "【9/3 20時~SS限定で158,980円！★拡張バッテリー3840Wh★】楽天1位 FOSSiBOT FB3840 エクストラバッテリー 拡張バッテリー 3"
+   "sample_title": "【9/4 20時~SS限定クーポンで157,980円！★拡張バッテリー3840Wh★】楽天1位 FOSSiBOT FB3840 エクストラバッテリー 拡張バッテ"
   },
   {
    "brand": "FOSSiBOT",
@@ -499,7 +289,7 @@
    "shops": 1,
    "adopted": false,
    "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "2026新発売【9/3 20時~SS限定で17,990円！】FOSSiBOT F300 DC ポータブル電源 288Wh ストラップ付 小型軽量 モバイルバッテ"
+   "sample_title": "【9/4 20時~SS限定クーポンで16,990円&P5倍】FOSSiBOT F300 DC ポータブル電源 288Wh ストラップ付 小型軽量 モバイルバッテ"
   },
   {
    "brand": "FOSSiBOT",
@@ -513,7 +303,7 @@
   },
   {
    "brand": "Goal Zero",
-   "model": "YETI 500X power station",
+   "model": "YETI 500X",
    "capacity_wh": 505,
    "price": 121880,
    "shops": 1,
@@ -533,7 +323,7 @@
   },
   {
    "brand": "Goal Zero",
-   "model": "Boulder 50 Solar Panel",
+   "model": "Boulder 50 GZ-32406",
    "capacity_wh": null,
    "price": 29480,
    "shops": 1,
@@ -542,124 +332,14 @@
    "sample_title": "GOAL ZERO ゴールゼロ Boulder 50 Solar Panel ソーラーパネル ソーラー 50w アウトドア アウトドア用品 キャンプ キャンプ用"
   },
   {
-   "brand": "JVCケンウッド",
-   "model": "BN-RF800 BN-RF800",
-   "capacity_wh": 806,
-   "price": 115000,
-   "shops": 1,
-   "adopted": false,
-   "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "【9/4 20時〜4時間限定★600円OFF 】JVCケンウッド ポータブル電源 BN-RF800 806Wh 蓄電池 アウトドア 防災 車中泊 キャンプ　アウ"
-  },
-  {
-   "brand": "JVCケンウッド",
-   "model": "BN-RF1500 Victor",
-   "capacity_wh": 1536,
-   "price": 209400,
-   "shops": 1,
-   "adopted": false,
-   "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "JVCケンウッド ビクター ポータブル電源 1536Wh 1500W 3way出力 アウトドア BN-RF1500 Victor【転送不可】"
-  },
-  {
-   "brand": "JVCケンウッド",
-   "model": "Jackery BN-RB15-C BN-RB15-C",
-   "capacity_wh": 1534,
-   "price": 194998,
-   "shops": 1,
-   "adopted": false,
-   "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "【お取り寄せ】JVCケンウッド Jackery BN-RB15-C ポータブル電源 426300mAh/1534Wh 出力1800W（瞬間最大3600W） BN"
-  },
-  {
-   "brand": "JVCケンウッド",
-   "model": "BN-RF1100 BN-RF1100",
-   "capacity_wh": 1152,
-   "price": 169899,
-   "shops": 1,
-   "adopted": false,
-   "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "【9/4 20時〜4時間限定★600円OFF 】JVCケンウッド ポータブル電源 BN-RF1100 1152Wh 蓄電池 アウトドア 防災 車中泊 キャンプ　"
-  },
-  {
-   "brand": "JVCケンウッド",
-   "model": "BN-RF510 Victor",
-   "capacity_wh": 512,
-   "price": 66978,
-   "shops": 1,
-   "adopted": false,
-   "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "【東証上場の安心企業】【新品・在庫あり】BN-RF510　●JVCケンウッド Victor 　ポータブル電源 512W【送料無料!（北海道・沖縄・離島配送不可）"
-  },
-  {
    "brand": "Jackery",
-   "model": "Solar Generator 2000 New",
-   "capacity_wh": 2042,
-   "price": 286400,
-   "shops": 1,
-   "adopted": false,
-   "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "【クーポン利用で142,272円 9/4 20:00から】Jackery Solar Generator 2000 New 2042Wh 200W ポータブル電"
-  },
-  {
-   "brand": "Jackery",
-   "model": "Solar Generator 1000 New",
-   "capacity_wh": 1070,
-   "price": 154600,
-   "shops": 1,
-   "adopted": false,
-   "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "【クーポン利用で81,938円 9/4 20:00から】Jackery Solar Generator 1000 New 1070Wh 100W ポータブル電源"
-  },
-  {
-   "brand": "Jackery",
-   "model": "Solar Generator 3000 New",
-   "capacity_wh": 3072,
-   "price": 416800,
-   "shops": 1,
-   "adopted": false,
-   "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "【クーポン利用で204,864円 9/4 20:00から】Jackery Solar Generator 3000 New 3072Wh 200W 専用キャリー"
-  },
-  {
-   "brand": "Jackery",
-   "model": "Solar Generator 1500 New",
-   "capacity_wh": 1536,
-   "price": 184600,
-   "shops": 1,
-   "adopted": false,
-   "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "【クーポン利用で137,112円 9/4 20:00から】Jackery Solar Generator 1500 New 1536Wh ポータブル電源 ソーラ"
-  },
-  {
-   "brand": "Jackery",
-   "model": "Solar Generator 500 New",
-   "capacity_wh": 512,
-   "price": 94600,
-   "shops": 1,
-   "adopted": false,
-   "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "【クーポン利用で61,490円 9/4 20:00から】Jackery Solar Generator ポータブル電源 500 New 512Wh ソーラーパネ"
-  },
-  {
-   "brand": "Jackery",
-   "model": "Battery Pack 1000plus",
+   "model": "Pack 1000plus",
    "capacity_wh": 1264,
    "price": 117600,
    "shops": 1,
    "adopted": false,
    "reason": "出品店舗が1店のみ（2店以上必要）",
    "sample_title": "【クーポン利用で64,680円 9/4 20:00から】Jackeryポータブル電源 Battery Pack 1000plus 1264Wh 拡張バッテリー "
-  },
-  {
-   "brand": "Jackery",
-   "model": "Solar Generator 240 New",
-   "capacity_wh": 256,
-   "price": 49900,
-   "shops": 1,
-   "adopted": false,
-   "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "【クーポン利用で37,425円 9/4 20:00から】Jackery Solar Generator 240 New 40Mini 256Wh + 40W ソ"
   },
   {
    "brand": "Jackery",
@@ -673,16 +353,6 @@
   },
   {
    "brand": "Jackery",
-   "model": "1000 Plus AC100V 50Hz",
-   "capacity_wh": 1264,
-   "price": 168000,
-   "shops": 1,
-   "adopted": false,
-   "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "【クーポン利用で100,800円 9/4 20:00から】Jackery ポータブル電源 1000 Plus 1264Wh リン酸鉄 ポタ電 大容量 1.7時間"
-  },
-  {
-   "brand": "Jackery",
    "model": "SolarSaga200",
    "capacity_wh": null,
    "price": 86600,
@@ -693,7 +363,7 @@
   },
   {
    "brand": "PowerArQ",
-   "model": "Solar IP65 ETFE",
+   "model": "IP65 ETFE",
    "capacity_wh": null,
    "price": 35900,
    "shops": 1,
@@ -703,43 +373,13 @@
   },
   {
    "brand": "PowerArQ",
-   "model": "Solar ETFE MC4",
+   "model": "ETFE MC4",
    "capacity_wh": null,
    "price": 59400,
    "shops": 1,
    "adopted": false,
    "reason": "出品店舗が1店のみ（2店以上必要）",
    "sample_title": "【クーポン利用で35,640円！4日20時〜】＜高評価★4.42＞PowerArQ Solar 210W ソーラーパネル 折り畳み ETFE ソーラー充電器 太"
-  },
-  {
-   "brand": "PowerArQ",
-   "model": "3 PA50-CH",
-   "capacity_wh": 555,
-   "price": 84926,
-   "shops": 1,
-   "adopted": false,
-   "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "加島商事 バッテリー交換式 ポータブル電源 PowerArQ 3 555Wh 蓄電池 大容量 ポータブルバッテリー パワーアーク チャコール PA50-CH ["
-  },
-  {
-   "brand": "PowerArQ",
-   "model": "3 PA50-OD",
-   "capacity_wh": 555,
-   "price": 84926,
-   "shops": 1,
-   "adopted": false,
-   "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "加島商事 バッテリー交換式 ポータブル電源 PowerArQ 3 555Wh 蓄電池 大容量 ポータブルバッテリー パワーアーク オリーブドラブ PA50-OD"
-  },
-  {
-   "brand": "PowerArQ",
-   "model": "3 PA50-RD",
-   "capacity_wh": 555,
-   "price": 88000,
-   "shops": 1,
-   "adopted": false,
-   "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "加島商事 バッテリー交換式 ポータブル電源 PowerArQ 3 555Wh 蓄電池 大容量 ポータブルバッテリー パワーアーク （レッド） レッド PA50-"
   },
   {
    "brand": "VTOMAN",
@@ -783,16 +423,6 @@
   },
   {
    "brand": "Yoshino",
-   "model": "B300 Pro SST",
-   "capacity_wh": 241,
-   "price": 66000,
-   "shops": 1,
-   "adopted": false,
-   "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "【クーポン利用で49500円！9/4 16:00まで】YOSHINO ヨシノ 固体電池 ポータブル電源 EV搭載電池技術 B300 Pro SST 241Wh "
-  },
-  {
-   "brand": "Yoshino",
    "model": "SP100 USB-C USB-A ETFE",
    "capacity_wh": null,
    "price": 38500,
@@ -800,16 +430,6 @@
    "adopted": false,
    "reason": "出品店舗が1店のみ（2店以上必要）",
    "sample_title": "YOSHINO ヨシノ ソーラーパネル SP100 100W ポータブル電源用 小型 充電器 折りたたみ USB-C/USB-A/DC出力 ソーラーチャージャー"
-  },
-  {
-   "brand": "Yoshino",
-   "model": "B300 Pro 241Wh+100W",
-   "capacity_wh": 241,
-   "price": 103500,
-   "shops": 1,
-   "adopted": false,
-   "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "【クーポン利用で77625円！9/4 16:00まで】YOSHINO ヨシノ 固体電池 ポータブル電源 ソーラーパネル セット EV搭載電池技術 B300 Pr"
   },
   {
    "brand": "Yoshino",
@@ -823,16 +443,6 @@
   },
   {
    "brand": "Yoshino",
-   "model": "B300 Pro 241Wh+CP10",
-   "capacity_wh": 241,
-   "price": 100200,
-   "shops": 1,
-   "adopted": false,
-   "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "【クーポン利用で75150円！9/4 16:00まで】YOSHINO ヨシノ 固体電池 ポータブル電源 ソーラーパネル セット EV搭載電池技術 B300 Pr"
-  },
-  {
-   "brand": "Yoshino",
    "model": "CP10 USB-C USB-A ETFE",
    "capacity_wh": null,
    "price": 35200,
@@ -843,7 +453,7 @@
   },
   {
    "brand": "Yoshino",
-   "model": "POWER JAPAN SP200 SP200",
+   "model": "SP200 SP200",
    "capacity_wh": null,
    "price": 77000,
    "shops": 1,
@@ -892,5 +502,11 @@
    "sample_title": "拡張バッテリーSuperBasVサテライト6400 STB64-09-2208 《 ZENDURE 》"
   }
  ],
- "added": 4
+ "added": 0,
+ "removed_duplicates": [
+  "DJI Power 1000 Mini Plus",
+  "Anker Solix C1000 Portable Power",
+  "Anker Solix C800 Plus Portable",
+  "DJI POWER 2000 7224114562"
+ ]
 }
