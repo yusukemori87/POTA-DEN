@@ -234,6 +234,32 @@ def amazon_prices(products):
         time.sleep(1.1)
     return out
 
+# ---------- 終売判定 ----------
+# 3ソースすべてで連続して見つからない日数を数え、しきい値を超えたら「販売終了の可能性」を立てる。
+# 巡回そのものが不調な日（楽天が1件も取れない等）はカウントしない。誤判定を避けるため。
+EOL_DAYS = int(os.environ.get('EOL_DAYS', '21'))
+
+def official_image(p):
+    """公式サイトの og:image を拾う（楽天でもサムネが取れなかった機種の最後の手段）"""
+    u = p.get('official_url')
+    if not u:
+        return None
+    try:
+        body = get(u, timeout=10)
+    except Exception:
+        return None
+    m = (re.search(r'<meta[^>]+property=["\']og:image["\'][^>]+content=["\']([^"\']+)', body, re.I)
+         or re.search(r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+property=["\']og:image', body, re.I))
+    if not m:
+        return None
+    img = m.group(1).strip()
+    if img.startswith('//'):
+        img = 'https:' + img
+    elif img.startswith('/'):
+        pu = urllib.parse.urlparse(u)
+        img = f'{pu.scheme}://{pu.netloc}' + img
+    return img if img.startswith('http') else None
+
 def main():
     products = json.load(open(os.path.join(DATA, 'products.json'), encoding='utf-8'))
     hist_path = os.path.join(DATA, 'price_history.json')
@@ -279,6 +305,17 @@ def main():
         if 'amazon' not in cur and p.get('amazon_price'):
             cur['amazon'] = p['amazon_price']  # PA-API 未設定時は最後に手動取得した値を保持
         vals = [v for v in cur.values() if v]
+        # --- 終売判定：今日「実際に販売中の出品」を1件でも確認できたか
+        live = any(rec.get(k) for k in ('rakuten', 'kakaku', 'amazon'))
+        prev = (p.get('prices') or {})
+        miss_days = 0 if live else (prev.get('miss_days') or 0) + 1
+        # PA-API未設定でAmazon専売の機種は在庫確認ができないので判定対象から外す
+        unverifiable = bool(p.get('amazon_asin')) and not amz
+        if live:
+            if p.get('discontinued'):
+                p['discontinued'] = False   # 復活したら戻す
+        elif miss_days >= EOL_DAYS and not unverifiable:
+            p['discontinued'] = True
         hist_vals = [x[k] for x in history[str(i)] for k in ('amazon', 'rakuten', 'kakaku') if x.get(k)]
         p['prices'] = {
             'updated': TODAY,
@@ -286,12 +323,28 @@ def main():
             'rakuten_url': rec.get('rakuten_url'), 'kakaku_url': rec.get('kakaku_url'),
             # ローカル画像が無い機種は楽天のサムネで補う（既存の値は消さない）
             'image': rec.get('rakuten_image') or (p.get('prices') or {}).get('image'),
+            'miss_days': miss_days,
             'min': min(vals) if vals else None,
             'hist_min': min(hist_vals) if hist_vals else None,
             'history': [[x['d'], min([x[k] for k in ('amazon', 'rakuten', 'kakaku') if x.get(k)] or [None])] for x in history[str(i)][-90:]],
         }
         print(f"{i:3d} {p['brand']} {p['model'][:24]:24s} 楽天:{rec.get('rakuten')} 価格.com:{rec.get('kakaku')} Amazon:{rec.get('amazon')}", flush=True)
         time.sleep(0.6 if KAKAKU_STATE['off'] else 1.0)
+    # ---- サムネの最終手段：公式サイトの og:image ----
+    try:
+        local_img = json.load(open(os.path.join(DATA, 'images.json'), encoding='utf-8'))
+    except Exception:
+        local_img = {}
+    need = [(i, q) for i, q in enumerate(products)
+            if str(i) not in local_img and not (q.get('prices') or {}).get('image') and q.get('official_url')]
+    print(f'サムネ未取得 {len(need)} 件 → 公式サイトから試行', flush=True)
+    for i, q in need[:60]:
+        im = official_image(q)
+        if im:
+            q.setdefault('prices', {})['image'] = im
+            print(f'  公式サムネ取得 #{i} {q["brand"]} {q["model"][:24]}', flush=True)
+        time.sleep(0.4)
+
     os.makedirs(os.path.join(DATA, 'prices'), exist_ok=True)
     json.dump(snap, open(os.path.join(DATA, 'prices', TODAY + '.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
     json.dump(history, open(hist_path, 'w', encoding='utf-8'), ensure_ascii=False)
@@ -314,6 +367,9 @@ def main():
         'kakaku_skipped': KAKAKU_STATE['off'],
         'kakaku_errors': KAKAKU_STATE['errors'][:5],
         'rakuten_errors': RAKUTEN_ERRORS[:5],
+        'discontinued': sum(1 for q in products if q.get('discontinued')),
+        'provisional': sum(1 for q in products if q.get('provisional')),
+        'images_from_rakuten': sum(1 for q in products if (q.get('prices') or {}).get('image')),
         'paapi_set': all(os.environ.get(k) for k in ('PAAPI_ACCESS_KEY', 'PAAPI_SECRET_KEY', 'PAAPI_PARTNER_TAG')),
     }
     json.dump(summary, open(os.path.join(DATA, 'last_run.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
