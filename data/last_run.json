@@ -1,8 +1,8 @@
 {
- "date": "2026-09-03",
- "products": 186,
- "rakuten_ok": 89,
- "kakaku_ok": 49,
+ "date": "2026-09-04",
+ "products": 182,
+ "rakuten_ok": 86,
+ "kakaku_ok": 48,
  "amazon_ok": 0,
  "rakuten_app_id_set": true,
  "rakuten_access_key_set": true,
@@ -20,7 +20,7 @@
   "HTTPError: HTTP Error 400: Bad Request {\"error_description\":\"keyword is not valid\",\"error\":\"wrong_parameter\"}"
  ],
  "discontinued": 0,
- "provisional": 4,
- "images_from_rakuten": 133,
+ "provisional": 0,
+ "images_from_rakuten": 129,
  "paapi_set": false
 }
