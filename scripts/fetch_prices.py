@@ -2,7 +2,10 @@
 """毎日の価格巡回スクリプト（GitHub Actions から実行）
 
 取得元:
-  1. 楽天市場 商品検索API  … 環境変数 RAKUTEN_APP_ID（必須）, RAKUTEN_AFFILIATE_ID（任意）
+  1. 楽天市場 商品検索API（2026年新方式 openapi.rakuten.co.jp）
+      … 環境変数 RAKUTEN_APP_ID（アプリケーションID・UUID形式／必須）
+        RAKUTEN_ACCESS_KEY（アクセスキー pk_… ／必須）
+        RAKUTEN_AFFILIATE_ID（任意）, SITE_DOMAIN（Referer 用／Webアプリ登録なら必須）
   2. 価格.com 最安価格      … スクレイピング（1機種ごとに待機。失敗しても続行）
   3. Amazon PA-API          … 環境変数 PAAPI_ACCESS_KEY / PAAPI_SECRET_KEY / PAAPI_PARTNER_TAG が
                               揃っている場合のみ（アソシエイト承認後に有効化）
@@ -27,6 +30,14 @@ EXCLUDE = re.compile(r'セット|パネル|拡張バッテリー|専用バッテ
 REFERER = (os.environ.get('RAKUTEN_REFERER') or
            (('https://' + os.environ['SITE_DOMAIN'].strip().replace('https://', '').strip('/') + '/')
             if os.environ.get('SITE_DOMAIN') else ''))
+
+def errmsg(e):
+    body = ''
+    try:
+        body = e.read().decode('utf-8', 'ignore')[:200]
+    except Exception:
+        pass
+    return f'{type(e).__name__}: {e} {body}'.strip()
 
 def get(url, headers=None, timeout=8):
     h = {'User-Agent': UA}
@@ -61,20 +72,47 @@ def title_matches(title, brand, toks):
 # ---------- 楽天 ----------
 RAKUTEN_ERRORS = []
 
-def rakuten_price(p, app_id, aff_id):
+RAKUTEN_EP = 'https://openapi.rakuten.co.jp/ichibams/api/IchibaItem/Search/20220601'
+RAKUTEN_AFF_OFF = {'v': False}   # affiliateId で弾かれたら以降は付けない
+
+def rakuten_call(params):
+    url = RAKUTEN_EP + '?' + urllib.parse.urlencode(params)
+    return json.loads(get(url))
+
+def rakuten_price(p, app_id, aff_id, access_key):
     q, model = query_of(p)
     toks = tokens_of(model)
-    params = {'applicationId': app_id, 'keyword': q + ' ポータブル電源', 'hits': 30, 'sort': '+itemPrice', 'formatVersion': 2, 'genreId': 0}
-    if aff_id:
+    base = {'applicationId': app_id, 'keyword': q + ' ポータブル電源',
+            'hits': 30, 'sort': '+itemPrice', 'formatVersion': 2}
+    if access_key:
+        base['accessKey'] = access_key
+    params = dict(base)
+    if aff_id and not RAKUTEN_AFF_OFF['v']:
         params['affiliateId'] = aff_id
-    url = 'https://app.rakuten.co.jp/services/api/IchibaItem/Search/20220601?' + urllib.parse.urlencode(params)
     try:
-        js = json.loads(get(url))
+        js = rakuten_call(params)
     except Exception as e:
-        msg = f'{type(e).__name__}: {e}'[:160]
+        # affiliateId が原因で弾かれるケースがあるので、1度だけ外して再試行
+        if 'affiliateId' in params:
+            try:
+                js = rakuten_call(base)
+                RAKUTEN_AFF_OFF['v'] = True
+                RAKUTEN_ERRORS.append('affiliateId を外して再試行に成功（アフィリエイトID要確認）')
+            except Exception as e2:
+                msg = errmsg(e2)[:300]
+                if msg not in RAKUTEN_ERRORS:
+                    RAKUTEN_ERRORS.append(msg)
+                return None, None, f'rakuten error: {e2}'
+        else:
+            msg = errmsg(e)[:300]
+            if msg not in RAKUTEN_ERRORS:
+                RAKUTEN_ERRORS.append(msg)
+            return None, None, f'rakuten error: {e}'
+    if isinstance(js, dict) and js.get('errors'):
+        msg = 'API error: ' + json.dumps(js['errors'], ensure_ascii=False)[:200]
         if msg not in RAKUTEN_ERRORS:
             RAKUTEN_ERRORS.append(msg)
-        return None, None, f'rakuten error: {e}'
+        return None, None, msg
     best = None
     for it in js.get('Items', []):
         name = it.get('itemName', '')
@@ -99,13 +137,13 @@ def kakaku_price(p):
         return None, None, 'skipped'
     q, model = query_of(p)
     toks = tokens_of(model)
-    url = 'https://kakaku.com/search_results/' + urllib.parse.quote(q) + '/?category=0032'
+    url = 'https://search.kakaku.com/' + urllib.parse.quote(q) + '/'
     try:
         body = get(url)
         KAKAKU_STATE['fail'] = 0
     except Exception as e:
         KAKAKU_STATE['fail'] += 1
-        msg = f'{type(e).__name__}: {e}'[:120]
+        msg = errmsg(e)[:300]
         if msg not in KAKAKU_STATE['errors']:
             KAKAKU_STATE['errors'].append(msg)
         if KAKAKU_STATE['fail'] >= KAKAKU_MAX_FAIL:
@@ -114,7 +152,16 @@ def kakaku_price(p):
         return None, None, f'kakaku error: {e}'
     # 検索結果の各アイテム: タイトルと最安価格
     best = None
-    for m in re.finditer(r'<a[^>]+href="(https://kakaku\.com/item/[^"]+)"[^>]*>([^<]{5,120})</a>[\s\S]{0,1500}?([\d,]{4,9})\s*円', body):
+    pats = [
+        r'<a[^>]+href="(https?://kakaku\.com/item/[^"]+)"[^>]*>([^<]{5,160})</a>[\s\S]{0,3000}?p-item_priceNum[^>]*>[^\d]{0,10}([\d,]{4,9})',
+        r'<a[^>]+href="(https?://kakaku\.com/item/[^"]+)"[^>]*>([^<]{5,160})</a>[\s\S]{0,1500}?([\d,]{4,9})\s*円',
+    ]
+    hits = []
+    for pat in pats:
+        hits = list(re.finditer(pat, body))
+        if hits:
+            break
+    for m in hits:
         href, title, price = m.group(1), html.unescape(m.group(2)), int(m.group(3).replace(',', ''))
         if not title_matches(title, p['brand'], toks):
             continue
@@ -165,6 +212,9 @@ def main():
     history = json.load(open(hist_path, encoding='utf-8')) if os.path.exists(hist_path) else {}
     app_id = os.environ.get('RAKUTEN_APP_ID')
     aff_id = os.environ.get('RAKUTEN_AFFILIATE_ID', '')
+    access_key = os.environ.get('RAKUTEN_ACCESS_KEY', '')
+    if app_id and not access_key:
+        print('注意: RAKUTEN_ACCESS_KEY が未設定です（2026年の新方式では必須）', file=sys.stderr)
     if not app_id:
         print('RAKUTEN_APP_ID が未設定です（楽天価格はスキップ）', file=sys.stderr)
     elif not REFERER:
@@ -178,7 +228,7 @@ def main():
             break
         rec = {'d': TODAY}
         if app_id:
-            price, url, st = rakuten_price(p, app_id, aff_id)
+            price, url, st = rakuten_price(p, app_id, aff_id, access_key)
             rec['rakuten'] = price
             if url:
                 rec['rakuten_url'] = url
@@ -224,6 +274,8 @@ def main():
         'kakaku_ok': got('kakaku'),
         'amazon_ok': got('amazon'),
         'rakuten_app_id_set': bool(app_id),
+        'rakuten_access_key_set': bool(access_key),
+        'rakuten_affiliate_dropped': RAKUTEN_AFF_OFF['v'],
         'rakuten_affiliate_id_set': bool(aff_id),
         'referer': REFERER or '(未設定)',
         'kakaku_skipped': KAKAKU_STATE['off'],
