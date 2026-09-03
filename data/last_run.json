@@ -19,5 +19,8 @@
   "HTTPError: HTTP Error 400: Bad Request {\"error_description\":\"API Configuration not found\",\"error\":\"wrong_parameter\"}",
   "HTTPError: HTTP Error 400: Bad Request {\"error_description\":\"keyword is not valid\",\"error\":\"wrong_parameter\"}"
  ],
+ "discontinued": 0,
+ "provisional": 0,
+ "images_from_rakuten": 129,
  "paapi_set": false
 }
