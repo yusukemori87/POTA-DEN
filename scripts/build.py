@@ -17,7 +17,8 @@ IMG = json.load(open(os.path.join(ROOT, 'data', 'images.json'), encoding='utf-8'
 KEYS = ['brand','model','capacity_wh','rated_output_w','surge_output_w','solar_input_w','ac_input_w','battery','cycles',
         'weight_kg','expandable','max_expand_wh','ups_ms','price_jpy','rating','reviews','release_year','official_url',
         'notes','amazon_price','amazon_asin','warranty_years','warranty_ext_years','warranty_note','sale_low_price',
-        'sale_low_note','review','tenno','prices','v200','v200_note','years_on_market']
+        'sale_low_note','review','tenno','prices','v200','v200_note','years_on_market',
+        'discontinued','provisional','discovered']
 
 def clean_model(m):
     m = re.sub(r'\s+', ' ', m).strip()
