@@ -87,8 +87,8 @@ CRITDEF = ('<details class="crit-def"><summary>「致命的」「要注意」の
 def product_page(i, p):
     sl = slug(p['brand'], p['model'])
     url = f'{SITE}/p/{sl}/'
-    img = IMG.get(str(i))
     pr = p.get('prices') or {}
+    img = IMG.get(str(i)) or pr.get('image')
     cur = pr.get('min') or p.get('amazon_price') or p.get('price_jpy')
     lows = [x for x in [p.get('sale_low_price'), pr.get('hist_min'), cur] if x]
     low = min(lows) if lows else None
