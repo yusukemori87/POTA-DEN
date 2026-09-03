@@ -130,6 +130,11 @@ aside{position:sticky;top:64px;max-height:calc(100vh - 80px);overflow:auto;paddi
 .tn{display:inline-flex;align-items:center;gap:5px;font-size:11px;font-weight:700;border-radius:6px;padding:2px 7px;white-space:nowrap;background:var(--surface2);color:var(--ink2)}
 .tn b{font-family:var(--mono);font-size:13px}
 .tn.s4{background:#E6F4EE;color:#0A5A4A}.tn.s3{background:#FFF3D6;color:#7A5200}.tn.s2{background:#FDE7DC;color:#8A3B12}.tn.s1{background:#F6D9D9;color:#8C1D1D}
+.card.eol{opacity:.62}
+.card.eol .ph img{filter:grayscale(1)}
+.eolbadge{position:absolute;left:10px;top:38px;font-size:10.5px;font-weight:700;padding:2px 7px;border-radius:6px;background:#5B6360;color:#fff}
+.tn.prov{background:var(--surface2,#EDEFEE);color:var(--muted);border:1px dashed var(--line2)}
+.provnote{margin:10px 0;padding:10px 12px;border:1px dashed var(--line2);border-radius:8px;color:var(--muted);font-size:12.5px;line-height:1.7}
 .crit{position:absolute;left:10px;top:38px;font-size:10.5px;font-weight:700;padding:2px 7px;border-radius:6px;background:#B42318;color:#fff}
 .pricebox .low{margin-left:2px}
 /* modal sections */
@@ -351,6 +356,7 @@ footer p{max-width:80ch;margin:0 0 8px}
       <label class="opt"><input type="checkbox" name="feat" value="vet"> 3年以上続く定番モデル <span class="c"></span></label>
       <label class="opt"><input type="checkbox" name="feat" value="v200"> 200V出力対応 <span class="c"></span></label>
       <label class="opt"><input type="checkbox" name="feat" value="rated"> Amazon評価あり <span class="c"></span></label>
+      <label class="opt"><input type="checkbox" name="feat" value="onsale"> 販売中のみ（終売を除く）<span class="c"></span></label>
     </div>
     <div class="fs" id="fs-weight"><h3>重量<button class="cl" data-clear="weight">クリア</button></h3>
       <label class="opt"><input type="radio" name="weight" value="0-5"> 〜5kg <span class="c"></span></label>
@@ -403,8 +409,8 @@ const $ = s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 // Wh単価の発散カラースケール（全182機種の十分位。安い=青／平均=無彩色／高い=赤）
 const PPW_BINS=[51.9,60.9,77.3,91.6,101.8,115.7,128.1,143.3,178.3];
 const ppwBin=v=>{if(v==null)return null;let i=0;while(i<PPW_BINS.length&&v>=PPW_BINS[i])i++;return i};
-const dvStyle=v=>{const i=ppwBin(v);if(i==null)return '';const lab=i===0?'最も安い層':i===9?'最も高い層':(i<4?'平均より安い':i>5?'平均より高い':'ほぼ平均');return ` data-dv="${i}" style="--dv-bg:var(--dv${i})" title="Wh単価 ${v} 円/Wh ・ 全182機種中で${lab}（第${i+1}十分位）"`};
-const dvLegendHTML=()=>{const cells=[...Array(10)].map((_,i)=>`<i style="background:var(--dv${i})" title="${i===0?'〜'+PPW_BINS[0]+' 円/Wh':i===9?PPW_BINS[8]+' 円/Wh〜':PPW_BINS[i-1]+'〜'+PPW_BINS[i]+' 円/Wh'}"></i>`).join('');return `<div class="dvlegend"><b>Wh単価</b><span>安い</span><span class="sc">${cells}</span><span>高い</span><span>（全182機種の分布で10段階・中央値 ${PPW_BINS[4]} 円/Wh）</span></div>`};
+const dvStyle=v=>{const i=ppwBin(v);if(i==null)return '';const lab=i===0?'最も安い層':i===9?'最も高い層':(i<4?'平均より安い':i>5?'平均より高い':'ほぼ平均');return ` data-dv="${i}" style="--dv-bg:var(--dv${i})" title="Wh単価 ${v} 円/Wh ・ 全${DATA.length}機種中で${lab}（第${i+1}十分位）"`};
+const dvLegendHTML=()=>{const cells=[...Array(10)].map((_,i)=>`<i style="background:var(--dv${i})" title="${i===0?'〜'+PPW_BINS[0]+' 円/Wh':i===9?PPW_BINS[8]+' 円/Wh〜':PPW_BINS[i-1]+'〜'+PPW_BINS[i]+' 円/Wh'}"></i>`).join('');return `<div class="dvlegend"><b>Wh単価</b><span>安い</span><span class="sc">${cells}</span><span>高い</span><span>（全${DATA.length}機種の分布で10段階・中央値 ${PPW_BINS[4]} 円/Wh）</span></div>`};
 const PAGE_BASE = window.POTADEN_PAGE_BASE || null;  // 静的サイト版では 'p/' が入る
 const slugOf = p => (p.brand+'-'+p.model).toLowerCase().replace(/\(.*?\)/g,'').replace(/[^a-z0-9ぁ-んァ-ヶ一-龠]+/g,'-').replace(/^-|-$/g,'');
 const hrefOf = p => PAGE_BASE ? PAGE_BASE+slugOf(p)+'/' : null;
@@ -423,7 +429,8 @@ DATA.forEach((p,i)=>{p.id=i;
   p._pnote=(p.prices&&p.prices.updated)?(p.prices.updated+' 取得'):(p._psrc==='Amazon'?'2026/9/2 取得':'メーカー通常価格');
   p._v200s=p.v200?'対応':'非対応';p._ts=p.tenno?p.tenno.score:null;p._crit=!!(p.review&&p.review.flagged.some(f=>f.level==='致命的'));
   p._q+=' '+(p.tenno?p.tenno.verdict:'');
-  p._img=IMG[i]||(p.prices&&p.prices.image)||null;});
+  p._img=IMG[i]||(p.prices&&p.prices.image)||null;
+  p._eol=!!p.discontinued; p._prov=!!p.provisional;});
 const BRANDS=[...new Set(DATA.map(p=>p.brand))].sort((a,b)=>DATA.filter(p=>p.brand===b).length-DATA.filter(p=>p.brand===a).length);
 $('#f-n').textContent=DATA.length;if(window.__updated){const e=document.getElementById('upd');if(e)e.textContent='価格最終更新: '+window.__updated}
 
@@ -470,10 +477,12 @@ function pass(p,skip){
   if(skip!=='out'&&S.out!=null&&!(p.rated_output_w>=S.out))return false;
   if(skip!=='brand'&&S.brand.size&&!S.brand.has(p.brand))return false;
   if(skip!=='weight'&&S.weight&&!inRange(p.weight_kg,S.weight))return false;
-  if(skip!=='feat'){for(const f of S.feat){if(f==='lfp'&&p.battery!=='LFP')return false;if(f==='exp'&&!p.expandable)return false;if(f==='ups'&&!(p.ups_ms!=null&&p.ups_ms<=20))return false;if(f==='light'&&!(p.weight_kg!=null&&p.weight_kg<=10))return false;if(f==='rated'&&p.rating==null)return false;if(f==='nocrit'&&p._crit)return false;if(f==='v200'&&!p.v200)return false;if(f==='vet'&&!(p.years_on_market>=3))return false}}
+  if(skip!=='feat'){for(const f of S.feat){if(f==='lfp'&&p.battery!=='LFP')return false;if(f==='exp'&&!p.expandable)return false;if(f==='ups'&&!(p.ups_ms!=null&&p.ups_ms<=20))return false;if(f==='light'&&!(p.weight_kg!=null&&p.weight_kg<=10))return false;if(f==='rated'&&p.rating==null)return false;if(f==='nocrit'&&p._crit)return false;if(f==='v200'&&!p.v200)return false;if(f==='vet'&&!(p.years_on_market>=3))return false;if(f==='onsale'&&p._eol)return false}}
   return true;
 }
-const SORTS={tenno:(a,b)=>(b._ts||0)-(a._ts||0)||(b.reviews||0)-(a.reviews||0),pop:(a,b)=>(b.reviews||0)-(a.reviews||0)||(b.rating||0)-(a.rating||0),rating:(a,b)=>(b.rating||0)-(a.rating||0)||(b.reviews||0)-(a.reviews||0),price_asc:(a,b)=>(a._pmin||9e9)-(b._pmin||9e9),price_desc:(a,b)=>(b._pmin||0)-(a._pmin||0),ppw:(a,b)=>(a._ppw||9e9)-(b._ppw||9e9),lowppw:(a,b)=>(a._lowppw||9e9)-(b._lowppw||9e9)||(a._ppw||9e9)-(b._ppw||9e9),cap_desc:(a,b)=>b.capacity_wh-a.capacity_wh,cap_asc:(a,b)=>a.capacity_wh-b.capacity_wh,solar:(a,b)=>(b.solar_input_w||0)-(a.solar_input_w||0),weight:(a,b)=>(a.weight_kg||9e9)-(b.weight_kg||9e9),warr:(a,b)=>(b._wext||0)-(a._wext||0)||(b.warranty_years||0)-(a.warranty_years||0)||(b.reviews||0)-(a.reviews||0),low:(a,b)=>(a._low||9e9)-(b._low||9e9),new:(a,b)=>(b.release_year||0)-(a.release_year||0)||(b.reviews||0)-(a.reviews||0)};
+const _SORTS={tenno:(a,b)=>(b._ts||0)-(a._ts||0)||(b.reviews||0)-(a.reviews||0),pop:(a,b)=>(b.reviews||0)-(a.reviews||0)||(b.rating||0)-(a.rating||0),rating:(a,b)=>(b.rating||0)-(a.rating||0)||(b.reviews||0)-(a.reviews||0),price_asc:(a,b)=>(a._pmin||9e9)-(b._pmin||9e9),price_desc:(a,b)=>(b._pmin||0)-(a._pmin||0),ppw:(a,b)=>(a._ppw||9e9)-(b._ppw||9e9),lowppw:(a,b)=>(a._lowppw||9e9)-(b._lowppw||9e9)||(a._ppw||9e9)-(b._ppw||9e9),cap_desc:(a,b)=>b.capacity_wh-a.capacity_wh,cap_asc:(a,b)=>a.capacity_wh-b.capacity_wh,solar:(a,b)=>(b.solar_input_w||0)-(a.solar_input_w||0),weight:(a,b)=>(a.weight_kg||9e9)-(b.weight_kg||9e9),warr:(a,b)=>(b._wext||0)-(a._wext||0)||(b.warranty_years||0)-(a.warranty_years||0)||(b.reviews||0)-(a.reviews||0),low:(a,b)=>(a._low||9e9)-(b._low||9e9),new:(a,b)=>(b.release_year||0)-(a.release_year||0)||(b.reviews||0)-(a.reviews||0)};
+// 販売終了は並び順に関わらず最後尾へ。評価準備中（新機種）は総合評価順のときだけ後ろへ。
+const SORTS=Object.fromEntries(Object.entries(_SORTS).map(([k,f])=>[k,(a,b)=>((a._eol?1:0)-(b._eol?1:0))||(k==='tenno'?((a._prov?1:0)-(b._prov?1:0)):0)||f(a,b)]));
 
 // facet counts
 function updateCounts(){
@@ -481,7 +490,7 @@ function updateCounts(){
     const n=DATA.filter(p=>pass(p,k)&&matchOne(p,k,v)).length;l.querySelector('.c').textContent=n;l.classList.toggle('on',inp.checked);});
   ['cap','rate','price','warr','tenno','solar','out','brand','feat','weight'].forEach(k=>{const on=(S[k] instanceof Set)?S[k].size>0:S[k]!=null;$('#fs-'+k).classList.toggle('active',on)});
 }
-function matchOne(p,k,v){switch(k){case'cap':return inRange(p.capacity_wh,v);case'rate':return p.rating>=+v;case'price':return inRange(p._pmin,v);case'warr':return p._wext>=+v;case'tenno':return p._ts>=+v;case'solar':return p.solar_input_w>=+v;case'out':return p.rated_output_w>=+v;case'brand':return p.brand===v;case'weight':return inRange(p.weight_kg,v);case'feat':return v==='lfp'?p.battery==='LFP':v==='exp'?!!p.expandable:v==='ups'?(p.ups_ms!=null&&p.ups_ms<=20):v==='light'?(p.weight_kg!=null&&p.weight_kg<=10):v==='nocrit'?!p._crit:v==='v200'?!!p.v200:v==='vet'?p.years_on_market>=3:p.rating!=null}}
+function matchOne(p,k,v){switch(k){case'cap':return inRange(p.capacity_wh,v);case'rate':return p.rating>=+v;case'price':return inRange(p._pmin,v);case'warr':return p._wext>=+v;case'tenno':return p._ts>=+v;case'solar':return p.solar_input_w>=+v;case'out':return p.rated_output_w>=+v;case'brand':return p.brand===v;case'weight':return inRange(p.weight_kg,v);case'feat':return v==='lfp'?p.battery==='LFP':v==='exp'?!!p.expandable:v==='ups'?(p.ups_ms!=null&&p.ups_ms<=20):v==='light'?(p.weight_kg!=null&&p.weight_kg<=10):v==='nocrit'?!p._crit:v==='v200'?!!p.v200:v==='vet'?p.years_on_market>=3:v==='onsale'?!p._eol:p.rating!=null}}
 
 // links
 const amz=p=>{const u=p.amazon_asin?`https://www.amazon.co.jp/dp/${p.amazon_asin}`:`https://www.amazon.co.jp/s?k=${encodeURIComponent(p.brand+' '+p.model.replace(/\(.*?\)/g,'').trim()+' ポータブル電源')}`;return AFF.amazonTag?u+(u.includes('?')?'&':'?')+'tag='+AFF.amazonTag:u};
@@ -493,7 +502,7 @@ const rak=p=>{
 
 function imgHTML(p,cls){ if(p._img)return `<img class="${cls||''}" src="${p._img}" alt="${esc(p.brand+' '+p.model)}" loading="lazy">`;
   return `<div class="noimg"><svg viewBox="0 0 48 48" fill="none" stroke="#9AA5A1" stroke-width="2"><rect x="6" y="14" width="32" height="22" rx="4"/><path d="M38 21h4v8h-4M14 24h6M12 20l3-5h18l3 5"/></svg><b>${fmt(p.capacity_wh)}</b>Wh</div>`}
-function tnHTML(p){if(!p.tenno)return '';const s=p.tenno.score;return `<span class="tn ${s>=75?'s4':s>=60?'s3':s>=45?'s2':'s1'}" title="${esc(p.tenno.verdict)}">総合評価 <b>${s}</b>点</span>`}
+function tnHTML(p){if(p._prov&&!p.tenno)return '<span class="tn prov" title="スペックのみ自動収録。採点はまだ行っていません">評価準備中</span>';if(!p.tenno)return '';const s=p.tenno.score;return `<span class="tn ${s>=75?'s4':s>=60?'s3':s>=45?'s2':'s1'}" title="${esc(p.tenno.verdict)}">総合評価 <b>${s}</b>点</span>`}
 function ageHTML(p){if(!p.release_year)return '';const y=p.years_on_market;
   return `<span class="age ${y>=3?'vet':''}" title="${y>=3?'3年以上売れ続けている定番モデル':'発売から'+y+'年'}"><b>${p.release_year}</b>年発売${y>=1?`・${y}年目`:'・新'}</span>`}
 function warrHTML(p){if(!p.warranty_years)return '';const w=p.warranty_years,e=p.warranty_ext_years;const y=v=>v===1.5?'18ヶ月':v+'年';const t=e&&e>w?`<b>${y(w)}</b>→登録で<b>${y(e)}</b>`:`<b>${y(w)}</b>`;return `<span class="warr ${(e||w)>=5?'w5':''}" title="${esc(p.warranty_note||'')}">保証 ${t}</span>`}
@@ -518,8 +527,8 @@ $('#chips').addEventListener('click',e=>{const b=e.target.closest('button');if(b
 function renderGrid(){
   const g=$('#grid');
   if(!LIST.length){g.innerHTML='<div class="empty" style="grid-column:1/-1">条件に合う機種がありません。条件を減らしてみてください。</div>';$('#loadmore').classList.add('hidden');return}
-  g.innerHTML=LIST.slice(0,S.shown).map((p,i)=>{const sel=S.cmp.includes(p.id);return `<article class="card ${sel?'sel':''}" data-id="${p.id}">
-    <div class="ph" data-open="${p.id}">${imgHTML(p)}<span class="rank">#${i+1}</span>${p._crit?'<span class="crit">致命的レビューあり</span>':''}${p.v200?'<span class="badge v200">200V出力</span>':''}${p.battery?`<span class="badge ${p.battery==='LFP'?'lfp':''}">${p.battery==='LFP'?'リン酸鉄':p.battery}</span>`:''}<label class="cb" onclick="event.stopPropagation()"><input type="checkbox" data-cmp="${p.id}" ${sel?'checked':''} ${!sel&&S.cmp.length>=4?'disabled':''}>比較</label></div>
+  g.innerHTML=LIST.slice(0,S.shown).map((p,i)=>{const sel=S.cmp.includes(p.id);return `<article class="card ${sel?'sel':''} ${p._eol?'eol':''}" data-id="${p.id}">
+    <div class="ph" data-open="${p.id}">${imgHTML(p)}<span class="rank">#${i+1}</span>${p._eol?'<span class="eolbadge">販売終了の可能性</span>':''}${p._crit?'<span class="crit">致命的レビューあり</span>':''}${p.v200?'<span class="badge v200">200V出力</span>':''}${p.battery?`<span class="badge ${p.battery==='LFP'?'lfp':''}">${p.battery==='LFP'?'リン酸鉄':p.battery}</span>`:''}<label class="cb" onclick="event.stopPropagation()"><input type="checkbox" data-cmp="${p.id}" ${sel?'checked':''} ${!sel&&S.cmp.length>=4?'disabled':''}>比較</label></div>
     <div class="body">
       <div class="brand">${esc(p.brand)}</div>
       <div class="capbadge">${fmt(p.capacity_wh)}<em>Wh</em>${p.expandable?'<span>拡張可</span>':''}</div>
@@ -550,6 +559,8 @@ function openModal(id,push){const p=DATA[id];
   const kv=[['容量',fmt(p.capacity_wh)+' Wh'],['定格出力',p.rated_output_w?fmt(p.rated_output_w)+' W':'DC専用'],['瞬間最大出力',p.surge_output_w?fmt(p.surge_output_w)+' W':'—'],['ソーラー最大入力',p.solar_input_w?fmt(p.solar_input_w)+' W':'—'],['AC充電入力',p.ac_input_w?fmt(p.ac_input_w)+' W':'—'],['電池',p.battery||'—'],['サイクル寿命',p.cycles?fmt(p.cycles)+' 回':'—'],['重量',p.weight_kg!=null?p.weight_kg+' kg':'—'],['拡張',p.expandable?'対応'+(p.max_expand_wh?'（最大 '+fmt(p.max_expand_wh)+' Wh）':''):'非対応'],['UPS切替',p.ups_ms!=null?p.ups_ms+' ms':'—'],['Wh単価',p._ppw!=null?p._ppw+' 円/Wh':'—'],['200V出力',p.v200?'対応':'非対応'],['メーカー保証',p.warranty_years?(p.warranty_ext_years&&p.warranty_ext_years>p.warranty_years?`${p.warranty_years===1.5?'18ヶ月':p.warranty_years+'年'}（登録で${p.warranty_ext_years}年）`:`${p.warranty_years}年`):'—'],['セール時最安値',p._low?yen(p._low):'—'],['発売年',p.release_year?`${p.release_year}年（${p.years_on_market}年目）`:'—'],['公式価格',yen(p.price_jpy)],['Amazon価格',p.amazon_price?yen(p.amazon_price):'—']];
   $('#modal').innerHTML=`<button class="mclose" id="mclose" aria-label="閉じる">×</button><div class="mimg"><div class="inner">${imgHTML(p)}<div class="cap">${fmt(p.capacity_wh)} Wh ／ ${p.rated_output_w?fmt(p.rated_output_w)+' W':'DC専用'}${p.weight_kg!=null?' ／ '+p.weight_kg+' kg':''}</div></div></div><div class="mbody">
     <div class="brand">${esc(p.brand)}</div><h2>${esc(p.model)}</h2>${ratingHTML(p)}
+    ${p._eol?`<div class="provnote"><b>販売終了の可能性があります。</b>Amazon・楽天・価格.comのいずれでも ${p.prices&&p.prices.miss_days||14} 日以上、販売中の出品を確認できませんでした。流通在庫や中古では入手できる場合があります。</div>`:''}
+    ${p._prov&&!p.tenno?`<div class="provnote"><b>スペックのみ自動収録した新機種です。</b>販売ページから拾える範囲の情報だけを掲載しています。実機のレビューが十分に集まった段階で、天の声による採点を行います。数値に誤りがある場合があるため、購入前に販売ページでご確認ください。</div>`:''}
     <div class="pricebox"><span class="price"><small>¥</small>${p._pmin?fmt(p._pmin):'—'}</span><span class="psrc">${p._psrc}価格・${esc(p._pnote)}</span>${p._low&&p._low<p._pmin?`<span class="low"><span class="tag">セール最安</span><b>${yen(p._low)}</b></span>`:''}</div>
     <div class="kv">${kv.map(([k,v])=>`<div><span>${k}</span><b>${esc(String(v))}</b></div>`).join('')}</div>
     ${p.warranty_note||p._lowsrc?`<div class="notes" style="display:grid;gap:4px">${p.warranty_note?`<div><b>保証:</b> ${esc(p.warranty_note)}</div>`:''}${p._low?`<div><b>セール最安値 ${yen(p._low)}:</b> ${esc(p._lowsrc)}</div>`:''}</div>`:''}
