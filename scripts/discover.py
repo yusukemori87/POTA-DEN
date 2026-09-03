@@ -73,9 +73,11 @@ def model_of(title, brand):
         t = re.sub(re.escape(b), ' ', t, flags=re.I)
     toks = [x for x in re.split(r'[\s/,、。｜|]+', t) if x]
     UNIT = re.compile(r'^\d+(?:\.\d+)?(?:wh|w|v|a|ah|mah|kg|kwh|個|台|年)$', re.I)
+    ENG = re.compile(r'^(portable|power|station|powerstation|solar|panel|generator|battery|japan|official|store|model|type|for|with|and|the)$', re.I)
+    SKU = re.compile(r'^\d{6,}$')
     keep = []
     for x in toks:
-        if UNIT.match(x):
+        if UNIT.match(x) or ENG.match(x) or SKU.match(x):
             continue
         if re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9\-+.]{0,15}', x):
             keep.append(x)
@@ -122,6 +124,44 @@ def main():
         known_models_by_brand.setdefault(norm(p['brand']), []).append(
             norm(re.sub(r'\(.*?\)', '', p['model'])))
 
+    def digit_tokens(model):
+        return {t.lower() for t in re.split(r'[^A-Za-z0-9]+', model or '') if t and re.search(r'\d', t)}
+
+    # ブランド＋容量＋数字トークンが一致する既存機種があれば同一とみなす
+    by_brand_cap = {}
+    for p in products:
+        if p.get('capacity_wh'):
+            by_brand_cap.setdefault((norm(p['brand']), p['capacity_wh']), []).append(digit_tokens(p['model']))
+
+    def is_known(brand, model, cap):
+        nm = norm(model)
+        if norm(brand) + '|' + nm in known:
+            return True
+        for km in known_models_by_brand.get(norm(brand), []):
+            if nm and km and (nm in km or km in nm):
+                return True
+        if cap:
+            mine = digit_tokens(model)
+            for toks in by_brand_cap.get((norm(brand), cap), []):
+                if mine & toks:
+                    return True
+        return False
+
+    # 過去に自動収録した仮エントリのうち、正規エントリと重複しているものを掃除する
+    curated = [p for p in products if not p.get('provisional')]
+    removed = []
+    for p in list(products):
+        if not p.get('provisional'):
+            continue
+        for c in curated:
+            if norm(c['brand']) == norm(p['brand']) and c.get('capacity_wh') and c['capacity_wh'] == p.get('capacity_wh') \
+               and (digit_tokens(c['model']) & digit_tokens(p['model'])):
+                products.remove(p)
+                removed.append(f"{p['brand']} {p['model']}")
+                break
+    if removed:
+        print('重複していた自動収録エントリを削除: ' + ' / '.join(removed))
+
     found = {}   # key -> dict
     for b in brands:
         items = search(f'{b} ポータブル電源', app_id, access_key)
@@ -139,10 +179,9 @@ def main():
                 continue
             key = norm(b) + '|' + norm(m)
             # 既存カタログに含まれる（部分一致も既存扱い）
-            nm = norm(m)
-            if key in known or any(nm in km or km in nm for km in known_models_by_brand.get(norm(b), [])):
-                continue
             cap = wh_of(name, it.get('itemCaption'))
+            if is_known(b, m, cap):
+                continue
             e = found.setdefault(key, {'brand': b, 'model': m, 'shops': set(), 'prices': [],
                                        'cap': None, 'watt': None, 'url': None, 'image': None,
                                        'titles': []})
@@ -199,7 +238,7 @@ def main():
 
     json.dump(products, open(os.path.join(DATA, 'products.json'), 'w', encoding='utf-8'),
               ensure_ascii=False, indent=1)
-    json.dump({'date': TODAY, 'candidates': report, 'added': added},
+    json.dump({'date': TODAY, 'candidates': report, 'added': added, 'removed_duplicates': removed},
               open(os.path.join(DATA, 'candidates.json'), 'w', encoding='utf-8'),
               ensure_ascii=False, indent=1)
     print(f'---- 新機種スキャン {TODAY} ----')
