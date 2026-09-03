@@ -2,17 +2,21 @@
  "date": "2026-09-03",
  "products": 182,
  "rakuten_ok": 0,
- "kakaku_ok": 0,
+ "kakaku_ok": 48,
  "amazon_ok": 0,
  "rakuten_app_id_set": true,
+ "rakuten_access_key_set": true,
+ "rakuten_affiliate_dropped": false,
  "rakuten_affiliate_id_set": true,
  "referer": "https://yusukemori87.github.io/",
- "kakaku_skipped": true,
+ "kakaku_skipped": false,
  "kakaku_errors": [
-  "HTTPError: HTTP Error 404: Not Found"
+  "HTTPError: HTTP Error 404: Not Found \n<!DOCTYPE html>\n<!--[if IE 9]><html class=\"is-ie9\" lang=\"ja\"><![endif]-->\n<!--[if gt IE 9]><!-->\n<html lang=\"ja\">\n<!--<![endif]-->\n<head>\n    <!--[if IE]>\n    <meta http-equiv=\"X-UA-Compatible\" conte",
+  "HTTPError: HTTP Error 404: Not Found <!doctype html>\r\n<html lang=\"ja\">\r\n<head>\r\n<script>\r\nif(navigator.userAgent.match(/iPod|iPhone|Android.*Mobile|Windows\\sPhone/i)){\r\ndocument.write('<meta name=\"viewport\" content=\"width=device-width,us"
  ],
  "rakuten_errors": [
-  "HTTPError: HTTP Error 400: 400"
+  "HTTPError: HTTP Error 400: Bad Request {\"error_description\":\"API Configuration not found\",\"error\":\"wrong_parameter\"}",
+  "HTTPError: HTTP Error 429: Too Many Requests { \"statusCode\": 429, \"message\": \"Rate limit is exceeded. Try again in 1 seconds.\" }"
  ],
  "paapi_set": false
 }

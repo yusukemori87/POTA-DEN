@@ -127,15 +127,15 @@
    "updated": "2026-09-03",
    "amazon": 24799,
    "rakuten": null,
-   "kakaku": null,
+   "kakaku": 30900,
    "rakuten_url": null,
-   "kakaku_url": null,
+   "kakaku_url": "https://kakaku.com/item/K0001652846/",
    "min": 24799,
-   "hist_min": null,
+   "hist_min": 30900,
    "history": [
     [
      "2026-09-03",
-     null
+     30900
     ]
    ]
   }
@@ -218,15 +218,15 @@
    "updated": "2026-09-03",
    "amazon": null,
    "rakuten": null,
-   "kakaku": null,
+   "kakaku": 39800,
    "rakuten_url": null,
-   "kakaku_url": null,
-   "min": null,
-   "hist_min": null,
+   "kakaku_url": "https://kakaku.com/item/K0001664208/",
+   "min": 39800,
+   "hist_min": 39800,
    "history": [
     [
      "2026-09-03",
-     null
+     39800
     ]
    ]
   }
@@ -347,15 +347,15 @@
    "updated": "2026-09-03",
    "amazon": 58820,
    "rakuten": null,
-   "kakaku": null,
+   "kakaku": 69700,
    "rakuten_url": null,
-   "kakaku_url": null,
+   "kakaku_url": "https://kakaku.com/item/K0001664209/",
    "min": 58820,
-   "hist_min": null,
+   "hist_min": 69700,
    "history": [
     [
      "2026-09-03",
-     null
+     69700
     ]
    ]
   }
@@ -465,15 +465,15 @@
    "updated": "2026-09-03",
    "amazon": 69850,
    "rakuten": null,
-   "kakaku": null,
+   "kakaku": 99700,
    "rakuten_url": null,
-   "kakaku_url": null,
+   "kakaku_url": "https://kakaku.com/item/K0001664210/",
    "min": 69850,
-   "hist_min": null,
+   "hist_min": 99700,
    "history": [
     [
      "2026-09-03",
-     null
+     99700
     ]
    ]
   }
@@ -556,15 +556,15 @@
    "updated": "2026-09-03",
    "amazon": null,
    "rakuten": null,
-   "kakaku": null,
+   "kakaku": 52000,
    "rakuten_url": null,
-   "kakaku_url": null,
-   "min": null,
-   "hist_min": null,
+   "kakaku_url": "https://kakaku.com/item/K0001528337/",
+   "min": 52000,
+   "hist_min": 52000,
    "history": [
     [
      "2026-09-03",
-     null
+     52000
     ]
    ]
   }
@@ -908,15 +908,15 @@
    "updated": "2026-09-03",
    "amazon": null,
    "rakuten": null,
-   "kakaku": null,
+   "kakaku": 43350,
    "rakuten_url": null,
-   "kakaku_url": null,
-   "min": null,
-   "hist_min": null,
+   "kakaku_url": "https://kakaku.com/item/K0001719212/",
+   "min": 43350,
+   "hist_min": 43350,
    "history": [
     [
      "2026-09-03",
-     null
+     43350
     ]
    ]
   }
@@ -1044,15 +1044,15 @@
    "updated": "2026-09-03",
    "amazon": 69800,
    "rakuten": null,
-   "kakaku": null,
+   "kakaku": 109700,
    "rakuten_url": null,
-   "kakaku_url": null,
+   "kakaku_url": "https://kakaku.com/item/K0001800444/",
    "min": 69800,
-   "hist_min": null,
+   "hist_min": 109700,
    "history": [
     [
      "2026-09-03",
-     null
+     109700
     ]
    ]
   }
@@ -1191,15 +1191,15 @@
    "updated": "2026-09-03",
    "amazon": 85860,
    "rakuten": null,
-   "kakaku": null,
+   "kakaku": 43350,
    "rakuten_url": null,
-   "kakaku_url": null,
-   "min": 85860,
-   "hist_min": null,
+   "kakaku_url": "https://kakaku.com/item/K0001719212/",
+   "min": 43350,
+   "hist_min": 43350,
    "history": [
     [
      "2026-09-03",
-     null
+     43350
     ]
    ]
   }
@@ -1333,15 +1333,15 @@
    "updated": "2026-09-03",
    "amazon": 88000,
    "rakuten": null,
-   "kakaku": null,
+   "kakaku": 74800,
    "rakuten_url": null,
-   "kakaku_url": null,
-   "min": 88000,
-   "hist_min": null,
+   "kakaku_url": "https://kakaku.com/item/K0001652845/",
+   "min": 74800,
+   "hist_min": 74800,
    "history": [
     [
      "2026-09-03",
-     null
+     74800
     ]
    ]
   }
@@ -1465,15 +1465,15 @@
    "updated": "2026-09-03",
    "amazon": 120750,
    "rakuten": null,
-   "kakaku": null,
+   "kakaku": 181500,
    "rakuten_url": null,
-   "kakaku_url": null,
+   "kakaku_url": "https://kakaku.com/item/K0001678897/",
    "min": 120750,
-   "hist_min": null,
+   "hist_min": 181500,
    "history": [
     [
      "2026-09-03",
-     null
+     181500
     ]
    ]
   }
@@ -1551,15 +1551,15 @@
    "updated": "2026-09-03",
    "amazon": null,
    "rakuten": null,
-   "kakaku": null,
+   "kakaku": 74800,
    "rakuten_url": null,
-   "kakaku_url": null,
-   "min": null,
-   "hist_min": null,
+   "kakaku_url": "https://kakaku.com/item/K0001772096/",
+   "min": 74800,
+   "hist_min": 74800,
    "history": [
     [
      "2026-09-03",
-     null
+     74800
     ]
    ]
   }
@@ -1687,15 +1687,15 @@
    "updated": "2026-09-03",
    "amazon": 119800,
    "rakuten": null,
-   "kakaku": null,
+   "kakaku": 104800,
    "rakuten_url": null,
-   "kakaku_url": null,
-   "min": 119800,
-   "hist_min": null,
+   "kakaku_url": "https://kakaku.com/item/K0001711916/",
+   "min": 104800,
+   "hist_min": 104800,
    "history": [
     [
      "2026-09-03",
-     null
+     104800
     ]
    ]
   }
@@ -1823,15 +1823,15 @@
    "updated": "2026-09-03",
    "amazon": 236334,
    "rakuten": null,
-   "kakaku": null,
+   "kakaku": 154988,
    "rakuten_url": null,
-   "kakaku_url": null,
-   "min": 236334,
-   "hist_min": null,
+   "kakaku_url": "https://kakaku.com/item/K0001711917/",
+   "min": 154988,
+   "hist_min": 154988,
    "history": [
     [
      "2026-09-03",
-     null
+     154988
     ]
    ]
   }
@@ -1903,15 +1903,15 @@
    "updated": "2026-09-03",
    "amazon": null,
    "rakuten": null,
-   "kakaku": null,
+   "kakaku": 189000,
    "rakuten_url": null,
-   "kakaku_url": null,
-   "min": null,
-   "hist_min": null,
+   "kakaku_url": "https://kakaku.com/item/K0001719487/",
+   "min": 189000,
+   "hist_min": 189000,
    "history": [
     [
      "2026-09-03",
-     null
+     189000
     ]
    ]
   }
@@ -1983,15 +1983,15 @@
    "updated": "2026-09-03",
    "amazon": null,
    "rakuten": null,
-   "kakaku": null,
+   "kakaku": 189000,
    "rakuten_url": null,
-   "kakaku_url": null,
-   "min": null,
-   "hist_min": null,
+   "kakaku_url": "https://kakaku.com/item/K0001719487/",
+   "min": 189000,
+   "hist_min": 189000,
    "history": [
     [
      "2026-09-03",
-     null
+     189000
     ]
    ]
   }
@@ -2100,15 +2100,15 @@
    "updated": "2026-09-03",
    "amazon": 79200,
    "rakuten": null,
-   "kakaku": null,
+   "kakaku": 52480,
    "rakuten_url": null,
-   "kakaku_url": null,
-   "min": 79200,
-   "hist_min": null,
+   "kakaku_url": "https://kakaku.com/item/K0001462503/",
+   "min": 52480,
+   "hist_min": 52480,
    "history": [
     [
      "2026-09-03",
-     null
+     52480
     ]
    ]
   }
@@ -2187,15 +2187,15 @@
    "updated": "2026-09-03",
    "amazon": null,
    "rakuten": null,
-   "kakaku": null,
+   "kakaku": 94017,
    "rakuten_url": null,
-   "kakaku_url": null,
-   "min": null,
-   "hist_min": null,
+   "kakaku_url": "https://kakaku.com/item/K0001545438/",
+   "min": 94017,
+   "hist_min": 94017,
    "history": [
     [
      "2026-09-03",
-     null
+     94017
     ]
    ]
   }
@@ -2267,15 +2267,15 @@
    "updated": "2026-09-03",
    "amazon": null,
    "rakuten": null,
-   "kakaku": null,
+   "kakaku": 254100,
    "rakuten_url": null,
-   "kakaku_url": null,
-   "min": null,
-   "hist_min": null,
+   "kakaku_url": "https://kakaku.com/item/K0001698680/",
+   "min": 254100,
+   "hist_min": 254100,
    "history": [
     [
      "2026-09-03",
-     null
+     254100
     ]
    ]
   }
@@ -2369,15 +2369,15 @@
    "updated": "2026-09-03",
    "amazon": null,
    "rakuten": null,
-   "kakaku": null,
+   "kakaku": 219800,
    "rakuten_url": null,
-   "kakaku_url": null,
-   "min": null,
-   "hist_min": null,
+   "kakaku_url": "https://kakaku.com/item/K0001489662/",
+   "min": 219800,
+   "hist_min": 219800,
    "history": [
     [
      "2026-09-03",
-     null
+     219800
     ]
    ]
   }
@@ -2512,15 +2512,15 @@
    "updated": "2026-09-03",
    "amazon": 378997,
    "rakuten": null,
-   "kakaku": null,
+   "kakaku": 279800,
    "rakuten_url": null,
-   "kakaku_url": null,
-   "min": 378997,
-   "hist_min": null,
+   "kakaku_url": "https://kakaku.com/item/K0001635713/",
+   "min": 279800,
+   "hist_min": 279800,
    "history": [
     [
      "2026-09-03",
-     null
+     279800
     ]
    ]
   }
@@ -4781,15 +4781,15 @@
    "updated": "2026-09-03",
    "amazon": 11925,
    "rakuten": null,
-   "kakaku": null,
+   "kakaku": 11925,
    "rakuten_url": null,
-   "kakaku_url": null,
+   "kakaku_url": "https://kakaku.com/item/J0000045529/",
    "min": 11925,
-   "hist_min": null,
+   "hist_min": 11925,
    "history": [
     [
      "2026-09-03",
-     null
+     11925
     ]
    ]
   }
@@ -4862,15 +4862,15 @@
    "updated": "2026-09-03",
    "amazon": null,
    "rakuten": null,
-   "kakaku": null,
+   "kakaku": 29520,
    "rakuten_url": null,
-   "kakaku_url": null,
-   "min": null,
-   "hist_min": null,
+   "kakaku_url": "https://kakaku.com/item/K0001623548/",
+   "min": 29520,
+   "hist_min": 29520,
    "history": [
     [
      "2026-09-03",
-     null
+     29520
     ]
    ]
   }
@@ -4941,15 +4941,15 @@
    "updated": "2026-09-03",
    "amazon": null,
    "rakuten": null,
-   "kakaku": null,
+   "kakaku": 22412,
    "rakuten_url": null,
-   "kakaku_url": null,
-   "min": null,
-   "hist_min": null,
+   "kakaku_url": "https://kakaku.com/item/K0001720293/",
+   "min": 22412,
+   "hist_min": 22412,
    "history": [
     [
      "2026-09-03",
-     null
+     22412
     ]
    ]
   }
@@ -5020,15 +5020,15 @@
    "updated": "2026-09-03",
    "amazon": null,
    "rakuten": null,
-   "kakaku": null,
+   "kakaku": 37370,
    "rakuten_url": null,
-   "kakaku_url": null,
-   "min": null,
-   "hist_min": null,
+   "kakaku_url": "https://kakaku.com/item/K0001787652/",
+   "min": 37370,
+   "hist_min": 37370,
    "history": [
     [
      "2026-09-03",
-     null
+     37370
     ]
    ]
   }
@@ -5107,15 +5107,15 @@
    "updated": "2026-09-03",
    "amazon": null,
    "rakuten": null,
-   "kakaku": null,
+   "kakaku": 26795,
    "rakuten_url": null,
-   "kakaku_url": null,
-   "min": null,
-   "hist_min": null,
+   "kakaku_url": "https://kakaku.com/item/K0001568817/",
+   "min": 26795,
+   "hist_min": 26795,
    "history": [
     [
      "2026-09-03",
-     null
+     26795
     ]
    ]
   }
@@ -5186,15 +5186,15 @@
    "updated": "2026-09-03",
    "amazon": null,
    "rakuten": null,
-   "kakaku": null,
+   "kakaku": 47840,
    "rakuten_url": null,
-   "kakaku_url": null,
-   "min": null,
-   "hist_min": null,
+   "kakaku_url": "https://kakaku.com/item/K0001697659/",
+   "min": 47840,
+   "hist_min": 47840,
    "history": [
     [
      "2026-09-03",
-     null
+     47840
     ]
    ]
   }
@@ -5295,15 +5295,15 @@
    "updated": "2026-09-03",
    "amazon": 62180,
    "rakuten": null,
-   "kakaku": null,
+   "kakaku": 50486,
    "rakuten_url": null,
-   "kakaku_url": null,
-   "min": 62180,
-   "hist_min": null,
+   "kakaku_url": "https://kakaku.com/item/K0001717441/",
+   "min": 50486,
+   "hist_min": 50486,
    "history": [
     [
      "2026-09-03",
-     null
+     50486
     ]
    ]
   }
@@ -5437,15 +5437,15 @@
    "updated": "2026-09-03",
    "amazon": 64503,
    "rakuten": null,
-   "kakaku": null,
+   "kakaku": 54799,
    "rakuten_url": null,
-   "kakaku_url": null,
-   "min": 64503,
-   "hist_min": null,
+   "kakaku_url": "https://kakaku.com/item/J0000045528/",
+   "min": 54799,
+   "hist_min": 54799,
    "history": [
     [
      "2026-09-03",
-     null
+     54799
     ]
    ]
   }
@@ -5516,15 +5516,15 @@
    "updated": "2026-09-03",
    "amazon": null,
    "rakuten": null,
-   "kakaku": null,
+   "kakaku": 69709,
    "rakuten_url": null,
-   "kakaku_url": null,
-   "min": null,
-   "hist_min": null,
+   "kakaku_url": "https://kakaku.com/item/K0001687446/",
+   "min": 69709,
+   "hist_min": 69709,
    "history": [
     [
      "2026-09-03",
-     null
+     69709
     ]
    ]
   }
@@ -5659,15 +5659,15 @@
    "updated": "2026-09-03",
    "amazon": 69484,
    "rakuten": null,
-   "kakaku": null,
+   "kakaku": 69484,
    "rakuten_url": null,
-   "kakaku_url": null,
+   "kakaku_url": "https://kakaku.com/item/J0000047405/",
    "min": 69484,
-   "hist_min": null,
+   "hist_min": 69484,
    "history": [
     [
      "2026-09-03",
-     null
+     69484
     ]
    ]
   }
@@ -5819,15 +5819,15 @@
    "updated": "2026-09-03",
    "amazon": null,
    "rakuten": null,
-   "kakaku": null,
+   "kakaku": 77870,
    "rakuten_url": null,
-   "kakaku_url": null,
-   "min": null,
-   "hist_min": null,
+   "kakaku_url": "https://kakaku.com/item/K0001793296/",
+   "min": 77870,
+   "hist_min": 77870,
    "history": [
     [
      "2026-09-03",
-     null
+     77870
     ]
    ]
   }
@@ -5965,15 +5965,15 @@
    "updated": "2026-09-03",
    "amazon": 99800,
    "rakuten": null,
-   "kakaku": null,
+   "kakaku": 82582,
    "rakuten_url": null,
-   "kakaku_url": null,
-   "min": 99800,
-   "hist_min": null,
+   "kakaku_url": "https://kakaku.com/item/K0001555061/",
+   "min": 82582,
+   "hist_min": 82582,
    "history": [
     [
      "2026-09-03",
-     null
+     82582
     ]
    ]
   }
@@ -6112,15 +6112,15 @@
    "updated": "2026-09-03",
    "amazon": 86884,
    "rakuten": null,
-   "kakaku": null,
+   "kakaku": 89880,
    "rakuten_url": null,
-   "kakaku_url": null,
+   "kakaku_url": "https://kakaku.com/item/J0000050542/",
    "min": 86884,
-   "hist_min": null,
+   "hist_min": 89880,
    "history": [
     [
      "2026-09-03",
-     null
+     89880
     ]
    ]
   }
@@ -6215,15 +6215,15 @@
    "updated": "2026-09-03",
    "amazon": null,
    "rakuten": null,
-   "kakaku": null,
+   "kakaku": 149800,
    "rakuten_url": null,
-   "kakaku_url": null,
-   "min": null,
-   "hist_min": null,
+   "kakaku_url": "https://kakaku.com/item/K0001700527/",
+   "min": 149800,
+   "hist_min": 149800,
    "history": [
     [
      "2026-09-03",
-     null
+     149800
     ]
    ]
   }
@@ -6294,15 +6294,15 @@
    "updated": "2026-09-03",
    "amazon": null,
    "rakuten": null,
-   "kakaku": null,
+   "kakaku": 107480,
    "rakuten_url": null,
-   "kakaku_url": null,
-   "min": null,
-   "hist_min": null,
+   "kakaku_url": "https://kakaku.com/item/K0001687445/",
+   "min": 107480,
+   "hist_min": 107480,
    "history": [
     [
      "2026-09-03",
-     null
+     107480
     ]
    ]
   }
@@ -6376,15 +6376,15 @@
    "updated": "2026-09-03",
    "amazon": null,
    "rakuten": null,
-   "kakaku": null,
+   "kakaku": 111960,
    "rakuten_url": null,
-   "kakaku_url": null,
-   "min": null,
-   "hist_min": null,
+   "kakaku_url": "https://kakaku.com/item/J0000048065/",
+   "min": 111960,
+   "hist_min": 111960,
    "history": [
     [
      "2026-09-03",
-     null
+     111960
     ]
    ]
   }
@@ -6586,15 +6586,15 @@
    "updated": "2026-09-03",
    "amazon": null,
    "rakuten": null,
-   "kakaku": null,
+   "kakaku": 138222,
    "rakuten_url": null,
-   "kakaku_url": null,
-   "min": null,
-   "hist_min": null,
+   "kakaku_url": "https://kakaku.com/item/K0001544941/",
+   "min": 138222,
+   "hist_min": 138222,
    "history": [
     [
      "2026-09-03",
-     null
+     138222
     ]
    ]
   }
@@ -6666,15 +6666,15 @@
    "updated": "2026-09-03",
    "amazon": null,
    "rakuten": null,
-   "kakaku": null,
+   "kakaku": 173091,
    "rakuten_url": null,
-   "kakaku_url": null,
-   "min": null,
-   "hist_min": null,
+   "kakaku_url": "https://kakaku.com/item/K0001679170/",
+   "min": 173091,
+   "hist_min": 173091,
    "history": [
     [
      "2026-09-03",
-     null
+     173091
     ]
    ]
   }
@@ -6776,15 +6776,15 @@
    "updated": "2026-09-03",
    "amazon": 146650,
    "rakuten": null,
-   "kakaku": null,
+   "kakaku": 129700,
    "rakuten_url": null,
-   "kakaku_url": null,
-   "min": 146650,
-   "hist_min": null,
+   "kakaku_url": "https://kakaku.com/item/K0001555450/",
+   "min": 129700,
+   "hist_min": 129700,
    "history": [
     [
      "2026-09-03",
-     null
+     129700
     ]
    ]
   }
@@ -6862,15 +6862,15 @@
    "updated": "2026-09-03",
    "amazon": null,
    "rakuten": null,
-   "kakaku": null,
+   "kakaku": 215880,
    "rakuten_url": null,
-   "kakaku_url": null,
-   "min": null,
-   "hist_min": null,
+   "kakaku_url": "https://kakaku.com/item/K0001772033/",
+   "min": 215880,
+   "hist_min": 215880,
    "history": [
     [
      "2026-09-03",
-     null
+     215880
     ]
    ]
   }
@@ -6958,15 +6958,15 @@
    "updated": "2026-09-03",
    "amazon": null,
    "rakuten": null,
-   "kakaku": null,
+   "kakaku": 479400,
    "rakuten_url": null,
-   "kakaku_url": null,
-   "min": null,
-   "hist_min": null,
+   "kakaku_url": "https://kakaku.com/item/K0001696427/",
+   "min": 479400,
+   "hist_min": 479400,
    "history": [
     [
      "2026-09-03",
-     null
+     479400
     ]
    ]
   }
@@ -9253,15 +9253,15 @@
    "updated": "2026-09-03",
    "amazon": 49988,
    "rakuten": null,
-   "kakaku": null,
+   "kakaku": 49988,
    "rakuten_url": null,
-   "kakaku_url": null,
+   "kakaku_url": "https://kakaku.com/item/K0001658628/",
    "min": 49988,
-   "hist_min": null,
+   "hist_min": 49988,
    "history": [
     [
      "2026-09-03",
-     null
+     49988
     ]
    ]
   }
@@ -9334,15 +9334,15 @@
    "updated": "2026-09-03",
    "amazon": null,
    "rakuten": null,
-   "kakaku": null,
+   "kakaku": 49500,
    "rakuten_url": null,
-   "kakaku_url": null,
-   "min": null,
-   "hist_min": null,
+   "kakaku_url": "https://kakaku.com/item/K0001622220/",
+   "min": 49500,
+   "hist_min": 49500,
    "history": [
     [
      "2026-09-03",
-     null
+     49500
     ]
    ]
   }
@@ -9481,15 +9481,15 @@
    "updated": "2026-09-03",
    "amazon": 65980,
    "rakuten": null,
-   "kakaku": null,
+   "kakaku": 65980,
    "rakuten_url": null,
-   "kakaku_url": null,
+   "kakaku_url": "https://kakaku.com/item/K0001694042/",
    "min": 65980,
-   "hist_min": null,
+   "hist_min": 65980,
    "history": [
     [
      "2026-09-03",
-     null
+     65980
     ]
    ]
   }
@@ -9623,15 +9623,15 @@
    "updated": "2026-09-03",
    "amazon": 50802,
    "rakuten": null,
-   "kakaku": null,
+   "kakaku": 50734,
    "rakuten_url": null,
-   "kakaku_url": null,
-   "min": 50802,
-   "hist_min": null,
+   "kakaku_url": "https://kakaku.com/item/K0001775011/",
+   "min": 50734,
+   "hist_min": 50734,
    "history": [
     [
      "2026-09-03",
-     null
+     50734
     ]
    ]
   }
@@ -9755,15 +9755,15 @@
    "updated": "2026-09-03",
    "amazon": 114500,
    "rakuten": null,
-   "kakaku": null,
+   "kakaku": 102800,
    "rakuten_url": null,
-   "kakaku_url": null,
-   "min": 114500,
-   "hist_min": null,
+   "kakaku_url": "https://kakaku.com/item/K0001694041/",
+   "min": 102800,
+   "hist_min": 102800,
    "history": [
     [
      "2026-09-03",
-     null
+     102800
     ]
    ]
   }
@@ -9953,15 +9953,15 @@
    "updated": "2026-09-03",
    "amazon": 168355,
    "rakuten": null,
-   "kakaku": null,
+   "kakaku": 127097,
    "rakuten_url": null,
-   "kakaku_url": null,
-   "min": 168355,
-   "hist_min": null,
+   "kakaku_url": "https://kakaku.com/item/K0001497231/",
+   "min": 127097,
+   "hist_min": 127097,
    "history": [
     [
      "2026-09-03",
-     null
+     127097
     ]
    ]
   }
@@ -11264,15 +11264,15 @@
    "updated": "2026-09-03",
    "amazon": 45800,
    "rakuten": null,
-   "kakaku": null,
+   "kakaku": 69300,
    "rakuten_url": null,
-   "kakaku_url": null,
+   "kakaku_url": "https://kakaku.com/item/J0000035827/",
    "min": 45800,
-   "hist_min": null,
+   "hist_min": 69300,
    "history": [
     [
      "2026-09-03",
-     null
+     69300
     ]
    ]
   }

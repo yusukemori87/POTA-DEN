@@ -2,27 +2,32 @@
  "0": {
   "d": "2026-09-03",
   "rakuten": null,
-  "kakaku": null
+  "kakaku": 30900,
+  "kakaku_url": "https://kakaku.com/item/K0001652846/"
  },
  "1": {
   "d": "2026-09-03",
   "rakuten": null,
-  "kakaku": null
+  "kakaku": 39800,
+  "kakaku_url": "https://kakaku.com/item/K0001664208/"
  },
  "2": {
   "d": "2026-09-03",
   "rakuten": null,
-  "kakaku": null
+  "kakaku": 69700,
+  "kakaku_url": "https://kakaku.com/item/K0001664209/"
  },
  "3": {
   "d": "2026-09-03",
   "rakuten": null,
-  "kakaku": null
+  "kakaku": 99700,
+  "kakaku_url": "https://kakaku.com/item/K0001664210/"
  },
  "4": {
   "d": "2026-09-03",
   "rakuten": null,
-  "kakaku": null
+  "kakaku": 52000,
+  "kakaku_url": "https://kakaku.com/item/K0001528337/"
  },
  "5": {
   "d": "2026-09-03",
@@ -37,77 +42,92 @@
  "7": {
   "d": "2026-09-03",
   "rakuten": null,
-  "kakaku": null
+  "kakaku": 43350,
+  "kakaku_url": "https://kakaku.com/item/K0001719212/"
  },
  "8": {
   "d": "2026-09-03",
   "rakuten": null,
-  "kakaku": null
+  "kakaku": 109700,
+  "kakaku_url": "https://kakaku.com/item/K0001800444/"
  },
  "9": {
   "d": "2026-09-03",
   "rakuten": null,
-  "kakaku": null
+  "kakaku": 43350,
+  "kakaku_url": "https://kakaku.com/item/K0001719212/"
  },
  "10": {
   "d": "2026-09-03",
   "rakuten": null,
-  "kakaku": null
+  "kakaku": 74800,
+  "kakaku_url": "https://kakaku.com/item/K0001652845/"
  },
  "11": {
   "d": "2026-09-03",
   "rakuten": null,
-  "kakaku": null
+  "kakaku": 181500,
+  "kakaku_url": "https://kakaku.com/item/K0001678897/"
  },
  "12": {
   "d": "2026-09-03",
   "rakuten": null,
-  "kakaku": null
+  "kakaku": 74800,
+  "kakaku_url": "https://kakaku.com/item/K0001772096/"
  },
  "13": {
   "d": "2026-09-03",
   "rakuten": null,
-  "kakaku": null
+  "kakaku": 104800,
+  "kakaku_url": "https://kakaku.com/item/K0001711916/"
  },
  "14": {
   "d": "2026-09-03",
   "rakuten": null,
-  "kakaku": null
+  "kakaku": 154988,
+  "kakaku_url": "https://kakaku.com/item/K0001711917/"
  },
  "15": {
   "d": "2026-09-03",
   "rakuten": null,
-  "kakaku": null
+  "kakaku": 189000,
+  "kakaku_url": "https://kakaku.com/item/K0001719487/"
  },
  "16": {
   "d": "2026-09-03",
   "rakuten": null,
-  "kakaku": null
+  "kakaku": 189000,
+  "kakaku_url": "https://kakaku.com/item/K0001719487/"
  },
  "17": {
   "d": "2026-09-03",
   "rakuten": null,
-  "kakaku": null
+  "kakaku": 52480,
+  "kakaku_url": "https://kakaku.com/item/K0001462503/"
  },
  "18": {
   "d": "2026-09-03",
   "rakuten": null,
-  "kakaku": null
+  "kakaku": 94017,
+  "kakaku_url": "https://kakaku.com/item/K0001545438/"
  },
  "19": {
   "d": "2026-09-03",
   "rakuten": null,
-  "kakaku": null
+  "kakaku": 254100,
+  "kakaku_url": "https://kakaku.com/item/K0001698680/"
  },
  "20": {
   "d": "2026-09-03",
   "rakuten": null,
-  "kakaku": null
+  "kakaku": 219800,
+  "kakaku_url": "https://kakaku.com/item/K0001489662/"
  },
  "21": {
   "d": "2026-09-03",
   "rakuten": null,
-  "kakaku": null
+  "kakaku": 279800,
+  "kakaku_url": "https://kakaku.com/item/K0001635713/"
  },
  "22": {
   "d": "2026-09-03",
@@ -202,52 +222,62 @@
  "40": {
   "d": "2026-09-03",
   "rakuten": null,
-  "kakaku": null
+  "kakaku": 11925,
+  "kakaku_url": "https://kakaku.com/item/J0000045529/"
  },
  "41": {
   "d": "2026-09-03",
   "rakuten": null,
-  "kakaku": null
+  "kakaku": 29520,
+  "kakaku_url": "https://kakaku.com/item/K0001623548/"
  },
  "42": {
   "d": "2026-09-03",
   "rakuten": null,
-  "kakaku": null
+  "kakaku": 22412,
+  "kakaku_url": "https://kakaku.com/item/K0001720293/"
  },
  "43": {
   "d": "2026-09-03",
   "rakuten": null,
-  "kakaku": null
+  "kakaku": 37370,
+  "kakaku_url": "https://kakaku.com/item/K0001787652/"
  },
  "44": {
   "d": "2026-09-03",
   "rakuten": null,
-  "kakaku": null
+  "kakaku": 26795,
+  "kakaku_url": "https://kakaku.com/item/K0001568817/"
  },
  "45": {
   "d": "2026-09-03",
   "rakuten": null,
-  "kakaku": null
+  "kakaku": 47840,
+  "kakaku_url": "https://kakaku.com/item/K0001697659/"
  },
  "46": {
   "d": "2026-09-03",
   "rakuten": null,
-  "kakaku": null
+  "kakaku": 50486,
+  "kakaku_url": "https://kakaku.com/item/K0001717441/"
  },
  "47": {
   "d": "2026-09-03",
   "rakuten": null,
-  "kakaku": null
+  "kakaku": 54799,
+  "kakaku_url": "https://kakaku.com/item/J0000045528/"
  },
  "48": {
   "d": "2026-09-03",
   "rakuten": null,
-  "kakaku": null
+  "kakaku": 69709,
+  "kakaku_url": "https://kakaku.com/item/K0001687446/"
  },
  "49": {
   "d": "2026-09-03",
   "rakuten": null,
-  "kakaku": null
+  "kakaku": 69484,
+  "kakaku_url": "https://kakaku.com/item/J0000047405/"
  },
  "50": {
   "d": "2026-09-03",
@@ -257,32 +287,38 @@
  "51": {
   "d": "2026-09-03",
   "rakuten": null,
-  "kakaku": null
+  "kakaku": 77870,
+  "kakaku_url": "https://kakaku.com/item/K0001793296/"
  },
  "52": {
   "d": "2026-09-03",
   "rakuten": null,
-  "kakaku": null
+  "kakaku": 82582,
+  "kakaku_url": "https://kakaku.com/item/K0001555061/"
  },
  "53": {
   "d": "2026-09-03",
   "rakuten": null,
-  "kakaku": null
+  "kakaku": 89880,
+  "kakaku_url": "https://kakaku.com/item/J0000050542/"
  },
  "54": {
   "d": "2026-09-03",
   "rakuten": null,
-  "kakaku": null
+  "kakaku": 149800,
+  "kakaku_url": "https://kakaku.com/item/K0001700527/"
  },
  "55": {
   "d": "2026-09-03",
   "rakuten": null,
-  "kakaku": null
+  "kakaku": 107480,
+  "kakaku_url": "https://kakaku.com/item/K0001687445/"
  },
  "56": {
   "d": "2026-09-03",
   "rakuten": null,
-  "kakaku": null
+  "kakaku": 111960,
+  "kakaku_url": "https://kakaku.com/item/J0000048065/"
  },
  "57": {
   "d": "2026-09-03",
@@ -292,27 +328,32 @@
  "58": {
   "d": "2026-09-03",
   "rakuten": null,
-  "kakaku": null
+  "kakaku": 138222,
+  "kakaku_url": "https://kakaku.com/item/K0001544941/"
  },
  "59": {
   "d": "2026-09-03",
   "rakuten": null,
-  "kakaku": null
+  "kakaku": 173091,
+  "kakaku_url": "https://kakaku.com/item/K0001679170/"
  },
  "60": {
   "d": "2026-09-03",
   "rakuten": null,
-  "kakaku": null
+  "kakaku": 129700,
+  "kakaku_url": "https://kakaku.com/item/K0001555450/"
  },
  "61": {
   "d": "2026-09-03",
   "rakuten": null,
-  "kakaku": null
+  "kakaku": 215880,
+  "kakaku_url": "https://kakaku.com/item/K0001772033/"
  },
  "62": {
   "d": "2026-09-03",
   "rakuten": null,
-  "kakaku": null
+  "kakaku": 479400,
+  "kakaku_url": "https://kakaku.com/item/K0001696427/"
  },
  "63": {
   "d": "2026-09-03",
@@ -427,27 +468,32 @@
  "85": {
   "d": "2026-09-03",
   "rakuten": null,
-  "kakaku": null
+  "kakaku": 49988,
+  "kakaku_url": "https://kakaku.com/item/K0001658628/"
  },
  "86": {
   "d": "2026-09-03",
   "rakuten": null,
-  "kakaku": null
+  "kakaku": 49500,
+  "kakaku_url": "https://kakaku.com/item/K0001622220/"
  },
  "87": {
   "d": "2026-09-03",
   "rakuten": null,
-  "kakaku": null
+  "kakaku": 65980,
+  "kakaku_url": "https://kakaku.com/item/K0001694042/"
  },
  "88": {
   "d": "2026-09-03",
   "rakuten": null,
-  "kakaku": null
+  "kakaku": 50734,
+  "kakaku_url": "https://kakaku.com/item/K0001775011/"
  },
  "89": {
   "d": "2026-09-03",
   "rakuten": null,
-  "kakaku": null
+  "kakaku": 102800,
+  "kakaku_url": "https://kakaku.com/item/K0001694041/"
  },
  "90": {
   "d": "2026-09-03",
@@ -457,7 +503,8 @@
  "91": {
   "d": "2026-09-03",
   "rakuten": null,
-  "kakaku": null
+  "kakaku": 127097,
+  "kakaku_url": "https://kakaku.com/item/K0001497231/"
  },
  "92": {
   "d": "2026-09-03",
@@ -512,7 +559,8 @@
  "102": {
   "d": "2026-09-03",
   "rakuten": null,
-  "kakaku": null
+  "kakaku": 69300,
+  "kakaku_url": "https://kakaku.com/item/J0000035827/"
  },
  "103": {
   "d": "2026-09-03",
