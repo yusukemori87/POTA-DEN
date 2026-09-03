@@ -15,7 +15,7 @@
   data/price_history.json       機種ID → [{d, amazon, rakuten, kakaku}] の履歴（直近400日）
   data/products.json            各機種の prices フィールドを更新（現在価格・最安履歴）
 """
-import json, os, re, sys, time, datetime, urllib.parse, urllib.request, html
+import json, os, re, sys, time, datetime, urllib.parse, urllib.request, urllib.error, html
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, 'data')
@@ -72,12 +72,33 @@ def title_matches(title, brand, toks):
 # ---------- 楽天 ----------
 RAKUTEN_ERRORS = []
 
-RAKUTEN_EP = 'https://openapi.rakuten.co.jp/ichibams/api/IchibaItem/Search/20220601'
+# 2026年の新API基盤。バージョンは 20260701 が現行、20220601 は移行期の互換用。
+RAKUTEN_EPS = ['https://openapi.rakuten.co.jp/ichibams/api/IchibaItem/Search/20260701',
+               'https://openapi.rakuten.co.jp/ichibams/api/IchibaItem/Search/20220601']
+RAKUTEN_STATE = {'ep': None}     # 最初に通ったエンドポイントを覚える
 RAKUTEN_AFF_OFF = {'v': False}   # affiliateId で弾かれたら以降は付けない
 
 def rakuten_call(params):
-    url = RAKUTEN_EP + '?' + urllib.parse.urlencode(params)
-    return json.loads(get(url))
+    eps = [RAKUTEN_STATE['ep']] if RAKUTEN_STATE['ep'] else RAKUTEN_EPS
+    last = None
+    for ep in eps:
+        url = ep + '?' + urllib.parse.urlencode(params)
+        for attempt in range(3):
+            try:
+                js = json.loads(get(url))
+                RAKUTEN_STATE['ep'] = ep
+                return js
+            except urllib.error.HTTPError as e:
+                if e.code == 429:          # レート制限は待って再試行
+                    time.sleep(2 + attempt * 2)
+                    last = e
+                    continue
+                last = e
+                break
+            except Exception as e:
+                last = e
+                break
+    raise last
 
 def rakuten_price(p, app_id, aff_id, access_key):
     q, model = query_of(p)
@@ -259,7 +280,7 @@ def main():
             'history': [[x['d'], min([x[k] for k in ('amazon', 'rakuten', 'kakaku') if x.get(k)] or [None])] for x in history[str(i)][-90:]],
         }
         print(f"{i:3d} {p['brand']} {p['model'][:24]:24s} 楽天:{rec.get('rakuten')} 価格.com:{rec.get('kakaku')} Amazon:{rec.get('amazon')}", flush=True)
-        time.sleep(0.25 if KAKAKU_STATE['off'] else 0.7)
+        time.sleep(0.6 if KAKAKU_STATE['off'] else 1.0)
     os.makedirs(os.path.join(DATA, 'prices'), exist_ok=True)
     json.dump(snap, open(os.path.join(DATA, 'prices', TODAY + '.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
     json.dump(history, open(hist_path, 'w', encoding='utf-8'), ensure_ascii=False)
@@ -275,6 +296,7 @@ def main():
         'amazon_ok': got('amazon'),
         'rakuten_app_id_set': bool(app_id),
         'rakuten_access_key_set': bool(access_key),
+        'rakuten_endpoint': RAKUTEN_STATE['ep'],
         'rakuten_affiliate_dropped': RAKUTEN_AFF_OFF['v'],
         'rakuten_affiliate_id_set': bool(aff_id),
         'referer': REFERER or '(未設定)',
