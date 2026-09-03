@@ -1,7 +1,7 @@
 {
  "date": "2026-09-03",
  "products": 182,
- "rakuten_ok": 17,
+ "rakuten_ok": 86,
  "kakaku_ok": 48,
  "amazon_ok": 0,
  "rakuten_app_id_set": true,
@@ -16,7 +16,7 @@
   "HTTPError: HTTP Error 404: Not Found <!doctype html>\r\n<html lang=\"ja\">\r\n<head>\r\n<script>\r\nif(navigator.userAgent.match(/iPod|iPhone|Android.*Mobile|Windows\\sPhone/i)){\r\ndocument.write('<meta name=\"viewport\" content=\"width=device-width,us"
  ],
  "rakuten_errors": [
-  "HTTPError: HTTP Error 403: Error {\n  \"errors\": {\n    \"errorCode\": 403,\n    \"errorMessage\": \"HTTP_REFERRER_NOT_ALLOWED\"\n  }\n}",
+  "HTTPError: HTTP Error 400: Bad Request {\"error_description\":\"API Configuration not found\",\"error\":\"wrong_parameter\"}",
   "HTTPError: HTTP Error 400: Bad Request {\"error_description\":\"keyword is not valid\",\"error\":\"wrong_parameter\"}"
  ],
  "paapi_set": false
