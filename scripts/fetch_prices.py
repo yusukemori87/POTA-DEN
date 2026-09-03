@@ -51,6 +51,7 @@ def get(url, headers=None, timeout=8):
 
 def query_of(p):
     m = re.sub(r'\(.*?\)', '', p['model']).strip()
+    m = re.sub(r'[+&?#]', ' ', m)   # 楽天APIが keyword で弾く記号を除去
     m = re.sub(r'^(Jackery ポータブル電源|Jackery|Anker Solix|Anker|EcoFlow|BLUETTI|Dabbsson|ALLPOWERS|Victor|JVC|KENWOOD|Zendure)\s+', '', m).strip()
     return f"{p['brand']} {m}", m
 
@@ -123,17 +124,17 @@ def rakuten_price(p, app_id, aff_id, access_key):
                 msg = errmsg(e2)[:300]
                 if msg not in RAKUTEN_ERRORS:
                     RAKUTEN_ERRORS.append(msg)
-                return None, None, f'rakuten error: {e2}'
+                return None, None, None
         else:
             msg = errmsg(e)[:300]
             if msg not in RAKUTEN_ERRORS:
                 RAKUTEN_ERRORS.append(msg)
-            return None, None, f'rakuten error: {e}'
+            return None, None, None
     if isinstance(js, dict) and js.get('errors'):
         msg = 'API error: ' + json.dumps(js['errors'], ensure_ascii=False)[:200]
         if msg not in RAKUTEN_ERRORS:
             RAKUTEN_ERRORS.append(msg)
-        return None, None, msg
+        return None, None, None
     best = None
     for it in js.get('Items', []):
         name = it.get('itemName', '')
@@ -143,10 +144,16 @@ def rakuten_price(p, app_id, aff_id, access_key):
         if not title_matches(name, p['brand'], toks):
             continue
         if best is None or price < best[0]:
-            best = (price, it.get('affiliateUrl') or it.get('itemUrl'))
+            imgs = it.get('mediumImageUrls') or it.get('smallImageUrls') or []
+            im = imgs[0] if imgs else None
+            if isinstance(im, dict):
+                im = im.get('imageUrl')
+            if im:
+                im = re.sub(r'\?.*$', '', im).replace('http://', 'https://')
+            best = (price, it.get('affiliateUrl') or it.get('itemUrl'), im)
     if best:
-        return best[0], best[1], 'ok'
-    return None, None, 'no match'
+        return best[0], best[1], best[2]
+    return None, None, None
 
 # ---------- 価格.com ----------
 # 連続で失敗したら以降スキップする（IPブロック等で1件25秒×182件かかるのを防ぐ）
@@ -249,7 +256,9 @@ def main():
             break
         rec = {'d': TODAY}
         if app_id:
-            price, url, st = rakuten_price(p, app_id, aff_id, access_key)
+            price, url, rimg = rakuten_price(p, app_id, aff_id, access_key)
+            if rimg:
+                rec['rakuten_image'] = rimg
             rec['rakuten'] = price
             if url:
                 rec['rakuten_url'] = url
@@ -275,6 +284,8 @@ def main():
             'updated': TODAY,
             'amazon': cur.get('amazon'), 'rakuten': cur.get('rakuten'), 'kakaku': cur.get('kakaku'),
             'rakuten_url': rec.get('rakuten_url'), 'kakaku_url': rec.get('kakaku_url'),
+            # ローカル画像が無い機種は楽天のサムネで補う（既存の値は消さない）
+            'image': rec.get('rakuten_image') or (p.get('prices') or {}).get('image'),
             'min': min(vals) if vals else None,
             'hist_min': min(hist_vals) if hist_vals else None,
             'history': [[x['d'], min([x[k] for k in ('amazon', 'rakuten', 'kakaku') if x.get(k)] or [None])] for x in history[str(i)][-90:]],
