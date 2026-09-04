@@ -7,7 +7,7 @@
  "rakuten_app_id_set": true,
  "rakuten_access_key_set": true,
  "rakuten_endpoint": "https://openapi.rakuten.co.jp/ichibams/api/IchibaItem/Search/20260701",
- "rakuten_affiliate_dropped": true,
+ "rakuten_affiliate_dropped": false,
  "rakuten_affiliate_id_set": true,
  "referer": "https://pota-den.com/",
  "kakaku_skipped": false,
@@ -17,8 +17,7 @@
  ],
  "rakuten_errors": [
   "HTTPError: HTTP Error 400: Bad Request {\"error_description\":\"API Configuration not found\",\"error\":\"wrong_parameter\"}",
-  "HTTPError: HTTP Error 400: Bad Request {\"error_description\":\"keyword is not valid\",\"error\":\"wrong_parameter\"}",
-  "affiliateId を外して再試行に成功（アフィリエイトID要確認）"
+  "HTTPError: HTTP Error 400: Bad Request {\"error_description\":\"keyword is not valid\",\"error\":\"wrong_parameter\"}"
  ],
  "discontinued": 0,
  "provisional": 0,
