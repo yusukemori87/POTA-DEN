@@ -267,12 +267,22 @@ footer{max-width:1440px;margin:0 auto;padding:10px 20px 60px;color:var(--ink2);f
 footer p{max-width:80ch;margin:0 0 8px}
 .hidden{display:none!important}
 .mtoggle{display:none}
+.sidehead,.sidefoot,.sidebg{display:none}
 @media (max-width:860px){
   .mimg{position:static}
   .page{grid-template-columns:1fr}
-  aside{position:static;max-height:none;display:none;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px}
-  aside.open{display:block}
+  aside{position:fixed;top:0;left:0;bottom:0;width:min(80vw,360px);max-height:none;display:block;background:var(--surface);border:0;border-right:1px solid var(--line);border-radius:0;padding:12px 14px 16px;overflow:auto;z-index:35;transform:translateX(-105%);transition:transform .25s ease;box-shadow:var(--shadow2);-webkit-overflow-scrolling:touch;overscroll-behavior:contain}
+  aside.open{transform:none}
+  aside.dragging{transition:none}
+  .sidebg{display:block;position:fixed;inset:0;background:rgba(10,14,13,.45);z-index:34;opacity:0;pointer-events:none;transition:opacity .25s}
+  .sidebg.on{opacity:1;pointer-events:auto}
+  .sidehead{display:flex;justify-content:space-between;align-items:center;margin-bottom:4px}
+  .sidehead b{font-size:15px}
+  .sidehead .tbtn{padding:5px 10px;font-size:12.5px}
+  .sidefoot{display:block;position:sticky;bottom:-16px;margin:12px -14px -16px;padding:10px 14px 14px;background:var(--surface);border-top:1px solid var(--line)}
+  .sidefoot .btn{display:block;width:100%}
   .mtoggle{display:inline-block}
+  .mtoggle.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
   .modal{grid-template-columns:1fr}
   .mimg{min-height:220px}
 }
@@ -292,7 +302,7 @@ footer p{max-width:80ch;margin:0 0 8px}
   <div class="logo"><i></i>ポタ電カタログ<small id="upd">JAPAN 2026.09</small></div>
   <form class="search" id="sform" role="search"><input type="search" id="q" placeholder="機種名・ブランドで検索（例: DELTA 3, Anker, 1000Wh）" aria-label="検索"><button type="submit">検索</button></form>
   <div class="topr">
-    <button class="tbtn mtoggle" id="mtoggle">絞り込み</button>
+    <button class="tbtn mtoggle" id="mtoggle" aria-controls="side" aria-expanded="false">絞り込み</button>
     <select class="sortsel" id="sort" aria-label="並び替え">
       <option value="tenno">総合評価が高い順</option>
       <option value="pop">レビュー数が多い順</option>
@@ -314,7 +324,8 @@ footer p{max-width:80ch;margin:0 0 8px}
 </div></div>
 
 <div class="page">
-  <aside id="side">
+  <aside id="side" aria-label="絞り込み">
+    <div class="sidehead"><b>絞り込み</b><button class="tbtn" id="sideclose" aria-label="絞り込みを閉じる">閉じる ×</button></div>
     <div class="fs" id="fs-tenno"><h3>総合評価スコア<button class="cl" data-clear="tenno">クリア</button></h3>
       <label class="opt"><input type="radio" name="tenno" value="75"> 75点以上（良品）<span class="c"></span></label>
       <label class="opt"><input type="radio" name="tenno" value="60"> 60点以上 <span class="c"></span></label>
@@ -377,7 +388,9 @@ footer p{max-width:80ch;margin:0 0 8px}
       <label class="opt"><input type="radio" name="weight" value="20-999"> 20kg〜 <span class="c"></span></label>
     </div>
     <button class="resetall" id="resetall">すべての条件をクリア</button>
+    <div class="sidefoot"><button class="btn p" id="sideapply">182件を表示</button></div>
   </aside>
+  <div class="sidebg" id="sidebg"></div>
 
   <main>
     <div class="lede">
@@ -477,7 +490,25 @@ $('#resetall').onclick=()=>{['cap','rate','price','warr','tenno','solar','out','
 $('#sform').onsubmit=e=>{e.preventDefault();S.q=$('#q').value.trim().toLowerCase();S.shown=24;render()};
 $('#q').addEventListener('input',e=>{if(!e.target.value){S.q='';render()}});
 $('#sort').onchange=e=>{S.sort=e.target.value;S.shown=24;render()};
-$('#mtoggle').onclick=()=>$('#side').classList.toggle('open');
+// ---- スマホ用ドロワー（左からスライドイン。背景タップ／左スワイプ／「絞り込み」再押し／閉じるボタン／Esc で閉じる）
+const side=$('#side'),sidebg=$('#sidebg'),mtoggle=$('#mtoggle');
+const isMobile=()=>matchMedia('(max-width:860px)').matches;
+function openSide(){const h=$('.top').offsetHeight;side.style.top=h+'px';sidebg.style.top=h+'px';side.classList.add('open');sidebg.classList.add('on');mtoggle.classList.add('on');mtoggle.setAttribute('aria-expanded','true');document.body.style.overflow='hidden'}
+function closeSide(){side.classList.remove('open');sidebg.classList.remove('on');mtoggle.classList.remove('on');mtoggle.setAttribute('aria-expanded','false');if(!$('#ov').classList.contains('open'))document.body.style.overflow=''}
+mtoggle.onclick=()=>side.classList.contains('open')?closeSide():openSide();
+sidebg.onclick=closeSide;$('#sideclose').onclick=closeSide;$('#sideapply').onclick=closeSide;
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&side.classList.contains('open'))closeSide()});
+matchMedia('(max-width:860px)').addEventListener('change',e=>{if(!e.matches)closeSide()});
+(()=>{let sx=null,sy=null,dx=0,drag=false;
+  const start=e=>{if(!isMobile())return;const t=e.touches[0];sx=t.clientX;sy=t.clientY;dx=0;drag=false};
+  const move=e=>{if(sx==null)return;const t=e.touches[0];const mx=t.clientX-sx,my=t.clientY-sy;
+    if(!drag){if(Math.abs(mx)>10&&Math.abs(mx)>Math.abs(my)*1.5){drag=true;side.classList.add('dragging')}else if(Math.abs(my)>10){sx=null;return}}
+    if(drag){dx=Math.min(0,mx);side.style.transform=`translateX(${dx}px)`;sidebg.style.opacity=String(Math.max(0,1+dx/side.offsetWidth))}};
+  const end=()=>{if(drag){side.classList.remove('dragging');side.style.transform='';sidebg.style.opacity='';if(dx<-side.offsetWidth*0.3)closeSide()}sx=null;drag=false};
+  side.addEventListener('touchstart',start,{passive:true});side.addEventListener('touchmove',move,{passive:true});side.addEventListener('touchend',end);side.addEventListener('touchcancel',end);
+  // 背景の暗い部分を左へスワイプしても閉じる
+  sidebg.addEventListener('touchstart',start,{passive:true});sidebg.addEventListener('touchmove',move,{passive:true});sidebg.addEventListener('touchend',end);
+})();
 $('#v-grid').onclick=()=>setView('grid');$('#v-chart').onclick=()=>setView('chart');
 function setView(v){S.view=v;$('#v-grid').setAttribute('aria-pressed',v==='grid');$('#v-chart').setAttribute('aria-pressed',v==='chart');$('#gridview').classList.toggle('hidden',v!=='grid');$('#chartview').classList.toggle('hidden',v!=='chart');render()}
 $('#ysel').onchange=render;
@@ -531,6 +562,7 @@ function ratingHTML(p){return p.rating==null?`<div class="rating none">Amazon評
 let LIST=[];
 function render(){
   LIST=DATA.filter(p=>pass(p)).sort(SORTS[S.sort]);
+  $('#sideapply').textContent=`${LIST.length}件を表示`;
   $('#cnt').textContent=LIST.length;$('#hint').textContent=LIST.length===DATA.length?`全 ${DATA.length} 機種`:`／ 全 ${DATA.length} 機種`;
   renderChips();updateCounts();
   if(S.view==='grid')renderGrid();else renderChart();
