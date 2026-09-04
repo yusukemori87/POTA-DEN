@@ -1,5 +1,5 @@
-<title>ポタ電カタログ</title>
-<meta name="description" content="日本で買えるポータブル電源を容量・Wh単価・星評価・ソーラー入力で横断比較">
+<title>ポータブル電源 比較__N__機種｜Wh単価・保証・辛口レビュー｜ポタ電カタログ</title>
+<meta name="description" content="日本で買えるポータブル電源__N__機種を横断比較。容量・Wh単価・メーカー保証・セール時最安値を一覧で並べ、レビューを読み込んだ編集部の辛口採点（100点満点）つき。価格は毎日自動更新。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap">
 <style>
@@ -49,7 +49,7 @@ button{font:inherit;color:inherit;cursor:pointer}
 .search button{border:0;background:var(--accent);color:#fff;padding:0 16px;font-weight:600}
 .topr{display:flex;align-items:center;gap:10px}
 .sortsel{font:inherit;padding:8px 10px;border:1.5px solid var(--line2);border-radius:10px;background:var(--surface);color:var(--ink)}
-.cmpbtn{border:1.5px solid var(--line2);background:var(--surface);border-radius:10px;padding:7px 12px;font-weight:600;display:flex;gap:8px;align-items:center}
+.cmpbtn{border:1.5px solid var(--line2);background:var(--surface);border-radius:10px;padding:7px 12px;font-weight:600;display:flex;gap:8px;align-items:center;white-space:nowrap}
 .cmpbtn b{background:var(--accent);color:#fff;border-radius:999px;min-width:20px;height:20px;display:inline-grid;place-items:center;font-size:11px;padding:0 6px}
 /* layout */
 .page{max-width:1440px;margin:0 auto;padding:18px 20px 80px;display:grid;grid-template-columns:250px 1fr;gap:22px;align-items:start}
@@ -72,8 +72,11 @@ aside{position:sticky;top:64px;max-height:calc(100vh - 80px);overflow:auto;paddi
 .resetall{width:100%;margin-top:12px;border:1.5px solid var(--line2);background:var(--surface);border-radius:10px;padding:8px;font-weight:600}
 /* results */
 .rhead{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;margin-bottom:12px}
-.rhead h1{font-size:18px;margin:0;font-weight:700}
-.rhead h1 span{font-weight:500;color:var(--ink2);font-size:13px;margin-left:8px}
+.rhead .cnt{font-size:18px;margin:0;font-weight:700}
+.rhead .cnt span{font-weight:500;color:var(--ink2);font-size:13px;margin-left:8px}
+.lede{margin:0 0 14px}
+.lede h1{font-size:20px;line-height:1.35;margin:0 0 6px;font-weight:700;letter-spacing:-.01em}
+.lede p{margin:0;font-size:13px;line-height:1.7;color:var(--ink2);max-width:78ch}
 .chipsrow{display:flex;flex-wrap:wrap;gap:6px}
 .fchip{display:inline-flex;align-items:center;gap:6px;background:var(--accent-soft);color:var(--accent-ink);border-radius:999px;padding:3px 10px;font-size:12px;font-weight:600}
 .fchip button{border:0;background:none;padding:0;color:inherit;font-size:14px;line-height:1}
@@ -258,7 +261,7 @@ svg.sc circle:hover{fill-opacity:1}
 .cmpt td{font-family:var(--mono)}
 .cmpt td.best{color:var(--accent-ink);font-weight:600}
 .cmpt img{width:72px;height:72px;object-fit:contain;background:var(--imgbg);border-radius:8px;mix-blend-mode:multiply}
-.tbtn{border:1.5px solid var(--line2);background:var(--surface);border-radius:9px;padding:6px 12px;font-weight:600}
+.tbtn{border:1.5px solid var(--line2);background:var(--surface);border-radius:9px;padding:6px 12px;font-weight:600;white-space:nowrap}
 .tbtn.p{background:var(--accent);border-color:var(--accent);color:#fff}
 footer{max-width:1440px;margin:0 auto;padding:10px 20px 60px;color:var(--ink2);font-size:12px}
 footer p{max-width:80ch;margin:0 0 8px}
@@ -272,6 +275,15 @@ footer p{max-width:80ch;margin:0 0 8px}
   .mtoggle{display:inline-block}
   .modal{grid-template-columns:1fr}
   .mimg{min-height:220px}
+}
+@media (max-width:560px){
+  .topr{width:100%;min-width:0;flex:1 1 100%}
+  .sortsel{flex:1;min-width:0;padding:8px 6px}
+  .lede{margin-bottom:10px}
+  .lede h1{font-size:17px;line-height:1.4}
+  .lede p{font-size:12px;line-height:1.65}
+  .kv{grid-template-columns:1fr}
+  .kv div span{white-space:nowrap}
 }
 @media (prefers-reduced-motion:reduce){.card,.tray{transition:none}}
 </style>
@@ -368,8 +380,12 @@ footer p{max-width:80ch;margin:0 0 8px}
   </aside>
 
   <main>
+    <div class="lede">
+      <h1>ポータブル電源の比較カタログ ― __N__機種を横並びで</h1>
+      <p>日本で新品購入できるポータブル電源__N__機種を、容量・Wh単価・保証・セール時最安値まで同じ物差しで比較。全機種にレビューを読み込んだ編集部の辛口採点（100点満点）つき。価格は毎日自動更新。</p>
+    </div>
     <div class="rhead">
-      <h1><span class="num" id="cnt">0</span>件<span id="hint"></span></h1>
+      <div class="cnt"><span class="num" id="cnt">0</span>件<span id="hint"></span></div>
       <div class="chipsrow" id="chips"></div>
       <div id="dvleg"></div>
       <div class="seg"><button id="v-grid" aria-pressed="true">商品一覧</button><button id="v-chart" aria-pressed="false">散布図</button></div>
@@ -412,7 +428,9 @@ const ppwBin=v=>{if(v==null)return null;let i=0;while(i<PPW_BINS.length&&v>=PPW_
 const dvStyle=v=>{const i=ppwBin(v);if(i==null)return '';const lab=i===0?'最も安い層':i===9?'最も高い層':(i<4?'平均より安い':i>5?'平均より高い':'ほぼ平均');return ` data-dv="${i}" style="--dv-bg:var(--dv${i})" title="Wh単価 ${v} 円/Wh ・ 全${DATA.length}機種中で${lab}（第${i+1}十分位）"`};
 const dvLegendHTML=()=>{const cells=[...Array(10)].map((_,i)=>`<i style="background:var(--dv${i})" title="${i===0?'〜'+PPW_BINS[0]+' 円/Wh':i===9?PPW_BINS[8]+' 円/Wh〜':PPW_BINS[i-1]+'〜'+PPW_BINS[i]+' 円/Wh'}"></i>`).join('');return `<div class="dvlegend"><b>Wh単価</b><span>安い</span><span class="sc">${cells}</span><span>高い</span><span>（全${DATA.length}機種の分布で10段階・中央値 ${PPW_BINS[4]} 円/Wh）</span></div>`};
 const PAGE_BASE = window.POTADEN_PAGE_BASE || null;  // 静的サイト版では 'p/' が入る
-const slugOf = p => (p.brand+'-'+p.model).toLowerCase().replace(/\(.*?\)/g,'').replace(/[^a-z0-9ぁ-んァ-ヶ一-龠]+/g,'-').replace(/^-|-$/g,'');
+// model が既にブランド名で始まる場合はブランドを重ねない（build.py の full_name と同じ規則）
+const fullName = p => p.model.toLowerCase().startsWith(p.brand.toLowerCase()) ? p.model : p.brand+' '+p.model;
+const slugOf = p => fullName(p).toLowerCase().replace(/\(.*?\)/g,'').replace(/[^a-z0-9ぁ-んァ-ヶ一-龠]+/g,'-').replace(/^-|-$/g,'');
 const hrefOf = p => PAGE_BASE ? PAGE_BASE+slugOf(p)+'/' : null;
 const linkAttr = p => PAGE_BASE ? ` href="${hrefOf(p)}"` : '';
 const fmt=n=>n==null?'—':n.toLocaleString('ja-JP');
@@ -530,7 +548,7 @@ function renderGrid(){
   g.innerHTML=LIST.slice(0,S.shown).map((p,i)=>{const sel=S.cmp.includes(p.id);return `<article class="card ${sel?'sel':''} ${p._eol?'eol':''}" data-id="${p.id}">
     <div class="ph" data-open="${p.id}">${imgHTML(p)}<span class="rank">#${i+1}</span>${p._eol?'<span class="eolbadge">販売終了の可能性</span>':''}${p._crit?'<span class="crit">致命的レビューあり</span>':''}${p.v200?'<span class="badge v200">200V出力</span>':''}${p.battery?`<span class="badge ${p.battery==='LFP'?'lfp':''}">${p.battery==='LFP'?'リン酸鉄':p.battery}</span>`:''}<label class="cb" onclick="event.stopPropagation()"><input type="checkbox" data-cmp="${p.id}" ${sel?'checked':''} ${!sel&&S.cmp.length>=4?'disabled':''}>比較</label></div>
     <div class="body">
-      <div class="brand">${esc(p.brand)}</div>
+      <div class="brand">${fullName(p)===p.model?'':esc(p.brand)}</div>
       <div class="capbadge">${fmt(p.capacity_wh)}<em>Wh</em>${p.expandable?'<span>拡張可</span>':''}</div>
       <h2 class="title">${PAGE_BASE?`<a${linkAttr(p)} data-open="${p.id}" style="color:inherit;text-decoration:none">${esc(p.model)}</a>`:`<span data-open="${p.id}">${esc(p.model)}</span>`}</h2>
       ${ratingHTML(p)}
@@ -558,7 +576,7 @@ function openModal(id,push){const p=DATA[id];
   if(push&&PAGE_BASE&&window.history&&history.pushState){try{history.pushState({id},'',hrefOf(p))}catch(e){}}
   const kv=[['容量',fmt(p.capacity_wh)+' Wh'],['定格出力',p.rated_output_w?fmt(p.rated_output_w)+' W':'DC専用'],['瞬間最大出力',p.surge_output_w?fmt(p.surge_output_w)+' W':'—'],['ソーラー最大入力',p.solar_input_w?fmt(p.solar_input_w)+' W':'—'],['AC充電入力',p.ac_input_w?fmt(p.ac_input_w)+' W':'—'],['電池',p.battery||'—'],['サイクル寿命',p.cycles?fmt(p.cycles)+' 回':'—'],['重量',p.weight_kg!=null?p.weight_kg+' kg':'—'],['拡張',p.expandable?'対応'+(p.max_expand_wh?'（最大 '+fmt(p.max_expand_wh)+' Wh）':''):'非対応'],['UPS切替',p.ups_ms!=null?p.ups_ms+' ms':'—'],['Wh単価',p._ppw!=null?p._ppw+' 円/Wh':'—'],['200V出力',p.v200?'対応':'非対応'],['メーカー保証',p.warranty_years?(p.warranty_ext_years&&p.warranty_ext_years>p.warranty_years?`${p.warranty_years===1.5?'18ヶ月':p.warranty_years+'年'}（登録で${p.warranty_ext_years}年）`:`${p.warranty_years}年`):'—'],['セール時最安値',p._low?yen(p._low):'—'],['発売年',p.release_year?`${p.release_year}年（${p.years_on_market}年目）`:'—'],['公式価格',yen(p.price_jpy)],['Amazon価格',p.amazon_price?yen(p.amazon_price):'—']];
   $('#modal').innerHTML=`<button class="mclose" id="mclose" aria-label="閉じる">×</button><div class="mimg"><div class="inner">${imgHTML(p)}<div class="cap">${fmt(p.capacity_wh)} Wh ／ ${p.rated_output_w?fmt(p.rated_output_w)+' W':'DC専用'}${p.weight_kg!=null?' ／ '+p.weight_kg+' kg':''}</div></div></div><div class="mbody">
-    <div class="brand">${esc(p.brand)}</div><h2>${esc(p.model)}</h2>${ratingHTML(p)}
+    <div class="brand">${fullName(p)===p.model?'':esc(p.brand)}</div><h2>${esc(p.model)}</h2>${ratingHTML(p)}
     ${p._eol?`<div class="provnote"><b>販売終了の可能性があります。</b>Amazon・楽天・価格.comのいずれでも ${p.prices&&p.prices.miss_days||14} 日以上、販売中の出品を確認できませんでした。流通在庫や中古では入手できる場合があります。</div>`:''}
     ${p._prov&&!p.tenno?`<div class="provnote"><b>スペックのみ自動収録した新機種です。</b>販売ページから拾える範囲の情報だけを掲載しています。実機のレビューが十分に集まった段階で、天の声による採点を行います。数値に誤りがある場合があるため、購入前に販売ページでご確認ください。</div>`:''}
     <div class="pricebox"><span class="price"><small>¥</small>${p._pmin?fmt(p._pmin):'—'}</span><span class="psrc">${p._psrc}価格・${esc(p._pnote)}</span>${p._low&&p._low<p._pmin?`<span class="low"><span class="tag">セール最安</span><b>${yen(p._low)}</b></span>`:''}</div>
@@ -650,7 +668,7 @@ function renderChart(){
 }
 const tip=$('#tip');
 $('#sc').addEventListener('mousemove',e=>{const c=e.target.closest('circle');if(!c){tip.style.display='none';return}const p=DATA[+c.dataset.id];
-  tip.innerHTML=`<b>${esc(p.brand)} ${esc(p.model)}</b><br>${fmt(p.capacity_wh)}Wh · ${p.rated_output_w?fmt(p.rated_output_w)+'W':'DC'} · PV${p.solar_input_w?fmt(p.solar_input_w)+'W':'—'}<br>${yen(p._pmin)}${p._ppw?' · '+p._ppw+'円/Wh':''}${p.rating?' · ★'+p.rating:''}`;
+  tip.innerHTML=`<b>${esc(fullName(p))}</b><br>${fmt(p.capacity_wh)}Wh · ${p.rated_output_w?fmt(p.rated_output_w)+'W':'DC'} · PV${p.solar_input_w?fmt(p.solar_input_w)+'W':'—'}<br>${yen(p._pmin)}${p._ppw?' · '+p._ppw+'円/Wh':''}${p.rating?' · ★'+p.rating:''}`;
   tip.style.display='block';tip.style.left=(e.clientX+14)+'px';tip.style.top=(e.clientY+14)+'px'});
 $('#sc').addEventListener('mouseleave',()=>tip.style.display='none');
 $('#sc').addEventListener('click',e=>{const c=e.target.closest('circle');if(c)openModal(+c.dataset.id)});
@@ -660,7 +678,7 @@ const CMPROWS=[['容量 Wh','capacity_wh',1],['Wh単価 円/Wh','_ppw',-1],['総
 function renderTray(){const n=S.cmp.length;$('#cmpn').textContent=n;$('#tray').classList.toggle('on',n>0);$('#traytitle').textContent=`比較: ${n} 機種`;
   if(!n){$('#tray').classList.remove('open');$('#traytoggle').textContent='比較表を開く';return}
   const ps=S.cmp.map(i=>DATA[i]);
-  let h=`<table class="cmpt"><tr><th></th>${ps.map(p=>`<th style="font-family:var(--sans);color:var(--ink);font-size:13px">${p._img?`<img src="${p._img}" alt="">`:''}<br>${esc(p.brand)}<br><b>${esc(p.model)}</b></th>`).join('')}</tr>`;
+  let h=`<table class="cmpt"><tr><th></th>${ps.map(p=>`<th style="font-family:var(--sans);color:var(--ink);font-size:13px">${p._img?`<img src="${p._img}" alt="">`:''}<br>${fullName(p)===p.model?'':esc(p.brand)}<br><b>${esc(p.model)}</b></th>`).join('')}</tr>`;
   for(const[lab,k,dir]of CMPROWS){const vals=ps.map(p=>p[k]);const nums=vals.filter(v=>typeof v==='number');const best=dir&&nums.length>1?(dir>0?Math.max(...nums):Math.min(...nums)):null;
     h+=`<tr><th>${lab}</th>${vals.map(v=>`<td class="${v===best?'best':''}">${v==null?'—':typeof v==='number'?((k==='_pmin'||k==='_low')?yen(v):fmt(v)):esc(String(v))}</td>`).join('')}</tr>`}
   h+=`<tr><th></th>${ps.map(p=>`<td><a class="btn am" style="display:inline-block" href="${amz(p)}" target="_blank" rel="nofollow noopener">Amazon</a> <button class="tbtn" data-rm="${p.id}">外す</button></td>`).join('')}</tr></table>`;
