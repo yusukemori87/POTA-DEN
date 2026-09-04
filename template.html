@@ -112,10 +112,12 @@ aside{position:sticky;top:64px;max-height:calc(100vh - 80px);overflow:auto;paddi
 .low{font-size:11.5px;color:var(--ink2);display:flex;align-items:center;gap:5px;flex-wrap:wrap}
 .low b{font-family:var(--mono);font-weight:600;color:var(--accent-ink)}
 .low .tag{background:var(--accent-soft);color:var(--accent-ink);font-size:10px;font-weight:700;padding:1px 6px;border-radius:5px}
+.low.now .tag{background:var(--accent);color:#fff}
 .meta{display:flex;flex-wrap:wrap;gap:4px 10px;align-items:center;justify-content:space-between}
 .capbadge{display:inline-flex;align-items:baseline;gap:3px;border:2.5px solid var(--ink);border-radius:0;padding:3px 10px;font-family:var(--mono);font-weight:600;font-size:19px;color:var(--ink);line-height:1.15;letter-spacing:-.01em;align-self:flex-start}
 .capbadge em{font-style:normal;font-size:11px;font-weight:600}
 .capbadge span{font-size:10.5px;font-weight:500;color:var(--ink2);margin-left:2px}
+.caprow{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap}
 .ppwrow{display:grid;grid-template-columns:1fr 1fr;gap:6px}
 .ppwrow div{background:var(--surface2);border-radius:8px;padding:5px 8px;line-height:1.25}
 .ppwrow div[data-dv]{background:var(--dv-bg)}
@@ -556,6 +558,8 @@ function ageHTML(p){if(!p.release_year)return '';const y=p.years_on_market;
   return `<span class="age ${y>=3?'vet':''}" title="${y>=3?'3年以上売れ続けている定番モデル':'発売から'+y+'年'}"><b>${p.release_year}</b>年発売${y>=1?`・${y}年目`:'・新'}</span>`}
 function warrHTML(p){if(!p.warranty_years)return '';const w=p.warranty_years,e=p.warranty_ext_years;const y=v=>v===1.5?'18ヶ月':v+'年';const t=e&&e>w?`<b>${y(w)}</b>→登録で<b>${y(e)}</b>`:`<b>${y(w)}</b>`;return `<span class="warr ${(e||w)>=5?'w5':''}" title="${esc(p.warranty_note||'')}">保証 ${t}</span>`}
 function shortNote(s){if(!s)return '';const m=s.match(/(20\d\d)[\/年.\-]?\s*(\d{1,2})?/);const src=/価格\.com/.test(s)?'価格.com':/プライムデー/.test(s)?'プライムデー':/ブラックフライデー|BF/.test(s)?'ブラックフライデー':/楽天/.test(s)?'楽天':/公式/.test(s)?'公式セール':/Amazon/.test(s)?'Amazon':'';return (m?m[1]+(m[2]?'/'+m[2]:'')+' ':'')+src}
+// 「セール最安」チップ：現在価格より2%超安い既知の最安値があれば金額つき、最安値と同水準なら「いま最安値」
+function lowChip(p){if(!p._low||!p._pmin)return '';if(p._low<p._pmin*0.98)return `<span class="low" title="${esc(p._lowsrc)}"><span class="tag">セール最安</span><b>${yen(p._low)}</b></span>`;return `<span class="low now" title="現在価格が、確認できている最安値と同水準です${p._lowsrc?'（'+esc(p._lowsrc)+'）':''}"><span class="tag">いま最安値</span></span>`}
 function ratingHTML(p){return p.rating==null?`<div class="rating none">Amazon評価なし</div>`:`<div class="rating">${starsHTML(p.rating)}<span class="rv">${p.rating.toFixed(1)}</span><span class="rc">(${fmt(p.reviews)})</span></div>`}
 
 // ---- render
@@ -581,12 +585,12 @@ function renderGrid(){
     <div class="ph" data-open="${p.id}">${imgHTML(p)}<span class="rank">#${i+1}</span>${p._eol?'<span class="eolbadge">販売終了の可能性</span>':''}${p._crit?'<span class="crit">致命的レビューあり</span>':''}${p.v200?'<span class="badge v200">200V出力</span>':''}${p.battery?`<span class="badge ${p.battery==='LFP'?'lfp':''}">${p.battery==='LFP'?'リン酸鉄':p.battery}</span>`:''}<label class="cb" onclick="event.stopPropagation()"><input type="checkbox" data-cmp="${p.id}" ${sel?'checked':''} ${!sel&&S.cmp.length>=4?'disabled':''}>比較</label></div>
     <div class="body">
       <div class="brand">${fullName(p)===p.model?'':esc(p.brand)}</div>
-      <div class="capbadge">${fmt(p.capacity_wh)}<em>Wh</em>${p.expandable?'<span>拡張可</span>':''}</div>
+      <div class="caprow"><div class="capbadge">${fmt(p.capacity_wh)}<em>Wh</em>${p.expandable?'<span>拡張可</span>':''}</div>${tnHTML(p)}</div>
       <h2 class="title">${PAGE_BASE?`<a${linkAttr(p)} data-open="${p.id}" style="color:inherit;text-decoration:none">${esc(p.model)}</a>`:`<span data-open="${p.id}">${esc(p.model)}</span>`}</h2>
       ${ratingHTML(p)}
-      <div class="pricebox" title="${esc(p._psrc)}価格 ／ ${esc(p._pnote)}"><span class="price"><small>¥</small>${p._pmin?fmt(p._pmin):'—'}</span>${p._low&&p._pmin&&p._low<p._pmin?`<span class="low" title="${esc(p._lowsrc)}"><span class="tag">セール最安</span><b>${yen(p._low)}</b></span>`:''}</div>
+      <div class="pricebox" title="${esc(p._psrc)}価格 ／ ${esc(p._pnote)}"><span class="price"><small>¥</small>${p._pmin?fmt(p._pmin):'—'}</span>${lowChip(p)}</div>
       <div class="ppwrow"><div${dvStyle(p._ppw)}><b>${p._ppw!=null?p._ppw.toFixed(1):'—'}<em>円/Wh</em></b><span>いまのWh単価</span></div><div${dvStyle(p._lowppw)}><b>${p._lowppw!=null?p._lowppw.toFixed(1):'—'}<em>円/Wh</em></b><span>最安時のWh単価</span></div></div>
-      <div class="meta">${ageHTML(p)}${warrHTML(p)}${tnHTML(p)}</div>
+      <div class="meta">${ageHTML(p)}${warrHTML(p)}</div>
       <div class="specs" style="grid-template-columns:repeat(3,1fr)">
         <div class="sp"><b>${p.rated_output_w?fmt(p.rated_output_w):'DC'}<em>W</em></b><span>定格出力</span></div>
         <div class="sp"><b>${p.solar_input_w?fmt(p.solar_input_w):'—'}<em>W</em></b><span>ソーラー</span></div>
@@ -611,7 +615,7 @@ function openModal(id,push){const p=DATA[id];
     <div class="brand">${fullName(p)===p.model?'':esc(p.brand)}</div><h2>${esc(p.model)}</h2>${ratingHTML(p)}
     ${p._eol?`<div class="provnote"><b>販売終了の可能性があります。</b>Amazon・楽天・価格.comのいずれでも ${p.prices&&p.prices.miss_days||14} 日以上、販売中の出品を確認できませんでした。流通在庫や中古では入手できる場合があります。</div>`:''}
     ${p._prov&&!p.tenno?`<div class="provnote"><b>スペックのみ自動収録した新機種です。</b>販売ページから拾える範囲の情報だけを掲載しています。実機のレビューが十分に集まった段階で、天の声による採点を行います。数値に誤りがある場合があるため、購入前に販売ページでご確認ください。</div>`:''}
-    <div class="pricebox"><span class="price"><small>¥</small>${p._pmin?fmt(p._pmin):'—'}</span><span class="psrc">${p._psrc}価格・${esc(p._pnote)}</span>${p._low&&p._low<p._pmin?`<span class="low"><span class="tag">セール最安</span><b>${yen(p._low)}</b></span>`:''}</div>
+    <div class="pricebox"><span class="price"><small>¥</small>${p._pmin?fmt(p._pmin):'—'}</span><span class="psrc">${p._psrc}価格・${esc(p._pnote)}</span>${lowChip(p)}</div>
     <div class="kv">${kv.map(([k,v])=>`<div><span>${k}</span><b>${esc(String(v))}</b></div>`).join('')}</div>
     ${p.warranty_note||p._lowsrc?`<div class="notes" style="display:grid;gap:4px">${p.warranty_note?`<div><b>保証:</b> ${esc(p.warranty_note)}</div>`:''}${p._low?`<div><b>セール最安値 ${yen(p._low)}:</b> ${esc(p._lowsrc)}</div>`:''}</div>`:''}
     ${p.notes?`<div class="notes">${esc(p.notes)}</div>`:''}
