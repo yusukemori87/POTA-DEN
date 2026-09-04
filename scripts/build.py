@@ -47,6 +47,63 @@ for p in d:
     q['model'] = clean_model(q['model'])
     prods.append(q)
 
+# ---------- 機能ボーナス（気が利いた機能・企業努力への加点。合計 +6 が上限） ----------
+# 仕様から機械的に判定できるものは build 時に自動で付け、独自性など人が判断するものは data/feature_editorial.json から読む。
+_fe_path = os.path.join(ROOT, 'data', 'feature_editorial.json')
+FEAT_ED = json.load(open(_fe_path, encoding='utf-8')) if os.path.exists(_fe_path) else {}
+FEATURE_CAP = 6
+
+def feature_bonus(p, sl):
+    items = []
+    cap = p.get('capacity_wh') or 0
+    if p.get('v200'):
+        items.append(('200V出力', 2))
+    if cap and p.get('solar_input_w'):
+        r = p['solar_input_w'] / cap
+        if r >= 0.75:
+            items.append(('大型ソーラー入力（容量の0.75倍以上）', 2))
+        elif r >= 0.55:
+            items.append(('ソーラー入力が大きい（容量の0.55倍以上）', 1))
+    if cap and p.get('ac_input_w') and p['ac_input_w'] / cap >= 1.0:
+        items.append(('約1時間の急速AC充電', 1))
+    if p.get('expandable'):
+        items.append(('拡張バッテリー対応', 1))
+    if p.get('ups_ms') is not None and p['ups_ms'] <= 10:
+        items.append(('UPS切替10ms以下', 1))
+    if (p.get('cycles') or 0) >= 6000:
+        items.append(('サイクル6,000回以上', 1))
+    if (p.get('warranty_ext_years') or p.get('warranty_years') or 0) >= 6:
+        items.append(('保証6年以上', 1))
+    for name, pt in (FEAT_ED.get(sl) or {}).get('items', []):
+        items.append((name, int(pt)))
+    raw = sum(pt for _, pt in items)
+    return min(FEATURE_CAP, raw), raw, items
+
+for p in prods:
+    t = p.get('tenno')
+    if not t or t.get('base_score') is None:
+        continue
+    fb, raw, items = feature_bonus(p, slug(p['brand'], p['model']))
+    if int(t['base_score']) < 40:  # 「買うな」帯（基礎40未満）は機能で救済しない
+        fb, raw, items = 0, 0, []
+    lb = t.get('longevity_bonus') or 0
+    t['feature_bonus'] = fb
+    t['feature_items'] = [f'{n} +{pt}' for n, pt in items]
+    t['score'] = min(100, int(t['base_score']) + lb + fb)
+    parts = []
+    if lb:
+        parts.append(f"継続販売 {lb}点（{t.get('longevity_note', '')}）")
+    if fb:
+        detail = '・'.join(t['feature_items'])
+        parts.append(f"機能 {fb}点（{'上限。' if raw > FEATURE_CAP else ''}{detail}）")
+    if parts:
+        bd = f"内訳: 基礎 {t['base_score']}点 ＋ " + ' ＋ '.join(parts)
+        if not lb and t.get('longevity_note'):
+            bd += f"／{t['longevity_note']}"
+    else:
+        bd = t.get('longevity_note', '') or ''
+    t['breakdown'] = bd
+
 OG_IMAGE = f'{SITE}/ogp.png'
 
 # ---------- 一覧ページ ----------
@@ -203,7 +260,7 @@ def product_page(i, p):
 {f'<div class="notes">{e(p["notes"])}</div>' if p.get('notes') else ''}
 <section class="msec"><h2 style="margin:0 0 6px;font-size:12px;letter-spacing:.08em;color:var(--muted);font-family:var(--mono)">総合評価 — 天の声（編集部の辛口採点）</h2>
 <div class="tennobox"><div class="sc">{sc}<small>点</small></div><div class="vd">{e(t.get('verdict'))}</div><div class="bd">{e(t.get('body'))}</div>
-<div class="ba"><span>{e(t.get('best_for'))}</span><span class="no">{e(t.get('avoid_if'))}</span></div><div class="bo">{('内訳: 基礎 ' + str(t.get('base_score')) + '点 ＋ 継続販売ボーナス ' + str(t.get('longevity_bonus')) + '点（' + e(t.get('longevity_note','')) + '）') if t.get('longevity_bonus') else e(t.get('longevity_note',''))}</div></div></section>
+<div class="ba"><span>{e(t.get('best_for'))}</span><span class="no">{e(t.get('avoid_if'))}</span></div><div class="bo">{e(t.get('breakdown') or t.get('longevity_note') or '')}</div></div></section>
 <section class="msec"><h2 style="margin:0 0 6px;font-size:12px;letter-spacing:.08em;color:var(--muted);font-family:var(--mono)">全レビューの要約</h2>
 <p class="summ" style="margin:0 0 8px">{e(rv.get('summary'))}</p>
 <div class="pc"><ul class="p">{''.join(f'<li>{e(x)}</li>' for x in rv.get('pros', []))}</ul><ul class="n">{''.join(f'<li>{e(x)}</li>' for x in rv.get('cons', []))}</ul></div></section>
