@@ -198,7 +198,7 @@ def product_page(i, p):
 <div class="mbody">
 <h1 style="margin:0;font-size:24px;line-height:1.25">{f'<span class="brand" style="display:block">{e(p["brand"])}</span>' if FN != p['model'] else ''}{e(p['model'])}</h1>
 {f'<div class="rating">{stars_html(p["rating"])}<span class="rv">{p["rating"]}</span><span class="rc">({fmt(p.get("reviews"))}件)</span></div>' if p.get('rating') else '<div class="rating none">Amazon評価なし</div>'}
-<div class="pricebox"><span class="price"><small>¥</small>{fmt(cur)}</span>{f'<span class="low"><span class="tag">セール最安</span><b>{yen(low)}</b></span>' if low and cur and low < cur else ''}</div>
+<div class="pricebox"><span class="price"><small>¥</small>{fmt(cur)}</span>{(f'<span class="low" title="{e(p.get("sale_low_note") or "")}"><span class="tag">セール最安</span><b>{yen(low)}</b></span>' if low < cur * 0.98 else '<span class="low now" title="現在価格が、確認できている最安値と同水準です"><span class="tag">いま最安値</span></span>') if low and cur else ''}</div>
 <div class="kv">{''.join(f'<div><span>{e(k)}</span><b>{e(v)}</b></div>' for k, v in kv)}</div>
 {f'<div class="notes">{e(p["notes"])}</div>' if p.get('notes') else ''}
 <section class="msec"><h2 style="margin:0 0 6px;font-size:12px;letter-spacing:.08em;color:var(--muted);font-family:var(--mono)">総合評価 — 天の声（編集部の辛口採点）</h2>
