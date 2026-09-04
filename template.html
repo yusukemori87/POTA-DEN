@@ -427,7 +427,7 @@ footer p{max-width:80ch;margin:0 0 8px}
 
 <footer>
   <p><b>データについて</b>　掲載 <span id="f-n"></span> 機種は 2026年9月時点で各メーカー公式・Amazon.co.jp・価格.com等で新品購入できる（または流通在庫のある）モデル。価格はAmazon実売（2026/9/2取得）を優先し、無い場合はメーカー公式の通常価格（税込）。★評価・レビュー数・商品画像は Amazon.co.jp の掲載情報で、色違い等のバリエーションと共有されている場合があります。</p>
-  <p>「総合評価（天の声）」は編集部がAmazon・価格.com・楽天・レビュー記事を横断して読み、仕様・価格・保証・サポート報告を突き合わせて付けた辛口の独自採点（100点満点）です。メーカーや販売店とは無関係で、レビューにない事実は書いていません。「気になるレビュー」は出典（時期・星）付きで、購入判断に関わる深刻な報告を優先して載せています。判定基準は各機種の詳細内に記載。総合評価には「発売から2年以上、現行モデルとして売られ続けている」ことへの加点（2〜6点）を含みます。新しい機種は加点0で、減点はしていません。仕様への不満（重い・高い）、購入者側の環境（自宅のブレーカーが落ちる等）、業界共通の挙動、配送・梱包の問題は製品の落ち度ではないため掲載していません。</p>
+  <p>「総合評価（天の声）」は編集部がAmazon・価格.com・楽天・レビュー記事を横断して読み、仕様・価格・保証・サポート報告を突き合わせて付けた辛口の独自採点（100点満点）です。メーカーや販売店とは無関係で、レビューにない事実は書いていません。「気になるレビュー」は出典（時期・星）付きで、購入判断に関わる深刻な報告を優先して載せています。判定基準は各機種の詳細内に記載。総合評価には「発売から2年以上、現行モデルとして売られ続けている」ことへの加点（2〜6点）と、200V出力・大きなソーラー入力・独自の工夫など「気の利いた機能・企業努力」への加点（合計6点まで）を含みます。新しい機種や機能が標準的な機種は加点0で、減点はしていません。内訳は各機種の総合評価の下に表示しています。仕様への不満（重い・高い）、購入者側の環境（自宅のブレーカーが落ちる等）、業界共通の挙動、配送・梱包の問題は製品の落ち度ではないため掲載していません。</p>
   <p>「セール時最安値」は公式セール・価格.com価格推移・プライムデー等の報道で確認できた税込最安値（2025〜2026年）で、現在は購入できない場合があります。保証年数はメーカー公式の記載（「登録で◯年」は会員登録・製品登録による延長後の合計）。Wh単価（円/Wh）は表示価格 ÷ 容量。ソーラー入力は本体単体の最大値。仕様・価格は変動するため、購入前に必ず販売ページでご確認ください。本サイトのリンクにはアフィリエイトリンクを含みます。<b>Amazonのアソシエイトとして、ポタ電カタログは適格販売により収入を得ています。</b>Amazon価格は取得時点のもので、変動する場合があります。最新の価格・在庫は必ず各販売ページでご確認ください。</p>
 </footer>
 
@@ -670,7 +670,7 @@ function buyHTML(p){
     <div class="bar"><em style="left:100%"></em><i style="left:${pos.toFixed(1)}%"></i></div>
     <div class="ends"><span>最安 ${yen(low)}</span><span>定価 ${yen(hi)}</span></div>
     ${chart}</div></div>`}
-function tennoHTML(p){if(!p.tenno)return '';const t=p.tenno;return `<div class="msec"><h3>総合評価 — 天の声（編集部の辛口採点）</h3><div class="tennobox"><div class="sc">${t.score}<small>点</small></div><div class="vd">${esc(t.verdict)}</div><div class="bd">${esc(t.body)}</div><div class="ba"><span>${esc(t.best_for)}</span><span class="no">${esc(t.avoid_if)}</span></div>${t.longevity_bonus?`<div class="bo">内訳: 基礎 ${t.base_score}点 ＋ 継続販売ボーナス ${t.longevity_bonus}点（${esc(t.longevity_note)}）</div>`:`<div class="bo">${esc(t.longevity_note||'')}</div>`}</div></div>`}
+function tennoHTML(p){if(!p.tenno)return '';const t=p.tenno;return `<div class="msec"><h3>総合評価 — 天の声（編集部の辛口採点）</h3><div class="tennobox"><div class="sc">${t.score}<small>点</small></div><div class="vd">${esc(t.verdict)}</div><div class="bd">${esc(t.body)}</div><div class="ba"><span>${esc(t.best_for)}</span><span class="no">${esc(t.avoid_if)}</span></div><div class="bo">${esc(t.breakdown||t.longevity_note||'')}</div></div></div>`}
 function reviewHTML(p){const r=p.review;if(!r)return '';
   const meta=[r.amazon_total?`Amazon ${esc(r.amazon_total.replace('件のグローバル評価','件'))}${p.rating?' ★'+p.rating:''}`:'',r.kakaku_rating?`価格.com ${r.kakaku_rating}${r.kakaku_reviews?'（'+r.kakaku_reviews+'件）':''}`:''].filter(Boolean).join(' ／ ');
   let h=`<div class="msec"><h3>全レビューの要約${meta?`<span style="text-transform:none;letter-spacing:0;margin-left:8px">${meta}</span>`:''}</h3><p class="summ" style="margin:0 0 8px">${esc(r.summary)}</p><div class="pc"><ul class="p">${r.pros.map(x=>`<li>${esc(x)}</li>`).join('')}</ul><ul class="n">${r.cons.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div></div>`;
