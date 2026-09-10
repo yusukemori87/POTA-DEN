@@ -1,7 +1,7 @@
 {
- "date": "2026-09-10",
+ "date": "2026-09-11",
  "products": 182,
- "rakuten_ok": 86,
+ "rakuten_ok": 88,
  "kakaku_ok": 48,
  "amazon_ok": 0,
  "rakuten_app_id_set": true,
@@ -21,6 +21,6 @@
  ],
  "discontinued": 0,
  "provisional": 0,
- "images_from_rakuten": 129,
+ "images_from_rakuten": 130,
  "paapi_set": false
 }
