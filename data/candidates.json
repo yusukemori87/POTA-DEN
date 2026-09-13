@@ -1,25 +1,25 @@
 {
- "date": "2026-09-07",
+ "date": "2026-09-14",
  "candidates": [
   {
    "brand": "AFERIY",
    "model": "af-s200 USB ETFE",
    "capacity_wh": 1248,
-   "price": 23880,
+   "price": 39800,
    "shops": 1,
    "adopted": false,
    "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "【P5倍+期間値下げ40％OFF】aferiy ソーラーパネル af-s200 ソーラーパネル 200W 小型 USB 太陽光パネル ポータブルソーラーパネル "
+   "sample_title": "【最大P5倍+クーポン利用で24,676円】aferiy ソーラーパネル af-s200 ソーラーパネル 200W 小型 USB 太陽光パネル ポータブルソーラ"
   },
   {
    "brand": "AFERIY",
    "model": "af-s400 ETFE",
    "capacity_wh": null,
-   "price": 40918,
+   "price": 99800,
    "shops": 1,
    "adopted": false,
    "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "【期間値下げ59％OFF】aferiy ソーラーパネル 400w af-s400 折り畳み式 ソーラー充電器 太陽光発電パネル ソーラーパネル USB充電 バッ"
+   "sample_title": "【クーポン利用で41,916円】aferiy ソーラーパネル 400w af-s400 折り畳み式 ソーラー充電器 太陽光発電パネル ソーラーパネル USB充電"
   },
   {
    "brand": "Anker",
@@ -33,23 +33,23 @@
   },
   {
    "brand": "Anker",
-   "model": "Solix PS60 Compact",
-   "capacity_wh": null,
-   "price": 17990,
-   "shops": 1,
-   "adopted": false,
-   "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "【7,200円OFFクーポン 9/11まで】Anker Solix PS60 Compact Portable Solar Panel ソーラーパネル60W ソ"
-  },
-  {
-   "brand": "Anker",
    "model": "Solix C1000 A1761521",
    "capacity_wh": null,
    "price": 70400,
    "shops": 1,
    "adopted": false,
    "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "◆最大3000円CP＋P3倍！！9/5◆アンカー ポータブル電源 Solix C1000 Portable Power Station A1761521 ベージ"
+   "sample_title": "アンカー ポータブル電源 Solix C1000 Portable Power Station A1761521 ベージュ アウトドア キャンプ Anker【転"
+  },
+  {
+   "brand": "Anker",
+   "model": "Solix PS60 Compact",
+   "capacity_wh": null,
+   "price": 17990,
+   "shops": 1,
+   "adopted": false,
+   "reason": "出品店舗が1店のみ（2店以上必要）",
+   "sample_title": "Anker Solix PS60 Compact Portable Solar Panel ソーラーパネル60W ソーラーチャージャー 折りたたみ式 持ち運び便"
   },
   {
    "brand": "Anker",
@@ -59,17 +59,7 @@
    "shops": 1,
    "adopted": false,
    "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "◆最大3000円CP＋P3倍！！9/5◆アンカー ポータブル電源 Solix C1000 Portable Power Station 蓄電池 A17615Z1"
-  },
-  {
-   "brand": "Anker",
-   "model": "Solix C1000 A1761511",
-   "capacity_wh": null,
-   "price": 71016,
-   "shops": 1,
-   "adopted": false,
-   "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "【新品】ANKER アンカー ポータブル電源 Solix C1000 Portable Power Station ブラック A1761511"
+   "sample_title": "アンカー ポータブル電源 Solix C1000 Portable Power Station 蓄電池 A17615Z1 ダークグレー Anker【転送不可】"
   },
   {
    "brand": "Anker",
@@ -79,7 +69,17 @@
    "shops": 1,
    "adopted": false,
    "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "◆最大3000円CP＋P3倍！！9/5◆アンカー ポータブル電源 アウトドア 非常用電源 SOLIX C1000 PORTABLE POW Anker【転送不可"
+   "sample_title": "アンカー ポータブル電源 アウトドア 非常用電源 SOLIX C1000 PORTABLE POW Anker【転送不可】"
+  },
+  {
+   "brand": "Anker",
+   "model": "Solix C800 Plus A17545Z1",
+   "capacity_wh": null,
+   "price": 57444,
+   "shops": 1,
+   "adopted": false,
+   "reason": "出品店舗が1店のみ（2店以上必要）",
+   "sample_title": "アンカー ポータブル電源 Anker Solix C800 Plus Portable Power Station A17545Z1 ダークグレー ANKER【"
   },
   {
    "brand": "BLUETTI",
@@ -89,27 +89,27 @@
    "shops": 1,
    "adopted": false,
    "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "【★特典あり★クーポン併用で132,970円】BLUETTI ポータブル電源 蓄電池 B300K 大容量 家庭用 2764.8Wh ソーラーパネル 増設バッテリ"
+   "sample_title": "【クーポン利用で153,300円 9/13から】BLUETTI ポータブル電源 蓄電池 B300K 大容量 家庭用 2764.8Wh ソーラーパネル 増設バッテ"
   },
   {
    "brand": "DJI",
    "model": "1000 Mini Plus DY0044",
    "capacity_wh": null,
-   "price": 55349,
+   "price": 51718,
    "shops": 1,
    "adopted": false,
    "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "【エントリーで最大全額ポイント還元｜9/11まで】 DJI｜ディージェイアイ DJI Power 1000 Mini Plus DY0044 [リン酸鉄リチウム"
+   "sample_title": "DJI｜ディージェイアイ ポータブル電源 DJI Power 1000 Mini Plus DY0044 [リン酸鉄リチウムイオン電池 /9出力 /AC・DC・"
   },
   {
-   "brand": "Dabbsson",
-   "model": "DBS2300plus 50 60Hz AC100V",
-   "capacity_wh": 2330,
-   "price": 126000,
+   "brand": "DJI",
+   "model": "1000 Mini White DY0050",
+   "capacity_wh": null,
+   "price": 52800,
    "shops": 1,
    "adopted": false,
    "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "【スーパーセールで126,000円 9/4 20時から】Dabbsson 2330Wh ポータブル電源 DBS2300plus 大容量 車中泊 防災安全協会推奨"
+   "sample_title": "DJI｜ディージェイアイ ポータブル電源 DJI POWER 1000 Mini White DY0050"
   },
   {
    "brand": "Dabbsson",
@@ -119,7 +119,17 @@
    "shops": 1,
    "adopted": false,
    "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "【スーパーセールで122,170円 9/4 20時から】Dabbsson 2150Wh ポータブル電源 大容量&高出力 DBS2100Pro 2400W ポータ"
+   "sample_title": "【時間限定で122,170★大容量★2100Pro· 2150Wh· 2400W】Dabbsson 2150Wh ポータブル電源 大容量&高出力 DBS2100"
+  },
+  {
+   "brand": "Dabbsson",
+   "model": "DBS2300plus 50 60Hz AC100V",
+   "capacity_wh": 2330,
+   "price": 126000,
+   "shops": 1,
+   "adopted": false,
+   "reason": "出品店舗が1店のみ（2店以上必要）",
+   "sample_title": "【大容量★時間限定で126,000円】【 2300plus·2330Wh· 2200W+210W】Dabbsson 2330Wh ポータブル電源 DBS2300"
   },
   {
    "brand": "Dabbsson",
@@ -129,7 +139,7 @@
    "shops": 1,
    "adopted": false,
    "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "【スーパーセールで153,000円 9/4 20時から】Dabbsson 2330Wh ポータブル電源 ソーラーパネル セット DBS2300plus+210W"
+   "sample_title": "【時間限定で153,000円】【 2300plus·2330Wh· 2200W+210W】Dabbsson 2330Wh ポータブル電源 ソーラーパネル セット"
   },
   {
    "brand": "Dabbsson",
@@ -149,7 +159,7 @@
    "shops": 1,
    "adopted": false,
    "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "【EVレベルの最速充電速度】Dabbsson 1382Wh ポータブル電源セット DBS1400Pro 2400W EV用半固体リン酸鉄リチウム 45分で80%"
+   "sample_title": "【 1400Pro·1382Wh· 2400W】【EVレベルの最速充電速度】Dabbsson 1382Wh ポータブル電源セット DBS1400Pro 2400"
   },
   {
    "brand": "Dabbsson",
@@ -159,7 +169,7 @@
    "shops": 1,
    "adopted": false,
    "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "【最安値挑戦中！】Dabbsson 1024Wh ポータブル電源セット DBS1000Pro 半固体リン酸鉄リチウム 15年長寿命並列接続機能対応 最大1064"
+   "sample_title": "【 1000Pro·1024Wh· 2000W】Dabbsson 1024Wh ポータブル電源セット DBS1000Pro 半固体リン酸鉄リチウム 15年長寿命"
   },
   {
    "brand": "Dabbsson",
@@ -169,37 +179,27 @@
    "shops": 1,
    "adopted": false,
    "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "【時間限定★クーポン利用で126,000円 ★9/4 から】Dabbsson 2330Wh ポータブル電源 DBS2300plus 大容量 ダブソン電池 EV半"
-  },
-  {
-   "brand": "Dabbsson",
-   "model": "DBS1000Pro AC+",
-   "capacity_wh": 1024,
-   "price": 92700,
-   "shops": 1,
-   "adopted": false,
-   "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "【スーパーセールで92,700円 9/4 20時から】Dabbsson 1024Wh ポータブル電源 DBS1000Pro 半固体リン酸鉄リチウム 業界初の拡張"
+   "sample_title": "【時間限定★クーポン利用で126,000円 ★9/13 から】【 2300plus·2330Wh· 2200W】Dabbsson 2330Wh ポータブル電源 "
   },
   {
    "brand": "EENOUR",
    "model": "2way",
    "capacity_wh": null,
-   "price": 64900,
+   "price": 59900,
    "shops": 1,
    "adopted": false,
    "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "【抽選で最大P100%バック！5,000円OFFクーポン】EENOUR 2way 発電機 ガスボンベ式 発電機 ガソリン 発電機 700W/1800W インバー"
+   "sample_title": "EENOUR 2way 発電機 ガスボンベ式 発電機 ガソリン 発電機 700W/1800W インバーター 発電機 家庭用 2種燃料 ハイブリッド発電機 家庭用"
   },
   {
    "brand": "EENOUR",
    "model": "DK3000iSDF AC",
    "capacity_wh": null,
-   "price": 111900,
+   "price": 119900,
    "shops": 1,
    "adopted": false,
    "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "【SS限定大特価★54％OFF＆P10倍！111,900円】＼抽選で最大100％還元／楽天61冠 EENOUR LPガス/ガソリン両用 発電機 イーノウ インバ"
+   "sample_title": "楽天61冠 EENOUR LPガス/ガソリン両用 発電機 イーノウ インバーター 防災 DK3000iSDF 最大3000W 家庭用 災害 プロパンガス キッチ"
   },
   {
    "brand": "EENOUR",
@@ -209,17 +209,17 @@
    "shops": 1,
    "adopted": false,
    "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "【抽選で最大P100%バック！5,000円OFFクーポン】EENOUR 発電機 ガソリン 発電機 カセットガス インバーター 発電機 ガソリン 700W/180"
+   "sample_title": "【5,000円OFFクーポン】EENOUR 発電機 ガソリン 発電機 カセットガス インバーター 発電機 ガソリン 700W/1800W ガスボンベ式 発電機 "
   },
   {
-   "brand": "EcoFlow",
-   "model": "RIVER 2 Max",
-   "capacity_wh": 512,
-   "price": 64900,
+   "brand": "EENOUR",
+   "model": "GT4700iO-3",
+   "capacity_wh": null,
+   "price": 59900,
    "shops": 1,
    "adopted": false,
    "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "【クーポン利用で35,695円 9/4 20:00~】EcoFlow ポータブル電源 リン酸鉄 長寿命 1hフル充電 大容量 RIVER 2 Max 512Wh"
+   "sample_title": "EENOUR イーノウ 発電機 GT4700iO-3 スタンダード 3800Wインバーター 発電機 オープン 家電利用可 携帯発電機 エンジン発電機 発電機 非"
   },
   {
    "brand": "EcoFlow",
@@ -229,7 +229,7 @@
    "shops": 1,
    "adopted": false,
    "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "【クーポン利用で79,800円 9/4 20:00~】EcoFlow ソーラーパネル 400W 軽量両面ソーラーパネル　充電器 太陽光発電 太陽光パネル ソーラ"
+   "sample_title": "【クーポン利用で79,800円 9/14~】EcoFlow ソーラーパネル 400W 軽量両面ソーラーパネル　充電器 太陽光発電 太陽光パネル ソーラーチャージ"
   },
   {
    "brand": "EcoFlow",
@@ -243,13 +243,23 @@
   },
   {
    "brand": "FOSSiBOT",
+   "model": "50 60Hz",
+   "capacity_wh": 1024,
+   "price": 51800,
+   "shops": 1,
+   "adopted": false,
+   "reason": "出品店舗が1店のみ（2店以上必要）",
+   "sample_title": "【限定クーポン利用で50,800円！停電対策 ★1024Wh★】APP対応★FOSSiBOT ポータブル電源 1200W リン酸鉄 4000回サイクル 1024"
+  },
+  {
+   "brand": "FOSSiBOT",
    "model": "F7200",
    "capacity_wh": 5222,
    "price": 658980,
    "shops": 1,
    "adopted": false,
    "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "【551,010円相当！SSクーポン&エントリーで最大P3倍】FOSSiBOTポータブル電源F7200 5222.4Wh リン酸鉄 7200W 安心の超大容量 "
+   "sample_title": "【551,010円相当！クーポン&エントリーで最大P2倍】FOSSiBOTポータブル電源F7200 5222.4Wh リン酸鉄 7200W 安心の超大容量 高出"
   },
   {
    "brand": "FOSSiBOT",
@@ -259,57 +269,47 @@
    "shops": 1,
    "adopted": false,
    "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "【49,390円相当！SS限定クーポン&エントリーで最大P3！2点セット ★1024Wh+200W★防災応援】FOSSiBOT ポータブル電源 1024Wh+ソ"
-  },
-  {
-   "brand": "FOSSiBOT",
-   "model": "50 60Hz",
-   "capacity_wh": 1024,
-   "price": 51800,
-   "shops": 1,
-   "adopted": false,
-   "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "【49,390円相当！SS限定クーポン&エントリーで最大P3！★1024Wh★防災応援】APP対応★FOSSiBOT ポータブル電源 1200W リン酸鉄 40"
+   "sample_title": "【限定クーポン利用で70,800円！2点セット ★1024Wh+200W★】FOSSiBOT ポータブル電源 1024Wh+ソーラーパネル200W セット リン"
   },
   {
    "brand": "FOSSiBOT",
    "model": "FB3840",
    "capacity_wh": 3840,
-   "price": 158980,
+   "price": 159900,
    "shops": 1,
    "adopted": false,
    "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "【153,645円相当！SS限定クーポン&エントリーで最大P3倍！】楽天1位 FOSSiBOT FB3840 エクストラバッテリー 拡張バッテリー 3840Wh"
+   "sample_title": "楽天1位【限定クーポン利用で158,900円！】FOSSiBOT FB3840 エクストラバッテリー 拡張バッテリー 3840Wh 拡張で最大11,520Wh "
   },
   {
    "brand": "FOSSiBOT",
    "model": "F300DC",
    "capacity_wh": 288,
-   "price": 17990,
+   "price": 34990,
    "shops": 1,
    "adopted": false,
    "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "【16,990円相当！限定クーポン&エントリーで最大P5！】FOSSiBOT F300DC ポータブル電源 288Wh ストラップ付 小型軽量 モバイルバッテリ"
+   "sample_title": "【限定クーポン利用で17,900円&エントリーで最大P3倍】FOSSiBOT F300DC ポータブル電源 288Wh ストラップ付 小型軽量 モバイルバッテリ"
   },
   {
    "brand": "FOSSiBOT",
    "model": "F1800",
    "capacity_wh": 1024,
-   "price": 53390,
+   "price": 54900,
    "shops": 1,
    "adopted": false,
    "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "【50,935円相当！SS限定クーポン&エントリーで最大P3★1500W】★防災応援★FOSSiBOT F1800 ポータブル電源 1024Wh 定格1500W"
+   "sample_title": "【限定クーポン利用で53,900円！★1500W】★防災応援★FOSSiBOT F1800 ポータブル電源 1024Wh 定格1500W 高出力 リン酸鉄 長寿"
   },
   {
    "brand": "FOSSiBOT",
    "model": "FAC580",
    "capacity_wh": 1000,
-   "price": 23800,
+   "price": 53800,
    "shops": 1,
    "adopted": false,
    "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "【22,152円相当！SS限定クーポン&エントリーで最大P3倍！】FOSSiBOT FAC580 走行充電器 580W カーチャージャー 6倍速充電 高出力 安"
+   "sample_title": "FOSSiBOT 【限定クーポン利用で25,900円！】FAC580 走行充電器 580W カーチャージャー 6倍速充電 高出力 安定性 ポータブル電源併用可能"
   },
   {
    "brand": "Goal Zero",
@@ -349,7 +349,7 @@
    "shops": 1,
    "adopted": false,
    "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "【最大2000円OFF★スーパーセール開催中！今がお得 】BH-SV180 ポータブルソーラーパネル 180W JVC ケンウッド ビクター　ポータブル電源 車"
+   "sample_title": "BH-SV180 ポータブルソーラーパネル 180W JVC ケンウッド ビクター　ポータブル電源 車中泊 キャンプ　アウトドア BH-SV180"
   },
   {
    "brand": "Jackery",
@@ -359,17 +359,7 @@
    "shops": 1,
    "adopted": false,
    "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "【クーポン利用で24,360円 9/4 20:00から】Jackeryソーラーパネル100W Jackery SolarSaga 100 ソーラーチャージャー折"
-  },
-  {
-   "brand": "Jackery",
-   "model": "Pack 1000plus",
-   "capacity_wh": 1264,
-   "price": 117600,
-   "shops": 1,
-   "adopted": false,
-   "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "【クーポン利用で64,680円 9/4 20:00から】Jackeryポータブル電源 Battery Pack 1000plus 1264Wh 拡張バッテリー "
+   "sample_title": "【クーポン利用で24,360円 9/14 00:00から】Jackeryソーラーパネル100W Jackery SolarSaga 100 ソーラーチャージャー"
   },
   {
    "brand": "Jackery",
@@ -379,7 +369,7 @@
    "shops": 1,
    "adopted": false,
    "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "【クーポン利用で60,620円 9/4 20:00から】Jackery ソーラーパネル200W Jackery SolarSaga200 IP67防水防塵ETF"
+   "sample_title": "【クーポン利用で60,620円 9/14 00:00から】Jackery ソーラーパネル200W Jackery SolarSaga200 IP67防水防塵ET"
   },
   {
    "brand": "PowerArQ",
@@ -389,7 +379,7 @@
    "shops": 1,
    "adopted": false,
    "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "【クーポン利用で32,310円！4日20時〜】＜MONOQLO★A評価受賞＞ PowerArQ Solar 120W ソーラーパネル 折り畳み 防水 IP65 "
+   "sample_title": "＜MONOQLO★A評価受賞＞ PowerArQ Solar 120W ソーラーパネル 折り畳み 防水 IP65 防塵 耐熱 ETFE 挿すだけ簡単 ソーラー充"
   },
   {
    "brand": "PowerArQ",
@@ -399,17 +389,7 @@
    "shops": 1,
    "adopted": false,
    "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "【クーポン利用で35,640円！4日20時〜】＜高評価★4.42＞PowerArQ Solar 210W ソーラーパネル 折り畳み ETFE ソーラー充電器 太"
-  },
-  {
-   "brand": "VTOMAN",
-   "model": "VS220 IP67",
-   "capacity_wh": null,
-   "price": 28800,
-   "shops": 1,
-   "adopted": false,
-   "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "VTOMAN VS220 ソーラーパネル 220W 19V 折りたたみ ソーラーチャージャー ソーラー充電器 太陽光パネル ETFE素材 23%高変換効率 単結"
+   "sample_title": "＜高評価★4.42＞PowerArQ Solar 210W ソーラーパネル 折り畳み ETFE ソーラー充電器 太陽光発電 ソーラーチャージャー 高効率 ポータ"
   },
   {
    "brand": "VTOMAN",
@@ -423,13 +403,23 @@
   },
   {
    "brand": "VTOMAN",
+   "model": "VS220 IP67",
+   "capacity_wh": null,
+   "price": 28800,
+   "shops": 1,
+   "adopted": false,
+   "reason": "出品店舗が1店のみ（2店以上必要）",
+   "sample_title": "VTOMAN VS220 ソーラーパネル 220W 19V 折りたたみ ソーラーチャージャー ソーラー充電器 太陽光パネル ETFE素材 23%高変換効率 単結"
+  },
+  {
+   "brand": "VTOMAN",
    "model": "VS110 IP67",
    "capacity_wh": null,
    "price": 19900,
    "shops": 1,
    "adopted": false,
    "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "VTOMAN VS110 ソーラーパネル 110W 折りたたみ ソーラーチャージャー ソーラー充電器 太陽光パネル ETFE素材 23%高変換効率 単結晶 小型"
+   "sample_title": "VTOMAN VS110ソーラーパネル 110W 折りたたみ ソーラーチャージャー ソーラー充電器 太陽光パネル ETFE素材 23%高変換効率 単結晶 小型 "
   },
   {
    "brand": "VTOMAN",
@@ -489,7 +479,7 @@
    "shops": 1,
    "adopted": false,
    "reason": "出品店舗が1店のみ（2店以上必要）",
-   "sample_title": "エントリー必須確率1/2最大100%Pバック! 【当日発送】【防災】 ZENDURE ゼンデュアー ZENDURE 200Wソーラーパネル ZD-200SP-B"
+   "sample_title": "【当日発送】【防災】 ZENDURE ゼンデュアー ZENDURE 200Wソーラーパネル ZD-200SP-BK -JH ZD200SPBKJH"
   },
   {
    "brand": "Zendure",
