@@ -1,0 +1,140 @@
+name: makistove-items
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: 楽天APIで薪ストーブ図鑑の商品画像を取得
+        env:
+          RAKUTEN_APP_ID: ${{ secrets.RAKUTEN_APP_ID }}
+          RAKUTEN_ACCESS_KEY: ${{ secrets.RAKUTEN_ACCESS_KEY }}
+          SITE_DOMAIN: ${{ vars.SITE_DOMAIN }}
+          RAKUTEN_REFERER: ${{ vars.RAKUTEN_REFERER }}
+        shell: python
+        run: |
+          import os, json, time, urllib.request, urllib.parse
+          QUERIES = [
+            "薪ストーブ 温度計 マグネット",
+            "ダッチオーブン 鋳鉄 10インチ",
+            "薪ストーブ 耐熱グローブ 革",
+            "一酸化炭素警報器 家庭用",
+            "煙突掃除 ブラシ ロッド 薪ストーブ",
+            "灰バケツ ふた付き 金属",
+            "触媒 温度計 薪ストーブ プローブ",
+            "時計型ストーブ ホンマ製作所",
+            "時計型ストーブ 煙突 106mm",
+            "薪ストーブ アウトドア テント",
+            "耐熱塗料 薪ストーブ 黒 スプレー",
+            "煙突トップ 150mm 薪ストーブ",
+            "煙突 温度計 薪ストーブ",
+            "耐火レンガ 炉台",
+            "ストーブマット 耐熱 薪ストーブ",
+            "薪ストーブ 遮熱板",
+            "木材水分計 薪 含水率",
+            "薪ラック 室内 アイアン",
+            "薪棚 カバー 防水",
+            "ログキャリー 薪 キャンバス",
+            "薪棚 台 すのこ 樹脂",
+            "着火剤 薪ストーブ 天然",
+            "焚き付け 薪 細割り",
+            "ロングライター 着火 薪ストーブ",
+            "薪ストーブ 火ばさみ トング",
+            "吊りはかり デジタル 50kg",
+            "チェーンソー 家庭用 薪",
+            "薪割り機 電動 7トン",
+            "薪割り 斧 ハスクバーナ",
+            "サーキュレーター 静音",
+            "ストーブファン 電源不要",
+            "ガスケットロープ 薪ストーブ",
+            "差圧計 デジタル",
+            "住宅用火災警報器 煙式",
+            "薪 ナラ 広葉樹 乾燥",
+            "焚き付け 薪 針葉樹 杉",
+            "薪 広葉樹 乾燥 薪ストーブ",
+            "チェーンソー 防護ズボン",
+            "フィスカース 薪割り斧",
+            "保護メガネ 作業用",
+            "薪割り くさび 鉄",
+            "薪割り ハンマー 斧",
+            "薪割り機 エンジン",
+            "作業手袋 革 薪割り",
+            "安全靴 先芯",
+            "2x4材",
+            "ポリカ波板 クリア",
+            "コーススレッド 75mm",
+            "薪棚 キット スチール 屋外",
+            "放射温度計 赤外線 高温",
+            "薪ストーブ 火かき棒",
+            "薪ストーブ ガラスクリーナー",
+            "ガラス スクレーパー",
+            "スキレット 鋳鉄",
+            "ホーロー鍋 両手",
+            "トリベット 鍋敷き 鋳鉄",
+            "耐熱グローブ ロング 薪ストーブ",
+            "ピザストーン",
+            "オーブン温度計",
+            "防じんマスク DS2",
+            "灰 掃除機 薪ストーブ",
+            "耐熱 接着剤 ガスケット",
+            "ノギス デジタル",
+            "灰スコップ 薪ストーブ",
+            "ふるい 園芸用 ステンレス",
+            "防錆スプレー",
+            "住宅用消火器",
+            "ストーブガード 薪ストーブ 大型",
+            "ベビーゲート 拡張 置くだけ",
+            "耐熱グローブ 子供",
+            "薪ストーブ 本",
+          ]
+          AFF = '57142585.1577c0d6.57142586.3a6608f9'
+          ref = os.environ.get('RAKUTEN_REFERER') or ('https://' + os.environ.get('SITE_DOMAIN','yusukemori87.github.io/POTA-DEN').replace('https://','').strip('/') + '/')
+          H = {'User-Agent': 'Mozilla/5.0', 'Referer': ref, 'Origin': ref.rstrip('/')}
+          EPS = ['https://openapi.rakuten.co.jp/ichibams/api/IchibaItem/Search/20260701',
+                 'https://openapi.rakuten.co.jp/ichibams/api/IchibaItem/Search/20220601']
+          os.makedirs('makistove/img', exist_ok=True)
+          out = []
+          def call(q):
+              p = {'applicationId': os.environ['RAKUTEN_APP_ID'], 'accessKey': os.environ.get('RAKUTEN_ACCESS_KEY',''),
+                   'affiliateId': AFF, 'keyword': q, 'hits': 10, 'imageFlag': 1, 'availability': 1,
+                   'sort': '-reviewCount', 'formatVersion': 2}
+              err = None
+              for ep in EPS:
+                  try:
+                      req = urllib.request.Request(ep + '?' + urllib.parse.urlencode(p), headers=H)
+                      return json.load(urllib.request.urlopen(req, timeout=30))
+                  except Exception as e:
+                      err = e
+              raise err
+          for i, q in enumerate(QUERIES):
+              rec = {'i': i, 'q': q}
+              try:
+                  js = call(q)
+                  for it in js.get('Items', []):
+                      imgs = it.get('mediumImageUrls') or []
+                      if not imgs: continue
+                      u = imgs[0] if isinstance(imgs[0], str) else imgs[0].get('imageUrl')
+                      u = u.split('?')[0] + '?_ex=300x300'
+                      data = urllib.request.urlopen(urllib.request.Request(u, headers={'User-Agent': 'Mozilla/5.0'}), timeout=30).read()
+                      open(f'makistove/img/{i}.jpg', 'wb').write(data)
+                      rec.update(name=it.get('itemName','')[:80], url=it.get('affiliateUrl') or it.get('itemUrl'), img=f'{i}.jpg')
+                      break
+              except Exception as e:
+                  rec['error'] = str(e)[:200]
+              out.append(rec); print(i, q, 'OK' if 'img' in rec else rec.get('error','画像なし'))
+              time.sleep(1.1)
+          json.dump(out, open('makistove/items.json', 'w'), ensure_ascii=False, indent=1)
+      - name: 保存
+        run: |
+          git config user.name "makistove-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add makistove
+          git diff --cached --quiet || git commit -m "makistove items $(TZ=Asia/Tokyo date +%F)"
+          git push
