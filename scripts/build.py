@@ -104,7 +104,7 @@ for p in prods:
         bd = t.get('longevity_note', '') or ''
     t['breakdown'] = bd
 
-OG_IMAGE = f'{SITE}/ogp.png'
+OG_IMAGE = f'{SITE}/ogp.png?v=2'  # 画像を差し替えたら番号を上げる（SNS側のキャッシュ対策）
 
 # ---------- 一覧ページ ----------
 tpl = open(os.path.join(ROOT, 'template.html'), encoding='utf-8').read()
