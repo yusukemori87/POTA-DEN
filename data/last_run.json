@@ -1,5 +1,5 @@
 {
- "date": "2026-10-25",
+ "date": "2026-10-26",
  "products": 182,
  "rakuten_ok": 85,
  "kakaku_ok": 45,
@@ -19,7 +19,7 @@
   "HTTPError: HTTP Error 400: Bad Request {\"error_description\":\"API Configuration not found\",\"error\":\"wrong_parameter\"}",
   "HTTPError: HTTP Error 400: Bad Request {\"error_description\":\"keyword is not valid\",\"error\":\"wrong_parameter\"}"
  ],
- "discontinued": 36,
+ "discontinued": 37,
  "provisional": 0,
  "images_from_rakuten": 134,
  "paapi_set": false
