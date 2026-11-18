@@ -326,3 +326,6 @@ open(os.path.join(ROOT, 'docs', '404.html'), 'w', encoding='utf-8').write(
     f'<style>{PAGE_CSS}</style></head><body>{_404_body}</body></html>')
 print('SITE =', SITE)
 print(f'{len(prods)} products → docs/index.html + docs/p/*/index.html ({len(urls)-1}ページ) + sitemap.xml')
+
+# ---------- SEO用の追加ページ（用途別ランキング・ブランド別・内部リンク・sitemap） ----------
+exec(open(os.path.join(ROOT, 'scripts', 'build_seo.py'), encoding='utf-8').read())
