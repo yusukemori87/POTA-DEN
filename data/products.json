@@ -124,7 +124,7 @@
   "v200_note": null,
   "years_on_market": 2,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 24799,
    "rakuten": null,
    "kakaku": 23560,
@@ -474,6 +474,10 @@
     [
      "2026-11-26",
      23560
+    ],
+    [
+     "2026-11-27",
+     23560
     ]
    ]
   }
@@ -553,7 +557,7 @@
   "v200_note": null,
   "years_on_market": 2,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": null,
    "kakaku": 39800,
@@ -903,6 +907,10 @@
     [
      "2026-11-26",
      39800
+    ],
+    [
+     "2026-11-27",
+     39800
     ]
    ]
   }
@@ -1020,7 +1028,7 @@
   "v200_note": null,
   "years_on_market": 2,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 58820,
    "rakuten": null,
    "kakaku": 69700,
@@ -1370,6 +1378,10 @@
     [
      "2026-11-26",
      69700
+    ],
+    [
+     "2026-11-27",
+     69700
     ]
    ]
   }
@@ -1476,7 +1488,7 @@
   "v200_note": null,
   "years_on_market": 2,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 69850,
    "rakuten": null,
    "kakaku": 99700,
@@ -1826,6 +1838,10 @@
     [
      "2026-11-26",
      99700
+    ],
+    [
+     "2026-11-27",
+     99700
     ]
    ]
   }
@@ -1905,15 +1921,15 @@
   "v200_note": null,
   "years_on_market": 4,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": null,
-   "kakaku": 43000,
+   "kakaku": 70000,
    "rakuten_url": null,
    "kakaku_url": "https://kakaku.com/item/K0001528337/",
    "image": "http://jp.ecoflow.com/cdn/shop/files/2_b41df852-bbe6-480a-b55a-036f3c6b5140.png?v=1783912008",
    "miss_days": 0,
-   "min": 43000,
+   "min": 70000,
    "hist_min": 39700,
    "history": [
     [
@@ -2255,6 +2271,10 @@
     [
      "2026-11-26",
      43000
+    ],
+    [
+     "2026-11-27",
+     70000
     ]
    ]
   }
@@ -2374,14 +2394,14 @@
   "v200_note": null,
   "years_on_market": 1,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 18990,
    "rakuten": null,
    "kakaku": null,
    "rakuten_url": null,
    "kakaku_url": null,
    "image": null,
-   "miss_days": 92,
+   "miss_days": 93,
    "min": 18990,
    "hist_min": null,
    "history": [
@@ -2724,6 +2744,10 @@
     [
      "2026-11-26",
      null
+    ],
+    [
+     "2026-11-27",
+     null
     ]
    ]
   }
@@ -2792,14 +2816,14 @@
   "v200_note": null,
   "years_on_market": 1,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": null,
    "kakaku": null,
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "http://jp.ecoflow.com/cdn/shop/files/TRAIL_300_DC_2.png?v=1764051847",
-   "miss_days": 92,
+   "miss_days": 93,
    "min": null,
    "hist_min": null,
    "history": [
@@ -3142,6 +3166,10 @@
     [
      "2026-11-26",
      null
+    ],
+    [
+     "2026-11-27",
+     null
     ]
    ]
   },
@@ -3272,7 +3300,7 @@
   "v200_note": null,
   "years_on_market": 1,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": null,
    "kakaku": 46111,
@@ -3622,6 +3650,10 @@
     [
      "2026-11-26",
      46111
+    ],
+    [
+     "2026-11-27",
+     46111
     ]
    ]
   }
@@ -3746,7 +3778,7 @@
   "v200_note": "公式スペックのAC出力は100Vのみ。200V出力の記載なし（AC入力200V対応とは別）",
   "years_on_market": 1,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 69800,
    "rakuten": null,
    "kakaku": 109700,
@@ -4096,6 +4128,10 @@
     [
      "2026-11-26",
      109700
+    ],
+    [
+     "2026-11-27",
+     109700
     ]
    ]
   }
@@ -4231,7 +4267,7 @@
   "v200_note": "公式スペックのAC出力は100Vのみ。200V出力の記載なし（AC入力200V対応とは別）",
   "years_on_market": 2,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 85860,
    "rakuten": null,
    "kakaku": 46111,
@@ -4581,6 +4617,10 @@
     [
      "2026-11-26",
      46111
+    ],
+    [
+     "2026-11-27",
+     46111
     ]
    ]
   }
@@ -4711,7 +4751,7 @@
   "v200_note": "公式スペックのAC出力は100Vのみ。200V出力の記載なし（AC入力200V対応とは別）",
   "years_on_market": 2,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 88000,
    "rakuten": null,
    "kakaku": 74800,
@@ -5061,6 +5101,10 @@
     [
      "2026-11-26",
      74800
+    ],
+    [
+     "2026-11-27",
+     74800
     ]
    ]
   }
@@ -5181,7 +5225,7 @@
   "v200_note": "公式スペックのAC出力は100V（AC入力が100V 15A表記）。200V出力の記載なし",
   "years_on_market": 1,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 120750,
    "rakuten": null,
    "kakaku": 181500,
@@ -5531,6 +5575,10 @@
     [
      "2026-11-26",
      181500
+    ],
+    [
+     "2026-11-27",
+     181500
     ]
    ]
   }
@@ -5605,7 +5653,7 @@
   "v200_note": "公式スペックのAC出力は100Vのみ。200V出力の記載なし（AC入力200V対応とは別）",
   "years_on_market": 0,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": null,
    "kakaku": 74800,
@@ -5955,6 +6003,10 @@
     [
      "2026-11-26",
      74800
+    ],
+    [
+     "2026-11-27",
+     74800
     ]
    ]
   }
@@ -6079,7 +6131,7 @@
   "v200_note": "公式スペックのAC出力は100Vのみ。200V出力の記載なし（AC入力200V対応とは別）",
   "years_on_market": 1,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 119800,
    "rakuten": null,
    "kakaku": 96734,
@@ -6429,6 +6481,10 @@
     [
      "2026-11-26",
      96734
+    ],
+    [
+     "2026-11-27",
+     96734
     ]
    ]
   }
@@ -6553,7 +6609,7 @@
   "v200_note": "公式スペックはAC×4で出力100Vのみ。200V出力の記載なし",
   "years_on_market": 1,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 236334,
    "rakuten": null,
    "kakaku": 154988,
@@ -6903,6 +6959,10 @@
     [
      "2026-11-26",
      154988
+    ],
+    [
+     "2026-11-27",
+     154988
     ]
    ]
   }
@@ -6971,7 +7031,7 @@
   "v200_note": "公式スペックはAC出力4ポート・定格3000Wで200V出力の記載なし。EcoFlow公式ブログでも200V対応はDELTA Pro 3のみと説明",
   "years_on_market": 1,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": null,
    "kakaku": 199800,
@@ -7321,6 +7381,10 @@
     [
      "2026-11-26",
      199800
+    ],
+    [
+     "2026-11-27",
+     199800
     ]
    ]
   },
@@ -7390,7 +7454,7 @@
   "v200_note": "公式スペックに200V出力の記載なし。EcoFlow公式ブログで『DELTA 3 Ultra Plusは200V対応を明記せず、200V対応はDELTA Pro 3』とされる",
   "years_on_market": 1,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": null,
    "kakaku": 199800,
@@ -7740,6 +7804,10 @@
     [
      "2026-11-26",
      199800
+    ],
+    [
+     "2026-11-27",
+     199800
     ]
    ]
   },
@@ -7846,7 +7914,7 @@
   "v200_note": "公式スペックのAC出力は『AC100～120V(50Hz/60Hz)』のみ",
   "years_on_market": 4,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 79200,
    "rakuten": null,
    "kakaku": 49800,
@@ -8196,6 +8264,10 @@
     [
      "2026-11-26",
      49800
+    ],
+    [
+     "2026-11-27",
+     49800
     ]
    ]
   }
@@ -8271,7 +8343,7 @@
   "v200_note": "公式スペックはAC6口 合計2000Wで出力100Vのみ。200V出力の記載なし",
   "years_on_market": 3,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": null,
    "kakaku": 94017,
@@ -8621,6 +8693,10 @@
     [
      "2026-11-26",
      94017
+    ],
+    [
+     "2026-11-27",
+     94017
     ]
    ]
   }
@@ -8689,7 +8765,7 @@
   "v200_note": "公式スペックはAC6口 合計2000Wで出力100Vのみ。200V出力の記載なし",
   "years_on_market": 1,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": null,
    "kakaku": 254100,
@@ -9039,6 +9115,10 @@
     [
      "2026-11-26",
      254100
+    ],
+    [
+     "2026-11-27",
+     254100
     ]
    ]
   }
@@ -9129,7 +9209,7 @@
   "v200_note": "本体単体は100V出力のみだが、公式スペックの出力電圧欄に『100V/200V』とあり、別売のダブルボルテージハブでDELTA Pro 2台を接続すると定格6000W・200V出力に対応",
   "years_on_market": 5,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": null,
    "kakaku": 219800,
@@ -9479,6 +9559,10 @@
     [
      "2026-11-26",
      219800
+    ],
+    [
+     "2026-11-27",
+     219800
     ]
    ]
   }
@@ -9610,7 +9694,7 @@
   "v200_note": "公式スペックに『200V専用AC出力ポート×1』『100V/200V兼用×1』を明記（合計7ポート）。パワーシステムキットで分電盤接続時も200V回路に給電可",
   "years_on_market": 2,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 378997,
    "rakuten": null,
    "kakaku": 279800,
@@ -9960,6 +10044,10 @@
     [
      "2026-11-26",
      279800
+    ],
+    [
+     "2026-11-27",
+     279800
     ]
    ]
   }
@@ -10029,7 +10117,7 @@
   "v200_note": "公式スペックに200V専用出力『1×NEMA 6-20R (200V 20A)』および『1×NEMA L15-30R (100V/200V 30A)』を明記",
   "years_on_market": 2,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": 598400,
    "kakaku": null,
@@ -10379,6 +10467,10 @@
     [
      "2026-11-26",
      598400
+    ],
+    [
+     "2026-11-27",
+     598400
     ]
    ]
   }
@@ -10503,11 +10595,11 @@
   "v200_note": null,
   "years_on_market": 2,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 18990,
-   "rakuten": 20273,
+   "rakuten": 21190,
    "kakaku": null,
-   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00u9zdo.5sz2d7b0.g00u9zdo.5sz2e7f1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmro-tonton%2Fto0626994738%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmro-tonton%2Fi%2F10075503%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00s3glo.5sz2d042.g00s3glo.5sz2e437/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fvaluecare%2Fvc-tr-6994738%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fvaluecare%2Fi%2F11130577%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
    "kakaku_url": null,
    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/mro-tonton/cabinet/trusco2025/to0620000000.jpg",
    "miss_days": 0,
@@ -10853,6 +10945,10 @@
     [
      "2026-11-26",
      20273
+    ],
+    [
+     "2026-11-27",
+     21190
     ]
    ]
   }
@@ -10983,14 +11079,14 @@
   "v200_note": null,
   "years_on_market": 2,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 20990,
    "rakuten": null,
    "kakaku": null,
    "rakuten_url": null,
    "kakaku_url": null,
    "image": null,
-   "miss_days": 92,
+   "miss_days": 93,
    "min": 20990,
    "hist_min": null,
    "history": [
@@ -11333,6 +11429,10 @@
     [
      "2026-11-26",
      null
+    ],
+    [
+     "2026-11-27",
+     null
     ]
    ]
   }
@@ -11464,14 +11564,14 @@
   "v200_note": null,
   "years_on_market": 2,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 29990,
    "rakuten": null,
    "kakaku": null,
    "rakuten_url": null,
    "kakaku_url": null,
    "image": null,
-   "miss_days": 92,
+   "miss_days": 93,
    "min": 29990,
    "hist_min": null,
    "history": [
@@ -11814,6 +11914,10 @@
     [
      "2026-11-26",
      null
+    ],
+    [
+     "2026-11-27",
+     null
     ]
    ]
   }
@@ -11944,14 +12048,14 @@
   "v200_note": null,
   "years_on_market": 4,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": null,
    "kakaku": null,
    "rakuten_url": null,
    "kakaku_url": null,
    "image": null,
-   "miss_days": 92,
+   "miss_days": 93,
    "min": null,
    "hist_min": null,
    "history": [
@@ -12294,6 +12398,10 @@
     [
      "2026-11-26",
      null
+    ],
+    [
+     "2026-11-27",
+     null
     ]
    ]
   }
@@ -12425,7 +12533,7 @@
   "v200_note": null,
   "years_on_market": 3,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": 49800,
    "kakaku": null,
@@ -12775,6 +12883,10 @@
     [
      "2026-11-26",
      49800
+    ],
+    [
+     "2026-11-27",
+     49800
     ]
    ]
   }
@@ -12895,7 +13007,7 @@
   "v200_note": null,
   "years_on_market": 2,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 73800,
    "rakuten": 59800,
    "kakaku": null,
@@ -13245,6 +13357,10 @@
     [
      "2026-11-26",
      59800
+    ],
+    [
+     "2026-11-27",
+     59800
     ]
    ]
   }
@@ -13314,7 +13430,7 @@
   "v200_note": "公式スペックに『本製品のACポートの定格電圧は100Vです』と明記（AC出力100V 1000W）",
   "years_on_market": 4,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": 129800,
    "kakaku": null,
@@ -13664,6 +13780,10 @@
     [
      "2026-11-26",
      129800
+    ],
+    [
+     "2026-11-27",
+     129800
     ]
    ]
   }
@@ -13800,14 +13920,14 @@
   "v200_note": "公式スペックはAC出力1500W/100Vのみ。200V出力の記載なし",
   "years_on_market": 3,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 74900,
    "rakuten": null,
    "kakaku": null,
    "rakuten_url": null,
    "kakaku_url": null,
    "image": null,
-   "miss_days": 92,
+   "miss_days": 93,
    "min": 74900,
    "hist_min": null,
    "history": [
@@ -14150,6 +14270,10 @@
     [
      "2026-11-26",
      null
+    ],
+    [
+     "2026-11-27",
+     null
     ]
    ]
   }
@@ -14225,14 +14349,14 @@
   "v200_note": "公式スペックはAC出力1500W（100V）のみ。200V出力の記載なし",
   "years_on_market": 1,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": null,
    "kakaku": null,
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "https://www.ankerjapan.com/cdn/shop/files/snp_A1762_listing_00_b87f86ac-c5a0-4ea9-84e9-9d209194e5d0_1200x1200.jpg?v=1764634626",
-   "miss_days": 92,
+   "miss_days": 93,
    "min": null,
    "hist_min": null,
    "history": [
@@ -14575,6 +14699,10 @@
     [
      "2026-11-26",
      null
+    ],
+    [
+     "2026-11-27",
+     null
     ]
    ]
   },
@@ -14689,14 +14817,14 @@
   "v200_note": "公式の比較表『AC200V対応』欄が「-」で非対応。AC出力は1550W(50/60Hz)の100Vのみ",
   "years_on_market": 1,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 69990,
    "rakuten": null,
    "kakaku": null,
    "rakuten_url": null,
    "kakaku_url": null,
    "image": null,
-   "miss_days": 92,
+   "miss_days": 93,
    "min": 69990,
    "hist_min": null,
    "history": [
@@ -15039,6 +15167,10 @@
     [
      "2026-11-26",
      null
+    ],
+    [
+     "2026-11-27",
+     null
     ]
    ]
   }
@@ -15175,16 +15307,16 @@
   "v200_note": "公式スペックは『AC：100V~ 15A、50Hz/60Hz、最大1500W』で100V出力のみ",
   "years_on_market": 4,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 89990,
-   "rakuten": 139000,
+   "rakuten": 105643,
    "kakaku": null,
    "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00r2muo.5sz2dba2.g00r2muo.5sz2e7a4/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauc-worldichi%2F4571411204425%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fauc-worldichi%2Fi%2F10031148%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
    "kakaku_url": null,
    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/auc-worldichi/cabinet/13/4571411204425.jpg",
    "miss_days": 0,
    "min": 89990,
-   "hist_min": 127000,
+   "hist_min": 105643,
    "history": [
     [
      "2026-09-03",
@@ -15525,6 +15657,10 @@
     [
      "2026-11-26",
      139000
+    ],
+    [
+     "2026-11-27",
+     105643
     ]
    ]
   }
@@ -15594,7 +15730,7 @@
   "v200_note": "公式スペックはAC定格出力1500W（AC5ポート）で、200V出力の記載なし",
   "years_on_market": 0,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": 199900,
    "kakaku": null,
@@ -15944,6 +16080,10 @@
     [
      "2026-11-26",
      199900
+    ],
+    [
+     "2026-11-27",
+     199900
     ]
    ]
   },
@@ -16081,14 +16221,14 @@
   "v200_note": "公式の比較表『AC200V対応』欄が空欄で非対応。AC出力は2000W(50/60Hz)の100Vのみ",
   "years_on_market": 1,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 199900,
    "rakuten": null,
    "kakaku": null,
    "rakuten_url": null,
    "kakaku_url": null,
    "image": null,
-   "miss_days": 92,
+   "miss_days": 93,
    "min": 199900,
    "hist_min": null,
    "history": [
@@ -16431,6 +16571,10 @@
     [
      "2026-11-26",
      null
+    ],
+    [
+     "2026-11-27",
+     null
     ]
    ]
   }
@@ -16498,14 +16642,14 @@
   "v200_note": "公式スペックはAC出力2000W。200V出力（AC200V対応）の記載なし",
   "years_on_market": 0,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": null,
    "kakaku": null,
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "https://www.ankerjapan.com/cdn/shop/files/A1785521_1200x1200.jpg?v=1770684444",
-   "miss_days": 92,
+   "miss_days": 93,
    "min": null,
    "hist_min": null,
    "history": [
@@ -16847,6 +16991,10 @@
     ],
     [
      "2026-11-26",
+     null
+    ],
+    [
+     "2026-11-27",
      null
     ]
    ]
@@ -16924,14 +17072,14 @@
   "v200_note": "公式スペックは『最大2000W (100V~20A, 50Hz/60Hz)』で100V出力のみ。200V対応はSolix F3800のみと明記",
   "years_on_market": 4,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": null,
    "kakaku": null,
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "https://www.ankerjapan.com/cdn/shop/files/A1780_listing_product_2_1200x1200.jpg?v=1732107731",
-   "miss_days": 92,
+   "miss_days": 93,
    "min": null,
    "hist_min": null,
    "history": [
@@ -17273,6 +17421,10 @@
     ],
     [
      "2026-11-26",
+     null
+    ],
+    [
+     "2026-11-27",
      null
     ]
    ]
@@ -17405,7 +17557,7 @@
   "v200_note": "公式スペックはAC出力 単ポート1500W(合計最大3000W)で100Vのみ。200V出力の記載なし",
   "years_on_market": 1,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 189900,
    "rakuten": 287602,
    "kakaku": null,
@@ -17755,6 +17907,10 @@
     [
      "2026-11-26",
      287602
+    ],
+    [
+     "2026-11-27",
+     287602
     ]
    ]
   }
@@ -17824,14 +17980,14 @@
   "v200_note": "公式スペックに『AC×7（100V×6 / 200V×1）』『合計最大出力5000W ※200V: 最大4000W』と200V専用出力ポートを明記",
   "years_on_market": 3,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": null,
    "kakaku": null,
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "https://www.ankerjapan.com/cdn/shop/files/A1790_listing_product_1200x1200.jpg?v=1728640388",
-   "miss_days": 92,
+   "miss_days": 93,
    "min": null,
    "hist_min": null,
    "history": [
@@ -18174,6 +18330,10 @@
     [
      "2026-11-26",
      null
+    ],
+    [
+     "2026-11-27",
+     null
     ]
    ]
   },
@@ -18306,7 +18466,7 @@
   "v200_note": null,
   "years_on_market": 3,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 11925,
    "rakuten": null,
    "kakaku": 12719,
@@ -18656,6 +18816,10 @@
     [
      "2026-11-26",
      12719
+    ],
+    [
+     "2026-11-27",
+     12719
     ]
    ]
   }
@@ -18725,7 +18889,7 @@
   "v200_note": null,
   "years_on_market": 2,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": null,
    "kakaku": 32800,
@@ -19075,6 +19239,10 @@
     [
      "2026-11-26",
      32800
+    ],
+    [
+     "2026-11-27",
+     32800
     ]
    ]
   }
@@ -19142,15 +19310,15 @@
   "v200_note": null,
   "years_on_market": 1,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
-   "rakuten": 18800,
+   "rakuten": 24684,
    "kakaku": 24684,
-   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00t7x7o.5sz2d5ce.g00t7x7o.5sz2eb03/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fborder-less1%2Frc_it0fy11zy5w4_rywu%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fborder-less1%2Fi%2F10074721%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00tmsao.5sz2dfbc.g00tmsao.5sz2e3cd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftakahashihonsha%2F4595556362352%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ftakahashihonsha%2Fi%2F10128044%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
    "kakaku_url": "https://kakaku.com/item/K0001720293/",
-   "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/border-less1/cabinet/12839628/imgrc0141719397.jpg",
+   "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/takahashihonsha/cabinet/goq242/161913_1.jpg",
    "miss_days": 0,
-   "min": 18800,
+   "min": 24684,
    "hist_min": 17493,
    "history": [
     [
@@ -19492,6 +19660,10 @@
     [
      "2026-11-26",
      18800
+    ],
+    [
+     "2026-11-27",
+     24684
     ]
    ]
   }
@@ -19559,7 +19731,7 @@
   "v200_note": null,
   "years_on_market": 0,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": 37370,
    "kakaku": 36390,
@@ -19909,6 +20081,10 @@
     [
      "2026-11-26",
      36390
+    ],
+    [
+     "2026-11-27",
+     36390
     ]
    ]
   }
@@ -19984,7 +20160,7 @@
   "v200_note": null,
   "years_on_market": 3,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": 35200,
    "kakaku": 33999,
@@ -20334,6 +20510,10 @@
     [
      "2026-11-26",
      33999
+    ],
+    [
+     "2026-11-27",
+     33999
     ]
    ]
   }
@@ -20401,7 +20581,7 @@
   "v200_note": null,
   "years_on_market": 1,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": null,
    "kakaku": 52350,
@@ -20751,6 +20931,10 @@
     [
      "2026-11-26",
      52350
+    ],
+    [
+     "2026-11-27",
+     52350
     ]
    ]
   }
@@ -20848,7 +21032,7 @@
   "v200_note": null,
   "years_on_market": 1,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 62180,
    "rakuten": 64651,
    "kakaku": 52800,
@@ -21198,6 +21382,10 @@
     [
      "2026-11-26",
      52800
+    ],
+    [
+     "2026-11-27",
+     52800
     ]
    ]
   }
@@ -21328,7 +21516,7 @@
   "v200_note": null,
   "years_on_market": 2,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 64503,
    "rakuten": 16874,
    "kakaku": 65268,
@@ -21678,6 +21866,10 @@
     [
      "2026-11-26",
      16874
+    ],
+    [
+     "2026-11-27",
+     16874
     ]
    ]
   }
@@ -21745,15 +21937,15 @@
   "v200_note": null,
   "years_on_market": 1,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
-   "rakuten": 81811,
+   "rakuten": 15900,
    "kakaku": 81811,
-   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00uuzro.5sz2df49.g00uuzro.5sz2e530/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ffukudakikai%2F6974209%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ffukudakikai%2Fi%2F10157760%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00tgroo.5sz2dbf5.g00tgroo.5sz2ea1f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjackery-japan%2F21-0001-000421%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjackery-japan%2Fi%2F10000231%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
    "kakaku_url": "https://kakaku.com/item/K0001687446/",
-   "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/fukudakikai/cabinet/209/6974209.jpg",
+   "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/jackery-japan/cabinet/14230742/14232005/imgrc0121751340.jpg",
    "miss_days": 0,
-   "min": 81811,
+   "min": 15900,
    "hist_min": 15900,
    "history": [
     [
@@ -22095,6 +22287,10 @@
     [
      "2026-11-26",
      81811
+    ],
+    [
+     "2026-11-27",
+     15900
     ]
    ]
   }
@@ -22226,15 +22422,15 @@
   "v200_note": "公式スペックのAC出力は100Vのみ。200V出力の記載なし",
   "years_on_market": 2,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 69484,
-   "rakuten": 53910,
+   "rakuten": 55920,
    "kakaku": 69484,
-   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00tgroo.5sz2dbf5.g00tgroo.5sz2ea1f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjackery-japan%2F21-0001-000315-r%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjackery-japan%2Fi%2F10000245%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00tgroo.5sz2dbf5.g00tgroo.5sz2ea1f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjackery-japan%2F21-0001-000224-r%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjackery-japan%2Fi%2F10000172%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
    "kakaku_url": "https://kakaku.com/item/J0000047405/",
-   "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/jackery-japan/cabinet/13198719/imgrc0115542667.jpg",
+   "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/jackery-japan/cabinet/11928181/1000.jpg",
    "miss_days": 0,
-   "min": 53910,
+   "min": 55920,
    "hist_min": 53910,
    "history": [
     [
@@ -22576,6 +22772,10 @@
     [
      "2026-11-26",
      53910
+    ],
+    [
+     "2026-11-27",
+     55920
     ]
    ]
   }
@@ -22644,13 +22844,13 @@
   "v200_note": "公式スペックのAC出力は100Vのみ。200V出力の記載なし",
   "years_on_market": 0,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 72468,
-   "rakuten": 109800,
+   "rakuten": 96031,
    "kakaku": 76860,
-   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00tgroo.5sz2dbf5.g00tgroo.5sz2ea1f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjackery-japan%2F21-0001-000447%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjackery-japan%2Fi%2F10000266%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00tmhbo.5sz2d71f.g00tmhbo.5sz2e4c3/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flovelonestar%2F20261118104124_119%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flovelonestar%2Fi%2F10046212%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
    "kakaku_url": "https://kakaku.com/item/J0000051816/",
-   "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/jackery-japan/cabinet/14230742/14232005/imgrc0121751327.jpg",
+   "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/lovelonestar/cabinet/r_1585049728/20261118104124_119_1.jpg",
    "miss_days": 0,
    "min": 72468,
    "hist_min": 76860,
@@ -22994,6 +23194,10 @@
     [
      "2026-11-26",
      76860
+    ],
+    [
+     "2026-11-27",
+     76860
     ]
    ]
   }
@@ -23062,7 +23266,7 @@
   "v200_note": "公式スペックは定格800W（瞬間最大1600W）の100V出力のみ。200V出力の記載なし",
   "years_on_market": 0,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": 95700,
    "kakaku": 81464,
@@ -23412,6 +23616,10 @@
     [
      "2026-11-26",
      81464
+    ],
+    [
+     "2026-11-27",
+     81464
     ]
    ]
   }
@@ -23546,15 +23754,15 @@
   "v200_note": "公式スペックのAC出力は100Vのみ。200V出力の記載なし",
   "years_on_market": 3,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 99800,
    "rakuten": null,
-   "kakaku": 78800,
+   "kakaku": 82682,
    "rakuten_url": null,
    "kakaku_url": "https://kakaku.com/item/K0001555061/",
    "image": null,
    "miss_days": 0,
-   "min": 78800,
+   "min": 82682,
    "hist_min": 73000,
    "history": [
     [
@@ -23896,6 +24104,10 @@
     [
      "2026-11-26",
      78800
+    ],
+    [
+     "2026-11-27",
+     82682
     ]
    ]
   }
@@ -24031,11 +24243,11 @@
   "v200_note": "公式スペックはAC3ポート最大1500W・100V出力のみ。200V出力の記載なし",
   "years_on_market": 1,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 86884,
    "rakuten": 126462,
    "kakaku": 89880,
-   "rakuten_url": "https://item.rakuten.co.jp/kurashiserekuto/vsp6sbdbt5zlr3litdhpyoxgqm/?rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00us8qo.5sz2daf4.g00us8qo.5sz2e7d2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkurashiserekuto%2Fvsp6sbdbt5zlr3litdhpyoxgqm%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkurashiserekuto%2Fi%2F10215101%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
    "kakaku_url": "https://kakaku.com/item/J0000050542/",
    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/kurashiserekuto/cabinet/12135263/50301944_4.jpg",
    "miss_days": 0,
@@ -24381,6 +24593,10 @@
     [
      "2026-11-26",
      89880
+    ],
+    [
+     "2026-11-27",
+     89880
     ]
    ]
   }
@@ -24472,11 +24688,11 @@
   "v200_note": "公式スペックのAC出力は100Vのみ。200V出力の記載なし",
   "years_on_market": 1,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": 147000,
    "kakaku": 149988,
-   "rakuten_url": "https://item.rakuten.co.jp/border-less1/rc_it5u8wllul5k_tzbz/?rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00t7x7o.5sz2d5ce.g00t7x7o.5sz2eb03/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fborder-less1%2Frc_it5u8wllul5k_tzbz%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fborder-less1%2Fi%2F10076286%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
    "kakaku_url": "https://kakaku.com/item/K0001700527/",
    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/border-less1/cabinet/13630213/imgrc0149376072.jpg",
    "miss_days": 0,
@@ -24822,6 +25038,10 @@
     [
      "2026-11-26",
      147000
+    ],
+    [
+     "2026-11-27",
+     147000
     ]
    ]
   }
@@ -24889,11 +25109,11 @@
   "v200_note": "公式スペックは『100V~ 50Hz/60Hz、3ポート合計2200W』で100V出力のみ",
   "years_on_market": 1,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": 119800,
    "kakaku": 125000,
-   "rakuten_url": "https://item.rakuten.co.jp/sokutei/810105521818/?rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00sxgso.5sz2d0aa.g00sxgso.5sz2e9e1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsokutei%2F810105521818%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsokutei%2Fi%2F10196019%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
    "kakaku_url": "https://kakaku.com/item/K0001687445/",
    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/sokutei/cabinet/item_photo/2026/10/810105521818.jpg",
    "miss_days": 0,
@@ -25239,6 +25459,10 @@
     [
      "2026-11-26",
      119800
+    ],
+    [
+     "2026-11-27",
+     119800
     ]
    ]
   }
@@ -25309,11 +25533,11 @@
   "v200_note": "公式スペックは定格2200W・100V/15Aで100V出力のみ。200V出力の記載なし",
   "years_on_market": 2,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": 95920,
    "kakaku": 109890,
-   "rakuten_url": "https://item.rakuten.co.jp/jackery-japan/21-0001-000268-r/?rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00tgroo.5sz2dbf5.g00tgroo.5sz2ea1f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjackery-japan%2F21-0001-000268-r%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjackery-japan%2Fi%2F10000194%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
    "kakaku_url": "https://kakaku.com/item/J0000048065/",
    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/jackery-japan/cabinet/11928181/imgrc0108816119.jpg",
    "miss_days": 0,
@@ -25659,6 +25883,10 @@
     [
      "2026-11-26",
      95920
+    ],
+    [
+     "2026-11-27",
+     95920
     ]
    ]
   }
@@ -25770,11 +25998,11 @@
   "v200_note": "公式スペックは定格2200W・100V/15Aで100V出力のみ。200V出力の記載なし",
   "years_on_market": 0,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 119800,
    "rakuten": 119700,
    "kakaku": 109890,
-   "rakuten_url": "https://item.rakuten.co.jp/paladineer/compass1794204975/?rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00sywwo.5sz2d325.g00sywwo.5sz2e8ee/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fpaladineer%2Fcompass1794204975%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fpaladineer%2Fi%2F10005766%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
    "kakaku_url": "https://kakaku.com/item/J0000051819/",
    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/paladineer/cabinet/13788334/13884522/imgrc0113107851.jpg",
    "miss_days": 0,
@@ -26120,6 +26348,10 @@
     [
      "2026-11-26",
      109890
+    ],
+    [
+     "2026-11-27",
+     109890
     ]
    ]
   }
@@ -26195,15 +26427,15 @@
   "v200_note": "単体では100V出力のみだが、Jackery公式記事に『2000 Plus 2台セットは専用コネクターで並列接続することで200Vに対応（定格4000W）』と明記。別売の専用コネクター＋2台構成が必要",
   "years_on_market": 3,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": null,
-   "kakaku": 153800,
+   "kakaku": 159800,
    "rakuten_url": null,
    "kakaku_url": "https://kakaku.com/item/K0001791264/",
    "image": "https://www.jackery.jp/cdn/shop/files/2000plus.jpg?v=1702627878",
    "miss_days": 0,
-   "min": 153800,
+   "min": 159800,
    "hist_min": 132000,
    "history": [
     [
@@ -26545,6 +26777,10 @@
     [
      "2026-11-26",
      153800
+    ],
+    [
+     "2026-11-27",
+     159800
     ]
    ]
   }
@@ -26613,11 +26849,11 @@
   "v200_note": "公式スペックは『NEMA L5-30R（出力100V/30A）』等、100V出力のみ。200V出力の記載なし",
   "years_on_market": 1,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": 175352,
    "kakaku": 175352,
-   "rakuten_url": "https://item.rakuten.co.jp/fukudakikai/6984595/?rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00uuzro.5sz2df49.g00uuzro.5sz2e530/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ffukudakikai%2F6984595%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ffukudakikai%2Fi%2F10156720%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
    "kakaku_url": "https://kakaku.com/item/K0001679170/",
    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/fukudakikai/cabinet/595/6984595.jpg",
    "miss_days": 0,
@@ -26963,6 +27199,10 @@
     [
      "2026-11-26",
      175352
+    ],
+    [
+     "2026-11-27",
+     175352
     ]
    ]
   }
@@ -27061,11 +27301,11 @@
   "v200_note": "公式スペックのAC出力は100Vのみ。200V出力の記載なし",
   "years_on_market": 3,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 146650,
    "rakuten": 146650,
    "kakaku": 146650,
-   "rakuten_url": "https://item.rakuten.co.jp/jackery-japan/21-0001-000049/?rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00tgroo.5sz2dbf5.g00tgroo.5sz2ea1f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjackery-japan%2F21-0001-000049%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjackery-japan%2Fi%2F10000114%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
    "kakaku_url": "https://kakaku.com/item/K0001555450/",
    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/jackery-japan/cabinet/09901844/09902090/imgrc0101133853.jpg",
    "miss_days": 0,
@@ -27411,6 +27651,10 @@
     [
      "2026-11-26",
      146650
+    ],
+    [
+     "2026-11-27",
+     146650
     ]
    ]
   }
@@ -27485,11 +27729,11 @@
   "v200_note": "公式製品ページに『200V家電対応（並列接続時・最大4000W出力）』と記載。別売の専用コネクターで本体2台を並列接続した場合に200V対応（単体は100V）",
   "years_on_market": 0,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": 287839,
    "kakaku": 215780,
-   "rakuten_url": "https://item.rakuten.co.jp/atomonlineshop/330558/?rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00r1jxo.5sz2deb6.g00r1jxo.5sz2eb9c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fatomonlineshop%2F330558%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fatomonlineshop%2Fi%2F10018244%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
    "kakaku_url": "https://kakaku.com/item/K0001772033/",
    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/atomonlineshop/cabinet/portable-power/330558-01.jpg",
    "miss_days": 0,
@@ -27835,6 +28079,10 @@
     [
      "2026-11-26",
      215780
+    ],
+    [
+     "2026-11-27",
+     215780
     ]
    ]
   }
@@ -27919,11 +28167,11 @@
   "v200_note": "公式スペックに『単相100V／200V AC出力に対応』と明記。1台で200V家電（エアコン・業務用機器）に給電可能",
   "years_on_market": 1,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": 451318,
    "kakaku": 439450,
-   "rakuten_url": "https://item.rakuten.co.jp/fukudakikai/7129421/?rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00uuzro.5sz2df49.g00uuzro.5sz2e530/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ffukudakikai%2F7129421%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ffukudakikai%2Fi%2F10157949%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
    "kakaku_url": "https://kakaku.com/item/K0001696427/",
    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/fukudakikai/cabinet/421/7129421.jpg",
    "miss_days": 0,
@@ -28269,6 +28517,10 @@
     [
      "2026-11-26",
      439450
+    ],
+    [
+     "2026-11-27",
+     439450
     ]
    ]
   }
@@ -28337,11 +28589,11 @@
   "v200_note": null,
   "years_on_market": 1,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": 22500,
    "kakaku": null,
-   "rakuten_url": "https://item.rakuten.co.jp/bluettijapan/aora10-jp-eg-rktjp-00/?rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00u57jo.5sz2dedf.g00u57jo.5sz2e74a/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbluettijapan%2Faora10-jp-eg-rktjp-00%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbluettijapan%2Fi%2F10000225%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
    "kakaku_url": null,
    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/bluettijapan/cabinet/12874450/14213836/14233969/aora10.jpg",
    "miss_days": 0,
@@ -28687,6 +28939,10 @@
     [
      "2026-11-26",
      22500
+    ],
+    [
+     "2026-11-27",
+     22500
     ]
    ]
   }
@@ -28817,11 +29073,11 @@
   "v200_note": null,
   "years_on_market": 1,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 27860,
    "rakuten": 26800,
    "kakaku": null,
-   "rakuten_url": "https://item.rakuten.co.jp/ebattery/bluetti-aroa30v2/?rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00u100o.5sz2db24.g00u100o.5sz2e9e1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Febattery%2Fbluetti-aroa30v2%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Febattery%2Fi%2F10000148%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
    "kakaku_url": null,
    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/ebattery/cabinet/13298630/0030.jpg",
    "miss_days": 0,
@@ -29167,6 +29423,10 @@
     [
      "2026-11-26",
      26800
+    ],
+    [
+     "2026-11-27",
+     26800
     ]
    ]
   }
@@ -29292,11 +29552,11 @@
   "v200_note": "公式ページのAC出力は1800W（瞬間最大3600W）の100V表記のみ。200V出力の記載なし",
   "years_on_market": 1,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 62910,
    "rakuten": 62910,
    "kakaku": null,
-   "rakuten_url": "https://item.rakuten.co.jp/jism/4582739521675-21-74495-n/?rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00pukwo.5sz2d13d.g00pukwo.5sz2e43b/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjism%2F4582739521675-21-74495-n%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjism%2Fi%2F15003362%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
    "kakaku_url": null,
    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/jism/cabinet/0142/4582739521675.jpg",
    "miss_days": 0,
@@ -29642,6 +29902,10 @@
     [
      "2026-11-26",
      62910
+    ],
+    [
+     "2026-11-27",
+     62910
     ]
    ]
   }
@@ -29747,11 +30011,11 @@
   "v200_note": "公式ページに200V出力の記載なし（出力700W・1kWhクラスの100V機）",
   "years_on_market": 0,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 56899,
    "rakuten": 96800,
    "kakaku": null,
-   "rakuten_url": "https://item.rakuten.co.jp/bluettijapan/bluettijapan_ac70/?rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00u57jo.5sz2dedf.g00u57jo.5sz2e74a/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbluettijapan%2Fbluettijapan_ac70%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbluettijapan%2Fi%2F10000107%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
    "kakaku_url": null,
    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/bluettijapan/cabinet/12874450/14213836/14259801/aora100mini1.jpg",
    "miss_days": 0,
@@ -30097,6 +30361,10 @@
     [
      "2026-11-26",
      96800
+    ],
+    [
+     "2026-11-27",
+     96800
     ]
    ]
   }
@@ -30221,11 +30489,11 @@
   "v200_note": "公式ページに200V出力の記載なし",
   "years_on_market": 1,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 56980,
    "rakuten": 59600,
    "kakaku": null,
-   "rakuten_url": "https://item.rakuten.co.jp/ebattery/bluetti-aroa100v2-outlet/?rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00u100o.5sz2db24.g00u100o.5sz2e9e1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Febattery%2Fbluetti-aroa100v2-outlet%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Febattery%2Fi%2F10000164%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
    "kakaku_url": null,
    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/ebattery/cabinet/14211071/bluetti-aora1.jpg",
    "miss_days": 0,
@@ -30571,6 +30839,10 @@
     [
      "2026-11-26",
      59600
+    ],
+    [
+     "2026-11-27",
+     59600
     ]
    ]
   }
@@ -30639,11 +30911,11 @@
   "v200_note": "公式ページのAC出力は2200Wの100V表記のみ。200V出力の記載なし",
   "years_on_market": 2,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": 101900,
    "kakaku": null,
-   "rakuten_url": "https://item.rakuten.co.jp/ebattery/bluetti-aora200/?rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00u100o.5sz2db24.g00u100o.5sz2e9e1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Febattery%2Fbluetti-aora200%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Febattery%2Fi%2F10000115%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
    "kakaku_url": null,
    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/ebattery/cabinet/12692704/00a.jpg",
    "miss_days": 0,
@@ -30989,6 +31261,10 @@
     [
      "2026-11-26",
      101900
+    ],
+    [
+     "2026-11-27",
+     101900
     ]
    ]
   }
@@ -31058,11 +31334,11 @@
   "v200_note": "公式スペックは『ACコンセント×4、100V/20A、定格2000W』で100V出力のみ",
   "years_on_market": 0,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": 160800,
    "kakaku": null,
-   "rakuten_url": "https://item.rakuten.co.jp/ebattery/bluetti-aroa300/?rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00u100o.5sz2db24.g00u100o.5sz2e9e1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Febattery%2Fbluetti-aroa300%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Febattery%2Fi%2F10000162%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
    "kakaku_url": null,
    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/ebattery/cabinet/13869879/00.jpg",
    "miss_days": 0,
@@ -31408,6 +31684,10 @@
     [
      "2026-11-26",
      160800
+    ],
+    [
+     "2026-11-27",
+     160800
     ]
    ]
   }
@@ -31522,15 +31802,15 @@
   "v200_note": "公式取扱説明書の仕様表はAC出力が『5-20R×4：100VAC 20A 合計3200W』『L5-30R：100VAC 30A 3000W』で全て100V。200V出力の記載なし",
   "years_on_market": 1,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 199500,
-   "rakuten": 212550,
+   "rakuten": 191295,
    "kakaku": null,
-   "rakuten_url": "https://item.rakuten.co.jp/confis-shop-2/apex300/?rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00unlgo.5sz2d8a5.g00unlgo.5sz2eaf0/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fconfis-shop-2%2Fapex300%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fconfis-shop-2%2Fi%2F10000576%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
    "kakaku_url": null,
    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/confis-shop-2/cabinet/11120761/2610271703-029.jpg",
    "miss_days": 0,
-   "min": 199500,
+   "min": 191295,
    "hist_min": 179550,
    "history": [
     [
@@ -31872,6 +32152,10 @@
     [
      "2026-11-26",
      212550
+    ],
+    [
+     "2026-11-27",
+     191295
     ]
    ]
   }
@@ -31941,16 +32225,16 @@
   "v200_note": null,
   "years_on_market": 0,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
-   "rakuten": 99800,
+   "rakuten": 89820,
    "kakaku": null,
-   "rakuten_url": "https://item.rakuten.co.jp/tgif-gaming/pioneerna/?rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00tuoto.5sz2db74.g00tuoto.5sz2e0b3/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fconfis-shop%2Fpioneerna%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fconfis-shop%2Fi%2F10000893%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
    "kakaku_url": null,
-   "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/tgif-gaming/cabinet/13541792/2610271735-001.jpg",
+   "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/confis-shop/cabinet/08041314/2610271550-001.jpg",
    "miss_days": 0,
-   "min": 99800,
-   "hist_min": 99800,
+   "min": 89820,
+   "hist_min": 89820,
    "history": [
     [
      "2026-09-03",
@@ -32291,6 +32575,10 @@
     [
      "2026-11-26",
      99800
+    ],
+    [
+     "2026-11-27",
+     89820
     ]
    ]
   }
@@ -32377,14 +32665,14 @@
   "v200_note": null,
   "years_on_market": 4,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": null,
    "kakaku": null,
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "http://www.bluetti.jp/cdn/shop/files/EB3A_1x_6eee58ec-99db-41d6-bdb4-a4fe28f03125_grande.png?v=1754290655",
-   "miss_days": 92,
+   "miss_days": 93,
    "min": null,
    "hist_min": null,
    "history": [
@@ -32726,6 +33014,10 @@
     ],
     [
      "2026-11-26",
+     null
+    ],
+    [
+     "2026-11-27",
      null
     ]
    ]
@@ -32807,14 +33099,14 @@
   "v200_note": null,
   "years_on_market": 3,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": null,
    "kakaku": null,
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "http://www.bluetti.jp/cdn/shop/files/e41e674ab682de3047b3aab1a68fe217_grande.png?v=1739514639",
-   "miss_days": 92,
+   "miss_days": 93,
    "min": null,
    "hist_min": null,
    "history": [
@@ -33156,6 +33448,10 @@
     ],
     [
      "2026-11-26",
+     null
+    ],
+    [
+     "2026-11-27",
      null
     ]
    ]
@@ -33279,11 +33575,11 @@
   "v200_note": null,
   "years_on_market": 3,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 39980,
    "rakuten": 47031,
    "kakaku": null,
-   "rakuten_url": "https://item.rakuten.co.jp/denkichiweb/4582739520357/?rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00u2bxo.5sz2d444.g00u2bxo.5sz2e739/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdenkichiweb%2F4582739520357%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fdenkichiweb%2Fi%2F10034133%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
    "kakaku_url": null,
    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/denkichiweb/cabinet/12885529/4582739520357_1.jpg",
    "miss_days": 0,
@@ -33629,6 +33925,10 @@
     [
      "2026-11-26",
      47031
+    ],
+    [
+     "2026-11-27",
+     47031
     ]
    ]
   }
@@ -33764,14 +34064,14 @@
   "v200_note": "公式スペックは『4×100V/18A、合計1800W』で100V出力のみ",
   "years_on_market": 3,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 59800,
    "rakuten": null,
    "kakaku": null,
    "rakuten_url": null,
    "kakaku_url": null,
    "image": null,
-   "miss_days": 92,
+   "miss_days": 93,
    "min": 59800,
    "hist_min": null,
    "history": [
@@ -34114,6 +34414,10 @@
     [
      "2026-11-26",
      null
+    ],
+    [
+     "2026-11-27",
+     null
     ]
    ]
   }
@@ -34182,11 +34486,11 @@
   "v200_note": "公式スペックは『4×100V/18A 最大1800W』で100V出力のみ",
   "years_on_market": 2,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": 99000,
    "kakaku": null,
-   "rakuten_url": "https://item.rakuten.co.jp/bluettijapan/ac180t-jp-gy-bl-rktjp-00/?rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00u57jo.5sz2dedf.g00u57jo.5sz2e74a/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbluettijapan%2Fac180t-jp-gy-bl-rktjp-00%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbluettijapan%2Fi%2F10000141%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
    "kakaku_url": null,
    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/bluettijapan/cabinet/12874450/12874457/ac180t.jpg",
    "miss_days": 0,
@@ -34532,6 +34836,10 @@
     [
      "2026-11-26",
      99000
+    ],
+    [
+     "2026-11-27",
+     99000
     ]
    ]
   }
@@ -34600,11 +34908,11 @@
   "v200_note": "公式スペックは『2×100V/20A、1×TT-30A』で100V出力のみ",
   "years_on_market": 2,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": 129960,
    "kakaku": null,
-   "rakuten_url": "https://item.rakuten.co.jp/bluettijapan/ac240-jp-gy-bl-rktjp-00/?rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00u57jo.5sz2dedf.g00u57jo.5sz2e74a/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbluettijapan%2Fac240-jp-gy-bl-rktjp-00%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbluettijapan%2Fi%2F10000130%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
    "kakaku_url": null,
    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/bluettijapan/cabinet/12874450/12874457/ac240.jpg",
    "miss_days": 0,
@@ -34950,6 +35258,10 @@
     [
      "2026-11-26",
      129960
+    ],
+    [
+     "2026-11-27",
+     129960
     ]
    ]
   }
@@ -35017,14 +35329,14 @@
   "v200_note": null,
   "years_on_market": 1,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": null,
    "kakaku": null,
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "http://www.bluetti.jp/cdn/shop/files/26659_1x_807c94f0-b3ae-459a-b89b-212f627c2139_grande.jpg?v=1740205817",
-   "miss_days": 92,
+   "miss_days": 93,
    "min": null,
    "hist_min": null,
    "history": [
@@ -35366,6 +35678,10 @@
     ],
     [
      "2026-11-26",
+     null
+    ],
+    [
+     "2026-11-27",
      null
     ]
    ]
@@ -35441,14 +35757,14 @@
   "v200_note": null,
   "years_on_market": 1,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": null,
    "kakaku": null,
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "http://www.bluetti.jp/cdn/shop/files/26639_1x_03d047fe-b565-40de-a87f-b7e8767157a9_grande.jpg?v=1740205879",
-   "miss_days": 92,
+   "miss_days": 93,
    "min": null,
    "hist_min": null,
    "history": [
@@ -35791,6 +36107,10 @@
     [
      "2026-11-26",
      null
+    ],
+    [
+     "2026-11-27",
+     null
     ]
    ]
   },
@@ -35857,11 +36177,11 @@
   "v200_note": null,
   "years_on_market": 2,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": 19000,
    "kakaku": null,
-   "rakuten_url": "https://item.rakuten.co.jp/shichi-assist/rc_ituofq2o7528_74rp/?rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00ubgno.5sz2d80e.g00ubgno.5sz2e407/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fshichi-assist%2Frc_ituofq2o7528_74rp%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fshichi-assist%2Fi%2F10026126%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
    "kakaku_url": null,
    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/shichi-assist/cabinet/14073737/imgrc0124610765.jpg",
    "miss_days": 0,
@@ -36207,6 +36527,10 @@
     [
      "2026-11-26",
      19000
+    ],
+    [
+     "2026-11-27",
+     19000
     ]
    ]
   }
@@ -36273,11 +36597,11 @@
   "v200_note": null,
   "years_on_market": null,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": 39800,
    "kakaku": null,
-   "rakuten_url": "https://item.rakuten.co.jp/ebattery/bluetti-ac60p-outlet/?rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00u100o.5sz2db24.g00u100o.5sz2e9e1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Febattery%2Fbluetti-ac60p-outlet%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Febattery%2Fi%2F10000163%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
    "kakaku_url": null,
    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/ebattery/cabinet/11159813/ac60p-00.jpg",
    "miss_days": 0,
@@ -36623,6 +36947,10 @@
     [
      "2026-11-26",
      39800
+    ],
+    [
+     "2026-11-27",
+     39800
     ]
    ]
   }
@@ -36689,11 +37017,11 @@
   "v200_note": null,
   "years_on_market": 2,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": 47031,
    "kakaku": null,
-   "rakuten_url": "https://item.rakuten.co.jp/denkichiweb/4582739520357/?rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00u2bxo.5sz2d444.g00u2bxo.5sz2e739/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdenkichiweb%2F4582739520357%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fdenkichiweb%2Fi%2F10034133%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
    "kakaku_url": null,
    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/denkichiweb/cabinet/12885529/4582739520357_1.jpg",
    "miss_days": 0,
@@ -37039,6 +37367,10 @@
     [
      "2026-11-26",
      47031
+    ],
+    [
+     "2026-11-27",
+     47031
     ]
    ]
   }
@@ -37106,13 +37438,13 @@
   "v200_note": "公式スペックは『4×100V/18A、合計1800W』で100V出力のみ",
   "years_on_market": 2,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": 88680,
    "kakaku": null,
-   "rakuten_url": "https://item.rakuten.co.jp/kimuraya/530489016/?rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00r7ldo.5sz2d287.g00r7ldo.5sz2e7a6/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbiccamera%2F4582739520043%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbiccamera%2Fi%2F15042047%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
    "kakaku_url": null,
-   "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/kimuraya/cabinet/a07000321/530489016.jpg",
+   "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/biccamera/cabinet/product/11405/00000013777799_a01.jpg",
    "miss_days": 0,
    "min": 88680,
    "hist_min": 82980,
@@ -37456,6 +37788,10 @@
     [
      "2026-11-26",
      88680
+    ],
+    [
+     "2026-11-27",
+     88680
     ]
    ]
   }
@@ -37523,11 +37859,11 @@
   "v200_note": "公式スペックは『2×100V/20A、1×TT-30A』で100V出力のみ",
   "years_on_market": 2,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": 198000,
    "kakaku": null,
-   "rakuten_url": "https://item.rakuten.co.jp/autostyle/bluz000020/?rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00rjbzo.5sz2d046.g00rjbzo.5sz2ecce/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fautostyle%2Fbluz000020%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fautostyle%2Fi%2F16847144%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
    "kakaku_url": null,
    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/autostyle/cabinet/bluz0001/bluz000020_01.jpg",
    "miss_days": 0,
@@ -37873,6 +38209,10 @@
     [
      "2026-11-26",
      198000
+    ],
+    [
+     "2026-11-27",
+     198000
     ]
    ]
   }
@@ -37992,11 +38332,11 @@
   "v200_note": null,
   "years_on_market": 2,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 49988,
    "rakuten": 45100,
    "kakaku": 45100,
-   "rakuten_url": "https://item.rakuten.co.jp/system5/n_1192091/?rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00uskco.5sz2d429.g00uskco.5sz2ef04/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsystem5%2Fn_1192091%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsystem5%2Fi%2F10001749%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
    "kakaku_url": "https://kakaku.com/item/K0001658628/",
    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/system5/cabinet/design/dji_1/n_1192091p1.jpg",
    "miss_days": 0,
@@ -38342,6 +38682,10 @@
     [
      "2026-11-26",
      45100
+    ],
+    [
+     "2026-11-27",
+     45100
     ]
    ]
   }
@@ -38411,7 +38755,7 @@
   "v200_note": "公式スペックの日本向けモデル(DYM1000L)は『AC100-120V 50/60Hz 最大2200W』。220-240Vは海外向けDYM1000Hの仕様で国内モデルの200V出力ではない",
   "years_on_market": 2,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": null,
    "kakaku": 39960,
@@ -38761,6 +39105,10 @@
     [
      "2026-11-26",
      39960
+    ],
+    [
+     "2026-11-27",
+     39960
     ]
    ]
   }
@@ -38896,11 +39244,11 @@
   "v200_note": "公式スペックは日本仕様100V出力。200V出力の記載なし（海外版のみ220-240V）",
   "years_on_market": 1,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 65980,
    "rakuten": 59980,
    "kakaku": 59980,
-   "rakuten_url": "https://item.rakuten.co.jp/dji-shop/6937224115132/?rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00tzoto.5sz2d560.g00tzoto.5sz2e055/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdji-shop%2F6937224115132%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fdji-shop%2Fi%2F10002365%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
    "kakaku_url": "https://kakaku.com/item/K0001694042/",
    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/dji-shop/cabinet/thum/power1000v2_thum2.jpg",
    "miss_days": 0,
@@ -39246,6 +39594,10 @@
     [
      "2026-11-26",
      59980
+    ],
+    [
+     "2026-11-27",
+     59980
     ]
    ]
   }
@@ -39376,15 +39728,15 @@
   "v200_note": "公式スペックの低電圧版は『AC100-120V 50/60Hz 最大1000W』。220-240Vは海外地域向けで国内モデルの200V出力ではない",
   "years_on_market": 0,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 50802,
-   "rakuten": 39960,
+   "rakuten": 36869,
    "kakaku": 39960,
-   "rakuten_url": "https://item.rakuten.co.jp/biccamera/6937224149618/?rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00r7ldo.5sz2d287.g00r7ldo.5sz2e7a6/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbiccamera%2F6937224149618%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbiccamera%2Fi%2F15412266%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
    "kakaku_url": "https://kakaku.com/item/J0000050513/",
    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/biccamera/cabinet/product/17359/00000015058207_a01.jpg",
    "miss_days": 0,
-   "min": 39960,
+   "min": 36869,
    "hist_min": 36869,
    "history": [
     [
@@ -39726,6 +40078,10 @@
     [
      "2026-11-26",
      39960
+    ],
+    [
+     "2026-11-27",
+     36869
     ]
    ]
   }
@@ -39846,11 +40202,11 @@
   "v200_note": "公式スペックの日本向けDYM2000Lは『AC100-120V 25A 50/60Hz』。220-240VはDYM2000H（海外向け）で国内モデルの200V出力ではない",
   "years_on_market": 1,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 114500,
    "rakuten": 83480,
    "kakaku": 99800,
-   "rakuten_url": "https://item.rakuten.co.jp/ecmaison/compass1787555861/?rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00upqno.5sz2dc57.g00upqno.5sz2e9b3/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fecmaison%2Fcompass1787555861%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fecmaison%2Fi%2F10000760%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
    "kakaku_url": "https://kakaku.com/item/K0001694041/",
    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/ecmaison/cabinet/compass1787555795.jpg",
    "miss_days": 0,
@@ -40196,6 +40552,10 @@
     [
      "2026-11-26",
      83480
+    ],
+    [
+     "2026-11-27",
+     83480
     ]
    ]
   }
@@ -40287,14 +40647,14 @@
   "v200_note": "公式スペックは『AC×4：100V AC 15A 50/60Hz 合計1500W』で100V出力のみ",
   "years_on_market": 4,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 180000,
    "rakuten": null,
    "kakaku": null,
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/d-shop1one/cabinet/point/4975769471582.jpg",
-   "miss_days": 4,
+   "miss_days": 5,
    "min": 180000,
    "hist_min": 199666,
    "history": [
@@ -40637,6 +40997,10 @@
     [
      "2026-11-26",
      null
+    ],
+    [
+     "2026-11-27",
+     null
     ]
    ]
   }
@@ -40720,11 +41084,11 @@
   "v200_note": "公式スペックは『AC×4：100V AC 15A 50/60Hz 合計1500W』で100V出力のみ",
   "years_on_market": 4,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 168355,
    "rakuten": 134800,
    "kakaku": null,
-   "rakuten_url": "https://item.rakuten.co.jp/marvelshopp/110000it/?rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00uqpgo.5sz2db76.g00uqpgo.5sz2e258/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmarvelshopp%2F110000it%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmarvelshopp%2Fi%2F10001081%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
    "kakaku_url": null,
    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/marvelshopp/cabinet/imgrc0124824054.jpg",
    "miss_days": 0,
@@ -41070,6 +41434,10 @@
     [
      "2026-11-26",
      134800
+    ],
+    [
+     "2026-11-27",
+     134800
     ]
    ]
   }
@@ -41187,11 +41555,11 @@
   "v200_note": null,
   "years_on_market": 3,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": 117800,
    "kakaku": null,
-   "rakuten_url": "https://item.rakuten.co.jp/sanbless/bn-rf800/?rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00q6doo.5sz2d29d.g00q6doo.5sz2e641/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsanbless%2Fbn-rf800%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsanbless%2Fi%2F10053932%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
    "kakaku_url": null,
    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/sanbless/cabinet/03509031/imgrc0110330022.jpg",
    "miss_days": 0,
@@ -41537,6 +41905,10 @@
     [
      "2026-11-26",
      117800
+    ],
+    [
+     "2026-11-27",
+     117800
     ]
    ]
   }
@@ -41636,11 +42008,11 @@
   "v200_note": null,
   "years_on_market": 3,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 75480,
    "rakuten": 73000,
    "kakaku": null,
-   "rakuten_url": "https://item.rakuten.co.jp/growthstore/4975769480072/?rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00uuxeo.5sz2d28b.g00uuxeo.5sz2e8b8/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fgrowthstore%2F4975769480072%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fgrowthstore%2Fi%2F10000371%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
    "kakaku_url": null,
    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/growthstore/cabinet/item/14232431/imgrc0116782604.jpg",
    "miss_days": 0,
@@ -41986,6 +42358,10 @@
     [
      "2026-11-26",
      73000
+    ],
+    [
+     "2026-11-27",
+     73000
     ]
    ]
   }
@@ -42070,14 +42446,14 @@
   "v200_note": null,
   "years_on_market": 3,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": null,
    "kakaku": null,
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/nf-support/cabinet/12585982/12785757/522751.jpg",
-   "miss_days": 51,
+   "miss_days": 52,
    "min": null,
    "hist_min": 53900,
    "history": [
@@ -42420,6 +42796,10 @@
     [
      "2026-11-26",
      null
+    ],
+    [
+     "2026-11-27",
+     null
     ]
    ]
   }
@@ -42537,14 +42917,14 @@
   "v200_note": null,
   "years_on_market": 0,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 52800,
    "rakuten": null,
    "kakaku": null,
    "rakuten_url": null,
    "kakaku_url": null,
    "image": null,
-   "miss_days": 92,
+   "miss_days": 93,
    "min": 52800,
    "hist_min": null,
    "history": [
@@ -42887,6 +43267,10 @@
     [
      "2026-11-26",
      null
+    ],
+    [
+     "2026-11-27",
+     null
     ]
    ]
   }
@@ -42971,14 +43355,14 @@
   "v200_note": null,
   "years_on_market": 0,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 36800,
    "rakuten": null,
    "kakaku": null,
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/kotosquare-jvckenwood/cabinet/litheli/powersupply/bnrl230ps_000.jpg",
-   "miss_days": 58,
+   "miss_days": 59,
    "min": 36800,
    "hist_min": 33120,
    "history": [
@@ -43321,6 +43705,10 @@
     [
      "2026-11-26",
      null
+    ],
+    [
+     "2026-11-27",
+     null
     ]
    ]
   }
@@ -43417,11 +43805,11 @@
   "v200_note": "交流出力は『100V/18A・60Hz 1800W(瞬間最大3600W)』で100V出力のみ。200V出力の記載なし",
   "years_on_market": 4,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 156000,
    "rakuten": 194998,
    "kakaku": null,
-   "rakuten_url": "https://item.rakuten.co.jp/gyouhan-shop/g0726030000025/?rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00qr9ko.5sz2d885.g00qr9ko.5sz2ed61/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fgyouhan-shop%2Fg0726030000025%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fgyouhan-shop%2Fi%2F10223034%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
    "kakaku_url": null,
    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/gyouhan-shop/cabinet/navigation3/g0726030000025.jpg",
    "miss_days": 0,
@@ -43767,6 +44155,10 @@
     [
      "2026-11-26",
      194998
+    ],
+    [
+     "2026-11-27",
+     194998
     ]
    ]
   }
@@ -43895,11 +44287,11 @@
   "v200_note": "JVC公式ラインアップ上もAC出力は100V（定格1000W）のみ。200V出力の記載を確認できず",
   "years_on_market": 6,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 109980,
    "rakuten": 149000,
    "kakaku": null,
-   "rakuten_url": "https://item.rakuten.co.jp/gearbox/bn-rb10-c/?rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00rcs2o.5sz2d6a9.g00rcs2o.5sz2e5c7/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fgearbox%2Fbn-rb10-c%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fgearbox%2Fi%2F10004696%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
    "kakaku_url": null,
    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/gearbox/cabinet/bn-rb10-c-n.jpg",
    "miss_days": 0,
@@ -44245,6 +44637,10 @@
     [
      "2026-11-26",
      149000
+    ],
+    [
+     "2026-11-27",
+     149000
     ]
    ]
   }
@@ -44374,11 +44770,11 @@
   "v200_note": null,
   "years_on_market": 5,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": 62670,
    "kakaku": null,
-   "rakuten_url": "https://item.rakuten.co.jp/saino/b0ftwh38xq/?rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00u1z6o.5sz2dd61.g00u1z6o.5sz2e9aa/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsaino%2Fb0ftwh38xq%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsaino%2Fi%2F10111239%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
    "kakaku_url": null,
    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/saino/cabinet/kimigayopic/systempic181/b091kdkkrx-00.jpg",
    "miss_days": 0,
@@ -44724,6 +45120,10 @@
     [
      "2026-11-26",
      62670
+    ],
+    [
+     "2026-11-27",
+     62670
     ]
    ]
   }
@@ -44847,11 +45247,11 @@
   "v200_note": null,
   "years_on_market": 5,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": 62670,
    "kakaku": null,
-   "rakuten_url": "https://item.rakuten.co.jp/saino/b0ftwh38xq/?rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00u1z6o.5sz2dd61.g00u1z6o.5sz2e9aa/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsaino%2Fb0ftwh38xq%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsaino%2Fi%2F10111239%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
    "kakaku_url": null,
    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/saino/cabinet/kimigayopic/systempic181/b091kdkkrx-00.jpg",
    "miss_days": 0,
@@ -45197,6 +45597,10 @@
     [
      "2026-11-26",
      62670
+    ],
+    [
+     "2026-11-27",
+     62670
     ]
    ]
   }
@@ -45264,14 +45668,14 @@
   "v200_note": null,
   "years_on_market": 2,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": null,
    "kakaku": null,
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "https://www.kenwood.com/jp/portable-power-supply.thumb.480.300.png",
-   "miss_days": 92,
+   "miss_days": 93,
    "min": null,
    "hist_min": null,
    "history": [
@@ -45614,6 +46018,10 @@
     [
      "2026-11-26",
      null
+    ],
+    [
+     "2026-11-27",
+     null
     ]
    ]
   },
@@ -45750,7 +46158,7 @@
   "v200_note": null,
   "years_on_market": 6,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 45800,
    "rakuten": null,
    "kakaku": 69300,
@@ -46100,6 +46508,10 @@
     [
      "2026-11-26",
      69300
+    ],
+    [
+     "2026-11-27",
+     69300
     ]
    ]
   }
@@ -46218,14 +46630,14 @@
   "v200_note": null,
   "years_on_market": 5,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 61600,
    "rakuten": null,
    "kakaku": null,
    "rakuten_url": null,
    "kakaku_url": null,
    "image": null,
-   "miss_days": 92,
+   "miss_days": 93,
    "min": 61600,
    "hist_min": null,
    "history": [
@@ -46568,6 +46980,10 @@
     [
      "2026-11-26",
      null
+    ],
+    [
+     "2026-11-27",
+     null
     ]
    ]
   }
@@ -46636,14 +47052,14 @@
   "v200_note": "公式スペックは定格1000W（瞬間最大2000W）・正弦波の100V機。200V出力の記載なし",
   "years_on_market": 5,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": null,
    "kakaku": null,
    "rakuten_url": null,
    "kakaku_url": null,
    "image": null,
-   "miss_days": 92,
+   "miss_days": 93,
    "min": null,
    "hist_min": null,
    "history": [
@@ -46986,6 +47402,10 @@
     [
      "2026-11-26",
      null
+    ],
+    [
+     "2026-11-27",
+     null
     ]
    ]
   },
@@ -47091,14 +47511,14 @@
   "v200_note": "公式スペックは『AC出力 100V×4口』で100V出力のみ",
   "years_on_market": 3,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 114399,
    "rakuten": null,
    "kakaku": null,
    "rakuten_url": null,
    "kakaku_url": null,
    "image": null,
-   "miss_days": 92,
+   "miss_days": 93,
    "min": 114399,
    "hist_min": null,
    "history": [
@@ -47441,6 +47861,10 @@
     [
      "2026-11-26",
      null
+    ],
+    [
+     "2026-11-27",
+     null
     ]
    ]
   }
@@ -47564,14 +47988,14 @@
   "v200_note": "公式スペックは『AC出力 100V×6口』で100V出力のみ",
   "years_on_market": 4,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 184800,
    "rakuten": null,
    "kakaku": null,
    "rakuten_url": null,
    "kakaku_url": null,
    "image": null,
-   "miss_days": 92,
+   "miss_days": 93,
    "min": 184800,
    "hist_min": null,
    "history": [
@@ -47914,6 +48338,10 @@
     [
      "2026-11-26",
      null
+    ],
+    [
+     "2026-11-27",
+     null
     ]
    ]
   }
@@ -47979,14 +48407,14 @@
   "v200_note": null,
   "years_on_market": 1,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": null,
    "kakaku": null,
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "http://powerarq.com/cdn/shop/articles/powerarq_HP_5544c26b-827d-4c4a-b470-bc61900b410f_1200x1200.png?v=1754986565",
-   "miss_days": 92,
+   "miss_days": 93,
    "min": null,
    "hist_min": null,
    "history": [
@@ -48328,6 +48756,10 @@
     ],
     [
      "2026-11-26",
+     null
+    ],
+    [
+     "2026-11-27",
      null
     ]
    ]
@@ -48398,14 +48830,14 @@
   "v200_note": "公式ページに『2台のDBS3500を並列接続すれば容量6860Wh・出力6000Wになり、200Vのエアコンにも対応』と明記。別売の並列接続ボックス（100V/200V 30/50A）使用時に200V出力可（単体は100V）",
   "years_on_market": 2,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": null,
    "kakaku": null,
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "http://jp.dabbsson.com/cdn/shop/files/dabbsson-dbs3500-3430wh3000w-427341.webp?v=1760616362&width=2048",
-   "miss_days": 92,
+   "miss_days": 93,
    "min": null,
    "hist_min": null,
    "history": [
@@ -48747,6 +49179,10 @@
     ],
     [
      "2026-11-26",
+     null
+    ],
+    [
+     "2026-11-27",
      null
     ]
    ]
@@ -48884,14 +49320,14 @@
   "v200_note": "公式スペックはAC出力2200W（瞬間最大4400W）で100V。200V出力の記載なし",
   "years_on_market": 3,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 126000,
    "rakuten": null,
    "kakaku": null,
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/dabbsson/cabinet/10382318/10382761/imgrc0144508390.jpg",
-   "miss_days": 23,
+   "miss_days": 24,
    "min": 126000,
    "hist_min": 126000,
    "history": [
@@ -49234,6 +49670,10 @@
     [
      "2026-11-26",
      null
+    ],
+    [
+     "2026-11-27",
+     null
     ]
    ]
   }
@@ -49300,16 +49740,16 @@
   "v200_note": "公式スペックは『純正弦波、2400W(瞬間4800W)、100V~(50/60Hz)』で100V出力のみ",
   "years_on_market": 2,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
-   "rakuten": 122170,
+   "rakuten": 120946,
    "kakaku": null,
-   "rakuten_url": "https://item.rakuten.co.jp/dabbsson/jpradbs2100pro-210sc-b-jp001/?rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00uk4uo.5sz2def7.g00uk4uo.5sz2e229/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdabbsson%2Fjpradbs2100pro-210sc-b-jp001%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fdabbsson%2Fi%2F10000096%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
    "kakaku_url": null,
    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/dabbsson/cabinet/10437018/14202407/imgrc0147331314.jpg",
    "miss_days": 0,
-   "min": 122170,
-   "hist_min": 122170,
+   "min": 120946,
+   "hist_min": 120946,
    "history": [
     [
      "2026-09-03",
@@ -49650,6 +50090,10 @@
     [
      "2026-11-26",
      122170
+    ],
+    [
+     "2026-11-27",
+     120946
     ]
    ]
   }
@@ -49772,11 +50216,11 @@
   "v200_note": "公式スペックは『純正弦波、2400W(瞬間4800W)、100V~(50/60Hz)』で100V出力のみ",
   "years_on_market": 2,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 114600,
    "rakuten": 163700,
    "kakaku": null,
-   "rakuten_url": "https://item.rakuten.co.jp/dabbsson/jpradbs1400pro-b-jp001-cp/?rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00uk4uo.5sz2def7.g00uk4uo.5sz2e229/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdabbsson%2Fjpradbs1400pro-b-jp001-cp%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fdabbsson%2Fi%2F10000122%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
    "kakaku_url": null,
    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/dabbsson/cabinet/10437018/14202407/imgrc0147331287.jpg",
    "miss_days": 0,
@@ -50122,6 +50566,10 @@
     [
      "2026-11-26",
      163700
+    ],
+    [
+     "2026-11-27",
+     163700
     ]
    ]
   }
@@ -50195,14 +50643,14 @@
   "v200_note": "公式スペックは『AC出力(x4) 2000W(瞬間4000W)、100V~(50/60Hz)』で100V出力のみ",
   "years_on_market": 2,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": null,
    "kakaku": null,
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "http://jp.dabbsson.com/cdn/shop/files/dabbsson-dbs1000-pro-1024wh-2000w-354873.jpg?v=1743229603&width=2048",
-   "miss_days": 92,
+   "miss_days": 93,
    "min": null,
    "hist_min": null,
    "history": [
@@ -50545,6 +50993,10 @@
     [
      "2026-11-26",
      null
+    ],
+    [
+     "2026-11-27",
+     null
     ]
    ]
   },
@@ -50681,11 +51133,11 @@
   "v200_note": "公式スペックは『AC出力(x4) 1200W(瞬間2400W)、100V~(50/60Hz)』で100V出力のみ",
   "years_on_market": 3,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 82480,
    "rakuten": 139800,
    "kakaku": null,
-   "rakuten_url": "https://item.rakuten.co.jp/dabbsson/jpradbs1300-b-jp001/?rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00uk4uo.5sz2def7.g00uk4uo.5sz2e229/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdabbsson%2Fjpradbs1300-b-jp001%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fdabbsson%2Fi%2F10000019%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
    "kakaku_url": null,
    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/dabbsson/cabinet/10437018/main0705/1300-1.jpg",
    "miss_days": 0,
@@ -51031,6 +51483,10 @@
     [
      "2026-11-26",
      139800
+    ],
+    [
+     "2026-11-27",
+     139800
     ]
    ]
   }
@@ -51098,15 +51554,15 @@
   "v200_note": "公式スペックは『純正弦波、3000W(瞬間6000W)、100V~(50/60Hz)』で100V出力のみ",
   "years_on_market": 1,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
-   "rakuten": 156800,
+   "rakuten": 313600,
    "kakaku": null,
-   "rakuten_url": "https://item.rakuten.co.jp/dabbsson/jpra3000l-b-jp001-copy/?rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00uk4uo.5sz2def7.g00uk4uo.5sz2e229/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdabbsson%2Fjpra3000l-b-jp001%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fdabbsson%2Fi%2F10000137%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
    "kakaku_url": null,
    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/dabbsson/cabinet/10437018/14202407/imgrc0147331255.jpg",
    "miss_days": 0,
-   "min": 156800,
+   "min": 313600,
    "hist_min": 143500,
    "history": [
     [
@@ -51448,6 +51904,10 @@
     [
      "2026-11-26",
      156800
+    ],
+    [
+     "2026-11-27",
+     313600
     ]
    ]
   }
@@ -51522,11 +51982,11 @@
   "v200_note": "公式スペックは『AC出力(x6) 2200W(瞬間4400W)、100V~(50/60Hz)』で100V出力のみ",
   "years_on_market": 1,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": 169800,
    "kakaku": null,
-   "rakuten_url": "https://item.rakuten.co.jp/dabbsson/jprad2000l-b-jp001-cp/?rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00uk4uo.5sz2def7.g00uk4uo.5sz2e229/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdabbsson%2Fjprad2000l-b-jp001-cp%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fdabbsson%2Fi%2F10000138%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
    "kakaku_url": null,
    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/dabbsson/cabinet/10437018/main0705/imgrc0117639796.jpg",
    "miss_days": 0,
@@ -51872,6 +52332,10 @@
     [
      "2026-11-26",
      169800
+    ],
+    [
+     "2026-11-27",
+     169800
     ]
    ]
   }
@@ -51977,11 +52441,11 @@
   "v200_note": "公式スペックは『AC出力(x2) 1200W(瞬間2400W)、100V~(50/60Hz)』で100V出力のみ",
   "years_on_market": 1,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 62500,
    "rakuten": 62500,
    "kakaku": null,
-   "rakuten_url": "https://item.rakuten.co.jp/dabbsson/jprad1000l-b-jp001/?rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00uk4uo.5sz2def7.g00uk4uo.5sz2e229/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdabbsson%2Fjprad1000l-b-jp001%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fdabbsson%2Fi%2F10000126%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
    "kakaku_url": null,
    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/dabbsson/cabinet/10437018/14202407/imgrc0147332824.jpg",
    "miss_days": 0,
@@ -52327,6 +52791,10 @@
     [
      "2026-11-26",
      62500
+    ],
+    [
+     "2026-11-27",
+     62500
     ]
    ]
   }
@@ -52456,16 +52924,16 @@
   "v200_note": null,
   "years_on_market": 1,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 46800,
-   "rakuten": 23600,
+   "rakuten": 23300,
    "kakaku": null,
-   "rakuten_url": "https://item.rakuten.co.jp/dabbsson/jpradbs600l-b-jp001/?rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00uk4uo.5sz2def7.g00uk4uo.5sz2e229/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdabbsson%2Fjpradbs600l-b-jp001%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fdabbsson%2Fi%2F10000117%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
    "kakaku_url": null,
    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/dabbsson/cabinet/10437018/14202407/imgrc0147332822.jpg",
    "miss_days": 0,
-   "min": 23600,
-   "hist_min": 23600,
+   "min": 23300,
+   "hist_min": 23300,
    "history": [
     [
      "2026-09-03",
@@ -52806,6 +53274,10 @@
     [
      "2026-11-26",
      23600
+    ],
+    [
+     "2026-11-27",
+     23300
     ]
    ]
   }
@@ -52879,11 +53351,11 @@
   "v200_note": null,
   "years_on_market": null,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": 34800,
    "kakaku": null,
-   "rakuten_url": "https://item.rakuten.co.jp/dabbsson/jprad300e-b-jp001-cp/?rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00uk4uo.5sz2def7.g00uk4uo.5sz2e229/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdabbsson%2Fjprad300e-b-jp001-cp%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fdabbsson%2Fi%2F10000144%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
    "kakaku_url": null,
    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/dabbsson/cabinet/10437018/main0705/imgrc0117639791.jpg",
    "miss_days": 0,
@@ -53229,6 +53701,10 @@
     [
      "2026-11-26",
      34800
+    ],
+    [
+     "2026-11-27",
+     34800
     ]
    ]
   }
@@ -53357,14 +53833,14 @@
   "v200_note": null,
   "years_on_market": 3,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 17670,
    "rakuten": null,
    "kakaku": null,
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/irodoriss/cabinet/img_20260722_1449/p-b0bw899w1t-01.jpg",
-   "miss_days": 16,
+   "miss_days": 17,
    "min": 17670,
    "hist_min": 20760,
    "history": [
@@ -53707,6 +54183,10 @@
     [
      "2026-11-26",
      null
+    ],
+    [
+     "2026-11-27",
+     null
     ]
    ]
   }
@@ -53781,14 +54261,14 @@
   "v200_note": "公式スペックは『AC出力×4：100V定格1600W(サージ3200W)』で100V出力のみ",
   "years_on_market": null,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 42000,
    "rakuten": null,
    "kakaku": null,
    "rakuten_url": null,
    "kakaku_url": null,
    "image": null,
-   "miss_days": 92,
+   "miss_days": 93,
    "min": 42000,
    "hist_min": null,
    "history": [
@@ -54131,6 +54611,10 @@
     [
      "2026-11-26",
      null
+    ],
+    [
+     "2026-11-27",
+     null
     ]
    ]
   }
@@ -54253,14 +54737,14 @@
   "v200_note": "公式スペックは『AC出力×4：100V、最大20A 50/60Hz切替』で100V出力のみ",
   "years_on_market": 3,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 79800,
    "rakuten": null,
    "kakaku": null,
    "rakuten_url": null,
    "kakaku_url": null,
    "image": null,
-   "miss_days": 92,
+   "miss_days": 93,
    "min": 79800,
    "hist_min": null,
    "history": [
@@ -54603,6 +55087,10 @@
     [
      "2026-11-26",
      null
+    ],
+    [
+     "2026-11-27",
+     null
     ]
    ]
   }
@@ -54669,14 +55157,14 @@
   "v200_note": "公式スペックは『AC出力×4：100V 定格3600W(瞬間最大6000W)』で100V出力のみ",
   "years_on_market": 2,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": null,
    "kakaku": null,
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "http://allpowers.jp/cdn/shop/products/r4000-side-view.jpg?v=1765531273",
-   "miss_days": 92,
+   "miss_days": 93,
    "min": null,
    "hist_min": null,
    "history": [
@@ -55018,6 +55506,10 @@
     ],
     [
      "2026-11-26",
+     null
+    ],
+    [
+     "2026-11-27",
      null
     ]
    ]
@@ -55151,14 +55643,14 @@
   "v200_note": null,
   "years_on_market": 4,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": null,
    "kakaku": null,
    "rakuten_url": null,
    "kakaku_url": null,
    "image": null,
-   "miss_days": 92,
+   "miss_days": 93,
    "min": null,
    "hist_min": null,
    "history": [
@@ -55501,6 +55993,10 @@
     [
      "2026-11-26",
      null
+    ],
+    [
+     "2026-11-27",
+     null
     ]
    ]
   }
@@ -55628,14 +56124,14 @@
   "v200_note": null,
   "years_on_market": 2,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 26999,
    "rakuten": null,
    "kakaku": null,
    "rakuten_url": null,
    "kakaku_url": null,
    "image": null,
-   "miss_days": 92,
+   "miss_days": 93,
    "min": 26999,
    "hist_min": null,
    "history": [
@@ -55978,6 +56474,10 @@
     [
      "2026-11-26",
      null
+    ],
+    [
+     "2026-11-27",
+     null
     ]
    ]
   }
@@ -56043,14 +56543,14 @@
   "v200_note": null,
   "years_on_market": null,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": null,
    "kakaku": null,
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "http://allpowers.jp/cdn/shop/files/S200.png?v=1755516254",
-   "miss_days": 92,
+   "miss_days": 93,
    "min": null,
    "hist_min": null,
    "history": [
@@ -56393,6 +56893,10 @@
     [
      "2026-11-26",
      null
+    ],
+    [
+     "2026-11-27",
+     null
     ]
    ]
   },
@@ -56462,14 +56966,14 @@
   "v200_note": null,
   "years_on_market": 1,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 13110,
    "rakuten": null,
    "kakaku": null,
    "rakuten_url": null,
    "kakaku_url": null,
    "image": null,
-   "miss_days": 92,
+   "miss_days": 93,
    "min": 13110,
    "hist_min": null,
    "history": [
@@ -56812,6 +57316,10 @@
     [
      "2026-11-26",
      null
+    ],
+    [
+     "2026-11-27",
+     null
     ]
    ]
   }
@@ -56933,14 +57441,14 @@
   "v200_note": null,
   "years_on_market": 1,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 7199,
    "rakuten": null,
    "kakaku": null,
    "rakuten_url": null,
    "kakaku_url": null,
    "image": null,
-   "miss_days": 92,
+   "miss_days": 93,
    "min": 7199,
    "hist_min": null,
    "history": [
@@ -57283,6 +57791,10 @@
     [
      "2026-11-26",
      null
+    ],
+    [
+     "2026-11-27",
+     null
     ]
    ]
   }
@@ -57352,14 +57864,14 @@
   "v200_note": null,
   "years_on_market": 3,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": null,
    "kakaku": null,
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "http://ugreen.jp/cdn/shop/files/15052-1.png?v=1732009462",
-   "miss_days": 92,
+   "miss_days": 93,
    "min": null,
    "hist_min": null,
    "history": [
@@ -57702,6 +58214,10 @@
     [
      "2026-11-26",
      null
+    ],
+    [
+     "2026-11-27",
+     null
     ]
    ]
   },
@@ -57779,11 +58295,11 @@
   "v200_note": "公式ページに200V出力の記載なし（1200W出力の国内100V機）",
   "years_on_market": 3,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": 89700,
    "kakaku": null,
-   "rakuten_url": "https://item.rakuten.co.jp/genbayahonpo/ugr-gs1200/?rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00t96po.5sz2d806.g00t96po.5sz2ed85/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fgenbayahonpo%2Fugr-gs1200%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fgenbayahonpo%2Fi%2F10034045%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
    "kakaku_url": null,
    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/genbayahonpo/cabinet/ace002/ugr-gs1200.jpg",
    "miss_days": 0,
@@ -58129,6 +58645,10 @@
     [
      "2026-11-26",
      89700
+    ],
+    [
+     "2026-11-27",
+     89700
     ]
    ]
   }
@@ -58199,14 +58719,14 @@
   "v200_note": "公式ページに200V出力の記載なし（2000W出力の国内100V機）",
   "years_on_market": 3,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": null,
    "kakaku": null,
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "http://ugreen.jp/cdn/shop/files/15356-2.png?v=1726309066",
-   "miss_days": 92,
+   "miss_days": 93,
    "min": null,
    "hist_min": null,
    "history": [
@@ -58549,6 +59069,10 @@
     [
      "2026-11-26",
      null
+    ],
+    [
+     "2026-11-27",
+     null
     ]
    ]
   },
@@ -58680,14 +59204,14 @@
   "v200_note": null,
   "years_on_market": null,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 18800,
    "rakuten": null,
    "kakaku": null,
    "rakuten_url": null,
    "kakaku_url": null,
    "image": null,
-   "miss_days": 92,
+   "miss_days": 93,
    "min": 18800,
    "hist_min": null,
    "history": [
@@ -59030,6 +59554,10 @@
     [
      "2026-11-26",
      null
+    ],
+    [
+     "2026-11-27",
+     null
     ]
    ]
   }
@@ -59155,11 +59683,11 @@
   "v200_note": null,
   "years_on_market": null,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 23560,
    "rakuten": 32800,
    "kakaku": null,
-   "rakuten_url": "https://item.rakuten.co.jp/yesper/vt-jump600/?rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00uahto.5sz2d926.g00uahto.5sz2e4ba/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fyesper%2Fvt-jump600%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fyesper%2Fi%2F10000144%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
    "kakaku_url": null,
    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/yesper/cabinet/11965015/600.jpg",
    "miss_days": 0,
@@ -59505,6 +60033,10 @@
     [
      "2026-11-26",
      32800
+    ],
+    [
+     "2026-11-27",
+     32800
     ]
    ]
   }
@@ -59581,14 +60113,14 @@
   "v200_note": null,
   "years_on_market": null,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 39990,
    "rakuten": null,
    "kakaku": null,
    "rakuten_url": null,
    "kakaku_url": null,
    "image": null,
-   "miss_days": 92,
+   "miss_days": 93,
    "min": 39990,
    "hist_min": null,
    "history": [
@@ -59931,6 +60463,10 @@
     [
      "2026-11-26",
      null
+    ],
+    [
+     "2026-11-27",
+     null
     ]
    ]
   }
@@ -60038,11 +60574,11 @@
   "v200_note": null,
   "years_on_market": null,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 49900,
    "rakuten": 69800,
    "kakaku": null,
-   "rakuten_url": "https://item.rakuten.co.jp/yesper/vt-jump1500x/?rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00uahto.5sz2d926.g00uahto.5sz2e4ba/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fyesper%2Fvt-jump1500x%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fyesper%2Fi%2F10000065%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
    "kakaku_url": null,
    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/yesper/cabinet/10732485/imgrc0106804354.jpg",
    "miss_days": 0,
@@ -60388,6 +60924,10 @@
     [
      "2026-11-26",
      69800
+    ],
+    [
+     "2026-11-27",
+     69800
     ]
    ]
   }
@@ -60463,11 +61003,11 @@
   "v200_note": "公式スペックは『AC(純正弦波 100V/50~60Hz)×6』で100V出力のみ",
   "years_on_market": 3,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": 88900,
    "kakaku": null,
-   "rakuten_url": "https://item.rakuten.co.jp/yesper/vtoman-flashspeed1500/?rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00uahto.5sz2d926.g00uahto.5sz2e4ba/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fyesper%2Fvtoman-flashspeed1500%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fyesper%2Fi%2F10000030%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
    "kakaku_url": null,
    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/yesper/cabinet/10320701/11186372/imgrc0108282121.jpg",
    "miss_days": 0,
@@ -60813,6 +61353,10 @@
     [
      "2026-11-26",
      88900
+    ],
+    [
+     "2026-11-27",
+     88900
     ]
    ]
   }
@@ -60888,11 +61432,11 @@
   "v200_note": "公式プレスリリースでも『純正弦波100V AC出力ポート』のみ記載、定格1800W。200V出力の記載なし",
   "years_on_market": null,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": 76900,
    "kakaku": null,
-   "rakuten_url": "https://item.rakuten.co.jp/yesper/vt-jump1800/?rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00uahto.5sz2d926.g00uahto.5sz2e4ba/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fyesper%2Fvt-jump1800%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fyesper%2Fi%2F10000029%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
    "kakaku_url": null,
    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/yesper/cabinet/10320701/11186372/imgrc0108282128.jpg",
    "miss_days": 0,
@@ -61238,6 +61782,10 @@
     [
      "2026-11-26",
      76900
+    ],
+    [
+     "2026-11-27",
+     76900
     ]
    ]
   }
@@ -61371,11 +61919,11 @@
   "v200_note": null,
   "years_on_market": 1,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 8900,
    "rakuten": 96800,
    "kakaku": null,
-   "rakuten_url": "https://item.rakuten.co.jp/yesper/vt-jump1000-cp1/?rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00uahto.5sz2d926.g00uahto.5sz2e4ba/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fyesper%2Fvt-jump1000-cp1%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fyesper%2Fi%2F10000150%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
    "kakaku_url": null,
    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/yesper/cabinet/10732485/11516371/jump1000.jpg",
    "miss_days": 0,
@@ -61721,6 +62269,10 @@
     [
      "2026-11-26",
      96800
+    ],
+    [
+     "2026-11-27",
+     96800
     ]
    ]
   }
@@ -61794,11 +62346,11 @@
   "v200_note": null,
   "years_on_market": 5,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": 99000,
    "kakaku": null,
-   "rakuten_url": "https://item.rakuten.co.jp/mitenekakakubamboo/zdsb600m-gy-jp/?rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00qs0io.5sz2da59.g00qs0io.5sz2e2ad/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmitenekakakubamboo%2Fzdsb600m-gy-jp%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmitenekakakubamboo%2Fi%2F10014551%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
    "kakaku_url": null,
    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/mitenekakakubamboo/cabinet/01113299/1208-2.jpg",
    "miss_days": 0,
@@ -62144,6 +62696,10 @@
     [
      "2026-11-26",
      99000
+    ],
+    [
+     "2026-11-27",
+     99000
     ]
    ]
   }
@@ -62211,11 +62767,11 @@
   "v200_note": "公式スペックは『最大1000W(瞬間最大1500W)』の100V機。200V出力の記載なし",
   "years_on_market": 5,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": 49800,
    "kakaku": null,
-   "rakuten_url": "https://item.rakuten.co.jp/plex/10020824/?rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00r23jo.5sz2d554.g00r23jo.5sz2e8fc/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fplex%2F10020824%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fplex%2Fi%2F10020824%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
    "kakaku_url": null,
    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/plex/cabinet/08216087/zendure_normal-0000.jpg",
    "miss_days": 0,
@@ -62561,6 +63117,10 @@
     [
      "2026-11-26",
      49800
+    ],
+    [
+     "2026-11-27",
+     49800
     ]
    ]
   }
@@ -62631,11 +63191,11 @@
   "v200_note": "公式ページに200V出力の記載なし",
   "years_on_market": 4,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": 253000,
    "kakaku": null,
-   "rakuten_url": "https://item.rakuten.co.jp/taneha/15zd-zdsbp1500bk-jp/?rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00tg07o.5sz2d9fd.g00tg07o.5sz2efcb/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftaneha%2F15zd-zdsbp1500bk-jp%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ftaneha%2Fi%2F10462889%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
    "kakaku_url": null,
    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/taneha/cabinet/12306671/imgrc0097588811.jpg",
    "miss_days": 0,
@@ -62981,6 +63541,10 @@
     [
      "2026-11-26",
      253000
+    ],
+    [
+     "2026-11-27",
+     253000
     ]
    ]
   }
@@ -63050,14 +63614,14 @@
   "v200_note": "公式スペックに『200V/16A×1ポート（最大3200W）』を明記。100V/200Vのデュアルボルテージシステムを1台で利用可能（200V用ケーブルは別途用意）",
   "years_on_market": 3,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": null,
    "kakaku": null,
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/nanshindo/cabinet/smki/smki2024/smki-180266.jpg",
-   "miss_days": 10,
+   "miss_days": 11,
    "min": null,
    "hist_min": 1349000,
    "history": [
@@ -63400,6 +63964,10 @@
     [
      "2026-11-26",
      null
+    ],
+    [
+     "2026-11-27",
+     null
     ]
    ]
   }
@@ -63469,14 +64037,14 @@
   "v200_note": null,
   "years_on_market": 6,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": null,
    "kakaku": null,
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "https://www.ask-corp.jp/products/images_thumb/goalzero/yeti-200x-120v-power-station_thumb.jpg",
-   "miss_days": 92,
+   "miss_days": 93,
    "min": null,
    "hist_min": null,
    "history": [
@@ -63818,6 +64386,10 @@
     ],
     [
      "2026-11-26",
+     null
+    ],
+    [
+     "2026-11-27",
      null
     ]
    ]
@@ -63894,14 +64466,14 @@
   "v200_note": "国内代理店の公式スペックは『AC120V/60Hz 純正弦波出力』で、200V出力の記載なし",
   "years_on_market": 6,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": null,
    "kakaku": null,
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "https://www.ask-corp.jp/products/images_thumb/goalzero/yeti-3000x-120v-power-station_thumb.jpg",
-   "miss_days": 92,
+   "miss_days": 93,
    "min": null,
    "hist_min": null,
    "history": [
@@ -64244,6 +64816,10 @@
     [
      "2026-11-26",
      null
+    ],
+    [
+     "2026-11-27",
+     null
     ]
    ]
   },
@@ -64315,13 +64891,13 @@
   "v200_note": null,
   "years_on_market": 8,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": 82800,
    "kakaku": null,
-   "rakuten_url": "https://item.rakuten.co.jp/c-c-s/citaeb01-sp/?rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00s4jfo.5sz2da5d.g00s4jfo.5sz2e176/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fc-c-s%2Fcitaeb01-sp%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fc-c-s%2Fi%2F10000170%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
    "kakaku_url": null,
-   "image": "https://thumbnail.image.rakuten.co.jp/@0_gold/c-c-s/citaeb01sp_top_20off.jpg",
+   "image": "https://thumbnail.image.rakuten.co.jp/@0_gold/c-c-s/citaeb01sp_top_15off.jpg",
    "miss_days": 0,
    "min": 82800,
    "hist_min": 82800,
@@ -64665,6 +65241,10 @@
     [
      "2026-11-26",
      82800
+    ],
+    [
+     "2026-11-27",
+     82800
     ]
    ]
   }
@@ -64732,14 +65312,14 @@
   "v200_note": null,
   "years_on_market": 6,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": null,
    "kakaku": null,
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "http://shop.lacita.co.jp/cdn/shop/products/citaeb01_sp_top01_grande.png?v=1620380401",
-   "miss_days": 92,
+   "miss_days": 93,
    "min": null,
    "hist_min": null,
    "history": [
@@ -65081,6 +65661,10 @@
     ],
     [
      "2026-11-26",
+     null
+    ],
+    [
+     "2026-11-27",
      null
     ]
    ]
@@ -65150,14 +65734,14 @@
   "v200_note": null,
   "years_on_market": 5,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": null,
    "kakaku": null,
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "http://shop.lacita.co.jp/cdn/shop/products/0604184400_5cf63d6033ddf_grande.jpg?v=1630918882",
-   "miss_days": 92,
+   "miss_days": 93,
    "min": null,
    "hist_min": null,
    "history": [
@@ -65499,6 +66083,10 @@
     ],
     [
      "2026-11-26",
+     null
+    ],
+    [
+     "2026-11-27",
      null
     ]
    ]
@@ -65625,14 +66213,14 @@
   "v200_note": "公式スペックは『AC 100V, 50/60Hz(切替), 定格1300W』で100V出力のみ",
   "years_on_market": 5,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 66430,
    "rakuten": null,
    "kakaku": null,
    "rakuten_url": null,
    "kakaku_url": null,
    "image": null,
-   "miss_days": 92,
+   "miss_days": 93,
    "min": 66430,
    "hist_min": null,
    "history": [
@@ -65975,6 +66563,10 @@
     [
      "2026-11-26",
      null
+    ],
+    [
+     "2026-11-27",
+     null
     ]
    ]
   }
@@ -66054,14 +66646,14 @@
   "v200_note": null,
   "years_on_market": 5,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": null,
    "kakaku": null,
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "http://powerarq.com/cdn/shop/files/240311_mini2_thumbnail_5_a0cf4fed-66b6-4156-9dcc-5c2cbc45fc97_1200x1200.jpg?v=1710822148",
-   "miss_days": 92,
+   "miss_days": 93,
    "min": null,
    "hist_min": null,
    "history": [
@@ -66403,6 +66995,10 @@
     ],
     [
      "2026-11-26",
+     null
+    ],
+    [
+     "2026-11-27",
      null
     ]
    ]
@@ -66472,14 +67068,14 @@
   "v200_note": null,
   "years_on_market": 4,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": null,
    "kakaku": null,
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "http://powerarq.com/cdn/shop/files/221109_pa70_thu_1351b930-b31b-43aa-949e-7033f4c52e85_1200x1200.jpg?v=1734065058",
-   "miss_days": 92,
+   "miss_days": 93,
    "min": null,
    "hist_min": null,
    "history": [
@@ -66821,6 +67417,10 @@
     ],
     [
      "2026-11-26",
+     null
+    ],
+    [
+     "2026-11-27",
      null
     ]
    ]
@@ -66899,14 +67499,14 @@
   "v200_note": null,
   "years_on_market": null,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": null,
    "kakaku": null,
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "http://www.eenour.jp/cdn/shop/files/P200_17.jpg?v=1770879095",
-   "miss_days": 92,
+   "miss_days": 93,
    "min": null,
    "hist_min": null,
    "history": [
@@ -67248,6 +67848,10 @@
     ],
     [
      "2026-11-26",
+     null
+    ],
+    [
+     "2026-11-27",
      null
     ]
    ]
@@ -67349,14 +67953,14 @@
   "v200_note": "公式スペックのAC定格電圧は『100V/110V/120V 切替』で200V出力なし",
   "years_on_market": 1,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 69976,
    "rakuten": null,
    "kakaku": null,
    "rakuten_url": null,
    "kakaku_url": null,
    "image": null,
-   "miss_days": 92,
+   "miss_days": 93,
    "min": 69976,
    "hist_min": null,
    "history": [
@@ -67699,6 +68303,10 @@
     [
      "2026-11-26",
      null
+    ],
+    [
+     "2026-11-27",
+     null
     ]
    ]
   }
@@ -67835,14 +68443,14 @@
   "v200_note": "公式スペックは『AC100V 定格2000W（瞬間最大4000W）』で100V出力のみ",
   "years_on_market": 2,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 99980,
    "rakuten": null,
    "kakaku": null,
    "rakuten_url": null,
    "kakaku_url": null,
    "image": null,
-   "miss_days": 92,
+   "miss_days": 93,
    "min": 99980,
    "hist_min": null,
    "history": [
@@ -68185,6 +68793,10 @@
     [
      "2026-11-26",
      null
+    ],
+    [
+     "2026-11-27",
+     null
     ]
    ]
   }
@@ -68313,14 +68925,14 @@
   "v200_note": null,
   "years_on_market": 0,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 7990,
    "rakuten": null,
    "kakaku": null,
    "rakuten_url": null,
    "kakaku_url": null,
    "image": null,
-   "miss_days": 92,
+   "miss_days": 93,
    "min": 7990,
    "hist_min": null,
    "history": [
@@ -68663,6 +69275,10 @@
     [
      "2026-11-26",
      null
+    ],
+    [
+     "2026-11-27",
+     null
     ]
    ]
   }
@@ -68753,14 +69369,14 @@
   "v200_note": null,
   "years_on_market": 0,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 21990,
    "rakuten": null,
    "kakaku": null,
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/konanonline/cabinet/root_sniper_folder/sniper_folder_00090/imgrc0375734691.jpg",
-   "miss_days": 37,
+   "miss_days": 38,
    "min": 21990,
    "hist_min": 27742,
    "history": [
@@ -69103,6 +69719,10 @@
     [
      "2026-11-26",
      null
+    ],
+    [
+     "2026-11-27",
+     null
     ]
    ]
   }
@@ -69227,13 +69847,13 @@
   "v200_note": "公式製品ページ・国内サイトに200V出力の記載を確認できず（国内向けは100V出力機）",
   "years_on_market": 0,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 58491,
    "rakuten": 56990,
    "kakaku": null,
-   "rakuten_url": "https://item.rakuten.co.jp/lovleopstore/t200pro/?rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00u9v8o.5sz2dace.g00u9v8o.5sz2ec4c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Flovleopstore%2Ft200pro%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flovleopstore%2Fi%2F10000057%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
    "kakaku_url": null,
-   "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/lovleopstore/cabinet/shohin34/1800-2000.jpg",
+   "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/lovleopstore/cabinet/shohin34/1800-g.jpg",
    "miss_days": 0,
    "min": 56990,
    "hist_min": 51990,
@@ -69577,6 +70197,10 @@
     [
      "2026-11-26",
      56990
+    ],
+    [
+     "2026-11-27",
+     56990
     ]
    ]
   }
@@ -69699,11 +70323,11 @@
   "v200_note": "公式製品ページ・国内サイトに200V出力の記載を確認できず（国内向けは100V出力機）",
   "years_on_market": 0,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 60269,
-   "rakuten": 79859,
+   "rakuten": 102212,
    "kakaku": null,
-   "rakuten_url": "https://item.rakuten.co.jp/konanonline/snpr-0gvj885v1/?rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00uisuo.5sz2d0e1.g00uisuo.5sz2eae5/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkonanonline%2Fsnpr-0gvj885v1%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkonanonline%2Fi%2F10386005%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
    "kakaku_url": null,
    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/konanonline/cabinet/sniper_folder_00165/imgrc0354998078.jpg",
    "miss_days": 0,
@@ -70049,6 +70673,10 @@
     [
      "2026-11-26",
      79859
+    ],
+    [
+     "2026-11-27",
+     102212
     ]
    ]
   }
@@ -70156,14 +70784,14 @@
   "v200_note": "公式製品ページ・国内サイトに200V出力の記載を確認できず（国内向けは100V出力機）",
   "years_on_market": 3,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 91990,
    "rakuten": null,
    "kakaku": null,
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/lovleopstore/cabinet/shohin34/2400-69.jpg",
-   "miss_days": 78,
+   "miss_days": 79,
    "min": 91990,
    "hist_min": 91900,
    "history": [
@@ -70506,6 +71134,10 @@
     [
      "2026-11-26",
      null
+    ],
+    [
+     "2026-11-27",
+     null
     ]
    ]
   }
@@ -70624,14 +71256,14 @@
   "v200_note": "公式製品ページ・国内サイトに200V出力の記載を確認できず（国内向けは100V出力機）",
   "years_on_market": 1,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 99990,
    "rakuten": null,
    "kakaku": null,
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/happyhour1414/cabinet/g/18/e9dihcud8h-2.jpg",
-   "miss_days": 84,
+   "miss_days": 85,
    "min": 99990,
    "hist_min": 118269,
    "history": [
@@ -70974,6 +71606,10 @@
     [
      "2026-11-26",
      null
+    ],
+    [
+     "2026-11-27",
+     null
     ]
    ]
   }
@@ -71040,14 +71676,14 @@
   "v200_note": "公式製品ページ・国内サイトに200V出力の記載を確認できず（国内向けは100V出力機）",
   "years_on_market": 0,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": null,
    "kakaku": null,
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/lovleopstore/cabinet/shohin34/3000-65.jpg",
-   "miss_days": 15,
+   "miss_days": 16,
    "min": null,
    "hist_min": 74990,
    "history": [
@@ -71390,6 +72026,10 @@
     [
      "2026-11-26",
      null
+    ],
+    [
+     "2026-11-27",
+     null
     ]
    ]
   }
@@ -71458,14 +72098,14 @@
   "v200_note": "公式製品ページ・国内サイトに200V出力の記載を確認できず（国内向けは100V出力機）",
   "years_on_market": 3,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": null,
    "kakaku": null,
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "http://www.aferiyjapan.com/cdn/shop/files/1_8d4a5fd1-0965-4146-bb73-00625d715786.png?v=1784628041",
-   "miss_days": 92,
+   "miss_days": 93,
    "min": null,
    "hist_min": null,
    "history": [
@@ -71807,6 +72447,10 @@
     ],
     [
      "2026-11-26",
+     null
+    ],
+    [
+     "2026-11-27",
      null
     ]
    ]
@@ -71877,14 +72521,14 @@
   "v200_note": null,
   "years_on_market": 4,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": null,
    "kakaku": null,
    "rakuten_url": null,
    "kakaku_url": null,
    "image": null,
-   "miss_days": 92,
+   "miss_days": 93,
    "min": null,
    "hist_min": null,
    "history": [
@@ -72226,6 +72870,10 @@
     ],
     [
      "2026-11-26",
+     null
+    ],
+    [
+     "2026-11-27",
      null
     ]
    ]
@@ -72296,14 +72944,14 @@
   "v200_note": "公式スペックは『110V/1800W(定格)、4000W(ピーク)』で200V出力の記載なし",
   "years_on_market": 4,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": null,
    "kakaku": null,
    "rakuten_url": null,
    "kakaku_url": null,
    "image": null,
-   "miss_days": 92,
+   "miss_days": 93,
    "min": null,
    "hist_min": null,
    "history": [
@@ -72645,6 +73293,10 @@
     ],
     [
      "2026-11-26",
+     null
+    ],
+    [
+     "2026-11-27",
      null
     ]
    ]
@@ -72720,14 +73372,14 @@
   "v200_note": null,
   "years_on_market": 2,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": null,
    "kakaku": null,
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "https://form.run/cached/creator-unsplash/2/24/32-1280.png",
-   "miss_days": 92,
+   "miss_days": 93,
    "min": null,
    "hist_min": null,
    "history": [
@@ -73069,6 +73721,10 @@
     ],
     [
      "2026-11-26",
+     null
+    ],
+    [
+     "2026-11-27",
      null
     ]
    ]
@@ -73144,14 +73800,14 @@
   "v200_note": null,
   "years_on_market": 2,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": null,
    "kakaku": null,
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "https://form.run/cached/creator-unsplash/2/24/32-1280.png",
-   "miss_days": 92,
+   "miss_days": 93,
    "min": null,
    "hist_min": null,
    "history": [
@@ -73493,6 +74149,10 @@
     ],
     [
      "2026-11-26",
+     null
+    ],
+    [
+     "2026-11-27",
      null
     ]
    ]
@@ -73570,14 +74230,14 @@
   "v200_note": "公式発表スペックは『AC出力ポート4個、合計2000W（サージ3600W）、100V、50/60Hz』で100V出力のみ",
   "years_on_market": 2,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": null,
    "kakaku": null,
    "rakuten_url": null,
    "kakaku_url": null,
    "image": null,
-   "miss_days": 92,
+   "miss_days": 93,
    "min": null,
    "hist_min": null,
    "history": [
@@ -73919,6 +74579,10 @@
     ],
     [
      "2026-11-26",
+     null
+    ],
+    [
+     "2026-11-27",
      null
     ]
    ]
@@ -74056,14 +74720,14 @@
   "v200_note": "公式スペックは『AC出力(×3) 純正弦波 合計1200W』の国内100V機。200V出力の記載なし",
   "years_on_market": 2,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 43900,
    "rakuten": null,
    "kakaku": null,
    "rakuten_url": null,
    "kakaku_url": null,
    "image": null,
-   "miss_days": 92,
+   "miss_days": 93,
    "min": 43900,
    "hist_min": null,
    "history": [
@@ -74406,6 +75070,10 @@
     [
      "2026-11-26",
      null
+    ],
+    [
+     "2026-11-27",
+     null
     ]
    ]
   }
@@ -74542,14 +75210,14 @@
   "v200_note": "公式スペックは『AC出力(×6) 純正弦波 合計2400W（最大4800W）110V(50/60Hz)』で200V出力の記載なし",
   "years_on_market": 4,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 86900,
    "rakuten": null,
    "kakaku": null,
    "rakuten_url": null,
    "kakaku_url": null,
    "image": null,
-   "miss_days": 92,
+   "miss_days": 93,
    "min": 86900,
    "hist_min": null,
    "history": [
@@ -74892,6 +75560,10 @@
     [
      "2026-11-26",
      null
+    ],
+    [
+     "2026-11-27",
+     null
     ]
    ]
   }
@@ -74990,14 +75662,14 @@
   "v200_note": "公式スペックは『3×AC 定格3300W』『110V/100V(50/60Hz)』（EU版のみ220-240V）で、国内モデルの200V出力の記載なし",
   "years_on_market": 2,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 160900,
    "rakuten": null,
    "kakaku": null,
    "rakuten_url": null,
    "kakaku_url": null,
    "image": null,
-   "miss_days": 92,
+   "miss_days": 93,
    "min": 160900,
    "hist_min": null,
    "history": [
@@ -75340,6 +76012,10 @@
     [
      "2026-11-26",
      null
+    ],
+    [
+     "2026-11-27",
+     null
     ]
    ]
   }
@@ -75470,11 +76146,11 @@
   "v200_note": null,
   "years_on_market": 3,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 23800,
    "rakuten": 23800,
    "kakaku": null,
-   "rakuten_url": "https://item.rakuten.co.jp/pecron/e300lfp/?rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00udj9o.5sz2de8f.g00udj9o.5sz2ee7e/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fpecron%2Fe300lfp%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fpecron%2Fi%2F10000042%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
    "kakaku_url": null,
    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/pecron/cabinet/biiino/item/main-image/20251212183421_1.jpg",
    "miss_days": 0,
@@ -75820,6 +76496,10 @@
     [
      "2026-11-26",
      23800
+    ],
+    [
+     "2026-11-27",
+     23800
     ]
    ]
   }
@@ -75932,11 +76612,11 @@
   "v200_note": null,
   "years_on_market": 1,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 30900,
    "rakuten": 30900,
    "kakaku": null,
-   "rakuten_url": "https://item.rakuten.co.jp/pecron/e500lfp/?rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00udj9o.5sz2de8f.g00udj9o.5sz2ee7e/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fpecron%2Fe500lfp%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fpecron%2Fi%2F10000046%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
    "kakaku_url": null,
    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/pecron/cabinet/biiino/item/main-image/20260403103540_1.jpg",
    "miss_days": 0,
@@ -76282,6 +76962,10 @@
     [
      "2026-11-26",
      30900
+    ],
+    [
+     "2026-11-27",
+     30900
     ]
    ]
   }
@@ -76350,14 +77034,14 @@
   "v200_note": null,
   "years_on_market": 4,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": null,
    "kakaku": null,
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "http://www.pecron.jp/cdn/shop/files/lQDPKdcdlMDH1IPNB9DNB9CwMi1GpL4OAEEI5lBpbhs4AQ_2000_2000.jpg?v=1764056577",
-   "miss_days": 92,
+   "miss_days": 93,
    "min": null,
    "hist_min": null,
    "history": [
@@ -76700,6 +77384,10 @@
     [
      "2026-11-26",
      null
+    ],
+    [
+     "2026-11-27",
+     null
     ]
    ]
   },
@@ -76769,11 +77457,11 @@
   "v200_note": null,
   "years_on_market": 0,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 53900,
    "rakuten": 51900,
    "kakaku": null,
-   "rakuten_url": "https://item.rakuten.co.jp/pecron/f1000lfp/?rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00udj9o.5sz2de8f.g00udj9o.5sz2ee7e/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fpecron%2Ff1000lfp%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fpecron%2Fi%2F10000051%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
    "kakaku_url": null,
    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/pecron/cabinet/biiino/item/main-image/20260805105832_1.jpg",
    "miss_days": 0,
@@ -77119,6 +77807,10 @@
     [
      "2026-11-26",
      51900
+    ],
+    [
+     "2026-11-27",
+     51900
     ]
    ]
   }
@@ -77188,14 +77880,14 @@
   "v200_note": "公式スペックは『電圧：100V 定格出力2000W 瞬間最大4000W』で100V出力のみ",
   "years_on_market": 4,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": null,
    "kakaku": null,
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "http://www.pecron.jp/cdn/shop/files/PECRON-E2000LFP-portable-power-station-1920wh-2000w-pecron.jp.jpg?v=1766623528",
-   "miss_days": 92,
+   "miss_days": 93,
    "min": null,
    "hist_min": null,
    "history": [
@@ -77538,6 +78230,10 @@
     [
      "2026-11-26",
      null
+    ],
+    [
+     "2026-11-27",
+     null
     ]
    ]
   },
@@ -77608,11 +78304,11 @@
   "v200_note": "公式スペックのAC定格出力は『100V～120V（純正弦波）』で200V出力の記載なし",
   "years_on_market": 0,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": 139000,
    "kakaku": null,
-   "rakuten_url": "https://item.rakuten.co.jp/pecron/f3000lfp/?rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00udj9o.5sz2de8f.g00udj9o.5sz2ee7e/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fpecron%2Ff3000lfp%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fpecron%2Fi%2F10000050%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
    "kakaku_url": null,
    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/pecron/cabinet/biiino/item/main-image/20260120120559_1.jpg",
    "miss_days": 0,
@@ -77958,6 +78654,10 @@
     [
      "2026-11-26",
      139000
+    ],
+    [
+     "2026-11-27",
+     139000
     ]
    ]
   }
@@ -78031,14 +78731,14 @@
   "v200_note": null,
   "years_on_market": 6,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": null,
    "kakaku": null,
    "rakuten_url": null,
    "kakaku_url": null,
    "image": null,
-   "miss_days": 92,
+   "miss_days": 93,
    "min": null,
    "hist_min": null,
    "history": [
@@ -78381,6 +79081,10 @@
     [
      "2026-11-26",
      null
+    ],
+    [
+     "2026-11-27",
+     null
     ]
    ]
   },
@@ -78449,11 +79153,11 @@
   "v200_note": null,
   "years_on_market": 3,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": 60500,
    "kakaku": null,
-   "rakuten_url": "https://item.rakuten.co.jp/tokka-com/4595985750010/?rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
+   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00s5hao.5sz2dd9b.g00s5hao.5sz2eef0/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftokka-com%2F4595985750010%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ftokka-com%2Fi%2F10942382%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
    "kakaku_url": null,
    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/tokka-com/cabinet/661/4595985750010.jpg",
    "miss_days": 0,
@@ -78799,6 +79503,10 @@
     [
      "2026-11-26",
      60500
+    ],
+    [
+     "2026-11-27",
+     60500
     ]
    ]
   }
@@ -78867,14 +79575,14 @@
   "v200_note": null,
   "years_on_market": 1,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": null,
    "kakaku": null,
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "http://www.yoshinopower.co.jp/cdn/shop/files/B330-1200_1200.png?v=1729159247&width=2048",
-   "miss_days": 92,
+   "miss_days": 93,
    "min": null,
    "hist_min": null,
    "history": [
@@ -79217,6 +79925,10 @@
     [
      "2026-11-26",
      null
+    ],
+    [
+     "2026-11-27",
+     null
     ]
    ]
   },
@@ -79311,14 +80023,14 @@
   "v200_note": null,
   "years_on_market": 3,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 110000,
-   "rakuten": null,
+   "rakuten": 110000,
    "kakaku": null,
-   "rakuten_url": null,
+   "rakuten_url": "https://hb.afl.rakuten.co.jp/hgc/g00uiiho.5sz2d2f9.g00uiiho.5sz2e0aa/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fyoshinopower%2Fyn-b600-sst-01%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fyoshinopower%2Fi%2F10000002%2F&rafcid=wsc_i_is_e151fff0-1050-44bd-93f2-b394e3936399",
    "kakaku_url": null,
-   "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/ebest/cabinet/467/4595985750027.jpg",
-   "miss_days": 1,
+   "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/yoshinopower/cabinet/10349072/10793196/imgrc0099230364.jpg",
+   "miss_days": 0,
    "min": 110000,
    "hist_min": 110000,
    "history": [
@@ -79661,6 +80373,10 @@
     [
      "2026-11-26",
      null
+    ],
+    [
+     "2026-11-27",
+     110000
     ]
    ]
   }
@@ -79767,14 +80483,14 @@
   "v200_note": "公式スペックは『AC出力 4コンセント, 100VAC, 50/60Hz, 合計1200W』で100V出力のみ",
   "years_on_market": 0,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": 130899,
    "rakuten": null,
    "kakaku": null,
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/yoshinopower/cabinet/13444488/13444492/13444613/imgrc0114784486.jpg",
-   "miss_days": 43,
+   "miss_days": 44,
    "min": 130899,
    "hist_min": 187000,
    "history": [
@@ -80117,6 +80833,10 @@
     [
      "2026-11-26",
      null
+    ],
+    [
+     "2026-11-27",
+     null
     ]
    ]
   }
@@ -80185,14 +80905,14 @@
   "v200_note": "公式スペックは『AC出力 100V、50/60Hz、合計2000W(x4)』で100V出力のみ",
   "years_on_market": 3,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": null,
    "kakaku": null,
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "https://thumbnail.image.rakuten.co.jp/@0_mall/yoshinopower/cabinet/10280294/10280305/11055337/imgrc0100184462.jpg",
-   "miss_days": 43,
+   "miss_days": 44,
    "min": null,
    "hist_min": 275000,
    "history": [
@@ -80535,6 +81255,10 @@
     [
      "2026-11-26",
      null
+    ],
+    [
+     "2026-11-27",
+     null
     ]
    ]
   },
@@ -80603,14 +81327,14 @@
   "v200_note": "公式スペックは『100V、50/60Hz、合計3300W(x2)』『100VAC/30A(x1)』で100V出力のみ",
   "years_on_market": 2,
   "prices": {
-   "updated": "2026-11-26",
+   "updated": "2026-11-27",
    "amazon": null,
    "rakuten": null,
    "kakaku": null,
    "rakuten_url": null,
    "kakaku_url": null,
    "image": "http://www.yoshinopower.co.jp/cdn/shop/files/B3600-1200_1200.png?v=1729159209&width=2048",
-   "miss_days": 92,
+   "miss_days": 93,
    "min": null,
    "hist_min": null,
    "history": [
@@ -80952,6 +81676,10 @@
     ],
     [
      "2026-11-26",
+     null
+    ],
+    [
+     "2026-11-27",
      null
     ]
    ]
